@@ -9,21 +9,22 @@
     <style>
         body {
             margin: 0;
-            font-family: 'Press Start 2P', monospace;
             background: black;
             color: #ffecb3;
             text-align: center;
             padding: 2rem;
+            font-family: 'Courier New', monospace;
+        }
+
+        h1 {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
         }
 
         .container {
             max-width: 800px;
             margin: 0 auto;
-        }
-
-        h1 {
-            font-size: 1.5rem;
-            margin-bottom: 2rem;
         }
 
         a {
@@ -37,11 +38,10 @@
             border-radius: 12px;
             background: #0a0a0a;
             box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
-            font-size: 0.8rem;
-            line-height: 1.4;
-            opacity: 0.85;
+            font-size: 1rem;
+            line-height: 1.6;
             color: #88f0ff;
-            text-shadow: 0 0 5px #88f0ff;
+            text-shadow: 0 0 2px #88f0ff;
         }
 
         .game {
@@ -53,17 +53,36 @@
             box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
         }
 
+        .description {
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #ffecb3;
+            text-shadow: 0 0 2px #ffecb3;
+        }
+
         button {
+            font-family: 'Press Start 2P', monospace;
             display: block;
             margin: 1rem auto 0;
-            padding: 1rem 2rem;
-            font-size: 1rem;
+            padding: 0.75rem 1.5rem;
+            font-size: 0.85rem;
             border: 2px solid;
             border-radius: 8px;
             cursor: pointer;
             transition: all 0.3s ease;
             text-shadow: 0 0 5px;
+            max-width: 280px;
+            width: 100%;
         }
+
+        button {
+            max-width: 280px;
+            width: 100%;
+        }
+
+
 
         .green {
             background: #001100;
@@ -117,25 +136,17 @@
             box-shadow: 0 0 15px #ffe066, 0 0 25px #ffe066, 0 0 35px #ffe066;
         }
 
-        .description {
-            max-width: 600px;
-            margin: 0 auto;
-            font-size: 0.8rem;
-            line-height: 1.4;
-            opacity: 0.85;
-        }
-
         .page-footer {
             color: #88f0ff;
-            text-shadow: 0 0 5px #88f0ff;
+            text-shadow: 0 0 2px #88f0ff;
+            margin-top: 3rem;
         }
 
         footer {
-            margin-top: 3rem;
             font-size: 0.7rem;
-            opacity: 0.7;
-            color: #88f0ff;
-            text-shadow: 0 0 5px #88f0ff;
+            color: #00ff88;
+            text-shadow: 0 0 2px #00ff88;
+            margin-top: 3rem;
         }
 
         @media (max-width: 600px) {
@@ -150,7 +161,7 @@
 
             .description,
             .intro {
-                font-size: 0.75rem;
+                font-size: 0.95rem;
                 padding: 0 1rem;
             }
 
@@ -166,37 +177,40 @@
         <h1>🕹️ Korovatron Arcade</h1>
 
         <div class="intro">
-            Here are some of the projects I have made while learning javascript.
+            <p>My javascript projects ...</p>
+            <p>All work on desktop with arrow keys and space, or with touch on mobile devices.</p>
         </div>
 
         <div class="game">
-            <div class="description">The first game I made was a clone of pacman</div>
-            <a href="https://korovatron.github.io/pacman"><button class="yellow">🟡 Play Pac-Man</button></a>
+            <div class="description">The first game I made was a clone of Pacman.</div>
+            <a href="https://korovatron.github.io/pacman"><button class="blue">🟡 Play Pac-Man</button></a>
         </div>
 
         <div class="game">
-            <div class="description">This game started life as a .net Windows game, which I decided to try and port to
-                javascript.</div>
+            <div class="description">This Tetris game started life as a VB.Net Windows game, which I decided to port to
+                JavaScript.</div>
             <a href="https://korovatron.github.io/tetris"><button class="blue">🧱 Play Tetris</button></a>
         </div>
 
         <div class="game">
-            <div class="description">I had to have a go at making a Space Invaders game!</div>
-            <a href="https://korovatron.github.io/spaceinvaders"><button class="green">🚀 Play Space Invaders</button></a>
+            <div class="description">I had to have a go at making a Space Invaders style game!</div>
+            <a href="https://korovatron.github.io/spaceinvaders"><button class="blue">🚀 Play Space
+                    Invaders</button></a>
         </div>
 
         <div class="game">
-            <div class="description">Bounce through logic loops and color puzzles. Mind the edge!</div>
-            <a href="https://korovatron.github.io/qorby"><button class="purple">🧠 Play Q*Orby</button></a>
+            <div class="description">I wanted to create a Q*Bert style game, but struggled drawing the sprites, so I
+                turned the characters into "Pulsating Orbs"!</div>
+            <a href="https://korovatron.github.io/qorby"><button class="blue">🧠 Play Q*Orby</button></a>
         </div>
 
-        
-        <div class="description page-footer" style="margin-top: 3rem;">
-            Insert coin ...
+        <div class="description page-footer">
+            All games can be installed as Progressive Web Apps (PWAs) on supported browsers and devices. For iOS, tap
+            the share icon and add to home screen for the best experience.
         </div>
 
         <footer>
-            Neil Kendall
+            Written By Neil Kendall
         </footer>
     </div>
 </body>
