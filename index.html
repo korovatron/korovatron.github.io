@@ -11,7 +11,7 @@
     <style>
         body {
             margin: 0;
-            background: black;
+            background: #32384C;
             color: #ffecb3;
             text-align: center;
             padding: 2rem;
@@ -38,8 +38,8 @@
             padding: 1.5rem;
             border: 2px solid #444;
             border-radius: 12px;
-            background: #0a0a0a;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+            background: linear-gradient(135deg, #1a2233 60%, #232b3a 100%);
+            box-shadow: 0 0 18px 2px #22335544;
             font-size: 1rem;
             line-height: 1.6;
             color: #88f0ff;
@@ -51,8 +51,8 @@
             padding: 1.5rem;
             border: 2px solid #444;
             border-radius: 12px;
-            background: #0a0a0a;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+            background: linear-gradient(135deg, #2a1a33 60%, #3a2332 100%);
+            box-shadow: 0 0 18px 2px #33224444;
         }
 
         .description {
@@ -60,8 +60,22 @@
             margin: 0 auto;
             font-size: 1rem;
             line-height: 1.6;
+        }
+
+        .description.blue {
+            color: #66ccff;
+        }
+
+        .description.green {
+            color: #00ff88;
+        }
+
+        .description.purple {
+            color: #cc66ff;
+        }
+
+        .description.yellow {
             color: #ffecb3;
-            text-shadow: 0 0 2px #ffecb3;
         }
 
         button {
@@ -145,9 +159,9 @@
         }
 
         footer {
-            font-size: 0.7rem;
-            color: #00ff88;
-            text-shadow: 0 0 2px #00ff88;
+            font-size: 1.5rem;
+            color: #fff;
+            font-family: 'Press Start 2P', monospace;
             margin-top: 3rem;
         }
 
@@ -176,43 +190,42 @@
 
 <body>
     <div class="container">
-        <h1>🕹️ Korovatron Arcade</h1>
+        <img src="korovatronarcadelogo.png" alt="Korovatron Arcade Logo"
+            style="max-width:100%;height:auto;display:block;margin:0 auto 2rem;">
 
         <div class="intro">
-            <p>My javascript projects ...</p>
-            <p>All work on desktop with arrow keys and space, or with touch on mobile devices.</p>
+            <p>Games created in HTML5 and JavaScript — playable on both desktop and mobile! Use your keyboard (cursor
+                keys and space) or touch controls to enjoy.</p>
+            <p>All games are installable as Progressive Web Apps (PWAs) on supported browsers. On iOS, tap the share
+                icon and select “Add to Home Screen” for the best experience.</p>
         </div>
 
         <div class="game">
-            <div class="description">The first game I made was a clone of Pacman.</div>
+            <div class="description" style="color:#66ccff;">The first game I made was a clone of Pacman.</div>
             <a href="https://korovatron.github.io/pacman"><button class="blue">🟡 Play Pac-Man</button></a>
         </div>
 
         <div class="game">
-            <div class="description">This Tetris game started life as a VB.Net Windows game, which I decided to port to
-                JavaScript.</div>
-            <a href="https://korovatron.github.io/tetris"><button class="blue">🧱 Play Tetris</button></a>
+            <div class="description" style="color:#00ff88;">This Tetris game started life as a VB.Net Windows game,
+                which I decided to port to JavaScript.</div>
+            <a href="https://korovatron.github.io/tetris"><button class="green">🧱 Play Tetris</button></a>
         </div>
 
         <div class="game">
-            <div class="description">I had to have a go at making a Space Invaders style game!</div>
-            <a href="https://korovatron.github.io/spaceinvaders"><button class="blue">🚀 Play Space
+            <div class="description" style="color:#cc66ff;">I had to have a go at making a Space Invaders style game!
+            </div>
+            <a href="https://korovatron.github.io/spaceinvaders"><button class="purple">🚀 Play Space
                     Invaders</button></a>
         </div>
 
         <div class="game">
-            <div class="description">I wanted to create a Q*Bert style game, but struggled drawing the sprites, so I
-                turned the characters into "Pulsating Orbs"!</div>
-            <a href="https://korovatron.github.io/qorby"><button class="blue">🧠 Play Q*Orby</button></a>
-        </div>
-
-        <div class="description page-footer">
-            All games can be installed as Progressive Web Apps (PWAs) on supported browsers and devices. For iOS, tap
-            the share icon and add to home screen for the best experience.
+            <div class="description" style="color:#ffecb3;">I wanted to create a Q*Bert style game, but struggled
+                drawing the sprites, so I turned the characters into "Pulsating Orbs"!</div>
+            <a href="https://korovatron.github.io/qorby"><button class="yellow">🧠 Play Q*Orby</button></a>
         </div>
 
         <footer>
-            Written By Neil Kendall
+            Games Written By Neil Kendall
         </footer>
     </div>
 </body>
