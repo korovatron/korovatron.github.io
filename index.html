@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -63,6 +64,18 @@
             background: linear-gradient(135deg, #2a1a33 60%, #3a2332 100%);
             box-shadow: 0 0 18px 2px #33224444;
             font-family: inherit;
+            text-align: center;
+        }
+
+        .game-image {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 0 8px #22223344;
+            display: block;
+            float: left;
+            margin: 0 1.25rem 1rem 0;
         }
 
         .description {
@@ -102,6 +115,7 @@
             text-shadow: 0 0 5px;
             max-width: 280px;
             width: 100%;
+            clear: both;
         }
 
         button {
@@ -238,13 +252,11 @@
         </div>
 
         <div class="game">
+            <img class="game-image" src="icons/crateEscapeIcon.png" alt="Crate Escape Icon">
             <div class="description" style="color:#00ff88;">A classic box-pushing puzzle game, based on Sokoban. Play on
                 mobile, desktop and tablet and sync game progress across devices. <br>Created
                 September 2025.</div>
-            <a href="https://www.korovatron.co.uk/crate_escape"><button class="green">Play The Crate
-                    Escape</button></a>
-
-
+            <a href="https://www.korovatron.co.uk/crate_escape"><button class="green">Play The Crate Escape</button></a>
             <div class="description" style="color:#00ff88; margin-top: 1.5rem;">
                 <a href="https://www.korovatron.co.uk/crate_escape/policies/privacy_policy.html"
                     style="color: #00ff88; text-decoration: none;">Privacy Policy</a>
@@ -252,12 +264,11 @@
                 <a href="https://www.korovatron.co.uk/crate_escape/policies/terms_of_service.html"
                     style="color: #00ff88; text-decoration: none;">Terms of Service</a>
             </div>
-
-
-
         </div>
 
+
         <div class="game">
+            <img class="game-image" src="icons/pacManIcon.png" alt="Pac-Man Icon">
             <div class="description" style="color:#88ddff;">The first game I made was a Pac-Man style game.<br>Created
                 June 2025.</div>
             <a href="https://www.korovatron.co.uk/pacman"><button class="blue">Play Pac-Man</button></a>
@@ -265,20 +276,22 @@
 
 
         <div class="game">
+            <img class="game-image" src="icons/tetrisIcon.png" alt="Tetris Icon">
             <div class="description" style="color:#ffaa66;">This Tetris game started life as a VB.Net Windows game,
                 which I decided to port to JavaScript.<br>Created July 2025.</div>
             <a href="https://www.korovatron.co.uk/tetris"><button class="orange">Play Tetris</button></a>
         </div>
 
         <div class="game">
+            <img class="game-image" src="icons/invaderIcon.png" alt="Space Invaders Icon">
             <div class="description" style="color:#dd88ff;">I have played countless hours of Space Invaders on the Atari
                 VCS 2600, so I had to have a go at making my own Space Invaders style game!<br>Created August 2025.
             </div>
-            <a href="https://www.korovatron.co.uk/spaceinvaders"><button class="purple">Play Space
-                    Invaders</button></a>
+            <a href="https://www.korovatron.co.uk/spaceinvaders"><button class="purple">Play Space Invaders</button></a>
         </div>
 
         <div class="game">
+            <img class="game-image" src="icons/qorbyIcon.png" alt="Q*Orby Icon">
             <div class="description" style="color:#ffecb3;">I wanted to create a Q*Bert style game, but struggled
                 drawing the sprites, so I turned the characters into "Pulsating Orbs"!<br>Created August 2025.</div>
             <a href="https://www.korovatron.co.uk/qorby"><button class="yellow">Play Q*Orby</button></a>
