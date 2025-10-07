@@ -1,0 +1,398 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Desktop browser favicon (transparent) -->
+    <link rel="icon" type="image/png" href="korovatronIconTrans.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="korovatronIconTrans.png">
+    <!-- iOS/mobile homescreen icon -->
+    <link rel="apple-tou<body>
+    <div class="container">
+
+        <img src="logo.png" alt="Page Logo" style="width:80%;height:auto;display:block;margin:0 auto 2rem;" id="main-logo">
+
+        <!-- Mode Toggle Switch -->
+        <div class="mode-toggle">
+            <span class="toggle-label">🎮 Fun</span>
+            <div class="toggle-switch" onclick="toggleMode()">
+                <div class="toggle-slider">🎮</div>
+            </div>
+            <span class="toggle-label">📚 Serious</span>
+        </div>
+
+        <div class="intro" id="intro-section">
+
+            <img src="controls.png" alt="Neil Kendall"
+                style="float:left;width:200px;height:auto;margin:1.0rem 0.4rem 0.4rem 0;" id="intro-image">
+
+            <div id="intro-text">
+                <p>Play classic arcade games on desktop, mobile or tablet. Use keyboard & mouse or touch & swipe controls to enjoy!</p>
+                <p>All games are installable as Progressive Web Apps (PWAs) on supported browsers and devices. On Apple iOS, tap the share icon and select "Add to Home Screen" for the best experience.</p>
+            </div>
+        </div>
+
+        <div id="content-area">
+            <!-- Content will be dynamically loaded here -->
+        </div>s="180x180" href="korovatronIcon.png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Neil's Retro Game Vault - Play classic arcade games made in HTML5 and JavaScript" id="meta-description">
+    <link rel="canonical" href="https://www.korovatron.co.uk/" />
+
+    <title id="page-title">Korovatron</title>
+    <style>
+        .game-title {
+            font-size: 1.7rem;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 0.5rem;
+            margin-top: 0.3rem;
+            letter-spacing: 0.5px;
+            text-align: center;
+        }
+        body {
+            margin: 0;
+            background: #32384C;
+            color: #ffecb3;
+            text-align: center;
+            padding: 2rem;
+            font-family: Arial, system-ui, -apple-system, sans-serif;
+        }
+
+        h1 {
+            font-family: Arial, system-ui, -apple-system, sans-serif;
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            font-family: inherit;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .intro {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            border: 2px solid #444;
+            border-radius: 12px;
+            background: linear-gradient(120deg, #2a3140 0%, #4d5a7a 70%, #7a6fa7 100%);
+            box-shadow: 0 0 18px 2px #22335544;
+            font-size: 1.15rem;
+            line-height: 1.6;
+            color: #fff;
+            text-shadow: 0 1px 6px #232b3a, 0 0px 1px #232b3a;
+            font-weight: bold;
+            font-family: inherit;
+        }
+
+        .game {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            border: 2px solid #444;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #2a1a33 60%, #3a2332 100%);
+            box-shadow: 0 0 18px 2px #33224444;
+            font-family: inherit;
+            text-align: center;
+        }
+
+        .game-image {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 0 8px #22223344;
+            display: block;
+            float: left;
+            margin: 0 1.25rem 1rem 0;
+        }
+
+        .description {
+            max-width: 600px;
+            margin: 0 auto 1.5rem auto;
+            font-size: 1rem;
+            line-height: 1.6;
+            font-family: inherit;
+        }
+
+        .description.blue {
+            color: #66ccff;
+        }
+
+        .description.green {
+            color: #00ff88;
+        }
+
+        .description.purple {
+            color: #cc66ff;
+        }
+
+        .description.yellow {
+            color: #ffecb3;
+        }
+
+        button {
+            font-family: Arial, system-ui, -apple-system, sans-serif;
+            display: block;
+            margin: 1rem auto 1.25rem auto;
+            padding: 0.75rem 1.5rem;
+            font-size: 1.1rem;
+            border: 2px solid;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-shadow: 0 0 5px;
+            max-width: 280px;
+            width: 100%;
+            clear: both;
+        }
+
+        button {
+            max-width: 280px;
+            width: 100%;
+        }
+
+
+
+        .green {
+            background: #001100;
+            color: #00ff88;
+            border-color: #00ff88;
+            box-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88, 0 0 30px #00ff88;
+            text-shadow: 0 0 5px #00ff88;
+        }
+
+        .green:hover {
+            background: #003300;
+            box-shadow: 0 0 15px #00ffcc, 0 0 25px #00ffcc, 0 0 35px #00ffcc;
+        }
+
+        .purple {
+            background: #110011;
+            color: #cc66ff;
+            border-color: #cc66ff;
+            box-shadow: 0 0 10px #cc66ff, 0 0 20px #cc66ff, 0 0 30px #cc66ff;
+            text-shadow: 0 0 5px #cc66ff;
+        }
+
+        .purple:hover {
+            background: #330033;
+            box-shadow: 0 0 15px #dd88ff, 0 0 25px #dd88ff, 0 0 35px #dd88ff;
+        }
+
+        .blue {
+            background: #001122;
+            color: #66ccff;
+            border-color: #66ccff;
+            box-shadow: 0 0 10px #66ccff, 0 0 20px #66ccff, 0 0 30px #66ccff;
+            text-shadow: 0 0 5px #66ccff;
+        }
+
+        .blue:hover {
+            background: #002244;
+            box-shadow: 0 0 15px #88ddff, 0 0 25px #88ddff, 0 0 35px #88ddff;
+        }
+
+        .yellow {
+            background: #221100;
+            color: #ffecb3;
+            border-color: #ffecb3;
+            box-shadow: 0 0 10px #ffecb3, 0 0 20px #ffecb3, 0 0 30px #ffecb3;
+            text-shadow: 0 0 5px #ffecb3;
+        }
+
+        .yellow:hover {
+            background: #442200;
+            box-shadow: 0 0 15px #ffe066, 0 0 25px #ffe066, 0 0 35px #ffe066;
+        }
+
+        .orange {
+            background: #221100;
+            color: #ff8844;
+            border-color: #ff8844;
+            box-shadow: 0 0 10px #ff8844, 0 0 20px #ff8844, 0 0 30px #ff8844;
+            text-shadow: 0 0 5px #ff8844;
+        }
+
+        .orange:hover {
+            background: #442200;
+            box-shadow: 0 0 15px #ffaa66, 0 0 25px #ffaa66, 0 0 35px #ffaa66;
+        }
+
+        .page-footer {
+            color: #88f0ff;
+            text-shadow: 0 0 2px #88f0ff;
+            margin-top: 3rem;
+        }
+
+        footer {
+            font-size: 1rem;
+            color: #fff;
+            font-family: inherit;
+            margin-top: 1.2rem;
+        }
+
+        header {
+            font-size: 0.8rem;
+            color: #ffffff;
+            font-family: inherit;
+            margin-top: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Toggle Switch Styles */
+        .mode-toggle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 2rem auto;
+            gap: 1rem;
+        }
+
+        .toggle-label {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .toggle-switch {
+            position: relative;
+            width: 80px;
+            height: 40px;
+            background: #333;
+            border-radius: 20px;
+            border: 2px solid #555;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .toggle-slider {
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            width: 32px;
+            height: 32px;
+            background: #fff;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+        }
+
+        .toggle-switch.serious .toggle-slider {
+            transform: translateX(40px);
+        }
+
+        /* Theme Styles */
+        body.serious-mode {
+            background: #1a1f2e;
+            color: #e8f4f8;
+        }
+
+        body.serious-mode .intro {
+            background: linear-gradient(120deg, #2c3e50 0%, #3498db 70%, #2980b9 100%);
+            border-color: #34495e;
+        }
+
+        body.serious-mode .game {
+            background: linear-gradient(135deg, #2c3e50 60%, #34495e 100%);
+            border-color: #34495e;
+        }
+
+        body.serious-mode .game-title {
+            color: #3498db;
+        }
+
+        body.serious-mode .toggle-switch {
+            background: #2980b9;
+            border-color: #3498db;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.2rem;
+            }
+
+            button {
+                width: 100%;
+                font-size: 0.9rem;
+                margin-bottom: 2rem;
+            }
+
+            .description,
+            .intro {
+                font-size: 0.95rem;
+                padding: 0 1rem;
+            }
+
+            .game {
+                padding: 1rem;
+            }
+
+            .game-image {
+                width: 80px;
+                height: 80px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <img src="logo.png" alt="Page Logo" style="width:80%;height:auto;display:block;margin:0 auto 2rem;">
+
+        <div class="intro">
+
+            <img src="controls.png" alt="Neil Kendall"
+                style="float:left;width:200px;height:auto;margin:1.0rem 0.4rem 0.4rem 0;">
+
+            <p>Play classic arcade games on desktop, mobile or tablet. Use keyboard & mouse or touch & swipe controls to enjoy!</p>
+            <p>All games are installable as Progressive Web Apps (PWAs) on supported browsers and devices. On Apple iOS, tap the share icon and select “Add to Home Screen” for the best experience.</p>
+        </div>
+
+        <div id="content-area">
+            <!-- Content will be dynamically loaded here -->
+        </div>
+
+        <footer>
+
+
+        <div class="game">
+            <h2 class="game-title">Tetris</h2>
+            <img class="game-image" src="icons/tetrisIcon.png" alt="Tetris Icon">
+            <div class="description" style="color:#ffaa66;">Stack, rotate, and clear lines in this faithful Tetris remake! Enjoy the timeless challenge of fitting falling blocks together for the highest score.<br>Created July 2025.</div>
+            <a href="https://www.korovatron.co.uk/tetris"><button class="orange">Play Tetris</button></a>
+        </div>
+
+        <div class="game">
+            <h2 class="game-title">Space Invaders</h2>
+            <img class="game-image" src="icons/invaderIcon.png" alt="Space Invaders Icon">
+            <div class="description" style="color:#dd88ff;">Defend Earth from waves of alien invaders 👾! Inspired by the Atari VCS 2600 classic, this version lets you blast your way through endless enemies and chase high scores.<br>Created August 2025.</div>
+            <a href="https://www.korovatron.co.uk/spaceinvaders"><button class="purple">👾 Play Space Invaders</button></a>
+        </div>
+
+        <div class="game">
+            <h2 class="game-title">Q*Orby</h2>
+            <img class="game-image" src="icons/qorbyIcon.png" alt="Q*Orby Icon">
+            <div class="description" style="color:#ffecb3;">Bounce your way across pyramid tiles as a pulsating orb in this quirky Q*Bert-inspired game! Dodge enemies, change colors, and master each level’s tricky layout.<br>Created August 2025.</div>
+            <a href="https://www.korovatron.co.uk/qorby"><button class="yellow">Play Q*Orby</button></a>
+        </div>
+
+        <footer>
+            real horrorshow
+            <img src="korovatronIconTrans.png" alt="Korovatron Icon"
+                style="display:block;margin:0 auto 1rem auto;width:96px;height:96px;">
+        </footer>
+    </div>
+</body>
+
+</html>
