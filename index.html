@@ -12,6 +12,20 @@
     <meta name="description" content="Neil's Retro Game Vault - Play classic arcade games made in HTML5 and JavaScript" id="meta-description">
     <link rel="canonical" href="https://www.korovatron.co.uk/" />
 
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.korovatron.co.uk/" id="og-url">
+    <meta property="og:title" content="Korovatron" id="og-title">
+    <meta property="og:description" content="Neil's Retro Game Vault - Play classic arcade games made in HTML5 and JavaScript" id="og-description">
+    <meta property="og:image" content="https://www.korovatron.co.uk/logo.png" id="og-image">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.korovatron.co.uk/" id="twitter-url">
+    <meta name="twitter:title" content="Korovatron" id="twitter-title">
+    <meta name="twitter:description" content="Neil's Retro Game Vault - Play classic arcade games made in HTML5 and JavaScript" id="twitter-description">
+    <meta name="twitter:image" content="https://www.korovatron.co.uk/logo.png" id="twitter-image">
+
     <title id="page-title">Korovatron</title>
     <style>
         .game-title {
@@ -498,6 +512,25 @@
             // Update page title and meta description
             document.getElementById('page-title').textContent = data.title;
             document.getElementById('meta-description').setAttribute('content', data.description);
+            
+            // Update Open Graph tags for social sharing
+            const currentUrl = currentMode === 'serious' 
+                ? 'https://www.korovatron.co.uk/?mode=serious'
+                : 'https://www.korovatron.co.uk/';
+            const ogImage = currentMode === 'serious'
+                ? 'https://www.korovatron.co.uk/seriousLogo.png'
+                : 'https://www.korovatron.co.uk/logo.png';
+                
+            document.getElementById('og-url').setAttribute('content', currentUrl);
+            document.getElementById('og-title').setAttribute('content', data.title);
+            document.getElementById('og-description').setAttribute('content', data.description);
+            document.getElementById('og-image').setAttribute('content', ogImage);
+            
+            // Update Twitter Card tags
+            document.getElementById('twitter-url').setAttribute('content', currentUrl);
+            document.getElementById('twitter-title').setAttribute('content', data.title);
+            document.getElementById('twitter-description').setAttribute('content', data.description);
+            document.getElementById('twitter-image').setAttribute('content', ogImage);
             
             // Update logo
             const logo = document.getElementById('main-logo');
