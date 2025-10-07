@@ -272,7 +272,7 @@
         }
 
         body.serious-mode .game-title {
-            color: #3498db;
+            color: #fff;
         }
 
         body.serious-mode .toggle-switch {
@@ -316,9 +316,9 @@
 
         <!-- Mode Toggle Switch -->
         <div class="mode-toggle">
-            <span class="toggle-label">🎮 Fun</span>
+            <span class="toggle-label">🕹️ Fun</span>
             <div class="toggle-switch" onclick="toggleMode()">
-                <div class="toggle-slider">🎮</div>
+                <div class="toggle-slider">🕹️</div>
             </div>
             <span class="toggle-label">📚 Serious</span>
         </div>
@@ -486,7 +486,7 @@
                 body.classList.add('serious-mode');
             } else {
                 toggleSwitch.classList.remove('serious');
-                toggleSlider.textContent = '🎮';
+                toggleSlider.textContent = '🕹️';
                 body.classList.remove('serious-mode');
             }
         }
