@@ -439,25 +439,52 @@
                 logoAlt: "Serious Mode Logo",
                 introImage: "controls.png", // Placeholder - you might want a different image
                 introText: `
-                    <p>Professional educational applications designed for classroom use. These tools are built to enhance learning and provide interactive experiences for students and educators.</p>
-                    <p>All applications are web-based and work across desktop, tablet, and mobile devices for maximum accessibility in any learning environment.</p>
+                    <p>A collection of web apps and tools I've made when something caught my interest or I needed to solve a problem. Nothing too fancy - just stuff I found useful or fun to build.</p>
+                    <p>All applications are web-based and work across desktop, tablet, and mobile devices.</p>
                 `,
                 items: [
                     {
                         title: "SQL Academy",
                         image: "icons/sqlAcademyIcon.png",
                         alt: "SQL Academy Icon",
-                        description: "Learn SQL through interactive lessons and practice exercises. Perfect for students beginning their journey with database queries and data manipulation.<br>A comprehensive learning platform for structured query language.",
+                        description: "Practice writing SQL queries to prepare for GCSE and A Level Computer Science exams. Interactive exercises help students master database queries, data manipulation, and SQL syntax.<br>Essential practice for UK Computer Science qualifications.",
                         color: "#3498db",
                         buttonText: "📚 Launch SQL Academy",
                         buttonClass: "blue",
                         url: "https://www.korovatron.co.uk/sql_academy/"
+                    },
+                    {
+                        title: "Graphiti",
+                        image: "icons/graphitiIcon.png",
+                        alt: "Graphiti Icon",
+                        description: "Plot and investigate mathematical functions with this interactive graphing tool. Explore equations, analyze behavior, and visualize mathematical concepts.<br>Work in progress - coming soon!",
+                        color: "#9b59b6",
+                        buttonText: "📊 Coming Soon - Graphiti",
+                        buttonClass: "purple",
+                        url: "#"
                     }
                 ]
             }
         };
 
         let currentMode = 'fun';
+
+        // Enhanced colors for serious mode (better contrast on lighter backgrounds)
+        function getEnhancedColor(originalColor, mode) {
+            if (mode !== 'serious') return originalColor;
+            
+            const colorMap = {
+                '#3498db': '#00bfff',  // Blue: brighter
+                '#9b59b6': '#bb6bd9',  // Purple: more vibrant
+                '#00ff88': '#00ff99',  // Green: slightly more intense
+                '#66ccff': '#00bfff',  // Light blue: brighter
+                '#ffaa66': '#ff9944',  // Orange: more saturated
+                '#dd88ff': '#bb6bd9',  // Light purple: more vibrant
+                '#ffecb3': '#ffd700'   // Yellow: more golden
+            };
+            
+            return colorMap[originalColor] || originalColor;
+        }
 
         // Check URL parameters on page load
         function getUrlParameter(name) {
@@ -550,14 +577,17 @@
                 const gameDiv = document.createElement('div');
                 gameDiv.className = 'game';
                 
+                // Use enhanced colors for serious mode
+                const displayColor = getEnhancedColor(item.color, currentMode);
+                
                 let policiesHtml = '';
                 if (item.policies) {
                     const policyLinks = item.policies.map(policy => 
-                        `<a href="${policy.url}" style="color: ${item.color}; text-decoration: none;">${policy.text}</a>`
-                    ).join('<span style="color: ' + item.color + '; margin: 0 0.5rem;">|</span>');
+                        `<a href="${policy.url}" style="color: ${displayColor}; text-decoration: none;">${policy.text}</a>`
+                    ).join('<span style="color: ' + displayColor + '; margin: 0 0.5rem;">|</span>');
                     
                     policiesHtml = `
-                        <div class="description" style="color:${item.color}; margin-top: 1.5rem;">
+                        <div class="description" style="color:${displayColor}; margin-top: 1.5rem;">
                             ${policyLinks}
                         </div>
                     `;
@@ -566,7 +596,7 @@
                 gameDiv.innerHTML = `
                     <h2 class="game-title">${item.title}</h2>
                     <img class="game-image" src="${item.image}" alt="${item.alt}">
-                    <div class="description" style="color:${item.color};">
+                    <div class="description" style="color:${displayColor};">
                         <p>${item.description}</p>
                     </div>
                     ${policiesHtml}
