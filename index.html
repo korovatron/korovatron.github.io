@@ -37,6 +37,7 @@
             letter-spacing: 0.5px;
             text-align: center;
         }
+        
         body {
             margin: 0;
             background: #32384C;
@@ -326,7 +327,11 @@
 <body>
     <div class="container">
 
-        <img src="images/korovatronLogo.png" alt="Page Logo" style="width:80%;height:auto;display:block;margin:0 auto 2rem;" id="main-logo">
+        <!-- Header with icon and logo -->
+        <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 2rem; max-width: 800px; margin-left: auto; margin-right: auto; padding: 0 1rem;">
+            <img src="favicon-32x32.png" alt="Korovatron Icon" style="width: min(96px, 15%); height: min(96px, 15%); margin-right: min(1rem, 3%); transform: translateY(-6px); flex-shrink: 0;">
+            <img src="images/korovatronLogo.png" alt="Page Logo" style="height: min(60px, 12%); width: auto; max-width: 75%; flex-shrink: 1;" id="main-logo">
+        </div>
 
         <!-- Mode Toggle Switch -->
         <div class="mode-toggle">
@@ -353,9 +358,7 @@
         </div>
 
         <footer>
-            real horrorshow
-            <img src="favicon-32x32.png" alt="Korovatron Icon"
-                style="display:block;margin:0 auto 1rem auto;width:96px;height:96px;">
+            © 2025 Neil Kendall. All games and applications created by me.
         </footer>
     </div>
 
