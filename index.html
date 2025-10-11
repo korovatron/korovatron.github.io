@@ -38,6 +38,48 @@
             text-align: center;
         }
         
+        /* Header layout - stacked on desktop, side-by-side on mobile */
+        .header-container {
+            text-align: center;
+            margin-bottom: 2rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 1rem;
+        }
+        
+        .header-logo {
+            height: min(60px, 12%);
+            width: auto;
+            max-width: 75%;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        .header-icon {
+            width: min(96px, 15%);
+            height: min(96px, 15%);
+            display: block;
+            margin: 1rem auto 0 auto;
+        }
+        
+        @media (max-width: 768px) {
+            .header-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .header-logo {
+                margin: 0;
+            }
+            
+            .header-icon {
+                margin: 0 0 0 min(1rem, 3%);
+                transform: translateY(-6px);
+            }
+        }
+        
         body {
             margin: 0;
             background: #32384C;
@@ -327,10 +369,10 @@
 <body>
     <div class="container">
 
-        <!-- Header with stacked logo and icon -->
-        <div style="text-align: center; margin-bottom: 2rem; max-width: 800px; margin-left: auto; margin-right: auto; padding: 0 1rem;">
-            <img src="images/korovatronLogo.png" alt="Page Logo" style="height: min(60px, 12%); width: auto; max-width: 75%; display: block; margin: 0 auto;" id="main-logo">
-            <img src="favicon-32x32.png" alt="Korovatron Icon" style="width: min(96px, 15%); height: min(96px, 15%); display: block; margin: 1rem auto 0 auto;">
+        <!-- Header with responsive layout -->
+        <div class="header-container">
+            <img src="images/korovatronLogo.png" alt="Page Logo" class="header-logo" id="main-logo">
+            <img src="favicon-32x32.png" alt="Korovatron Icon" class="header-icon">
         </div>
 
         <!-- Mode Toggle Switch -->
