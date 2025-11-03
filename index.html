@@ -369,29 +369,14 @@
 <body>
     <div class="container">
 
-        <!-- Header with responsive layout -->
-        <div class="header-container">
-            <img src="images/korovatronLogo.png" alt="Page Logo" class="header-logo" id="main-logo">
-            <img src="favicon-32x32.png" alt="Korovatron Icon" class="header-icon">
-        </div>
-
-        <!-- Mode Toggle Switch -->
-        <div class="mode-toggle">
-            <span class="toggle-label">🕹️ Fun</span>
-            <div class="toggle-switch" onclick="toggleMode()">
-                <div class="toggle-slider">🕹️</div>
-            </div>
-            <span class="toggle-label">📚 Serious</span>
-        </div>
-
-        <div class="intro" id="intro-section">
+        <div class="intro">
 
             <img src="images/controls.png" alt="Neil Kendall"
                 style="float:left;width:200px;height:auto;margin:1.0rem 0.4rem 0.4rem 0;" id="intro-image">
 
             <div id="intro-text">
-                <p>Play classic arcade games on desktop, mobile or tablet. Use keyboard & mouse or touch & swipe controls to enjoy!</p>
-                <p>All games are installable as Progressive Web Apps (PWAs) on supported browsers and devices. On Apple iOS, tap the share icon and select "Add to Home Screen" for the best experience.</p>
+                <p>A collection of games, educational tools, and web applications built with HTML5 and JavaScript.</p>
+                <p>All applications work across desktop, tablet, and mobile devices. They can be installed as Progressive Web Apps (PWAs) on supported browsers.</p>
             </div>
         </div>
 
@@ -424,8 +409,7 @@
                         alt: "Crate Escape Icon",
                         description: `Push, plan, and puzzle your way through over 1000 Sokoban-inspired levels — playable on mobile, desktop, and tablet.
                             <br>Sign in with your Google account to sync game progress across devices and pick up right where you left off.
-                            <br>Replay your past solutions step-by-step to sharpen your strategy and uncover smarter paths.
-                            <br>Created September 2025`,
+                            <br>Replay your past solutions step-by-step to sharpen your strategy and uncover smarter paths.`,
                         color: "#00ff88",
                         buttonText: "📦 Play The Crate Escape",
                         buttonClass: "green",
@@ -439,7 +423,7 @@
                         title: "Pac-Man",
                         image: "images/icons/pacManIcon.png",
                         alt: "Pac-Man Icon",
-                        description: "Eat all the dots and outsmart the ghosts 👻 — Blinky, Pinky, Inky, and Clyde—in this Pac-Man inspired retro arcade challenge!<br>Created June 2025.",
+                        description: "Eat all the dots and outsmart the ghosts 👻 — Blinky, Pinky, Inky, and Clyde—in this Pac-Man inspired retro arcade challenge!",
                         color: "#88ddff",
                         buttonText: "🍒 Play Pac-Man",
                         buttonClass: "blue",
@@ -449,7 +433,7 @@
                         title: "Tetris",
                         image: "images/icons/tetrisIcon.png",
                         alt: "Tetris Icon",
-                        description: "Stack, rotate, and clear lines in this faithful Tetris remake! Enjoy the timeless challenge of fitting falling blocks together for the highest score.<br>Created July 2025.",
+                        description: "Stack, rotate, and clear lines in this faithful Tetris remake! Enjoy the timeless challenge of fitting falling blocks together for the highest score.",
                         color: "#ffaa66",
                         buttonText: "Play Tetris",
                         buttonClass: "orange",
@@ -459,7 +443,7 @@
                         title: "Space Invaders",
                         image: "images/icons/invaderIcon.png",
                         alt: "Space Invaders Icon",
-                        description: "Defend Earth from waves of alien invaders 👾! Inspired by the Atari VCS 2600 classic, this version lets you blast your way through endless enemies and chase high scores.<br>Created August 2025.",
+                        description: "Defend Earth from waves of alien invaders 👾! Inspired by the Atari VCS 2600 classic, this version lets you blast your way through endless enemies and chase high scores.",
                         color: "#dd88ff",
                         buttonText: "👾 Play Space Invaders",
                         buttonClass: "purple",
@@ -469,7 +453,7 @@
                         title: "Q*Orby",
                         image: "images/icons/qorbyIcon.png",
                         alt: "Q*Orby Icon",
-                        description: "Bounce your way across pyramid tiles as a pulsating orb in this quirky Q*Bert-inspired game! Dodge enemies, change colors, and master each level's tricky layout.<br>Created August 2025.",
+                        description: "Bounce your way across pyramid tiles as a pulsating orb in this quirky Q*Bert-inspired game! Dodge enemies, change colors, and master each level's tricky layout.",
                         color: "#ffecb3",
                         buttonText: "Play Q*Orby",
                         buttonClass: "yellow",
@@ -492,7 +476,7 @@
                         title: "Graphiti",
                         image: "images/icons/graphitiIcon.png",
                         alt: "Graphiti Icon",
-                        description: "Interactive graphing tool for plotting and investigating cartesian (explicit & implicit) and polar functions. Calculate intercepts, intersections, and turning points with real-time analysis.<br>Perfect for GCSE and A Level mathematics students and teachers.<br>Created October 2025.",
+                        description: "Interactive graphing tool for plotting and investigating cartesian (explicit & implicit) and polar functions. Calculate intercepts, intersections, and turning points with real-time analysis.<br>Perfect for GCSE and A Level mathematics students and teachers.",
                         color: "#ffaa66",
                         buttonText: "<img src='images/icons/graphitiIcon.png' style='width:28px;height:28px;vertical-align:middle;margin-right:5px;'> Launch Graphiti",
                         buttonClass: "orange",
@@ -502,7 +486,7 @@
                         title: "Mandelscope",
                         image: "images/icons/mandelscopeIcon.png",
                         alt: "Mandelscope Icon",
-                        description: "Explore the infinite beauty of the Mandelbrot and Julia sets with this interactive fractal viewer. Zoom, pan, and discover intricate patterns in one of mathematics' most fascinating fractals. Save locations in the sets for future reference.<br>Created October 2025.",
+                        description: "Explore the infinite beauty of the Mandelbrot and Julia sets with this interactive fractal viewer. Zoom, pan, and discover intricate patterns in one of mathematics' most fascinating fractals. Save locations in the sets for future reference.",
                         color: "#00ff88",
                         buttonText: "<img src='images/icons/mandelscopeIcon.png' style='width:28px;height:28px;vertical-align:middle;margin-right:5px;'> Launch Mandelscope",
                         buttonClass: "green",
@@ -512,7 +496,7 @@
                         title: "SQL Academy",
                         image: "images/icons/sqlAcademyIcon.png",
                         alt: "SQL Academy Icon",
-                        description: "Practice writing SQL queries to prepare for GCSE and A Level Computer Science exams. Interactive exercises help students master database queries, data manipulation, and SQL syntax.<br>Essential practice for UK Computer Science qualifications.<br>Created October 2025.",
+                        description: "Practice writing SQL queries to prepare for GCSE and A Level Computer Science exams. Interactive exercises help students master database queries, data manipulation, and SQL syntax.<br>Essential practice for UK Computer Science qualifications.",
                         color: "#3498db",
                         buttonText: "📚 Launch SQL Academy",
                         buttonClass: "blue",
@@ -522,116 +506,28 @@
             }
         };
 
-        let currentMode = 'fun';
+        // Combine all items in desired order
+        const allItems = [
+            contentData.serious.items[1],  // Mandelscope
+            contentData.fun.items[0],      // The Crate Escape
+            contentData.serious.items[0],  // Graphiti
+            contentData.fun.items[1],      // Pacman
+            contentData.serious.items[2],  // SQL Academy
+            contentData.fun.items[2],      // Tetris
+            contentData.fun.items[3],      // Space Invaders
+            contentData.fun.items[4]       // Q*Orby
+        ];
 
-        // Enhanced colors for serious mode (better contrast on lighter backgrounds)
-        function getEnhancedColor(originalColor, mode) {
-            if (mode !== 'serious') return originalColor;
-            
-            const colorMap = {
-                '#3498db': '#00bfff',  // Blue: brighter
-                '#ffff00': '#ffff44',  // Neon yellow: slightly lighter for serious mode
-                '#00ff88': '#00ff99',  // Green: slightly more intense
-                '#66ccff': '#00bfff',  // Light blue: brighter
-                '#ffaa66': '#ff9944',  // Orange: more saturated
-                '#dd88ff': '#bb6bd9',  // Light purple: more vibrant
-                '#ffecb3': '#ffd700'   // Yellow: more golden
-            };
-            
-            return colorMap[originalColor] || originalColor;
-        }
-
-        // Check URL parameters on page load
-        function getUrlParameter(name) {
-            const urlParams = new URLSearchParams(window.location.search);
-            return urlParams.get(name);
-        }
-
-        // Initialize mode based on URL parameter
-        function initializeMode() {
-            const modeParam = getUrlParameter('mode');
-            if (modeParam === 'serious') {
-                currentMode = 'serious';
-            }
-            updateContent();
-            updateToggleSwitch();
-        }
-
-        // Toggle between modes
-        function toggleMode() {
-            currentMode = currentMode === 'fun' ? 'serious' : 'fun';
-            updateContent();
-            updateToggleSwitch();
-            
-            // Update URL without page refresh
-            const newUrl = currentMode === 'serious' 
-                ? `${window.location.pathname}?mode=serious`
-                : window.location.pathname;
-            window.history.replaceState({}, '', newUrl);
-        }
-
-        // Update toggle switch appearance
-        function updateToggleSwitch() {
-            const toggleSwitch = document.querySelector('.toggle-switch');
-            const toggleSlider = document.querySelector('.toggle-slider');
-            const body = document.body;
-            
-            if (currentMode === 'serious') {
-                toggleSwitch.classList.add('serious');
-                toggleSlider.textContent = '📚';
-                body.classList.add('serious-mode');
-            } else {
-                toggleSwitch.classList.remove('serious');
-                toggleSlider.textContent = '🕹️';
-                body.classList.remove('serious-mode');
-            }
-        }
-
-        // Update page content
-        function updateContent() {
-            const data = contentData[currentMode];
-            
-            // Update page title and meta description
-            document.getElementById('page-title').textContent = data.title;
-            document.getElementById('meta-description').setAttribute('content', data.description);
-            
-            // Update Open Graph tags for social sharing
-            const currentUrl = currentMode === 'serious' 
-                ? 'https://www.korovatron.co.uk/?mode=serious'
-                : 'https://www.korovatron.co.uk/';
-            const ogImage = 'https://www.korovatron.co.uk/images/korovatronLogo.png';
-                
-            document.getElementById('og-url').setAttribute('content', currentUrl);
-            document.getElementById('og-title').setAttribute('content', data.title);
-            document.getElementById('og-description').setAttribute('content', data.description);
-            document.getElementById('og-image').setAttribute('content', ogImage);
-            
-            // Update Twitter Card tags
-            document.getElementById('twitter-url').setAttribute('content', currentUrl);
-            document.getElementById('twitter-title').setAttribute('content', data.title);
-            document.getElementById('twitter-description').setAttribute('content', data.description);
-            document.getElementById('twitter-image').setAttribute('content', ogImage);
-            
-            // Update logo
-            const logo = document.getElementById('main-logo');
-            logo.src = data.logoSrc;
-            logo.alt = data.logoAlt;
-            
-            // Update intro section
-            const introImage = document.getElementById('intro-image');
-            introImage.src = data.introImage;
-            document.getElementById('intro-text').innerHTML = data.introText;
-            
-            // Update content area
+        // Load all content on page load
+        function loadContent() {
             const contentArea = document.getElementById('content-area');
             contentArea.innerHTML = '';
             
-            data.items.forEach(item => {
+            allItems.forEach(item => {
                 const gameDiv = document.createElement('div');
                 gameDiv.className = 'game';
                 
-                // Use enhanced colors for serious mode
-                const displayColor = getEnhancedColor(item.color, currentMode);
+                const displayColor = item.color;
                 
                 let policiesHtml = '';
                 if (item.policies) {
@@ -661,7 +557,7 @@
         }
 
         // Initialize on page load
-        document.addEventListener('DOMContentLoaded', initializeMode);
+        document.addEventListener('DOMContentLoaded', loadContent);
     </script>
 </body>
 
