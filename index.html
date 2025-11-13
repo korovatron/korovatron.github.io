@@ -105,6 +105,26 @@
             text-decoration: none;
         }
 
+        #content-area {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        @media (min-width: 769px) {
+            .container {
+                max-width: 1200px;
+            }
+
+            #content-area {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .game {
+                margin-bottom: 0;
+            }
+        }
+
         .intro {
             margin-bottom: 2rem;
             padding: 1.5rem;
@@ -410,9 +430,9 @@
                         description: `Push, plan, and puzzle your way through over 1000 Sokoban-inspired levels — playable on mobile, desktop, and tablet.
                             <br>Sign in with your Google account to sync game progress across devices and pick up right where you left off.
                             <br>Replay your past solutions step-by-step to sharpen your strategy and uncover smarter paths.`,
-                        color: "#00ff88",
+                        color: "#3498db",
                         buttonText: "📦 Play The Crate Escape",
-                        buttonClass: "green",
+                        buttonClass: "blue",
                         url: "https://www.korovatron.co.uk/crate_escape",
                         policies: [
                             { text: "Privacy Policy", url: "https://www.korovatron.co.uk/crate_escape/policies/privacy_policy.html" },
@@ -444,9 +464,9 @@
                         image: "images/icons/invaderIcon.png",
                         alt: "Space Invaders Icon",
                         description: "Defend Earth from waves of alien invaders 👾! Inspired by the Atari VCS 2600 classic, this version lets you blast your way through endless enemies and chase high scores.",
-                        color: "#dd88ff",
+                        color: "#00ff88",
                         buttonText: "👾 Play Space Invaders",
-                        buttonClass: "purple",
+                        buttonClass: "green",
                         url: "https://www.korovatron.co.uk/spaceinvaders"
                     },
                     {
@@ -497,9 +517,9 @@
                         image: "images/icons/sqlAcademyIcon.png",
                         alt: "SQL Academy Icon",
                         description: "Practice writing SQL queries to prepare for GCSE and A Level Computer Science exams. Interactive exercises help students master database queries, data manipulation, and SQL syntax.<br>Essential practice for UK Computer Science qualifications.",
-                        color: "#3498db",
+                        color: "#cc66ff",
                         buttonText: "📚 Launch SQL Academy",
-                        buttonClass: "blue",
+                        buttonClass: "purple",
                         url: "https://www.korovatron.co.uk/sql_academy/"
                     }
                 ]
@@ -511,9 +531,9 @@
             contentData.serious.items[1],  // Mandelscope (green)
             contentData.serious.items[0],  // Graphiti (orange)
             contentData.fun.items[0],      // The Crate Escape (green)
-            contentData.fun.items[1],      // Pacman (blue)
-            contentData.fun.items[2],      // Tetris (orange)
             contentData.serious.items[2],  // SQL Academy (blue)
+            contentData.fun.items[2],      // Tetris (orange)
+            contentData.fun.items[1],      // Pacman (blue)
             contentData.fun.items[3],      // Space Invaders (purple)
             contentData.fun.items[4]       // Q*Orby (yellow)
         ];
