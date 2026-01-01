@@ -404,8 +404,8 @@
                 style="float:left;width:200px;height:auto;margin:1.0rem 0.4rem 0.4rem 0;" id="intro-image">
 
             <div id="intro-text">
-                <p>A collection of games, educational tools, and web applications built with HTML5 and JavaScript.</p>
-                <p>All applications work across desktop, tablet, and mobile devices. They can be installed as Progressive Web Apps (PWAs) on supported browsers.</p>
+                <p style="font-size: 1.3rem; font-weight: 700; margin-bottom: 0.8rem;">Educational tools, retro games, and other geeky projects.</p>
+                <p>Work on any device: desktop, tablet, or mobile. Install as Progressive Web Apps (PWAs) for offline access and home screen shortcuts.</p>
             </div>
         </div>
 
@@ -515,22 +515,12 @@
                         title: "Mandelscope",
                         image: "images/icons/mandelscopeIcon.png",
                         alt: "Mandelscope Icon",
-                        description: "Explore the infinite beauty of the Mandelbrot and Julia sets with this interactive fractal viewer. Zoom incredibly deep using GPU acceleration and perturbation theory—dive down to 10<sup>-38</sup> magnification levels. Pan, discover intricate patterns, and save your favorite locations for future reference.<br><br>Includes an interactive educational guide where you can learn the mathematics behind the sets and write your own implementation with instant visual feedback. Experience one of mathematics' most fascinating fractals!",
+                        description: "Explore the infinite beauty of the Mandelbrot and Julia sets with this interactive fractal viewer. Zoom incredibly deep using GPU acceleration and perturbation theory—dive down to 10<sup>-38</sup> magnification levels. Discover intricate patterns, and save your favorite locations for future reference.<br><br>Includes an interactive educational guide where you can learn the mathematics behind the sets and write your own implementation with instant visual feedback. Experience one of mathematics' most fascinating fractals!",
                         color: "#ffaa66",
                         buttonText: "<img src='images/icons/mandelscopeIcon.png' style='width:28px;height:28px;vertical-align:middle;margin-right:5px;'> Launch Mandelscope",
                         buttonText: "<img src='images/icons/mandelscopeIcon.png' style='width:28px;height:28px;vertical-align:middle;margin-right:5px;'> Launch Mandelscope",
                         buttonClass: "orange",
                         url: "https://www.korovatron.co.uk/mandelscope/"
-                    },
-                    {
-                        title: "SQL Academy",
-                        image: "images/icons/sqlAcademyIcon.png",
-                        alt: "SQL Academy Icon",
-                        description: "Practice writing SQL queries to prepare for GCSE and A Level Computer Science exams. Interactive exercises help students master database queries, data manipulation, and SQL syntax.<br>Essential practice for UK Computer Science qualifications.",
-                        color: "#cc66ff",
-                        buttonText: "📚 Launch SQL Academy",
-                        buttonClass: "purple",
-                        url: "https://www.korovatron.co.uk/sql_academy/"
                     },
                     {
                         title: "Haskish",
@@ -541,6 +531,16 @@
                         buttonText: "💻 Launch Haskish",
                         buttonClass: "blue",
                         url: "https://www.korovatron.co.uk/haskish/"
+                    },
+                    {
+                        title: "SQL Academy",
+                        image: "images/icons/sqlAcademyIcon.png",
+                        alt: "SQL Academy Icon",
+                        description: "Practice writing SQL queries to prepare for GCSE and A Level Computer Science exams. Interactive exercises help students master database queries, data manipulation, and SQL syntax.<br>Essential practice for UK Computer Science qualifications.",
+                        color: "#cc66ff",
+                        buttonText: "📚 Launch SQL Academy",
+                        buttonClass: "purple",
+                        url: "https://www.korovatron.co.uk/sql_academy/"
                     }
                 ]
             }
@@ -550,8 +550,8 @@
         const allItems = [
             contentData.serious.items[0],  // Graphiti (orange)
             contentData.serious.items[1],  // Mandelscope (green)
-            contentData.serious.items[2],  // SQL Academy (blue)
-            contentData.serious.items[3],  // Haskish (blue)
+            contentData.serious.items[2],  // Haskish (blue)
+            contentData.serious.items[3],  // SQL Academy (blue)
             contentData.fun.items[0],      // The Crate Escape (green)
             contentData.fun.items[2],      // Tetris (orange)
             contentData.fun.items[1],      // Pacman (blue)
