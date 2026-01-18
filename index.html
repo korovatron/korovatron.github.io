@@ -148,6 +148,13 @@
             font-weight: bold;
             font-family: inherit;
         }
+        
+        /* Make intro heading significantly larger on desktop */
+        @media (min-width: 769px) {
+            .intro-heading {
+                font-size: 2rem !important;
+            }
+        }
 
         .game {
             margin-bottom: 2rem;
@@ -404,8 +411,8 @@
                 style="float:left;width:200px;height:auto;margin:1.0rem 0.4rem 0.4rem 0;" id="intro-image">
 
             <div id="intro-text">
-                <p style="font-size: 1.3rem; font-weight: 700; margin-bottom: 0.8rem;">Some geeky stuff I have made</p>
-                <p>They work on any device: desktop, tablet, or mobile. Install as Progressive Web Apps (PWAs) for offline access and home screen shortcuts.</p>
+                <p class="intro-heading" style="font-size: 1.3rem; font-weight: 700; margin-bottom: 0.8rem; color: #ffdd00;">geeky stuff i've made</p>
+                <p>they work in all modern browsers on desktop, tablet and mobile devices and can be installed as progressive web apps (PWAs) for offline access and home screen shortcuts</p>
             </div>
         </div>
 
