@@ -318,76 +318,6 @@
             margin-bottom: 1.5rem;
         }
 
-        /* Toggle Switch Styles */
-        .mode-toggle {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 2rem auto;
-            gap: 1rem;
-        }
-
-        .toggle-label {
-            font-size: 1.1rem;
-            font-weight: bold;
-            color: #fff;
-        }
-
-        .toggle-switch {
-            position: relative;
-            width: 80px;
-            height: 40px;
-            background: #333;
-            border-radius: 20px;
-            border: 2px solid #555;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .toggle-slider {
-            position: absolute;
-            top: 2px;
-            left: 2px;
-            width: 32px;
-            height: 32px;
-            background: #fff;
-            border-radius: 50%;
-            transition: transform 0.3s ease;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1rem;
-        }
-
-        .toggle-switch.serious .toggle-slider {
-            transform: translateX(40px);
-        }
-
-        /* Theme Styles */
-        body.serious-mode {
-            background: #32384C;
-            color: #e8f4f8;
-        }
-
-        body.serious-mode .intro {
-            background: linear-gradient(120deg, #2c3e50 0%, #3498db 70%, #2980b9 100%);
-            border-color: #34495e;
-        }
-
-        body.serious-mode .game {
-            background: linear-gradient(135deg, #2c3e50 60%, #34495e 100%);
-            border-color: #34495e;
-        }
-
-        body.serious-mode .game-title {
-            color: #fff;
-        }
-
-        body.serious-mode .toggle-switch {
-            background: #2980b9;
-            border-color: #3498db;
-        }
-
         @media (max-width: 600px) {
             h1 {
                 font-size: 1.2rem;
@@ -446,7 +376,7 @@
 
             <div id="intro-text">
               
-                <p style="color: #ffffff;">Retro games, educational apps, and whatever other geeky things catch my interest. Use them on mobile, tablet, or desktop, and install them as PWAs for offline access by adding them to your home screen.</p>
+                <p style="color: #ffffff;">Retro games, educational tools, and whatever other geeky things catch my interest. Use them on mobile, tablet, or desktop, and install them as PWAs for offline access by adding them to your mobile home screen.</p>
             </div>
         </div>
 
@@ -460,144 +390,104 @@
     </div>
 
     <script>
-        // Data for different modes
-        const contentData = {
-            fun: {
-                title: "Korovatron",
-                description: "Play classic arcade games on desktop, mobile or tablet. Use keyboard & mouse or touch & swipe controls to enjoy! All games are installable as Progressive Web Apps (PWAs) on supported browsers and devices. On Apple iOS, tap the share icon and select \"Add to Home Screen\" for the best experience.",
-                logoSrc: "apple-touch-icon-180x180.png",
-                logoAlt: "Korovatron Logo",
-                introImage: "images/controls.png",
-                introText: `
-                    <p>Play classic arcade games on desktop, mobile or tablet. Use keyboard & mouse or touch & swipe controls to enjoy!</p>
-                    <p>All games are installable as Progressive Web Apps (PWAs) on supported browsers and devices. On Apple iOS, tap the share icon and select "Add to Home Screen" for the best experience.</p>
-                `,
-                items: [
-                    {
-                        title: "The Crate Escape",
-                        image: "images/icons/crateEscapeIcon.png",
-                        alt: "Crate Escape Icon",
-                        description: `Push, plan, and puzzle your way through over 1000 Sokoban-inspired levels — playable on mobile, desktop, and tablet.
-                            <br>Sign in with your Google account to sync game progress across devices and pick up right where you left off.
-                            <br>Replay your past solutions step-by-step to sharpen your strategy and uncover smarter paths.`,
-                        color: "#3498db",
-                        buttonText: "📦 Shove Off",
-                        buttonClass: "blue",
-                        url: "https://www.korovatron.co.uk/crate_escape",
-                        policies: [
-                            { text: "Privacy Policy", url: "https://www.korovatron.co.uk/crate_escape/policies/privacy_policy.html" },
-                            { text: "Terms of Service", url: "https://www.korovatron.co.uk/crate_escape/policies/terms_of_service.html" }
-                        ]
-                    },
-                    {
-                        title: "Pac-Man",
-                        image: "images/icons/pacManIcon.png",
-                        alt: "Pac-Man Icon",
-                        description: "Eat all the dots and outsmart the ghosts 👻 — Blinky, Pinky, Inky, and Clyde—in this Pac-Man inspired retro arcade challenge!",
-                        color: "#88ddff",
-                        buttonText: "🍒 Waka Waka",
-                        buttonClass: "blue",
-                        url: "https://www.korovatron.co.uk/pacman"
-                    },
-                    {
-                        title: "Tetris",
-                        image: "images/icons/tetrisIcon.png",
-                        alt: "Tetris Icon",
-                        description: "Stack, rotate, and clear lines in this faithful Tetris remake! Enjoy the timeless challenge of fitting falling blocks together for the highest score.",
-                        color: "#ffaa66",
-                        buttonText: "Another Brick in the Wall",
-                        buttonClass: "orange",
-                        url: "https://www.korovatron.co.uk/tetris"
-                    },
-                    {
-                        title: "Space Invaders",
-                        image: "images/icons/invaderIcon.png",
-                        alt: "Space Invaders Icon",
-                        description: "Defend Earth from waves of alien invaders 👾! Inspired by the Atari VCS 2600 classic, this version lets you blast your way through endless enemies and chase high scores.",
-                        color: "#00ff88",
-                        buttonText: "👾 Take me to your leader",
-                        buttonClass: "green",
-                        url: "https://www.korovatron.co.uk/spaceinvaders"
-                    },
-                    {
-                        title: "Q*Orby",
-                        image: "images/icons/qorbyIcon.png",
-                        alt: "Q*Orby Icon",
-                        description: "Bounce your way across pyramid tiles as a pulsating orb in this quirky Q*Bert-inspired game! Dodge enemies, change colors, and master each level's tricky layout.",
-                        color: "#ffecb3",
-                        buttonText: "Hop in",
-                        buttonClass: "yellow",
-                        url: "https://www.korovatron.co.uk/qorby"
-                    }
+        // All content items
+        const allItems = [
+            {
+                title: "Graphiti",
+                image: "images/icons/graphitiIcon.png",
+                alt: "Graphiti Icon",
+                description: "Free online graphing calculator designed for students and teachers of GCSE and A Level Maths & Further Maths.<br><br>Plot equations and inequalities. Find intersections, intercepts and turning points. Visualise calculus concepts with interactive tangents, normals and integrals.<br><br>Supports cartesian (explicit, implicit and parametric) as well as polar functions. Works on any device - no download needed.<br><br><a href='https://www.youtube.com/watch?v=DVhl1wcOLL8&t=120s' target='_blank' style='color:#00ff88;font-size:0.9em;opacity:0.8;'>📺 Click to watch all features</a>",
+                color: "#00ff88",
+                buttonText: "<img src='images/icons/graphitiIcon.png' style='width:28px;height:28px;vertical-align:middle;margin-right:5px;'> Tag That Curve",
+                buttonClass: "green",
+                url: "https://www.korovatron.co.uk/graphiti"
+            },
+            {
+                title: "Mandelscope",
+                image: "images/icons/mandelscopeIcon.png",
+                alt: "Mandelscope Icon",
+                description: "Explore the infinite beauty of the Mandelbrot and Julia sets with this interactive fractal viewer. Zoom incredibly deep using GPU acceleration and perturbation theory—dive down to 10<sup>-38</sup> magnification levels. Discover intricate patterns, and save your favorite locations for future reference.<br><br>Includes an interactive educational guide where you can learn the mathematics behind the sets and write your own implementation with instant visual feedback. Experience one of mathematics' most fascinating fractals!",
+                color: "#ffaa66",
+                buttonText: "<img src='images/icons/mandelscopeIcon.png' style='width:28px;height:28px;vertical-align:middle;margin-right:5px;'> Dive In",
+                buttonClass: "orange",
+                url: "https://www.korovatron.co.uk/mandelscope/"
+            },
+            {
+                title: "Haskish",
+                image: "images/icons/haskishIcon.png",
+                alt: "Haskish Icon",
+                description: "Free online Haskell-style functional programming playground for teachers and students. Features an interactive REPL, guided lessons & challenges, list comprehensions, lambdas, higher-order functions, pattern matching, and more. No installation required - works offline as a Progressive Web App. Covers all AQA A Level Computer Science functional programming requirements and beyond!",
+                color: "#66ccff",
+                buttonText: "λ Curry On!",
+                buttonClass: "blue",
+                url: "https://www.korovatron.co.uk/haskish/"
+            },
+            {
+                title: "SQL Academy",
+                image: "images/icons/sqlAcademyIcon.png",
+                alt: "SQL Academy Icon",
+                description: "Practice writing SQL queries to prepare for GCSE and A Level Computer Science exams. Interactive exercises help students master database queries, data manipulation, and SQL syntax.<br>Essential practice for UK Computer Science qualifications.",
+                color: "#cc66ff",
+                buttonText: "📚 Run the Query",
+                buttonClass: "purple",
+                url: "https://www.korovatron.co.uk/sql_academy/"
+            },
+            {
+                title: "The Crate Escape",
+                image: "images/icons/crateEscapeIcon.png",
+                alt: "Crate Escape Icon",
+                description: `Push, plan, and puzzle your way through over 1000 Sokoban-inspired levels — playable on mobile, desktop, and tablet.
+                    <br>Sign in with your Google account to sync game progress across devices and pick up right where you left off.
+                    <br>Replay your past solutions step-by-step to sharpen your strategy and uncover smarter paths.`,
+                color: "#3498db",
+                buttonText: "📦 Shove Off",
+                buttonClass: "blue",
+                url: "https://www.korovatron.co.uk/crate_escape",
+                policies: [
+                    { text: "Privacy Policy", url: "https://www.korovatron.co.uk/crate_escape/policies/privacy_policy.html" },
+                    { text: "Terms of Service", url: "https://www.korovatron.co.uk/crate_escape/policies/terms_of_service.html" }
                 ]
             },
-            serious: {
-                title: "Korovatron - Educational Tools",
-                description: "A collection of web apps and tools I've made when something caught my interest or I needed to solve a problem. Nothing too fancy - just stuff I found useful or fun to build. All applications are web-based and work across desktop, tablet, and mobile devices.",
-                logoSrc: "apple-touch-icon-180x180.png",
-                logoAlt: "Korovatron Logo",
-                introImage: "images/controls.png", // Placeholder - you might want a different image
-                introText: `
-                    <p>A collection of web apps and tools I've made when something caught my interest or I needed to solve a problem. Nothing too fancy - just stuff I found useful or fun to build.</p>
-                    <p>All applications are web-based and work across desktop, tablet, and mobile devices.</p>
-                `,
-                items: [
-                    {
-                        title: "Graphiti",
-                        image: "images/icons/graphitiIcon.png",
-                        alt: "Graphiti Icon",
-                        description: "Free online graphing calculator designed for students and teachers of GCSE and A Level Maths & Further Maths.<br><br>Plot equations and inequalities. Find intersections, intercepts and turning points. Visualise calculus concepts with interactive tangents, normals and integrals.<br><br>Supports cartesian (explicit, implicit and parametric) as well as polar functions. Works on any device - no download needed.<br><br><a href='https://www.youtube.com/watch?v=DVhl1wcOLL8&t=120s' target='_blank' style='color:#00ff88;font-size:0.9em;opacity:0.8;'>📺 Click to watch all features</a>",
-                        color: "#00ff88",
-                        buttonText: "<img src='images/icons/graphitiIcon.png' style='width:28px;height:28px;vertical-align:middle;margin-right:5px;'> Tag That Curve",
-                        buttonClass: "green",
-                        url: "https://www.korovatron.co.uk/graphiti"
-                    },
-                    {
-                        title: "Mandelscope",
-                        image: "images/icons/mandelscopeIcon.png",
-                        alt: "Mandelscope Icon",
-                        description: "Explore the infinite beauty of the Mandelbrot and Julia sets with this interactive fractal viewer. Zoom incredibly deep using GPU acceleration and perturbation theory—dive down to 10<sup>-38</sup> magnification levels. Discover intricate patterns, and save your favorite locations for future reference.<br><br>Includes an interactive educational guide where you can learn the mathematics behind the sets and write your own implementation with instant visual feedback. Experience one of mathematics' most fascinating fractals!",
-                        color: "#ffaa66",
-                        buttonText: "<img src='images/icons/mandelscopeIcon.png' style='width:28px;height:28px;vertical-align:middle;margin-right:5px;'> Dive In",
-                        buttonText: "<img src='images/icons/mandelscopeIcon.png' style='width:28px;height:28px;vertical-align:middle;margin-right:5px;'> Dive In",
-                        buttonClass: "orange",
-                        url: "https://www.korovatron.co.uk/mandelscope/"
-                    },
-                    {
-                        title: "Haskish",
-                        image: "images/icons/haskishIcon.png",
-                        alt: "Haskish Icon",
-                        description: "Free online Haskell-style functional programming playground for teachers and students. Features an interactive REPL, guided lessons & challenges, list comprehensions, lambdas, higher-order functions, pattern matching, and more. No installation required - works offline as a Progressive Web App. Covers all AQA A Level Computer Science functional programming requirements and beyond!",
-                        color: "#66ccff",
-                        buttonText: "λ Curry On!",
-                        buttonClass: "blue",
-                        url: "https://www.korovatron.co.uk/haskish/"
-                    },
-                    {
-                        title: "SQL Academy",
-                        image: "images/icons/sqlAcademyIcon.png",
-                        alt: "SQL Academy Icon",
-                        description: "Practice writing SQL queries to prepare for GCSE and A Level Computer Science exams. Interactive exercises help students master database queries, data manipulation, and SQL syntax.<br>Essential practice for UK Computer Science qualifications.",
-                        color: "#cc66ff",
-                        buttonText: "📚 Run the Query",
-                        buttonClass: "purple",
-                        url: "https://www.korovatron.co.uk/sql_academy/"
-                    }
-                ]
+            {
+                title: "Tetris",
+                image: "images/icons/tetrisIcon.png",
+                alt: "Tetris Icon",
+                description: "Stack, rotate, and clear lines in this faithful Tetris remake! Enjoy the timeless challenge of fitting falling blocks together for the highest score.",
+                color: "#ffaa66",
+                buttonText: "Another Brick in the Wall",
+                buttonClass: "orange",
+                url: "https://www.korovatron.co.uk/tetris"
+            },
+            {
+                title: "Pac-Man",
+                image: "images/icons/pacManIcon.png",
+                alt: "Pac-Man Icon",
+                description: "Eat all the dots and outsmart the ghosts 👻 — Blinky, Pinky, Inky, and Clyde—in this Pac-Man inspired retro arcade challenge!",
+                color: "#88ddff",
+                buttonText: "🍒 Waka Waka",
+                buttonClass: "blue",
+                url: "https://www.korovatron.co.uk/pacman"
+            },
+            {
+                title: "Space Invaders",
+                image: "images/icons/invaderIcon.png",
+                alt: "Space Invaders Icon",
+                description: "Defend Earth from waves of alien invaders 👾! Inspired by the Atari VCS 2600 classic, this version lets you blast your way through endless enemies and chase high scores.",
+                color: "#00ff88",
+                buttonText: "👾 Take me to your leader",
+                buttonClass: "green",
+                url: "https://www.korovatron.co.uk/spaceinvaders"
+            },
+            {
+                title: "Q*Orby",
+                image: "images/icons/qorbyIcon.png",
+                alt: "Q*Orby Icon",
+                description: "Bounce your way across pyramid tiles as a pulsating orb in this quirky Q*Bert-inspired game! Dodge enemies, change colors, and master each level's tricky layout.",
+                color: "#ffecb3",
+                buttonText: "Hop in",
+                buttonClass: "yellow",
+                url: "https://www.korovatron.co.uk/qorby"
             }
-        };
-
-        // Combine all items in desired order
-        const allItems = [
-            contentData.serious.items[0],  // Graphiti (orange)
-            contentData.serious.items[1],  // Mandelscope (green)
-            contentData.serious.items[2],  // Haskish (blue)
-            contentData.serious.items[3],  // SQL Academy (blue)
-            contentData.fun.items[0],      // The Crate Escape (green)
-            contentData.fun.items[2],      // Tetris (orange)
-            contentData.fun.items[1],      // Pacman (blue)
-            contentData.fun.items[3],      // Space Invaders (purple)
-            contentData.fun.items[4]       // Q*Orby (yellow)
         ];
 
         // Load all content on page load
