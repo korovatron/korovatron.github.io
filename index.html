@@ -221,7 +221,7 @@
         }
 
         .description.purple {
-            color: #cc66ff;
+            color: #ff80ff;
         }
 
         .description.yellow {
@@ -259,15 +259,15 @@
 
         .purple {
             background: #110011;
-            color: #cc66ff;
-            border-color: #cc66ff;
-            box-shadow: 0 0 10px #cc66ff, 0 0 20px #cc66ff, 0 0 30px #cc66ff;
-            text-shadow: 0 0 5px #cc66ff;
+            color: #ff80ff;
+            border-color: #ff80ff;
+            box-shadow: 0 0 10px #ff80ff, 0 0 20px #ff80ff, 0 0 30px #ff80ff;
+            text-shadow: 0 0 5px #ff80ff;
         }
 
         .purple:hover {
             background: #330033;
-            box-shadow: 0 0 15px #dd88ff, 0 0 25px #dd88ff, 0 0 35px #dd88ff;
+            box-shadow: 0 0 15px #ff99ff, 0 0 25px #ff99ff, 0 0 35px #ff99ff;
         }
 
         .blue {
@@ -421,9 +421,10 @@
                 title: "Graphiti",
                 image: "images/icons/graphitiIcon.png",
                 alt: "Graphiti Icon",
-                description: "Free online graphing calculator designed for students and teachers of GCSE and A Level Maths & Further Maths.<br><br>Plot equations and inequalities. Find intersections, intercepts and turning points. Visualise calculus concepts with interactive tangents, normals and integrals.<br><br>Supports cartesian (explicit, implicit and parametric) as well as polar functions. Works on any device - no download needed.<br><br><a href='https://www.youtube.com/playlist?list=PL3qUa0OyFq5VsuEoxAtYPpAnkuMaFCaE5' target='_blank' style='color:#00ff88;font-size:0.9em;opacity:0.8;display:inline-flex;align-items:center;gap:0.45em;'><img src='images/yt_icon_white_digital.png' alt='YouTube' style='width:2.2em;height:2.2em;display:block;'><span>Click for video tutorials</span></a>",
+                description: "Free online graphing calculator designed for students and teachers of GCSE and A Level Maths & Further Maths.<br><br>Plot equations and inequalities. Find intersections, intercepts and turning points. Visualise calculus concepts with interactive tangents, normals and integrals.<br><br>Supports cartesian (explicit, implicit and parametric) as well as polar functions. Works on any device - no download needed.",
                 color: "#00ff88",
-                buttonText: "<img src='images/icons/graphitiIcon.png' width='28' height='28' style='width:28px;height:28px;vertical-align:middle;margin-right:5px;'> Tag That Curve",
+                youtubeUrl: "https://www.youtube.com/playlist?list=PL3qUa0OyFq5VsuEoxAtYPpAnkuMaFCaE5",
+                buttonText: "Tag That Curve",
                 buttonClass: "green",
                 url: "https://www.korovatron.co.uk/graphiti"
             },
@@ -431,8 +432,9 @@
                 title: "Vectorama",
                 image: "images/icons/vectorama.png",
                 alt: "Vectorama Icon",
-                description: "Vectorama is a clean, intuitive way to explore vectors, lines, planes, and matrix transformations in 2D and 3D. <br><br>Animate transformations, uncover eigenvalues and eigenvectors, and see eigenspaces drawn right in front of you.<br><br>Plot geometric objects, find intersections, measure angles, and compute distances — including minimum distances between skew lines or parallel planes. Switch between arrow-style or point-style vectors depending on what you're explaining.<br><br>Built to help students and teachers make the abstract visible.<br><br><a href='https://www.youtube.com/playlist?list=PL3qUa0OyFq5VcVRntLC41CSZZMUalKisd' target='_blank' style='color:#ffecb3;font-size:0.9em;opacity:0.8;display:inline-flex;align-items:center;gap:0.45em;'><img src='images/yt_icon_white_digital.png' alt='YouTube' style='width:2.2em;height:2.2em;display:block;'><span>Click for video tutorials</span></a>",
+                description: "Vectorama is a clean, intuitive way to explore vectors, lines, planes, and matrix transformations in 2D and 3D. <br><br>Animate transformations, uncover eigenvalues and eigenvectors, and see eigenspaces drawn right in front of you.<br><br>Plot geometric objects, find intersections, measure angles, and compute distances — including minimum distances between skew lines or parallel planes. Switch between arrow-style or point-style vectors depending on what you're explaining.<br><br>Built to help students and teachers make the abstract visible.",
                 color: "#ffecb3",
+                youtubeUrl: "https://www.youtube.com/playlist?list=PL3qUa0OyFq5VcVRntLC41CSZZMUalKisd",
                 buttonText: "Launch",
                 buttonClass: "yellow",
                 url: "https://www.korovatron.co.uk/vectorama"
@@ -442,7 +444,7 @@
                 image: "images/icons/sqlAcademyIcon.png",
                 alt: "SQL Academy Icon",
                 description: "Practice writing SQL queries to prepare for GCSE and A Level Computer Science exams. Interactive exercises help students master database queries, data manipulation, and SQL syntax.<br>Essential practice for UK Computer Science qualifications.",
-                color: "#cc66ff",
+                color: "#ff80ff",
                 buttonText: "Run",
                 buttonClass: "purple",
                 url: "https://www.korovatron.co.uk/sql_academy/"
@@ -478,7 +480,7 @@
                 image: "images/icons/mandelscopeIcon.png",
                 alt: "Mandelscope Icon",
                 description: "Explore the infinite beauty of the Mandelbrot and Julia sets with this interactive fractal viewer. Zoom incredibly deep using GPU acceleration and perturbation theory—dive down to 10<sup>-38</sup> magnification levels. Discover intricate patterns, and save your favorite locations for future reference.<br><br>Includes an interactive educational guide where you can learn the mathematics behind the sets and write your own implementation with instant visual feedback. Experience one of mathematics' most fascinating fractals!",
-                color: "#cc66ff",
+                color: "#ff80ff",
                 buttonText: "<img src='images/icons/mandelscopeIcon.png' width='28' height='28' style='width:28px;height:28px;vertical-align:middle;margin-right:5px;'>Explore",
                 buttonClass: "purple",
                 url: "https://www.korovatron.co.uk/mandelscope/"
@@ -548,6 +550,18 @@
                         </div>
                     `;
                 }
+
+                let youtubeHtml = '';
+                if (item.youtubeUrl) {
+                    youtubeHtml = `
+                        <div class="description" style="color:${displayColor}; margin-top: 0.75rem; margin-bottom: 0.25rem;">
+                            <a href="${item.youtubeUrl}" target="_blank" style="color:${displayColor}; font-size:0.9em; opacity:0.8; display:inline-flex; align-items:center; gap:0.45em; text-decoration:none;">
+                                <img src="images/yt_icon_white_digital.png" alt="YouTube" style="width:2.4em;height:2.4em;display:block;">
+                                <span>Click for video tutorials</span>
+                            </a>
+                        </div>
+                    `;
+                }
                 
                 gameDiv.innerHTML = `
                     <div class="game-content">
@@ -558,6 +572,7 @@
                         </div>
                         ${policiesHtml}
                     </div>
+                    ${youtubeHtml}
                     <a class="game-action" href="${item.url}"><button class="${item.buttonClass}">${item.buttonText}</button></a>
                 `;
                 
