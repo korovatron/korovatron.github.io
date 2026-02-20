@@ -335,6 +335,14 @@
             margin-top: 1.2rem;
         }
 
+        .footer-separator {
+            display: inline;
+        }
+
+        .footer-contact {
+            color: inherit;
+        }
+
         header {
             font-size: 0.8rem;
             color: #ffffff;
@@ -380,6 +388,17 @@
                 text-size-adjust: 100%;
                 font-size: 1.4rem !important;
             }
+
+            footer {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 0.35rem;
+            }
+
+            .footer-separator {
+                display: none;
+            }
         }
         
         @media (min-width: 601px) and (max-width: 768px) {
@@ -410,7 +429,7 @@
         </div>
 
         <footer>
-            © 2025-2026 Neil Kendall
+            <span>© 2025-2026 Neil Kendall</span><span class="footer-separator"> | </span><a class="footer-contact" href="mailto:unimatrix@korovatron.co.uk">Contact Me</a>
         </footer>
     </div>
 
