@@ -8,6 +8,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="description" content="Privacy policy for Korovatron websites and apps." />
+    <meta name="robots" content="noindex, nofollow, noarchive" />
+    <meta name="googlebot" content="noindex, nofollow, noarchive" />
     <link rel="canonical" href="https://www.korovatron.co.uk/privacy-policy.html" />
     <title>Privacy Policy | Korovatron</title>
     <style>
@@ -15,20 +17,29 @@
             --bg: #32384c;
             --panel: #2a3140;
             --panel-border: #4d5a7a;
-            --text: #ffecb3;
+            --text: #88ddff;
             --heading: #ffffff;
-            --link: #88f0ff;
-            --muted: #d8dbe6;
+            --link: #88ddff;
+            --muted: #b5d6e8;
         }
 
         * {
             box-sizing: border-box;
         }
 
+        html {
+            margin: 0;
+            padding: 0;
+            min-height: 100%;
+            background: var(--bg);
+        }
+
         body {
             margin: 0;
-            padding: 1.5rem;
-            background: radial-gradient(circle at top, #4d5a7a 0%, var(--bg) 40%, #222839 100%);
+            min-height: 100vh;
+            min-height: 100dvh;
+            padding: calc(1.5rem + env(safe-area-inset-top)) calc(1.5rem + env(safe-area-inset-right)) calc(1.5rem + env(safe-area-inset-bottom)) calc(1.5rem + env(safe-area-inset-left));
+            background: var(--bg);
             color: var(--text);
             font-family: Arial, system-ui, -apple-system, sans-serif;
             line-height: 1.65;
@@ -40,11 +51,23 @@
         }
 
         .card {
-            background: linear-gradient(135deg, var(--panel) 0%, #222839 100%);
-            border: 2px solid var(--panel-border);
-            border-radius: 14px;
+            background: linear-gradient(135deg, #2a1a33 60%, #3a2332 100%);
+            border: 2px solid #444;
+            border-radius: 12px;
             padding: 1.5rem;
-            box-shadow: 0 0 18px 2px #22335544;
+            box-shadow: 0 0 18px 2px #33224444;
+        }
+
+        .card h1,
+        .card h2 {
+            text-shadow: 0 1px 6px #232b3a, 0 0 1px #232b3a;
+            letter-spacing: 0.4px;
+            font-weight: 800;
+        }
+
+        .card p,
+        .card li {
+            text-shadow: 0 1px 4px #1b2438;
         }
 
         h1,
@@ -56,6 +79,7 @@
         h1 {
             font-size: 1.8rem;
             margin-bottom: 0.5rem;
+            text-align: center;
         }
 
         h2 {
@@ -92,11 +116,47 @@
             margin-top: 1.4rem;
             color: var(--muted);
             font-size: 0.95rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .home-button {
+            font-family: Arial, system-ui, -apple-system, sans-serif;
+            display: block;
+            margin: 1rem auto 0.75rem auto;
+            padding: 0.75rem 1.5rem;
+            font-size: 1.1rem;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            border: 2px solid #66ccff;
+            border-radius: 8px;
+            background: #001122;
+            color: #66ccff;
+            text-align: center;
+            text-decoration: none;
+            text-shadow: 0 0 5px #66ccff;
+            box-shadow: 0 0 10px #66ccff, 0 0 20px #66ccff, 0 0 30px #66ccff;
+            transition: all 0.3s ease;
+            width: 100%;
+            max-width: 280px;
+        }
+
+        .home-button:hover {
+            background: #002244;
+            box-shadow: 0 0 15px #88ddff, 0 0 25px #88ddff, 0 0 35px #88ddff;
+        }
+
+        .home-button:focus-visible {
+            outline: 2px solid #88ddff;
+            outline-offset: 3px;
         }
 
         @media (max-width: 600px) {
             body {
-                padding: 1rem;
+                padding: calc(1rem + env(safe-area-inset-top)) calc(1rem + env(safe-area-inset-right)) calc(1rem + env(safe-area-inset-bottom)) calc(1rem + env(safe-area-inset-left));
             }
 
             .card {
@@ -105,6 +165,10 @@
 
             h1 {
                 font-size: 1.5rem;
+            }
+
+            .home-button {
+                font-size: 1rem;
             }
         }
     </style>
@@ -165,7 +229,7 @@
             <p>We may update this policy from time to time. Material changes will be reflected by updating the date at the top of this page.</p>
 
             <footer>
-                <a href="/">Return to Korovatron Home</a>
+                <a class="home-button" href="/" aria-label="Return to home page">HOME</a>
                 <p class="small">Questions about privacy: <a href="mailto:unimatrix@korovatron.co.uk">unimatrix@korovatron.co.uk</a></p>
             </footer>
         </article>

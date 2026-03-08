@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /privacy-policy.html
+
+Sitemap: https://www.korovatron.co.uk/sitemap.xml
