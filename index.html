@@ -436,6 +436,17 @@
         // All content items
         const allItems = [
             {
+                title: "Encodr",
+                image: "images/icons/encodrIcon.png",
+                alt: "Encodr Icon",
+                description: "Hands-on tools for teaching and practising Data Representation at GCSE and A Level.<br><br>Explore number bases, fixed and floating-point representation, bitmap images, character encoding, and digital sound through interactive tools designed for classroom teaching and independent practice.<br><br>Includes built-in tests and random worksheet generation to create fresh practice for lessons, homework, and revision.",
+                color: "#66ccff",
+                buttonText: "Launch",
+                buttonClass: "blue",
+                buttonNote: "Work in prrogress - expect frequent updates",
+                url: "https://www.korovatron.co.uk/encodr"
+            },
+            {
                 title: "Boolinator",
                 image: "images/icons/boolinator.png",
                 alt: "Boolinator Icon",
@@ -588,6 +599,11 @@
                         </div>
                     `;
                 }
+
+                let buttonNoteHtml = '';
+                if (item.buttonNote) {
+                    buttonNoteHtml = `<div class="description" style="color:${displayColor}; margin-top: -0.5rem; margin-bottom: 0; font-size: 0.9rem;"><p>${item.buttonNote}</p></div>`;
+                }
                 
                 gameDiv.innerHTML = `
                     <div class="game-content">
@@ -600,6 +616,7 @@
                     </div>
                     ${youtubeHtml}
                     <a class="game-action" href="${item.url}"><button class="${item.buttonClass}">${item.buttonText}</button></a>
+                    ${buttonNoteHtml}
                 `;
                 
                 contentArea.appendChild(gameDiv);
