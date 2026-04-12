@@ -642,8 +642,46 @@
             });
         }
 
+        function scrollToHashAnchor() {
+            if (!window.location.hash) {
+                return;
+            }
+
+            const anchorId = decodeURIComponent(window.location.hash.slice(1));
+            const anchorEl = document.getElementById(anchorId);
+            if (!anchorEl) {
+                return;
+            }
+
+            anchorEl.scrollIntoView({ block: 'start', inline: 'nearest' });
+        }
+
+        function stabilizeHashScroll() {
+            if (!window.location.hash) {
+                return;
+            }
+
+            let attempts = 0;
+            const maxAttempts = 6;
+
+            function retryScroll() {
+                scrollToHashAnchor();
+                attempts += 1;
+
+                if (attempts < maxAttempts) {
+                    window.setTimeout(retryScroll, 120);
+                }
+            }
+
+            retryScroll();
+        }
+
         // Initialize on page load
         loadContent();
+        stabilizeHashScroll();
+
+        window.addEventListener('hashchange', stabilizeHashScroll);
+        window.addEventListener('pageshow', stabilizeHashScroll);
     </script>
 </body>
 
