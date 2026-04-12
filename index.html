@@ -415,7 +415,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" id="maths">
 
         <div class="intro">
 
@@ -462,6 +462,37 @@
                 url: "https://www.korovatron.co.uk/vectorama"
             },
             {
+                title: "Graphiti",
+                image: "images/icons/graphitiIcon.png",
+                alt: "Graphiti Icon",
+                description: "Graphing calculator designed for students and teachers of GCSE and A Level Maths & Further Maths.<br><br>Plot equations and inequalities. Find intersections, intercepts and turning points. Visualise calculus concepts with interactive tangents, normals and integrals.<br><br>Supports cartesian (explicit, implicit and parametric) as well as polar functions. Works on any device - no download needed - optionally install as a PWA for offline use.",
+                color: "#00cfc0",
+                buttonText: "Tag That Curve",
+                buttonClass: "neon",
+                url: "https://www.korovatron.co.uk/graphiti"
+            },
+            {
+                title: "Mandelscope",
+                image: "images/icons/mandelscopeIcon.png",
+                alt: "Mandelscope Icon",
+                description: "Explore the infinite beauty of the Mandelbrot and Julia sets with this interactive fractal viewer. Zoom incredibly deep using GPU acceleration and perturbation theory—dive down to 10<sup>-38</sup> magnification levels. Discover intricate patterns, and save your favorite locations for future reference.<br><br>Includes an interactive educational guide where you can learn the mathematics behind the sets and write your own implementation.",
+                color: "#00ff88",
+                buttonText: "<img src='images/icons/mandelscopeIcon.png' width='28' height='28' style='width:28px;height:28px;vertical-align:middle;margin-right:5px;'>Explore",
+                buttonClass: "green",
+                url: "https://www.korovatron.co.uk/mandelscope/"
+            },
+            {
+                title: "Boolinator",
+                anchorId: "computer-science",
+                image: "images/icons/boolinator.png",
+                alt: "Boolinator Icon",
+                description: "Practise your Boolean algebra by simplifying randomly generated expressions.<br><br>Work through expressions step by step and have each stage checked for logical equivalence. If you get stuck, request a hint to nudge you in the right direction. Supports both major notation styles, making it suitable for AQA and OCR exam boards.<br><br>Includes a built in PDF worksheet generator that creates fresh practice sheets on demand, perfect for classroom use or revision sessions.",
+                color: "#00ff88",
+                buttonText: "Execute",
+                buttonClass: "green",
+                url: "https://www.korovatron.co.uk/boolinator/"
+            },
+            {
                 title: "Encodr",
                 image: "images/icons/encodrIcon.png",
                 alt: "Encodr Icon",
@@ -470,39 +501,6 @@
                 buttonText: "01000111 01101111",
                 buttonClass: "blue",
                 url: "https://www.korovatron.co.uk/encodr"
-            },
-            {
-                title: "Boolinator",
-                image: "images/icons/boolinator.png",
-                alt: "Boolinator Icon",
-                description: "Practise your Boolean algebra by simplifying randomly generated expressions.<br><br>Work through expressions step by step and have each stage checked for logical equivalence. If you get stuck, request a hint to nudge you in the right direction. Supports both major notation styles, making it suitable for AQA and OCR exam boards.<br><br>Includes a built in PDF worksheet generator that creates fresh practice sheets on demand, perfect for classroom use or revision sessions.",
-                color: "#00cfc0",
-                buttonText: "Execute",
-                buttonClass: "neon",
-                url: "https://www.korovatron.co.uk/boolinator/"
-            },
-            {
-                title: "Graphiti",
-                image: "images/icons/graphitiIcon.png",
-                alt: "Graphiti Icon",
-                description: "Graphing calculator designed for students and teachers of GCSE and A Level Maths & Further Maths.<br><br>Plot equations and inequalities. Find intersections, intercepts and turning points. Visualise calculus concepts with interactive tangents, normals and integrals.<br><br>Supports cartesian (explicit, implicit and parametric) as well as polar functions. Works on any device - no download needed - optionally install as a PWA for offline use.",
-                color: "#00ff88",
-                buttonText: "Tag That Curve",
-                buttonClass: "green",
-                url: "https://www.korovatron.co.uk/graphiti"
-            },
-            {
-                title: "The Crate Escape",
-                image: "images/icons/crateEscapeIcon.png",
-                alt: "Crate Escape Icon",
-                description: `Push, plan, and puzzle your way through over 1200 Sokoban-inspired levels — playable on mobile, desktop, and tablet.
-                    <br><br>Sign in with your Google account to sync game progress across devices and pick up right where you left off.<br><br>
-                    Replay your past solutions step-by-step to sharpen your strategy and uncover smarter paths.<br><br>
-                    Build your own puzzles with the level editor/importer, then generate links to share custom levels instantly.`,
-                color: "#88ddff",
-                buttonText: "📦 Shove Off",
-                buttonClass: "blue",
-                url: "https://www.korovatron.co.uk/crate_escape"
             },
             {
                 title: "Haskish",
@@ -525,14 +523,18 @@
                 url: "https://www.korovatron.co.uk/sql_academy/"
             },
             {
-                title: "Mandelscope",
-                image: "images/icons/mandelscopeIcon.png",
-                alt: "Mandelscope Icon",
-                description: "Explore the infinite beauty of the Mandelbrot and Julia sets with this interactive fractal viewer. Zoom incredibly deep using GPU acceleration and perturbation theory—dive down to 10<sup>-38</sup> magnification levels. Discover intricate patterns, and save your favorite locations for future reference.<br><br>Includes an interactive educational guide where you can learn the mathematics behind the sets and write your own implementation.",
-                color: "#00ff88",
-                buttonText: "<img src='images/icons/mandelscopeIcon.png' width='28' height='28' style='width:28px;height:28px;vertical-align:middle;margin-right:5px;'>Explore",
-                buttonClass: "green",
-                url: "https://www.korovatron.co.uk/mandelscope/"
+                title: "The Crate Escape",
+                anchorId: "retro-games",
+                image: "images/icons/crateEscapeIcon.png",
+                alt: "Crate Escape Icon",
+                description: `Push, plan, and puzzle your way through over 1200 Sokoban-inspired levels — playable on mobile, desktop, and tablet.
+                    <br><br>Sign in with your Google account to sync game progress across devices and pick up right where you left off.<br><br>
+                    Replay your past solutions step-by-step to sharpen your strategy and uncover smarter paths.<br><br>
+                    Build your own puzzles with the level editor/importer, then generate links to share custom levels instantly.`,
+                color: "#88ddff",
+                buttonText: "📦 Shove Off",
+                buttonClass: "blue",
+                url: "https://www.korovatron.co.uk/crate_escape"
             },
             {
                 title: "Space Invaders",
@@ -585,6 +587,9 @@
                 const gameDiv = document.createElement('div');
                 gameDiv.className = 'game';
                 gameDiv.setAttribute('data-nosnippet', '');
+                if (item.anchorId) {
+                    gameDiv.id = item.anchorId;
+                }
                 
                 const displayColor = item.color;
                 
