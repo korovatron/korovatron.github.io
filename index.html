@@ -31,6 +31,24 @@
     <meta name="twitter:image" content="https://www.korovatron.co.uk/apple-touch-icon-180x180.png" id="twitter-image">
 
     <title id="page-title">Korovatron</title>
+    <script>
+        (function () {
+            if (!window.location.hash) {
+                return;
+            }
+
+            window.__pendingInitialHash = window.location.hash;
+
+            if (window.history && typeof window.history.replaceState === 'function') {
+                if ('scrollRestoration' in window.history) {
+                    window.history.scrollRestoration = 'manual';
+                }
+
+                const cleanUrl = window.location.pathname + window.location.search;
+                window.history.replaceState(null, '', cleanUrl);
+            }
+        })();
+    </script>
     <style>
         .game-title {
             font-size: 1.7rem;
@@ -642,12 +660,29 @@
             });
         }
 
-        function scrollToHashAnchor() {
-            if (!window.location.hash) {
+        function getActiveHash() {
+            return window.__pendingInitialHash || window.location.hash;
+        }
+
+        function restoreHashInUrl(hashValue) {
+            if (!hashValue) {
                 return;
             }
 
-            const anchorId = decodeURIComponent(window.location.hash.slice(1));
+            if (window.history && typeof window.history.replaceState === 'function') {
+                const urlWithHash = window.location.pathname + window.location.search + hashValue;
+                window.history.replaceState(null, '', urlWithHash);
+            } else {
+                window.location.hash = hashValue;
+            }
+        }
+
+        function scrollToHashAnchor(hashValue) {
+            if (!hashValue) {
+                return;
+            }
+
+            const anchorId = decodeURIComponent(hashValue.slice(1));
             const anchorEl = document.getElementById(anchorId);
             if (!anchorEl) {
                 return;
@@ -657,7 +692,8 @@
         }
 
         function stabilizeHashScroll() {
-            if (!window.location.hash) {
+            const hashValue = getActiveHash();
+            if (!hashValue) {
                 return;
             }
 
@@ -665,7 +701,12 @@
             const maxAttempts = 6;
 
             function retryScroll() {
-                scrollToHashAnchor();
+                scrollToHashAnchor(hashValue);
+                if (window.__pendingInitialHash) {
+                    restoreHashInUrl(hashValue);
+                    window.__pendingInitialHash = '';
+                }
+
                 attempts += 1;
 
                 if (attempts < maxAttempts) {
