@@ -31,30 +31,7 @@
     <meta name="twitter:image" content="https://www.korovatron.co.uk/apple-touch-icon-180x180.png" id="twitter-image">
 
     <title id="page-title">Korovatron</title>
-    <script>
-        (function () {
-            if (!window.location.hash) {
-                return;
-            }
-
-            window.__pendingInitialHash = window.location.hash;
-            document.documentElement.classList.add('pre-anchor-scroll');
-
-            if (window.history && typeof window.history.replaceState === 'function') {
-                if ('scrollRestoration' in window.history) {
-                    window.history.scrollRestoration = 'manual';
-                }
-
-                const cleanUrl = window.location.pathname + window.location.search;
-                window.history.replaceState(null, '', cleanUrl);
-            }
-        })();
-    </script>
     <style>
-        html.pre-anchor-scroll body {
-            visibility: hidden;
-        }
-
         .game-title {
             font-size: 1.7rem;
             font-weight: 800;
@@ -480,9 +457,9 @@
                 image: "images/icons/vectorama.png",
                 alt: "Vectorama Icon",
                 description: "Interactive environment for exploring vectors, lines, planes, and matrix transformations in 2D and 3D. Ideal for Level 2 and A Level Further Maths.<br><br>Visualise transformations dynamically, investigate eigenvalues and eigenvectors, and observe eigenspaces directly.<br><br>Plot geometric objects, determine intersections, measure angles, and compute distances, including the shortest distances between skew lines and parallel planes. Works on any device - no download needed - optionally install as a PWA for offline use.",
-                color: "#ff80ff",
+                color: "#ffaa66",
                 buttonText: "Launch",
-                buttonClass: "purple",
+                buttonClass: "orange",
                 url: "https://www.korovatron.co.uk/vectorama"
             },
             {
@@ -507,7 +484,6 @@
             },
             {
                 title: "Boolinator",
-                anchorId: "computer-science",
                 image: "images/icons/boolinator.png",
                 alt: "Boolinator Icon",
                 description: "Practise your Boolean algebra by simplifying randomly generated expressions.<br><br>Work through expressions step by step and have each stage checked for logical equivalence. If you get stuck, request a hint to nudge you in the right direction. Supports both major notation styles, making it suitable for AQA and OCR exam boards.<br><br>Includes a built in PDF worksheet generator that creates fresh practice sheets on demand, perfect for classroom use or revision sessions.",
@@ -541,23 +517,22 @@
                 image: "images/icons/sqlAcademyIcon.png",
                 alt: "SQL Academy Icon",
                 description: "Practice writing SQL queries to prepare for GCSE and A Level Computer Science exams. Interactive exercises help students master database queries, data manipulation, and SQL syntax.<br>Essential practice for UK Computer Science qualifications.<br><br>No installation or sign-in required. Student progress is tracked locally in the browser, so you can pick up right where you left off.",
-                color: "#ff80ff",
+                color: "#88ddff",
                 buttonText: "Run",
-                buttonClass: "purple",
+                buttonClass: "blue",
                 url: "https://www.korovatron.co.uk/sql_academy/"
             },
             {
                 title: "The Crate Escape",
-                anchorId: "retro-games",
                 image: "images/icons/crateEscapeIcon.png",
                 alt: "Crate Escape Icon",
                 description: `Push, plan, and puzzle your way through over 1200 Sokoban-inspired levels — playable on mobile, desktop, and tablet.
                     <br><br>Sign in with your Google account to sync game progress across devices and pick up right where you left off.<br><br>
                     Replay your past solutions step-by-step to sharpen your strategy and uncover smarter paths.<br><br>
                     Build your own puzzles with the level editor/importer, then generate links to share custom levels instantly.`,
-                color: "#88ddff",
+                color: "#ff80ff",
                 buttonText: "📦 Shove Off",
-                buttonClass: "blue",
+                buttonClass: "purple",
                 url: "https://www.korovatron.co.uk/crate_escape"
             },
             {
@@ -565,9 +540,9 @@
                 image: "images/icons/invaderIcon.png",
                 alt: "Space Invaders Icon",
                 description: "Defend Earth from waves of alien invaders 👾! Inspired by the Atari VCS 2600 classic, this version lets you blast your way through endless enemies and chase high scores.",
-                color: "#ffecb3",
+                color: "#ff80ff",
                 buttonText: "👾 Launch",
-                buttonClass: "yellow",
+                buttonClass: "purple",
                 url: "https://www.korovatron.co.uk/spaceinvaders"
             },
             {
@@ -575,9 +550,9 @@
                 image: "images/icons/pacManIcon.png",
                 alt: "Pac-Man Icon",
                 description: "Eat all the dots and outsmart the ghosts 👻 — Blinky, Pinky, Inky, and Clyde—in this Pac-Man inspired retro arcade challenge!",
-                color: "#ff80ff",
+                color: "#ffecb3",
                 buttonText: "🍒 Waka Waka",
-                buttonClass: "purple",
+                buttonClass: "yellow",
                 url: "https://www.korovatron.co.uk/pacman"
             },
             {
@@ -585,9 +560,9 @@
                 image: "images/icons/tetrisIcon.png",
                 alt: "Tetris Icon",
                 description: "Stack, rotate, and clear lines in this faithful Tetris remake! Enjoy the timeless challenge of fitting falling blocks together for the highest score.",
-                color: "#ffaa66",
+                color: "#ff80ff",
                 buttonText: "Let's Go",
-                buttonClass: "orange",
+                buttonClass: "purple",
                 url: "https://www.korovatron.co.uk/tetris"
             },
             {
@@ -602,18 +577,39 @@
             }
         ];
 
+        const desiredOrder = [
+            "Trimension",
+            "Boolinator",
+            "The Crate Escape",
+            "Graphiti",
+            "Encodr",
+            "Pac-Man",
+            "Vectorama",
+            "SQL Academy",
+            "Tetris",
+            "Mandelscope",
+            "Haskish",
+            "Space Invaders",
+            "Q*Orby"
+        ];
+
+        const orderedItems = desiredOrder
+            .map(title => allItems.find(item => item.title === title))
+            .filter(Boolean);
+        const orderedTitleSet = new Set(orderedItems.map(item => item.title));
+        const displayItems = orderedItems.concat(
+            allItems.filter(item => !orderedTitleSet.has(item.title))
+        );
+
         // Load all content on page load
         function loadContent() {
             const contentArea = document.getElementById('content-area');
             contentArea.innerHTML = '';
             
-            allItems.forEach(item => {
+            displayItems.forEach(item => {
                 const gameDiv = document.createElement('div');
                 gameDiv.className = 'game';
                 gameDiv.setAttribute('data-nosnippet', '');
-                if (item.anchorId) {
-                    gameDiv.id = item.anchorId;
-                }
                 
                 const displayColor = item.color;
                 
@@ -665,79 +661,8 @@
             });
         }
 
-        function getActiveHash() {
-            return window.__pendingInitialHash || window.location.hash;
-        }
-
-        function restoreHashInUrl(hashValue) {
-            if (!hashValue) {
-                return;
-            }
-
-            if (window.history && typeof window.history.replaceState === 'function') {
-                const urlWithHash = window.location.pathname + window.location.search + hashValue;
-                window.history.replaceState(null, '', urlWithHash);
-            } else {
-                window.location.hash = hashValue;
-            }
-        }
-
-        function scrollToHashAnchor(hashValue) {
-            if (!hashValue) {
-                return;
-            }
-
-            const anchorId = decodeURIComponent(hashValue.slice(1));
-            const anchorEl = document.getElementById(anchorId);
-            if (!anchorEl) {
-                return;
-            }
-
-            anchorEl.scrollIntoView({ block: 'start', inline: 'nearest' });
-        }
-
-        function stabilizeHashScroll() {
-            const hashValue = getActiveHash();
-            if (!hashValue) {
-                return;
-            }
-
-            const isInitialHashSync = document.documentElement.classList.contains('pre-anchor-scroll');
-
-            let attempts = 0;
-            const maxAttempts = isInitialHashSync ? 4 : 6;
-
-            function finishInitialHashSync() {
-                if (isInitialHashSync) {
-                    document.documentElement.classList.remove('pre-anchor-scroll');
-                }
-            }
-
-            function retryScroll() {
-                scrollToHashAnchor(hashValue);
-                if (window.__pendingInitialHash) {
-                    restoreHashInUrl(hashValue);
-                    window.__pendingInitialHash = '';
-                }
-
-                attempts += 1;
-
-                if (attempts < maxAttempts) {
-                    window.setTimeout(retryScroll, 120);
-                } else {
-                    finishInitialHashSync();
-                }
-            }
-
-            retryScroll();
-        }
-
         // Initialize on page load
         loadContent();
-        stabilizeHashScroll();
-
-        window.addEventListener('hashchange', stabilizeHashScroll);
-        window.addEventListener('pageshow', stabilizeHashScroll);
     </script>
 </body>
 
