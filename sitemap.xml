@@ -73,6 +73,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.korovatron.co.uk/chewring/</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.korovatron.co.uk/encodr/</loc>
     <lastmod>2026-05-26</lastmod>
     <changefreq>weekly</changefreq>
