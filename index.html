@@ -66,6 +66,14 @@
             display: block;
             margin: 1rem auto 0 auto;
         }
+
+        .no-edge-overlay {
+            pointer-events: none;
+        }
+
+        .no-edge-overlay img {
+            pointer-events: auto;
+        }
         
         @media (max-width: 768px) {
             .header-container {
@@ -433,8 +441,10 @@
 
         <div class="intro">
 
-            <img src="images/mysticCow.png" alt="Mystic Cow" width="400" height="400"
-                style="float:left;width:200px;height:auto;margin:-0.5rem 0.4rem 0.4rem 0;" id="intro-image">
+            <div class="no-edge-overlay">
+                <img src="images/mysticCow.png" alt="Mystic Cow" width="400" height="400"
+                    style="float:left;width:200px;height:auto;margin:-0.5rem 0.4rem 0.4rem 0;" id="intro-image">
+            </div>
 
             <div id="intro-text">
               
