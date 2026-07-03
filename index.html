@@ -695,13 +695,13 @@
             allItems.filter(item => !orderedTitleSet.has(item.title))
         );
 
-        // Place the Slurm card at a random position on each visit, excluding slot 1.
+        // Place the Slurm card at a random position on each visit: slots 2-4 only.
         const slurmTitle = "Thirsty for more?";
         const slurmIndex = displayItems.findIndex(item => item.title === slurmTitle);
         if (slurmIndex !== -1 && displayItems.length > 1) {
             const [slurmItem] = displayItems.splice(slurmIndex, 1);
             const minIndex = 1;
-            const maxIndex = Math.min(4, displayItems.length);
+            const maxIndex = Math.min(3, displayItems.length);
             const randomIndex = Math.floor(Math.random() * (maxIndex - minIndex + 1)) + minIndex;
             displayItems.splice(randomIndex, 0, slurmItem);
         }
