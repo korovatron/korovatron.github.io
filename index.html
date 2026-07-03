@@ -259,6 +259,20 @@
             clear: both;
         }
 
+        .image-button-link {
+            display: block;
+            width: fit-content;
+            margin: 1rem auto 1.25rem auto;
+        }
+
+        .image-button {
+            width: 140px;
+            height: auto;
+            display: block;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
         .green {
             background: #000000;
             color: #00ff88;
@@ -269,6 +283,14 @@
 
         .green:hover {
             background: #000000;
+            box-shadow: 0 0 15px #00ff88, 0 0 25px #00ff88, 0 0 35px #00ff88;
+        }
+
+        .image-button.green {
+            box-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88, 0 0 30px #00ff88;
+        }
+
+        .image-button.green:hover {
             box-shadow: 0 0 15px #00ff88, 0 0 25px #00ff88, 0 0 35px #00ff88;
         }
 
@@ -619,6 +641,18 @@
                 buttonText: "Hop in",
                 buttonClass: "orange",
                 url: "https://www.korovatron.co.uk/qorby"
+            },
+            {
+                title: "Thirsty for more?",
+                image: "images/icons/slurm.png",
+                alt: "Buy me a Slurm Icon",
+                description: "<strong>If these tools have helped your lessons run smoother and your students learn better, then buying me a Slurm helps power what comes next.</strong><br><br>They're here to save you time, reduce the usual planning nonsense, and give students clearer, calmer ways to understand the tricky parts of maths and computer science.<br><br>If that's been a help, a Slurm is a simple way to keep the whole thing going.",
+                color: "#00ff88",
+                buttonText: "Donate Slurm",
+                buttonClass: "green",
+                buttonImage: "images/icons/slurm.png",
+                hideMainImage: true,
+                url: "https://buymeacoffee.com/korovatron"
             }
         ];
 
@@ -638,7 +672,8 @@
             "Pac-Man",
             "Tetris",
             "Space Invaders",
-            "Q*Orby"
+            "Q*Orby",
+            "Thirsty for more?"
         ];
 
         const orderedItems = desiredOrder
@@ -648,6 +683,15 @@
         const displayItems = orderedItems.concat(
             allItems.filter(item => !orderedTitleSet.has(item.title))
         );
+
+        // Place the Slurm card at a random position on each visit, excluding slot 1.
+        const slurmTitle = "Thirsty for more?";
+        const slurmIndex = displayItems.findIndex(item => item.title === slurmTitle);
+        if (slurmIndex !== -1 && displayItems.length > 1) {
+            const [slurmItem] = displayItems.splice(slurmIndex, 1);
+            const randomIndex = Math.floor(Math.random() * displayItems.length) + 1;
+            displayItems.splice(randomIndex, 0, slurmItem);
+        }
 
         // Load all content on page load
         function loadContent() {
@@ -690,18 +734,26 @@
                 if (item.buttonNote) {
                     buttonNoteHtml = `<div class="description" style="color:${displayColor}; margin-top: -0.5rem; margin-bottom: 0; font-size: 0.9rem;"><p>${item.buttonNote}</p></div>`;
                 }
+
+                const mainImageHtml = item.hideMainImage
+                    ? ''
+                    : `<img class="game-image" src="${item.image}" alt="${item.alt}" width="120" height="120">`;
+
+                const actionHtml = item.buttonImage
+                    ? `<a class="game-action image-button-link" href="${item.url}" aria-label="${item.buttonText}"><img class="image-button ${item.buttonClass}" src="${item.buttonImage}" alt="${item.buttonText}" width="140"></a>`
+                    : `<a class="game-action" href="${item.url}"><button class="${item.buttonClass}">${item.buttonText}</button></a>`;
                 
                 gameDiv.innerHTML = `
                     <div class="game-content">
                         <h2 class="game-title">${item.title}</h2>
-                        <img class="game-image" src="${item.image}" alt="${item.alt}" width="120" height="120">
+                        ${mainImageHtml}
                         <div class="description" style="color:${displayColor};">
                             <p>${item.description}</p>
                         </div>
                         ${policiesHtml}
                     </div>
                     ${youtubeHtml}
-                    <a class="game-action" href="${item.url}"><button class="${item.buttonClass}">${item.buttonText}</button></a>
+                    ${actionHtml}
                     ${buttonNoteHtml}
                 `;
                 
