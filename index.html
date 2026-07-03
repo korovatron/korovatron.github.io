@@ -213,6 +213,11 @@
             margin: 0 1.25rem 1rem 0;
         }
 
+        .game-image-right {
+            float: right;
+            margin: 0 0 1rem 1.25rem;
+        }
+
         .description {
             max-width: 600px;
             margin: 0 auto 1.5rem auto;
@@ -644,14 +649,19 @@
             },
             {
                 title: "Thirsty for more?",
-                image: "images/icons/slurm.png",
-                alt: "Buy me a Slurm Icon",
-                description: "<strong>If these tools have helped your lessons run smoother and your students learn better, then buying me a Slurm helps power what comes next.</strong><br><br>They're here to save you time, reduce the usual planning nonsense, and give students clearer, calmer ways to understand the tricky parts of maths and computer science.<br><br>If that's been a help, a Slurm is a simple way to keep the whole thing going.",
+                image: "images/icons/hypnoToad.png",
+                alt: "HypnoToad Icon",
+                descriptionParagraphs: [
+                    "If these tools have helped your lessons run smoother and your students learn better, then buying me a Slurm helps power what comes next ...",
+                    "They're here to save you time, reduce the usual planning nonsense, and give students clearer, calmer ways to understand the tricky parts of maths and computer science and play some proper games.",
+                    "If that's been a help, a Slurm is a simple way to keep the whole thing going."
+                ],
+                useRandomParagraphColors: true,
                 color: "#00ff88",
                 buttonText: "Donate Slurm",
                 buttonClass: "green",
                 buttonImage: "images/icons/slurm.png",
-                hideMainImage: true,
+                mainImageRight: true,
                 url: "https://buymeacoffee.com/korovatron"
             }
         ];
@@ -735,9 +745,24 @@
                     buttonNoteHtml = `<div class="description" style="color:${displayColor}; margin-top: -0.5rem; margin-bottom: 0; font-size: 0.9rem;"><p>${item.buttonNote}</p></div>`;
                 }
 
+                let descriptionHtml = `<p>${item.description}</p>`;
+                if (item.descriptionParagraphs) {
+                    const themeColors = ["#66ccff", "#00ff88", "#ff80ff", "#ffecb3", "#ffaa66", "#00cfc0", "#88ddff"];
+                    let paragraphColors = [displayColor, displayColor, displayColor];
+
+                    if (item.useRandomParagraphColors) {
+                        const shuffled = themeColors.slice().sort(() => Math.random() - 0.5);
+                        paragraphColors = shuffled.slice(0, item.descriptionParagraphs.length);
+                    }
+
+                    descriptionHtml = item.descriptionParagraphs
+                        .map((paragraph, index) => `<p style="color:${paragraphColors[index]};">${paragraph}</p>`)
+                        .join('');
+                }
+
                 const mainImageHtml = item.hideMainImage
                     ? ''
-                    : `<img class="game-image" src="${item.image}" alt="${item.alt}" width="120" height="120">`;
+                    : `<img class="game-image${item.mainImageRight ? ' game-image-right' : ''}" src="${item.image}" alt="${item.alt}" width="120" height="120">`;
 
                 const actionHtml = item.buttonImage
                     ? `<a class="game-action image-button-link" href="${item.url}" aria-label="${item.buttonText}"><img class="image-button ${item.buttonClass}" src="${item.buttonImage}" alt="${item.buttonText}" width="140"></a>`
@@ -748,7 +773,7 @@
                         <h2 class="game-title">${item.title}</h2>
                         ${mainImageHtml}
                         <div class="description" style="color:${displayColor};">
-                            <p>${item.description}</p>
+                            ${descriptionHtml}
                         </div>
                         ${policiesHtml}
                     </div>
