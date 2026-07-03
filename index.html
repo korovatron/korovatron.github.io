@@ -661,6 +661,7 @@
                 buttonText: "Donate Slurm",
                 buttonClass: "green",
                 buttonImage: "images/icons/slurm.png",
+                goatEventText: "BUY ME A SLURM CLICKED",
                 mainImageRight: true,
                 url: "https://buymeacoffee.com/korovatron"
             }
@@ -699,7 +700,9 @@
         const slurmIndex = displayItems.findIndex(item => item.title === slurmTitle);
         if (slurmIndex !== -1 && displayItems.length > 1) {
             const [slurmItem] = displayItems.splice(slurmIndex, 1);
-            const randomIndex = Math.floor(Math.random() * displayItems.length) + 1;
+            const minIndex = 1;
+            const maxIndex = Math.min(4, displayItems.length);
+            const randomIndex = Math.floor(Math.random() * (maxIndex - minIndex + 1)) + minIndex;
             displayItems.splice(randomIndex, 0, slurmItem);
         }
 
@@ -764,9 +767,13 @@
                     ? ''
                     : `<img class="game-image${item.mainImageRight ? ' game-image-right' : ''}" src="${item.image}" alt="${item.alt}" width="120" height="120">`;
 
+                const trackingAttributes = item.goatEventText
+                    ? ` data-goat-event="${item.goatEventText}"`
+                    : '';
+
                 const actionHtml = item.buttonImage
-                    ? `<a class="game-action image-button-link" href="${item.url}" aria-label="${item.buttonText}"><img class="image-button ${item.buttonClass}" src="${item.buttonImage}" alt="${item.buttonText}" width="140"></a>`
-                    : `<a class="game-action" href="${item.url}"><button class="${item.buttonClass}">${item.buttonText}</button></a>`;
+                    ? `<a class="game-action image-button-link" href="${item.url}" aria-label="${item.buttonText}"${trackingAttributes}><img class="image-button ${item.buttonClass}" src="${item.buttonImage}" alt="${item.buttonText}" width="140"></a>`
+                    : `<a class="game-action" href="${item.url}"${trackingAttributes}><button class="${item.buttonClass}">${item.buttonText}</button></a>`;
                 
                 gameDiv.innerHTML = `
                     <div class="game-content">
@@ -783,6 +790,19 @@
                 `;
                 
                 contentArea.appendChild(gameDiv);
+            });
+
+            contentArea.querySelectorAll('[data-goat-event]').forEach((link) => {
+                link.addEventListener('click', () => {
+                    const eventText = link.getAttribute('data-goat-event');
+                    if (window.goatcounter && typeof window.goatcounter.count === 'function' && eventText) {
+                        window.goatcounter.count({
+                            path: eventText,
+                            title: eventText,
+                            event: true
+                        });
+                    }
+                });
             });
         }
 
