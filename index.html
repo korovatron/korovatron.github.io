@@ -214,14 +214,16 @@
         }
 
         .featured-game {
-            background: linear-gradient(120deg, #2a3140 0%, #4d5a7a 70%, #7a6fa7 100%);
-            box-shadow: 0 0 18px 2px #22335544;
+            background: transparent;
+            box-shadow: none;
+            border: 0;
+            border-radius: 0;
             font-size: 1.15rem;
             line-height: 1.6;
             color: #fff;
             text-shadow: 0 1px 6px #232b3a, 0 0 1px #232b3a;
             font-weight: bold;
-            padding: 0.85rem 1.5rem;
+            padding: 0;
         }
 
         .game-content {
@@ -335,10 +337,10 @@
         .media-only-layout {
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center;
             gap: 1.5rem;
             position: relative;
-            min-height: 135px;
+            min-height: 96px;
         }
 
         .media-only-layout .image-button-link {
@@ -354,23 +356,6 @@
             flex: 0 0 auto;
             position: relative;
             z-index: 1;
-        }
-
-        .media-only-text {
-            position: absolute;
-            inset: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: #ffffff;
-            text-shadow: 0 1px 6px #232b3a, 0 0 1px #232b3a;
-            font-weight: inherit;
-            font-size: inherit;
-            line-height: inherit;
-            font-family: inherit;
-            padding: 0 12rem;
-            pointer-events: none;
         }
 
         .purple {
@@ -502,13 +487,9 @@
 
             .media-only-layout {
                 gap: 1rem;
-                min-height: 110px;
+                min-height: 88px;
             }
 
-            .media-only-text {
-                padding: 0 7rem;
-            }
-            
             #intro-image {
                 width: 100px !important;
                 margin-top: 0.5rem !important;
@@ -737,7 +718,6 @@
                 image: "images/icons/hypnoToad.png",
                 alt: "HypnoToad Icon",
                 mediaOnlyLayout: true,
-                mediaOnlyText: "Useful? Consider buying me a Slurm ...",
                 color: "#00ff88",
                 buttonText: "Donate Slurm",
                 buttonClass: "green",
@@ -861,7 +841,6 @@
                     gameDiv.innerHTML = `
                         <div class="media-only-layout">
                             ${actionHtml}
-                            <div class="media-only-text">${item.mediaOnlyText || ''}</div>
                             ${mainImageHtml}
                         </div>
                     `;
