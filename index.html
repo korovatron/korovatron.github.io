@@ -130,6 +130,10 @@
             min-height: 60vh;
         }
 
+        #featured-content-area {
+            margin-top: 2rem;
+        }
+
         @media (min-width: 769px) {
             .container {
                 max-width: 1200px;
@@ -162,6 +166,12 @@
             margin-right: auto;
             overflow: auto;
         }
+
+        .feature-width {
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
         
         /* Make intro heading significantly larger on desktop */
         @media (min-width: 769px) {
@@ -172,6 +182,10 @@
             .intro {
                 max-width: 100%;
             }
+
+            .feature-width {
+                max-width: 100%;
+            }
         }
         
         /* Increase intro text size on larger desktop displays */
@@ -179,6 +193,10 @@
             .intro {
                 font-size: 1.45rem;
                 color: #ffffff;
+            }
+
+            .featured-game {
+                font-size: 1.45rem;
             }
         }
 
@@ -193,6 +211,17 @@
             display: flex;
             flex-direction: column;
             scroll-margin-top: 8px;
+        }
+
+        .featured-game {
+            background: linear-gradient(120deg, #2a3140 0%, #4d5a7a 70%, #7a6fa7 100%);
+            box-shadow: 0 0 18px 2px #22335544;
+            font-size: 1.15rem;
+            line-height: 1.6;
+            color: #fff;
+            text-shadow: 0 1px 6px #232b3a, 0 0 1px #232b3a;
+            font-weight: bold;
+            padding: 0.85rem 1.5rem;
         }
 
         .game-content {
@@ -297,6 +326,51 @@
 
         .image-button.green:hover {
             box-shadow: 0 0 15px #00ff88, 0 0 25px #00ff88, 0 0 35px #00ff88;
+        }
+
+        .media-only-card {
+            justify-content: center;
+        }
+
+        .media-only-layout {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.5rem;
+            position: relative;
+            min-height: 135px;
+        }
+
+        .media-only-layout .image-button-link {
+            margin: 0;
+            flex: 0 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .media-only-layout .game-image {
+            float: none;
+            margin: 0;
+            flex: 0 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .media-only-text {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #ffffff;
+            text-shadow: 0 1px 6px #232b3a, 0 0 1px #232b3a;
+            font-weight: inherit;
+            font-size: inherit;
+            line-height: inherit;
+            font-family: inherit;
+            padding: 0 12rem;
+            pointer-events: none;
         }
 
         .purple {
@@ -425,6 +499,15 @@
                 width: 80px;
                 height: 80px;
             }
+
+            .media-only-layout {
+                gap: 1rem;
+                min-height: 110px;
+            }
+
+            .media-only-text {
+                padding: 0 7rem;
+            }
             
             #intro-image {
                 width: 100px !important;
@@ -460,7 +543,7 @@
     <div class="container" id="maths">
         <h1 class="visually-hidden">Korovatron: GCSE and A Level maths and computer science tools, plus retro games</h1>
 
-        <div class="intro">
+        <div class="intro feature-width">
 
             <img src="images/mysticCow.png" alt="Mystic Cow" width="400" height="400"
                 style="float:left;width:200px;height:auto;margin:-0.5rem 0.4rem 0.4rem 0;" id="intro-image">
@@ -474,6 +557,8 @@
         <div id="content-area">
             <!-- Content will be dynamically loaded here -->
         </div>
+
+        <div id="featured-content-area"></div>
 
         <footer>
             <span>© 2025-2026 Neil Kendall</span>
@@ -651,12 +736,8 @@
                 title: "Thirsty for more?",
                 image: "images/icons/hypnoToad.png",
                 alt: "HypnoToad Icon",
-                descriptionParagraphs: [
-                    "If these tools have helped your lessons run smoother and your students learn better, then buying me a Slurm helps power what comes next ...",
-                    "They're here to save you time, reduce the usual planning nonsense, and give students clearer, calmer ways to understand the tricky parts of maths and computer science and play some proper games.",
-                    "If that's been a help, a Slurm is a simple way to keep the whole thing going."
-                ],
-                useRandomParagraphColors: true,
+                mediaOnlyLayout: true,
+                mediaOnlyText: "Useful? Consider buying me a Slurm ...",
                 color: "#00ff88",
                 buttonText: "Donate Slurm",
                 buttonClass: "green",
@@ -691,29 +772,30 @@
             .map(title => allItems.find(item => item.title === title))
             .filter(Boolean);
         const orderedTitleSet = new Set(orderedItems.map(item => item.title));
-        const displayItems = orderedItems.concat(
+        const allDisplayItems = orderedItems.concat(
             allItems.filter(item => !orderedTitleSet.has(item.title))
         );
-
-        // Place the Slurm card at a random position on each visit: slots 2-4 only.
         const slurmTitle = "Thirsty for more?";
-        const slurmIndex = displayItems.findIndex(item => item.title === slurmTitle);
-        if (slurmIndex !== -1 && displayItems.length > 1) {
-            const [slurmItem] = displayItems.splice(slurmIndex, 1);
-            const minIndex = 1;
-            const maxIndex = Math.min(3, displayItems.length);
-            const randomIndex = Math.floor(Math.random() * (maxIndex - minIndex + 1)) + minIndex;
-            displayItems.splice(randomIndex, 0, slurmItem);
-        }
+        const featuredItem = allDisplayItems.find(item => item.title === slurmTitle) || null;
+        const displayItems = allDisplayItems.filter(item => item.title !== slurmTitle);
 
         // Load all content on page load
         function loadContent() {
+            const featuredContentArea = document.getElementById('featured-content-area');
             const contentArea = document.getElementById('content-area');
+            featuredContentArea.innerHTML = '';
             contentArea.innerHTML = '';
-            
-            displayItems.forEach(item => {
+
+            function createCard(item, extraClass = '') {
                 const gameDiv = document.createElement('div');
-                gameDiv.className = 'game';
+                const cardClasses = ['game'];
+                if (extraClass) {
+                    cardClasses.push(extraClass);
+                }
+                if (item.mediaOnlyLayout) {
+                    cardClasses.push('media-only-card');
+                }
+                gameDiv.className = cardClasses.join(' ');
                 gameDiv.setAttribute('data-nosnippet', '');
                 
                 const displayColor = item.color;
@@ -774,6 +856,18 @@
                 const actionHtml = item.buttonImage
                     ? `<a class="game-action image-button-link" href="${item.url}" aria-label="${item.buttonText}"${trackingAttributes}><img class="image-button ${item.buttonClass}" src="${item.buttonImage}" alt="${item.buttonText}" width="140"></a>`
                     : `<a class="game-action" href="${item.url}"${trackingAttributes}><button class="${item.buttonClass}">${item.buttonText}</button></a>`;
+
+                if (item.mediaOnlyLayout) {
+                    gameDiv.innerHTML = `
+                        <div class="media-only-layout">
+                            ${actionHtml}
+                            <div class="media-only-text">${item.mediaOnlyText || ''}</div>
+                            ${mainImageHtml}
+                        </div>
+                    `;
+
+                    return gameDiv;
+                }
                 
                 gameDiv.innerHTML = `
                     <div class="game-content">
@@ -788,11 +882,19 @@
                     ${actionHtml}
                     ${buttonNoteHtml}
                 `;
-                
-                contentArea.appendChild(gameDiv);
+
+                return gameDiv;
+            }
+
+            if (featuredItem) {
+                featuredContentArea.appendChild(createCard(featuredItem, 'feature-width featured-game'));
+            }
+
+            displayItems.forEach(item => {
+                contentArea.appendChild(createCard(item));
             });
 
-            contentArea.querySelectorAll('[data-goat-event]').forEach((link) => {
+            document.querySelectorAll('[data-goat-event]').forEach((link) => {
                 link.addEventListener('click', () => {
                     const eventText = link.getAttribute('data-goat-event');
                     if (window.goatcounter && typeof window.goatcounter.count === 'function' && eventText) {
