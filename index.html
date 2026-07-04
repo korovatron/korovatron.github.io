@@ -725,7 +725,7 @@
                 goatEventText: "BUY ME A SLURM CLICKED",
                 mainImageRight: true,
                 url: "https://buymeacoffee.com/korovatron"
-            }
+            },
         ];
 
         const desiredOrder = [
@@ -865,13 +865,13 @@
                 return gameDiv;
             }
 
-            if (featuredItem) {
-                featuredContentArea.appendChild(createCard(featuredItem, 'feature-width featured-game'));
-            }
-
             displayItems.forEach(item => {
                 contentArea.appendChild(createCard(item));
             });
+
+            if (featuredItem) {
+                featuredContentArea.appendChild(createCard(featuredItem, 'feature-width featured-game'));
+            }
 
             document.querySelectorAll('[data-goat-event]').forEach((link) => {
                 link.addEventListener('click', () => {
