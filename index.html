@@ -130,10 +130,6 @@
             min-height: 60vh;
         }
 
-        #featured-content-area {
-            margin-top: 2rem;
-        }
-
         @media (min-width: 769px) {
             .container {
                 max-width: 1200px;
@@ -451,6 +447,26 @@
             text-decoration-thickness: 1px;
         }
 
+        .footer-slurm {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin: 1.25rem 0 2rem 0;
+        }
+
+        .footer-slurm .image-button-link {
+            margin: 0;
+        }
+
+        .footer-slurm-icon {
+            float: none;
+            margin: 0;
+            width: 80px;
+            height: 80px;
+        }
+
         header {
             font-size: 0.8rem;
             color: #ffffff;
@@ -539,9 +555,13 @@
             <!-- Content will be dynamically loaded here -->
         </div>
 
-        <div id="featured-content-area"></div>
-
         <footer>
+            <div class="footer-slurm">
+                <a class="game-action image-button-link" href="https://buymeacoffee.com/korovatron" aria-label="Donate Slurm" data-goat-event="BUY ME A SLURM CLICKED">
+                    <img class="image-button green" src="images/icons/slurm.png" alt="Donate Slurm" width="140">
+                </a>
+                <img class="game-image footer-slurm-icon" src="images/icons/hypnoToad.png" alt="HypnoToad Icon" width="120" height="120">
+            </div>
             <span>© 2025-2026 Neil Kendall</span>
             <a class="footer-contact footer-link" href="privacy-policy.html">Privacy Policy</a>
         </footer>
@@ -713,19 +733,6 @@
                 buttonClass: "orange",
                 url: "https://www.korovatron.co.uk/qorby"
             },
-            {
-                title: "Thirsty for more?",
-                image: "images/icons/hypnoToad.png",
-                alt: "HypnoToad Icon",
-                mediaOnlyLayout: true,
-                color: "#00ff88",
-                buttonText: "Donate Slurm",
-                buttonClass: "green",
-                buttonImage: "images/icons/slurm.png",
-                goatEventText: "BUY ME A SLURM CLICKED",
-                mainImageRight: true,
-                url: "https://buymeacoffee.com/korovatron"
-            },
         ];
 
         const desiredOrder = [
@@ -744,8 +751,7 @@
             "Pac-Man",
             "Tetris",
             "Space Invaders",
-            "Q*Orby",
-            "Thirsty for more?"
+            "Q*Orby"
         ];
 
         const orderedItems = desiredOrder
@@ -755,15 +761,11 @@
         const allDisplayItems = orderedItems.concat(
             allItems.filter(item => !orderedTitleSet.has(item.title))
         );
-        const slurmTitle = "Thirsty for more?";
-        const featuredItem = allDisplayItems.find(item => item.title === slurmTitle) || null;
-        const displayItems = allDisplayItems.filter(item => item.title !== slurmTitle);
+        const displayItems = allDisplayItems;
 
         // Load all content on page load
         function loadContent() {
-            const featuredContentArea = document.getElementById('featured-content-area');
             const contentArea = document.getElementById('content-area');
-            featuredContentArea.innerHTML = '';
             contentArea.innerHTML = '';
 
             function createCard(item, extraClass = '') {
@@ -868,10 +870,6 @@
             displayItems.forEach(item => {
                 contentArea.appendChild(createCard(item));
             });
-
-            if (featuredItem) {
-                featuredContentArea.appendChild(createCard(featuredItem, 'feature-width featured-game'));
-            }
 
             document.querySelectorAll('[data-goat-event]').forEach((link) => {
                 link.addEventListener('click', () => {
