@@ -44,48 +44,6 @@
             text-align: center;
         }
         
-        /* Header layout - stacked on desktop, side-by-side on mobile */
-        .header-container {
-            text-align: center;
-            margin-bottom: 2rem;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-            padding: 0 1rem;
-        }
-        
-        .header-logo {
-            height: min(60px, 12%);
-            width: auto;
-            max-width: 75%;
-            display: block;
-            margin: 0 auto;
-        }
-        
-        .header-icon {
-            width: min(96px, 15%);
-            height: min(96px, 15%);
-            display: block;
-            margin: 1rem auto 0 auto;
-        }
-        
-        @media (max-width: 768px) {
-            .header-container {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-            
-            .header-logo {
-                margin: 0;
-            }
-            
-            .header-icon {
-                margin: 0 0 0 min(1rem, 3%);
-                transform: translateY(-6px);
-            }
-        }
-        
         body {
             margin: 0;
             background: #000000;
@@ -169,12 +127,7 @@
             margin-right: auto;
         }
         
-        /* Make intro heading significantly larger on desktop */
         @media (min-width: 769px) {
-            .intro-heading {
-                font-size: 1.7rem !important;
-            }
-            
             .intro {
                 max-width: 100%;
             }
@@ -191,9 +144,6 @@
                 color: #ffffff;
             }
 
-            .featured-game {
-                font-size: 1.45rem;
-            }
         }
 
         .game {
@@ -207,19 +157,6 @@
             display: flex;
             flex-direction: column;
             scroll-margin-top: 8px;
-        }
-
-        .featured-game {
-            background: transparent;
-            box-shadow: none;
-            border: 0;
-            border-radius: 0;
-            font-size: 1.15rem;
-            line-height: 1.6;
-            color: #fff;
-            text-shadow: 0 1px 6px #232b3a, 0 0 1px #232b3a;
-            font-weight: bold;
-            padding: 0;
         }
 
         .game-content {
@@ -253,34 +190,13 @@
             font-family: inherit;
         }
 
-        .description.blue {
-            color: #66ccff;
-        }
-
-        .description.green {
-            color: #00ff88;
-        }
-
-        .description.purple {
-            color: #ff80ff;
-        }
-
-        .description.yellow {
-            color: #ffecb3;
-        }
-
-        .wip-note {
-            font-weight: 600;
-            font-size: 0.95em;
-            color: #ffb74d;
-        }
-
-        button {
+        .action-button {
             font-family: Arial, system-ui, -apple-system, sans-serif;
             display: block;
             margin: 1rem auto 1.25rem auto;
             padding: 0.75rem 1.5rem;
             font-size: 1.1rem;
+            font-weight: 400;
             border: 2px solid;
             border-radius: 8px;
             cursor: pointer;
@@ -289,12 +205,26 @@
             max-width: 280px;
             width: 100%;
             clear: both;
+            text-align: center;
+            text-decoration: none;
+            line-height: 1.2;
+        }
+
+        .action-button:focus-visible {
+            outline: 2px solid #ffffff;
+            outline-offset: 3px;
         }
 
         .image-button-link {
             display: block;
             width: fit-content;
             margin: 1rem auto 1.25rem auto;
+        }
+
+        .image-button-link:focus-visible {
+            outline: 2px solid #ffffff;
+            outline-offset: 3px;
+            border-radius: 10px;
         }
 
         .image-button {
@@ -419,12 +349,6 @@
             box-shadow: 0 0 15px #18d6c8, 0 0 25px #18d6c8, 0 0 35px #18d6c8;
         }
 
-        .page-footer {
-            color: #88f0ff;
-            text-shadow: 0 0 2px #88f0ff;
-            margin-top: 3rem;
-        }
-
         footer {
             font-size: 1rem;
             color: #fff;
@@ -467,20 +391,12 @@
             height: auto;
         }
 
-        header {
-            font-size: 0.8rem;
-            color: #ffffff;
-            font-family: inherit;
-            margin-top: 0.5rem;
-            margin-bottom: 1.5rem;
-        }
-
         @media (max-width: 600px) {
             h1 {
                 font-size: 1.2rem;
             }
 
-            button {
+            .action-button {
                 width: 100%;
                 font-size: 0.9rem;
                 margin-bottom: 2rem;
@@ -512,12 +428,6 @@
                 margin-bottom: 0 !important;
             }
             
-            .intro-heading {
-                -webkit-text-size-adjust: 100%;
-                text-size-adjust: 100%;
-                font-size: 1.4rem !important;
-            }
-
             footer {
                 display: flex;
                 flex-direction: column;
@@ -537,7 +447,7 @@
 </head>
 
 <body>
-    <div class="container" id="maths">
+    <main class="container" id="maths">
         <h1 class="visually-hidden">Korovatron: GCSE and A Level maths and computer science tools, plus retro games</h1>
 
         <div class="intro feature-width">
@@ -565,7 +475,7 @@
             <span>© 2025-2026 Neil Kendall</span>
             <a class="footer-contact footer-link" href="privacy-policy.html">Privacy Policy</a>
         </footer>
-    </div>
+    </main>
 
     <script>
         // All content items
@@ -616,7 +526,7 @@
                 alt: "Mandelscope Icon",
                 description: "Explore the infinite beauty of the Mandelbrot and Julia sets with this interactive fractal viewer. Zoom incredibly deep using GPU acceleration and perturbation theory, as far as 10<sup>-38</sup> magnification levels. Discover intricate patterns, and save your favorite locations for future reference.<br><br>Includes an interactive educational guide where you can learn the mathematics behind the sets and write your own implementation.",
                 color: "#ff80ff",
-                buttonText: "<img src='images/icons/mandelscopeIcon.png' width='28' height='28' style='width:28px;height:28px;vertical-align:middle;margin-right:5px;'>Explore",
+                buttonText: "<img src='images/icons/mandelscopeIcon.png' alt='' aria-hidden='true' width='28' height='28' style='width:28px;height:28px;vertical-align:middle;margin-right:5px;'>Explore",
                 buttonClass: "purple",
                 url: "https://www.korovatron.co.uk/mandelscope/"
             },
@@ -781,31 +691,6 @@
                 gameDiv.setAttribute('data-nosnippet', '');
                 
                 const displayColor = item.color;
-                
-                let policiesHtml = '';
-                if (item.policies) {
-                    const policyLinks = item.policies.map(policy => 
-                        `<a href="${policy.url}" style="color: ${displayColor}; text-decoration: none;">${policy.text}</a>`
-                    ).join('<span style="color: ' + displayColor + '; margin: 0 0.5rem;">|</span>');
-                    
-                    policiesHtml = `
-                        <div class="description" style="color:${displayColor}; margin-top: 1.5rem;">
-                            ${policyLinks}
-                        </div>
-                    `;
-                }
-
-                let youtubeHtml = '';
-                if (item.youtubeUrl) {
-                    youtubeHtml = `
-                        <div class="description" style="color:${displayColor}; margin-top: 0.75rem; margin-bottom: 0.25rem;">
-                            <a href="${item.youtubeUrl}" target="_blank" style="color:${displayColor}; font-size:0.9em; opacity:0.8; display:inline-flex; align-items:center; gap:0.45em; text-decoration:none;">
-                                <img src="images/yt_icon_white_digital.png" alt="YouTube" style="width:2.4em;height:2.4em;display:block;">
-                                <span>Click for video tutorials</span>
-                            </a>
-                        </div>
-                    `;
-                }
 
                 let buttonNoteHtml = '';
                 if (item.buttonNote) {
@@ -837,7 +722,7 @@
 
                 const actionHtml = item.buttonImage
                     ? `<a class="game-action image-button-link" href="${item.url}" aria-label="${item.buttonText}"${trackingAttributes}><img class="image-button ${item.buttonClass}" src="${item.buttonImage}" alt="${item.buttonText}" width="140"></a>`
-                    : `<a class="game-action" href="${item.url}"${trackingAttributes}><button class="${item.buttonClass}">${item.buttonText}</button></a>`;
+                    : `<a class="game-action action-button ${item.buttonClass}" href="${item.url}"${trackingAttributes}>${item.buttonText}</a>`;
 
                 if (item.mediaOnlyLayout) {
                     gameDiv.innerHTML = `
@@ -857,9 +742,7 @@
                         <div class="description" style="color:${displayColor};">
                             ${descriptionHtml}
                         </div>
-                        ${policiesHtml}
                     </div>
-                    ${youtubeHtml}
                     ${actionHtml}
                     ${buttonNoteHtml}
                 `;
