@@ -712,9 +712,9 @@
                 title: "Graphiti",
                 image: "images/icons/graphitiIcon.png",
                 alt: "Graphiti Icon",
-                description: "A classroom-first graphing calculator focused on understanding mathematics rather than simply plotting graphs.<br><br><button class='tile-highlight gallery-text-link' type='button' data-gallery-link='Graphiti'>Browse the gallery</button> below to discover features built specifically for learning and explaining mathematics, not just plotting curves.<br><br>Advanced calculus concepts such as interactive tangents, normals, integrals, area between curves, and numerical integration (Simpson’s, trapezium, mid‑ordinate) are available in seconds.<br><br>Supports explicit, implicit and parametric Cartesian functions, polar curves and inequalities, with automatic graph analysis including asymptotes (linear and curvilinear), holes and curve classification. Works on any device, with optional PWA installation for offline use.<br><br>Share a URL to restore the full graph setup - ideal for lesson planning and quick reuse.<br><br><em><strong>Perfect for GCSE, A Level and Further Maths.</strong></em>",
+                description: "A classroom-first graphing calculator focused on understanding mathematics rather than simply plotting graphs.<br><br><button class='tile-highlight gallery-text-link' type='button' data-gallery-link='Graphiti' title='Explore a gallery of features'>Browse the gallery</button> below to discover features built specifically for learning and explaining mathematics, not just plotting curves.<br><br>Advanced calculus concepts such as interactive tangents, normals, integrals, area between curves, and numerical integration (Simpson’s, trapezium, mid‑ordinate) are available in seconds.<br><br>Supports explicit, implicit and parametric Cartesian functions, polar curves and inequalities, with automatic graph analysis including asymptotes (linear and curvilinear), holes and curve classification. Works on any device, with optional PWA installation for offline use.<br><br>Share a URL to restore the full graph setup - ideal for lesson planning and quick reuse.<br><br><em><strong>Perfect for GCSE, A Level and Further Maths.</strong></em>",
                 color: "#00ff88",
-                buttonText: "Tag That Curve",
+                buttonText: "Launch",
                 buttonClass: "green",
                 url: "https://www.korovatron.co.uk/graphiti"
             },
@@ -1041,12 +1041,12 @@
                     : '';
 
                 const launchHtml = item.buttonImage
-                    ? `<a class="game-action image-button-link" href="${item.url}" aria-label="${item.buttonText}"${trackingAttributes}><img class="image-button ${item.buttonClass}" src="${item.buttonImage}" alt="${item.buttonText}" width="140"></a>`
-                    : `<a class="game-action action-button ${item.buttonClass}" href="${item.url}"${trackingAttributes}>${item.buttonText}</a>`;
+                    ? `<a class="game-action image-button-link" href="${item.url}" aria-label="${item.buttonText}" title="Open App"${trackingAttributes}><img class="image-button ${item.buttonClass}" src="${item.buttonImage}" alt="${item.buttonText}" width="140"></a>`
+                    : `<a class="game-action action-button ${item.buttonClass}" href="${item.url}" title="Open App"${trackingAttributes}>${item.buttonText}</a>`;
 
                 const galleryItems = getGalleryItems(item);
                 const galleryButtonHtml = galleryItems.length
-                    ? `<button class="game-action action-button ${item.buttonClass}" type="button" data-gallery-title="${item.title}">Gallery</button>`
+                    ? `<button class="game-action action-button ${item.buttonClass}" type="button" data-gallery-title="${item.title}" title="Explore a gallery of features">Gallery</button>`
                     : '';
                 const actionHtml = `<div class="game-actions${galleryItems.length ? ' has-gallery' : ''}">${launchHtml}${galleryButtonHtml}</div>`;
 
