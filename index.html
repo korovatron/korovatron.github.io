@@ -869,6 +869,16 @@
             }
         }
 
+        function countGoatEvent(eventText) {
+            if (window.goatcounter && typeof window.goatcounter.count === 'function' && eventText) {
+                window.goatcounter.count({
+                    path: eventText,
+                    title: eventText,
+                    event: true
+                });
+            }
+        }
+
         function openGallery(item) {
             const galleryItems = getGalleryItems(item);
             if (!galleryItems.length) {
@@ -885,6 +895,7 @@
             document.body.classList.add('gallery-open');
             document.getElementById('gallery-dialog').classList.add('is-open');
             document.getElementById('gallery-next').focus();
+            countGoatEvent(`${item.title} Gallery opened`);
         }
 
         function setGalleryNavButtonGlow(buttonClass) {
@@ -911,6 +922,12 @@
             updateGalleryView();
         }
 
+        function countGalleryNavigation() {
+            if (activeGalleryTitle) {
+                countGoatEvent(`${activeGalleryTitle} gallery navigation`);
+            }
+        }
+
         function updateGalleryView() {
             const entry = activeGallery[activeGalleryIndex];
             const image = document.getElementById('gallery-image');
@@ -926,8 +943,14 @@
         }
 
         function initialiseGalleryControls() {
-            document.getElementById('gallery-prev').addEventListener('click', () => moveGallery(-1));
-            document.getElementById('gallery-next').addEventListener('click', () => moveGallery(1));
+            document.getElementById('gallery-prev').addEventListener('click', () => {
+                moveGallery(-1);
+                countGalleryNavigation();
+            });
+            document.getElementById('gallery-next').addEventListener('click', () => {
+                moveGallery(1);
+                countGalleryNavigation();
+            });
             document.querySelectorAll('[data-gallery-close]').forEach((element) => {
                 element.addEventListener('click', closeGallery);
             });
@@ -1043,13 +1066,7 @@
             document.querySelectorAll('[data-goat-event]').forEach((link) => {
                 link.addEventListener('click', () => {
                     const eventText = link.getAttribute('data-goat-event');
-                    if (window.goatcounter && typeof window.goatcounter.count === 'function' && eventText) {
-                        window.goatcounter.count({
-                            path: eventText,
-                            title: eventText,
-                            event: true
-                        });
-                    }
+                    countGoatEvent(eventText);
                 });
             });
         }
