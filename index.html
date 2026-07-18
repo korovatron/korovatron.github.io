@@ -216,6 +216,28 @@
             font-family: inherit;
         }
 
+        .tile-highlight {
+            color: #ffff00;
+            font-weight: 800;
+        }
+
+        .gallery-text-link {
+            appearance: none;
+            border: 0;
+            background: transparent;
+            padding: 0;
+            font: inherit;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            cursor: pointer;
+        }
+
+        .gallery-text-link:focus-visible {
+            outline: 2px solid #ffffff;
+            outline-offset: 3px;
+            border-radius: 3px;
+        }
+
         .action-button {
             font-family: Arial, system-ui, -apple-system, sans-serif;
             display: block;
@@ -690,7 +712,7 @@
                 title: "Graphiti",
                 image: "images/icons/graphitiIcon.png",
                 alt: "Graphiti Icon",
-                description: "A classroom-first graphing calculator focused on understanding mathematics rather than simply plotting graphs.<br><br>Advanced calculus concepts such as interactive tangents, normals, integrals, area between curves, and numerical integration (Simpson’s, trapezium, mid‑ordinate) are available in seconds.<br><br>Supports explicit, implicit and parametric Cartesian functions, polar curves and inequalities, with automatic graph analysis including asymptotes, holes and curve classification. Works on any device, with optional PWA installation for offline use.<br><br>Share a URL to restore the full graph setup - ideal for lesson planning and quick reuse.<br><br><span style='display:inline-block;padding:0.1rem 0.45rem;border-radius:999px;background:#ffff00;color:#000000;font-size:0.72rem;font-weight:700;line-height:1.2;vertical-align:middle;'>NEW </span> Fully customisable SVG export for creating clean, editable graph visuals for worksheets, slides and teaching resources.<br><br><em><strong>Perfect for GCSE, A Level and Further Maths.</strong></em>",
+                description: "A classroom-first graphing calculator focused on understanding mathematics rather than simply plotting graphs.<br><br><button class='tile-highlight gallery-text-link' type='button' data-gallery-link='Graphiti'>Browse the gallery</button> below to discover features built specifically for learning and explaining mathematics, not just plotting curves.<br><br>Advanced calculus concepts such as interactive tangents, normals, integrals, area between curves, and numerical integration (Simpson’s, trapezium, mid‑ordinate) are available in seconds.<br><br>Supports explicit, implicit and parametric Cartesian functions, polar curves and inequalities, with automatic graph analysis including asymptotes (linear and curvilinear), holes and curve classification. Works on any device, with optional PWA installation for offline use.<br><br>Share a URL to restore the full graph setup - ideal for lesson planning and quick reuse.<br><br><em><strong>Perfect for GCSE, A Level and Further Maths.</strong></em>",
                 color: "#00ff88",
                 buttonText: "Tag That Curve",
                 buttonClass: "green",
@@ -1059,6 +1081,10 @@
                 const galleryButton = card.querySelector('[data-gallery-title]');
                 if (galleryButton) {
                     galleryButton.addEventListener('click', () => openGallery(item));
+                }
+                const galleryTextLink = card.querySelector(`[data-gallery-link="${item.title}"]`);
+                if (galleryTextLink) {
+                    galleryTextLink.addEventListener('click', () => openGallery(item));
                 }
                 contentArea.appendChild(card);
             });
