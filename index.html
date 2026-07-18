@@ -112,6 +112,7 @@
         .intro {
             margin-bottom: 2rem;
             padding: 1.5rem;
+            padding-bottom: 3.75rem;
             border: 2px solid #444;
             border-radius: 12px;
             background: linear-gradient(120deg, #2a3140 0%, #4d5a7a 70%, #7a6fa7 100%);
@@ -126,6 +127,34 @@
             margin-left: auto;
             margin-right: auto;
             overflow: auto;
+            position: relative;
+        }
+
+        .korovatron-pill {
+            position: absolute;
+            right: 1.5rem;
+            bottom: 1.25rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: auto;
+            max-width: calc(100% - 3rem);
+            margin: 0;
+            padding: 0.4rem 0.85rem;
+            border: 2px solid;
+            border-radius: 999px;
+            box-sizing: border-box;
+            background: #b34cff;
+            color: #ffffff;
+            border-color: #20b7f2;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 0.72em;
+            font-weight: inherit;
+            line-height: 1.2;
+            text-shadow: none;
+            box-shadow: none;
+            white-space: nowrap;
         }
 
         .feature-width {
@@ -586,7 +615,14 @@
             .description,
             .intro {
                 font-size: 0.95rem;
-                padding: 0 1rem;
+                padding: 0 1rem 3.5rem 1rem;
+            }
+
+            .korovatron-pill {
+                right: 1rem;
+                bottom: 1rem;
+                max-width: calc(100% - 2rem);
+                font-size: 0.82rem;
             }
 
             .game {
@@ -640,6 +676,8 @@
               
                 <p style="color: #ffffff;">Retro Games, Maths and Computer Science tools for students and teachers. No cost. No logins. No adverts. No fuss. What more could you want?<br>Everything works on mobile, tablet, and desktop, and can be installed as PWAs for offline access.</p>
             </div>
+
+            <button class="korovatron-pill" type="button" aria-label="Play Korovatron pronunciation" title="Run phoneme subroutine: Korovatron sounds like /kəˈrəʊvətrɒn/">/kəˈrəʊvətrɒn/</button>
         </div>
 
         <div id="content-area">
@@ -1000,6 +1038,16 @@
             });
         }
 
+        function initialiseKorovatronPronunciation() {
+            const pronunciationButton = document.querySelector('.korovatron-pill');
+            const pronunciationAudio = new Audio('sounds/korovatron.mp3');
+
+            pronunciationButton.addEventListener('click', () => {
+                pronunciationAudio.currentTime = 0;
+                pronunciationAudio.play().catch(() => {});
+            });
+        }
+
         // Load all content on page load
         function loadContent() {
             const contentArea = document.getElementById('content-area');
@@ -1106,6 +1154,7 @@
 
         // Initialize on page load
         initialiseGalleryControls();
+        initialiseKorovatronPronunciation();
         loadGalleryData().then(loadContent);
     </script>
 </body>
