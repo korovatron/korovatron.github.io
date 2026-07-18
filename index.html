@@ -50,6 +50,16 @@
             font-family: Arial, system-ui, -apple-system, sans-serif;
         }
 
+        body.gallery-open {
+            position: fixed;
+            top: var(--gallery-scroll-top, 0);
+            left: 0;
+            right: 0;
+            width: 100%;
+            overflow: hidden;
+            touch-action: none;
+        }
+
         h1 {
             font-family: Arial, system-ui, -apple-system, sans-serif;
             font-size: 1.5rem;
@@ -164,6 +174,25 @@
             margin-top: auto;
         }
 
+        .game-actions {
+            margin-top: auto;
+            display: flex;
+            justify-content: center;
+            gap: 0.75rem;
+            clear: both;
+            max-width: 280px;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .game-actions .action-button {
+            flex: 1 1 0;
+            min-width: 0;
+            margin: 1rem 0 1.25rem 0;
+            max-width: none;
+        }
+
         .game-image {
             width: 120px;
             height: 120px;
@@ -207,9 +236,123 @@
             line-height: 1.2;
         }
 
+        button.action-button {
+            appearance: none;
+        }
+
         .action-button:focus-visible {
             outline: 2px solid #ffffff;
             outline-offset: 3px;
+        }
+
+        .gallery-dialog {
+            position: fixed;
+            inset: 0;
+            z-index: 20;
+            display: none;
+            padding: 5vh 5vw;
+            box-sizing: border-box;
+            overscroll-behavior: contain;
+        }
+
+        .gallery-dialog.is-open {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .gallery-backdrop {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.78);
+        }
+
+        .gallery-panel {
+            position: relative;
+            width: 90vw;
+            max-width: 90vw;
+            max-height: 90vh;
+            overflow: hidden;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            padding: 1rem 1rem 2rem 1rem;
+            border: 2px solid #444;
+            border-radius: 12px;
+            background: #080808;
+            box-shadow: 0 0 28px 4px #22335588;
+            color: #ffffff;
+            touch-action: pan-y;
+        }
+
+        .gallery-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .gallery-title {
+            margin: 0;
+            font-size: 1.1rem;
+            line-height: 1.3;
+            text-align: left;
+        }
+
+        .gallery-close {
+            width: 2.5rem;
+            height: 2.5rem;
+            border: 2px solid #ffffff;
+            border-radius: 8px;
+            background: #000000;
+            color: #ffffff;
+            font-size: 1.4rem;
+            line-height: 1;
+            cursor: pointer;
+        }
+
+        .gallery-image {
+            display: block;
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            max-height: calc(90vh - 15rem);
+            margin: 0 auto;
+            object-fit: contain;
+            border-radius: 8px;
+            background: #000000;
+        }
+
+        .gallery-caption {
+            min-height: 3.4rem;
+            margin: 1rem 0;
+            font-size: 1.18rem;
+            line-height: 1.45;
+            color: #ffecb3;
+            overflow-wrap: anywhere;
+            hyphens: auto;
+        }
+
+        .gallery-controls {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .gallery-nav-button {
+            margin: 0;
+            max-width: none;
+        }
+
+        .gallery-controls .gallery-nav-button {
+            margin: 0;
+        }
+
+        .gallery-count {
+            min-width: 4.5rem;
+            color: #ffffff;
         }
 
         .image-button-link {
@@ -399,6 +542,18 @@
                 margin-bottom: 2rem;
             }
 
+            .game-actions {
+                gap: 0.5rem;
+            }
+
+            .game-actions .action-button {
+                padding: 0.7rem 0.55rem;
+            }
+
+            .gallery-controls {
+                grid-template-columns: 1fr;
+            }
+
             .description,
             .intro {
                 font-size: 0.95rem;
@@ -462,6 +617,23 @@
             <!-- Content will be dynamically loaded here -->
         </div>
 
+        <div class="gallery-dialog" id="gallery-dialog" role="dialog" aria-modal="true" aria-labelledby="gallery-title">
+            <div class="gallery-backdrop" data-gallery-close></div>
+            <div class="gallery-panel">
+                <div class="gallery-header">
+                    <h2 class="gallery-title" id="gallery-title"></h2>
+                    <button class="gallery-close" type="button" aria-label="Close gallery" data-gallery-close>&times;</button>
+                </div>
+                <img class="gallery-image" id="gallery-image" src="" alt="">
+                <p class="gallery-caption" id="gallery-caption"></p>
+                <div class="gallery-controls">
+                    <button class="action-button blue gallery-nav-button" type="button" id="gallery-prev">Back</button>
+                    <span class="gallery-count" id="gallery-count"></span>
+                    <button class="action-button blue gallery-nav-button" type="button" id="gallery-next">Next</button>
+                </div>
+            </div>
+        </div>
+
         <footer>
             <div class="footer-slurm">
                 <a class="game-action image-button-link" href="https://buymeacoffee.com/korovatron" aria-label="Donate Slurm" data-goat-event="BUY ME A SLURM CLICKED">
@@ -475,6 +647,13 @@
     </main>
 
     <script>
+        let galleryData = {};
+        let activeGallery = [];
+        let activeGalleryTitle = '';
+        let activeGalleryIndex = 0;
+        let galleryScrollY = 0;
+        const glowButtonClasses = ['green', 'purple', 'blue', 'yellow', 'orange', 'neon'];
+
         // All content items
         const allItems = [
             {
@@ -670,6 +849,105 @@
         );
         const displayItems = allDisplayItems;
 
+        function getGalleryItems(item) {
+            const gallery = galleryData[item.title];
+            if (!Array.isArray(gallery)) {
+                return [];
+            }
+
+            return gallery.filter(entry => entry && entry.src && entry.title);
+        }
+
+        async function loadGalleryData() {
+            try {
+                const response = await fetch('images/galleries/gallery-data.json', { cache: 'no-cache' });
+                if (response.ok) {
+                    galleryData = await response.json();
+                }
+            } catch (error) {
+                galleryData = {};
+            }
+        }
+
+        function openGallery(item) {
+            const galleryItems = getGalleryItems(item);
+            if (!galleryItems.length) {
+                return;
+            }
+
+            activeGallery = galleryItems;
+            activeGalleryTitle = item.title;
+            activeGalleryIndex = 0;
+            setGalleryNavButtonGlow(item.buttonClass);
+            updateGalleryView();
+            galleryScrollY = window.scrollY;
+            document.body.style.setProperty('--gallery-scroll-top', `-${galleryScrollY}px`);
+            document.body.classList.add('gallery-open');
+            document.getElementById('gallery-dialog').classList.add('is-open');
+            document.getElementById('gallery-next').focus();
+        }
+
+        function setGalleryNavButtonGlow(buttonClass) {
+            const glowClass = glowButtonClasses.includes(buttonClass) ? buttonClass : 'blue';
+            document.querySelectorAll('.gallery-nav-button').forEach((button) => {
+                button.classList.remove(...glowButtonClasses);
+                button.classList.add(glowClass);
+            });
+        }
+
+        function closeGallery() {
+            document.getElementById('gallery-dialog').classList.remove('is-open');
+            document.body.classList.remove('gallery-open');
+            document.body.style.removeProperty('--gallery-scroll-top');
+            window.scrollTo(0, galleryScrollY);
+        }
+
+        function moveGallery(direction) {
+            if (!activeGallery.length) {
+                return;
+            }
+
+            activeGalleryIndex = (activeGalleryIndex + direction + activeGallery.length) % activeGallery.length;
+            updateGalleryView();
+        }
+
+        function updateGalleryView() {
+            const entry = activeGallery[activeGalleryIndex];
+            const image = document.getElementById('gallery-image');
+            const title = document.getElementById('gallery-title');
+            const caption = document.getElementById('gallery-caption');
+            const count = document.getElementById('gallery-count');
+
+            title.textContent = activeGalleryTitle;
+            image.src = entry.src;
+            image.alt = entry.alt || entry.title;
+            caption.textContent = entry.title;
+            count.textContent = `${activeGalleryIndex + 1} of ${activeGallery.length}`;
+        }
+
+        function initialiseGalleryControls() {
+            document.getElementById('gallery-prev').addEventListener('click', () => moveGallery(-1));
+            document.getElementById('gallery-next').addEventListener('click', () => moveGallery(1));
+            document.querySelectorAll('[data-gallery-close]').forEach((element) => {
+                element.addEventListener('click', closeGallery);
+            });
+
+            document.addEventListener('keydown', (event) => {
+                const galleryOpen = document.getElementById('gallery-dialog').classList.contains('is-open');
+                if (!galleryOpen) {
+                    return;
+                }
+
+                if (event.key === 'Escape') {
+                    closeGallery();
+                } else if (event.key === 'ArrowLeft') {
+                    moveGallery(-1);
+                } else if (event.key === 'ArrowRight') {
+                    moveGallery(1);
+                }
+            });
+        }
+
         // Load all content on page load
         function loadContent() {
             const contentArea = document.getElementById('content-area');
@@ -717,9 +995,15 @@
                     ? ` data-goat-event="${item.goatEventText}"`
                     : '';
 
-                const actionHtml = item.buttonImage
+                const launchHtml = item.buttonImage
                     ? `<a class="game-action image-button-link" href="${item.url}" aria-label="${item.buttonText}"${trackingAttributes}><img class="image-button ${item.buttonClass}" src="${item.buttonImage}" alt="${item.buttonText}" width="140"></a>`
                     : `<a class="game-action action-button ${item.buttonClass}" href="${item.url}"${trackingAttributes}>${item.buttonText}</a>`;
+
+                const galleryItems = getGalleryItems(item);
+                const galleryButtonHtml = galleryItems.length
+                    ? `<button class="game-action action-button ${item.buttonClass}" type="button" data-gallery-title="${item.title}">Gallery</button>`
+                    : '';
+                const actionHtml = `<div class="game-actions${galleryItems.length ? ' has-gallery' : ''}">${launchHtml}${galleryButtonHtml}</div>`;
 
                 if (item.mediaOnlyLayout) {
                     gameDiv.innerHTML = `
@@ -748,7 +1032,12 @@
             }
 
             displayItems.forEach(item => {
-                contentArea.appendChild(createCard(item));
+                const card = createCard(item);
+                const galleryButton = card.querySelector('[data-gallery-title]');
+                if (galleryButton) {
+                    galleryButton.addEventListener('click', () => openGallery(item));
+                }
+                contentArea.appendChild(card);
             });
 
             document.querySelectorAll('[data-goat-event]').forEach((link) => {
@@ -766,7 +1055,8 @@
         }
 
         // Initialize on page load
-        loadContent();
+        initialiseGalleryControls();
+        loadGalleryData().then(loadContent);
     </script>
 </body>
 
