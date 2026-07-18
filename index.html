@@ -365,11 +365,18 @@
 
         .gallery-nav-button {
             margin: 0;
+            width: auto;
             max-width: none;
+            justify-self: start;
         }
 
         .gallery-controls .gallery-nav-button {
             margin: 0;
+            width: auto;
+        }
+
+        #gallery-next {
+            justify-self: end;
         }
 
         .gallery-count {
@@ -573,7 +580,7 @@
             }
 
             .gallery-controls {
-                grid-template-columns: 1fr;
+                grid-template-columns: 1fr auto 1fr;
             }
 
             .description,
