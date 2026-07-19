@@ -129,28 +129,60 @@
             position: relative;
         }
 
-        .korovatron-pill {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: auto;
-            margin: 0 0.35rem 0 0;
-            padding: 0.4rem 0.85rem;
-            border: 2px solid;
-            border-radius: 999px;
-            box-sizing: border-box;
-            background: #b34cff;
+        .dictionary-entry {
+            margin: 0;
             color: #ffffff;
-            border-color: #20b7f2;
+            text-align: left;
+        }
+
+        .dictionary-headword {
+            font-size: 1.18em;
+            font-weight: 800;
+        }
+
+        .korovatron-pill {
+            display: inline;
+            margin: 0 0.25rem;
+            padding: 0;
+            border: 0;
+            background: transparent;
+            color: inherit;
             cursor: pointer;
             font-family: inherit;
-            font-size: 0.72em;
+            font-size: inherit;
             font-weight: inherit;
-            line-height: 1.2;
-            text-shadow: none;
-            box-shadow: none;
-            vertical-align: middle;
-            white-space: nowrap;
+            line-height: inherit;
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 0.18em;
+        }
+
+        .korovatron-pill:hover {
+            color: #ffecb3;
+        }
+
+        .korovatron-pill:focus-visible {
+            outline: 2px solid #ffffff;
+            outline-offset: 3px;
+            border-radius: 3px;
+        }
+
+        .pronunciation-icon {
+            width: 0.95em;
+            height: 0.95em;
+            margin-left: 0.18em;
+            vertical-align: -0.12em;
+            fill: currentColor;
+        }
+
+        .dictionary-part-of-speech {
+            font-style: italic;
+            font-weight: 800;
+        }
+
+        .dictionary-definition {
+            display: block;
+            margin-top: 0.28em;
         }
 
         .feature-width {
@@ -663,7 +695,7 @@
 
             <div id="intro-text">
               
-                <p style="color: #ffffff;"><button class="korovatron-pill" type="button" aria-label="Play Korovatron pronunciation" title="Run phoneme subroutine: Korovatron sounds like /kəˈrəʊvətrɒn/" data-goat-event="IPA voice clicked">/kəˈrəʊvətrɒn/</button>Retro Games, Maths and Computer Science tools for students and teachers. No cost. No logins. No adverts. No fuss. What more could you want?<br>Everything works on mobile, tablet, and desktop, and can be installed as PWAs for offline access.</p>
+                <p class="dictionary-entry"><span class="dictionary-headword">Korovatron</span> <a class="korovatron-pill" href="sounds/korovatron.mp3" aria-label="Play Korovatron pronunciation" title="Play Korovatron pronunciation" data-goat-event="IPA voice clicked">/kəˈrəʊvətrɒn/<svg class="pronunciation-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 9v6h4l5 4V5L7 9H3zm13.5 3a4.5 4.5 0 0 0-2.25-3.9v7.8A4.5 4.5 0 0 0 16.5 12zm-2.25-8.2v2.1a7 7 0 0 1 0 12.2v2.1a9 9 0 0 0 0-16.4z"/></svg></a> <strong><em class="dictionary-part-of-speech">noun</em></strong><span class="dictionary-definition">A collection of classroom‑ready Maths and Computer Science tools, accompanied by lightweight retro games; ultra‑clean, capable, fast, ad‑free, and built to support learning and teaching without friction.</span></p>
             </div>
         </div>
 
@@ -1029,7 +1061,8 @@
             const pronunciationButton = document.querySelector('.korovatron-pill');
             const pronunciationAudio = new Audio('sounds/korovatron.mp3');
 
-            pronunciationButton.addEventListener('click', () => {
+            pronunciationButton.addEventListener('click', (event) => {
+                event.preventDefault();
                 pronunciationAudio.currentTime = 0;
                 pronunciationAudio.play().catch(() => {});
             });
