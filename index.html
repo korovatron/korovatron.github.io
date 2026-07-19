@@ -310,6 +310,11 @@
             color: #fff;
             font-style: italic;
             font-weight: 800;
+            margin: 0 0 0.85rem 0;
+        }
+
+        .tile-tagline + p {
+            margin-top: 0;
         }
 
         .gallery-text-link {
@@ -678,6 +683,10 @@
             .intro {
                 font-size: 0.95rem;
                 padding: 0.85rem 1rem 1rem 1rem;
+            }
+
+            .description.has-tagline {
+                padding-top: 0;
             }
 
             .game {
@@ -1147,6 +1156,9 @@
                 const taglineHtml = item.tagline
                     ? `<p class="tile-tagline">${item.tagline}</p>`
                     : '';
+                const descriptionClasses = item.tagline
+                    ? 'description has-tagline'
+                    : 'description';
 
                 const mainImageHtml = item.hideMainImage
                     ? ''
@@ -1181,7 +1193,7 @@
                     <div class="game-content">
                         <h2 class="game-title">${item.title}</h2>
                         ${mainImageHtml}
-                        <div class="description" style="color:${displayColor};">
+                        <div class="${descriptionClasses}" style="color:${displayColor};">
                             ${taglineHtml}
                             ${descriptionHtml}
                         </div>
