@@ -56,6 +56,8 @@
             left: 0;
             right: 0;
             width: 100%;
+            box-sizing: border-box;
+            padding-right: calc(2rem + var(--gallery-scrollbar-width, 0px));
             overflow: hidden;
             touch-action: none;
         }
@@ -1010,7 +1012,9 @@
             setGalleryNavButtonGlow(item.buttonClass);
             updateGalleryView();
             galleryScrollY = window.scrollY;
+            const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
             document.body.style.setProperty('--gallery-scroll-top', `-${galleryScrollY}px`);
+            document.body.style.setProperty('--gallery-scrollbar-width', `${scrollbarWidth}px`);
             document.body.classList.add('gallery-open');
             document.getElementById('gallery-dialog').classList.add('is-open');
             document.getElementById('gallery-next').focus();
@@ -1029,6 +1033,7 @@
             document.getElementById('gallery-dialog').classList.remove('is-open');
             document.body.classList.remove('gallery-open');
             document.body.style.removeProperty('--gallery-scroll-top');
+            document.body.style.removeProperty('--gallery-scrollbar-width');
             window.scrollTo(0, galleryScrollY);
         }
 
