@@ -304,6 +304,12 @@
             font-weight: 800;
         }
 
+        .tile-tagline {
+            color: #fff;
+            font-style: italic;
+            font-weight: 800;
+        }
+
         .gallery-text-link {
             appearance: none;
             border: 0;
@@ -802,7 +808,8 @@
                 title: "Graphiti",
                 image: "images/icons/graphitiIcon.png",
                 alt: "Graphiti Icon",
-                description: "A graphing calculator built for teaching. Fast, visual and packed with tools that make maths <em>click</em>.<br><br>Graphiti analyses curves automatically, spotting asymptotes, turning points, holes and other key features.<br><br>Show tangents, normals, integrals, polar curves and numerical methods instantly, without setup.<br><br>Runs on any device, with optional offline mode.<br><br>Share a single URL to restore your full graph - perfect for lessons, homework and quick demos.",
+                tagline: "Plots the graph. Explains the maths.",
+                description: "More than a graphing calculator. Graphiti helps you explore, analyse and understand mathematics visually.<br><br>Automatically detect asymptotes, holes, turning points, envelopes and other key features that ordinary graphing calculators simply plot.<br><br>Investigate tangents, normals, integrals, polar graphs, implicit curves and numerical methods with instant visual feedback.<br><br>Works on desktop, tablet and mobile, with optional offline support. Share complete graph setups with a single URL.",
                 color: "#00ff88",
                 buttonText: "Launch",
                 buttonClass: "green",
@@ -1132,6 +1139,9 @@
                         .map((paragraph, index) => `<p style="color:${paragraphColors[index]};">${paragraph}</p>`)
                         .join('');
                 }
+                const taglineHtml = item.tagline
+                    ? `<p class="tile-tagline">${item.tagline}</p>`
+                    : '';
 
                 const mainImageHtml = item.hideMainImage
                     ? ''
@@ -1167,6 +1177,7 @@
                         <h2 class="game-title">${item.title}</h2>
                         ${mainImageHtml}
                         <div class="description" style="color:${displayColor};">
+                            ${taglineHtml}
                             ${descriptionHtml}
                         </div>
                     </div>
