@@ -37,7 +37,7 @@
 		},
 		{
 			"src": "images/galleries/graphiti/numericalIntegration.png",
-			"title": "Perform interactive numerical integration using Simpson's rule, Mid-Ordinate and trapezium rule with adjustable strips",
+			"title": "Perform interactive numerical integration using Simpson's, mid-ordinate and trapezium rules with adjustable strips",
 			"alt": "Graphiti performs numerical integration"
 		},
 		{
