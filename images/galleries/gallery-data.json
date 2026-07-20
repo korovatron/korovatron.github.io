@@ -2,88 +2,88 @@
     "Graphiti": [
         {
 			"src": "images/galleries/graphiti/maxMin.png",
-			"title": "Automatic detection of local maxima, minima and intersections",
-			"alt": "Graphiti showing automatic detection of local maxima and minima and intersections"
+			"title": "Graphiti automatically detects local maxima, minima and intersections",
+			"alt": "Graphiti automatically detects local maxima, minima and intersections"
 		},
 		{
 			"src": "images/galleries/graphiti/implicit.png",
-			"title": "Plot implicit functions as well as explicit",
-			"alt": "Graphiti plots implicit functions as well as explicit"
+			"title": "Graphiti can plot implicit functions in addition to explicit functions",
+			"alt": "Graphiti can plot implicit functions in addition to explicit functions"
 		},
 		{
 			"src": "images/galleries/graphiti/parametric.png",
-			"title": "Plot parametric functions",
-			"alt": "Graphiti plots parametric functions"
+			"title": "Graphiti can plot parametric functions",
+			"alt": "Graphiti can plot parametric functions"
 		},
 		{
 			"src": "images/galleries/graphiti/inequalityIntersections.png",
-			"title": "Plot inequalities and their intersections",
-			"alt": "Graphiti plots inequalities and their intersections"
+			"title": "Graphiti can plot inequalities and their intersections",
+			"alt": "Graphiti can plot inequalities and their intersections"
 		},
 		{
 			"src": "images/galleries/graphiti/polar.png",
-			"title": "Plot polar functions with optional animation and step-through",
-			"alt": "Graphiti plots polar functions"
+			"title": "Graphiti can plot polar functions with optional animation and step-through",
+			"alt": "Graphiti can plot polar functions with optional animation and step-through"
 		},
 		{
 			"src": "images/galleries/graphiti/definiteIntegral.png",
-			"title": "Calculate definite integrals",
-			"alt": "Graphiti calculates definite integrals"
+			"title": "Graphiti can calculate definite integrals",
+			"alt": "Graphiti can calculate definite integrals"
 		},
 		{
 			"src": "images/galleries/graphiti/interactiveTangentsNormals.png",
-			"title": "Add interactive tangents and normals",
-			"alt": "Graphiti interactive tangents and normals"
+			"title": "Graphiti can add interactive tangents and normals",
+			"alt": "Graphiti can add interactive tangents and normals"
 		},
 		{
 			"src": "images/galleries/graphiti/numericalIntegration.png",
-			"title": "Perform interactive numerical integration using Simpson's, mid-ordinate and trapezium rules with adjustable strips",
-			"alt": "Graphiti performs numerical integration"
+			"title": "Graphiti can perform interactive numerical integration using Simpson's, mid-ordinate and trapezium rules with adjustable strips",
+			"alt": "Graphiti can perform interactive numerical integration using Simpson's, mid-ordinate and trapezium rules with adjustable strips"
 		},
 		{
 			"src": "images/galleries/graphiti/areaBetweenCurves.png",
-			"title": "Calculate and shade the area between curves",
-			"alt": "Graphiti calculates the area between curves"
+			"title": "Graphiti can calculate and shade the area between curves",
+			"alt": "Graphiti can calculate and shade the area between curves"
 		},
 		{
 			"src": "images/galleries/graphiti/polarArea.png",
-			"title": "Calculate and shade the area of polar functions",
-			"alt": "Graphiti calculates the area of polar functions"
+			"title": "Graphiti can calculate and shade the area of polar functions",
+			"alt": "Graphiti can calculate and shade the area of polar functions"
 		},
 		{
 			"src": "images/galleries/graphiti/shapeDetection.png",
-			"title": "Automatic shape detection in graphs",
-			"alt": "Graphiti detects shapes in graphs"
+			"title": "Graphiti can automatically detect shapes in graphs",
+			"alt": "Graphiti can automatically detect shapes in graphs"
 		},
 		{
 			"src": "images/galleries/graphiti/parameterSliders.png",
-			"title": "Adjust parameters using sliders",
-			"alt": "Graphiti adjusts parameters using sliders"
+			"title": "Graphiti can adjust parameters using sliders",
+			"alt": "Graphiti can adjust parameters using sliders"
 		},
 		{
 			"src": "images/galleries/graphiti/asymptopes.png",
-			"title": "Automatic detection of asymptotes (horizontal, vertical and oblique)",
-			"alt": "Graphiti detects asymptotes"
+			"title": "Graphiti can automatically detect asymptotes (horizontal, vertical and oblique)",
+			"alt": "Graphiti can automatically detect asymptotes (horizontal, vertical and oblique)"
 		},
         {
 			"src": "images/galleries/graphiti/curvilinear.png",
-			"title": "Automatic detection of curvilinear asymptotes",
-			"alt": "Graphiti detects curvilinear asymptotes"
+			"title": "Graphiti can automatically detect curvilinear asymptotes",
+			"alt": "Graphiti can automatically detect curvilinear asymptotes"
 		},
 		{
 			"src": "images/galleries/graphiti/autoHoleDetection.png",
-			"title": "Automatic detection and plotting of removable singularities (holes)",
-			"alt": "Graphiti detects and plots holes"
+			"title": "Graphiti can automatically detect and show removable singularities (holes)",
+			"alt": "Graphiti can automatically detect and show removable singularities (holes)"
 		},
 		{
 			"src": "images/galleries/graphiti/envelope.png",
-			"title": "Automatic detection of envelopes for oscillating functions such as damped harmonic motion",
-			"alt": "Graphiti detects envelopes for oscillating functions"
+			"title": "Graphiti can automatically detect envelopes for oscillating functions such as damped harmonic motion",
+			"alt": "Graphiti can automatically detect envelopes for oscillating functions"
 		},
         {
 			"src": "images/galleries/graphiti/svg.png",
 			"title": "Export graphs as fully customisable SVG files for use in worksheets and slides",
-			"alt": "Graphiti exports graphs as SVG"
+			"alt": "Export graphs as fully customisable SVG files for use in worksheets and slides"
 		}
     ],
     "Vectorama": [],
