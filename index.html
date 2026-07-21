@@ -783,6 +783,7 @@
         let activeGalleryTitle = '';
         let activeGalleryIndex = 0;
         let galleryScrollY = 0;
+        const preloadedGalleryImages = new Set();
         const glowButtonClasses = ['green', 'purple', 'blue', 'yellow', 'orange', 'neon'];
 
         // All content items
@@ -1089,6 +1090,21 @@
             }
         }
 
+        function preloadGalleryImage(index) {
+            if (!activeGallery.length) {
+                return;
+            }
+
+            const entry = activeGallery[(index + activeGallery.length) % activeGallery.length];
+            if (!entry || !entry.src || preloadedGalleryImages.has(entry.src)) {
+                return;
+            }
+
+            preloadedGalleryImages.add(entry.src);
+            const image = new Image();
+            image.src = entry.src;
+        }
+
         function updateGalleryView() {
             const entry = activeGallery[activeGalleryIndex];
             const image = document.getElementById('gallery-image');
@@ -1101,6 +1117,7 @@
             image.alt = entry.alt || entry.title;
             caption.textContent = entry.title;
             count.textContent = `${activeGalleryIndex + 1} of ${activeGallery.length}`;
+            preloadGalleryImage(activeGalleryIndex + 1);
         }
 
         function initialiseGalleryControls() {
