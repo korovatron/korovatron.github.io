@@ -86,7 +86,61 @@
 			"alt": "Export graphs as fully customisable SVG files for use in worksheets and slides"
 		}
     ],
-    "Vectorama": [],
+    "Vectorama": [ {
+			"src": "images/galleries/vectorama/2DPoints.png",
+			"title": "Vectorama allows you to add vectors as points in 2D space. Ideal for exploring transformations of the unit square in Level 2 Further Maths",
+			"alt": "Vectorama allows you to add vectors as points in 2D space. Ideal for exploring transformations of the unit square in Level 2 Further Maths"
+		},
+		{
+			"src": "images/galleries/vectorama/2DArrows.png",
+			"title": "Vectorama can also represent vectors as arrows. Add your own or choose from built-in vector presets",
+			"alt": "Vectorama can also represent vectors as arrows. Add your own or choose from built-in vector presets"
+		},
+		{
+			"src": "images/galleries/vectorama/2DShear.png",
+			"title": "Add matrices and experiment with changing the entries and watch the smooth animation as the transformation is applied",
+			"alt": "Add matrices and experiment with changing the entries and watch the smooth animation as the transformation is applied"
+		},
+		{
+			"src": "images/galleries/vectorama/2DComposition.png",
+			"title": "Vectorama can apply multiple matrices in sequence to perform composition transformations",
+			"alt": "Vectorama can apply multiple matrices in sequence to perform composition transformations"
+		},
+		{
+			"src": "images/galleries/vectorama/3DMatrices.png",
+			"title": "Vectorama works with 3D vectors and matrices, allowing you to explore transformations in 3D space. Ideal for A Level Further Maths and university linear algebra courses",
+			"alt": "Vectorama works with 3D vectors and matrices, allowing you to explore transformations in 3D space. Ideal for A Level Further Maths and university linear algebra courses"
+		},
+		{
+			"src": "images/galleries/vectorama/Lattice.png",
+			"title": "Vectorama can overlay a lattice so you can see how spaces are transformed by matrices",
+			"alt": "Vectorama can overlay a lattice so you can see how spaces are transformed by matrices"
+		},
+		{
+			"src": "images/galleries/vectorama/MatrixIdentification.png",
+			"title": "As you experiment changing the entries in a matrix, Vectorama can identify the matrix transformation and display its properties",
+			"alt": "As you experiment changing the entries in a matrix, Vectorama can identify the matrix transformation and display its properties"
+		},
+		{
+			"src": "images/galleries/vectorama/EigenSpace.png",
+			"title": "Vectorama calculates eigenvalues, eigenvectors and visualises eigenspaces for any matrix transformation",
+			"alt": "Vectorama calculates eigenvalues, eigenvectors and visualises eigenspaces for any matrix transformation"
+		},
+		{
+			"src": "images/galleries/vectorama/AngleBetweenPlanes.png",
+			"title": "Vectorama can calculate the equation of the line of intersection between two planes and find the angle between them",
+			"alt": "Vectorama can calculate the equation of the line of intersection between two planes and find the angle between them"
+		},
+		{
+			"src": "images/galleries/vectorama/SkewLinesAngle.png",
+			"title": "Lines and planes can be added in all the usual vector forms. Vectorama will calculate the angle between lines and planes and even skew lines",
+			"alt": "Lines and planes can be added in all the usual vector forms. Vectorama will calculate the angle between lines and planes and even skew lines"
+		},
+		{
+			"src": "images/galleries/vectorama/SkewLinesDistance.png",
+			"title": "Vectorama can calculate the distance between skew lines",
+			"alt": "Vectorama can calculate the distance between skew lines"
+		}],
     "Trimension": [],
     "The Crate Escape": [],
     "Gyrograf": [],
