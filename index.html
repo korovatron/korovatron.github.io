@@ -990,6 +990,33 @@
             return gallery.filter(entry => entry && entry.src && entry.title);
         }
 
+        function createGalleryDescriptionList(item, galleryItems) {
+            if (!galleryItems.length) {
+                return null;
+            }
+
+            const section = document.createElement('section');
+            const headingId = `gallery-descriptions-${item.title.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
+            section.className = 'visually-hidden';
+            section.setAttribute('aria-labelledby', headingId);
+
+            const heading = document.createElement('h3');
+            heading.id = headingId;
+            heading.textContent = `${item.title} gallery descriptions`;
+
+            const list = document.createElement('ul');
+            galleryItems.forEach((entry) => {
+                const listItem = document.createElement('li');
+                listItem.textContent = entry.title;
+                list.appendChild(listItem);
+            });
+
+            section.appendChild(heading);
+            section.appendChild(list);
+
+            return section;
+        }
+
         async function loadGalleryData() {
             try {
                 const response = await fetch('images/galleries/gallery-data.json', { cache: 'no-cache' });
@@ -1188,6 +1215,11 @@
                         </div>
                     `;
 
+                    const galleryDescriptionList = createGalleryDescriptionList(item, galleryItems);
+                    if (galleryDescriptionList) {
+                        gameDiv.appendChild(galleryDescriptionList);
+                    }
+
                     return gameDiv;
                 }
                 
@@ -1203,6 +1235,11 @@
                     ${actionHtml}
                     ${buttonNoteHtml}
                 `;
+
+                const galleryDescriptionList = createGalleryDescriptionList(item, galleryItems);
+                if (galleryDescriptionList) {
+                    gameDiv.appendChild(galleryDescriptionList);
+                }
 
                 return gameDiv;
             }
