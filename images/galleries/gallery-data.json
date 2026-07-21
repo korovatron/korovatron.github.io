@@ -141,7 +141,26 @@
 			"title": "Vectorama can calculate the distance between skew lines",
 			"alt": "Vectorama can calculate the distance between skew lines"
 		}],
-    "Trimension": [],
+    "Trimension": [{
+			"src": "images/galleries/trimension/composite.png",
+			"title": "Trimension allows you to build composite solids from cuboids, pyramids, prisms, and more. Dimensions and adjacent faces are fully customisable",
+			"alt": "Trimension allows you to build composite solids from cuboids, pyramids, prisms, and more. Dimensions and adjacent faces are fully customisable"
+		},
+		{
+			"src": "images/galleries/trimension/addItems.png",
+			"title": "Add internal labels, angles, triangles, line-segments, quadrilaterals, and more to your solids. All items can be hidden at any time; ideal for gradually revealing features during a lesson",
+			"alt": "Add internal labels, angles, triangles, line-segments, quadrilaterals, and more to your solids. All items can be hidden at any time; ideal for gradually revealing features during a lesson"
+		},
+		{
+			"src": "images/galleries/trimension/inspect.png",
+			"title": "Trimension's standout feature: tap Inspect on any triangle or quadrilateral to instantly extract it into a clean, labelled 2D view, ideal for identifying triangles and walking students through the geometry step by step",
+			"alt": "Trimension's standout feature: tap Inspect on any triangle or quadrilateral to instantly extract it into a clean, labelled 2D view, ideal for identifying triangles and walking students through the geometry step by step"
+		},
+		{
+			"src": "images/galleries/trimension/exportSVG.png",
+			"title": "Trimension can export PNG and SVG versions for worksheets and presentations. SVGs are editable in Word, PowerPoint, and SVG editors, so labels, lengths, and other details can be adjusted",
+			"alt": "Trimension can export PNG and SVG versions for worksheets and presentations. SVGs are editable in Word, PowerPoint, and SVG editors, so labels, lengths, and other details can be adjusted"
+		}],
     "The Crate Escape": [],
     "Gyrograf": [],
     "Haskish": [],
