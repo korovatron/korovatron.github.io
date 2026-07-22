@@ -2,8 +2,8 @@
     "Graphiti": [
         {
 			"src": "images/galleries/graphiti/maxMin.png",
-			"title": "Graphiti automatically detects local maxima, minima and intersections",
-			"alt": "Graphiti automatically detects local maxima, minima and intersections"
+			"title": "Graphiti automatically detects local maxima, minima, points of inflection and intersections",
+			"alt": "Graphiti automatically detects local maxima, minima, points of inflection and intersections"
 		},
 		{
 			"src": "images/galleries/graphiti/implicit.png",
