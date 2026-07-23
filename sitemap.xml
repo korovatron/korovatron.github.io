@@ -1,10 +1,171 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.korovatron.co.uk/</loc>
     <lastmod>2026-07-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/graphiti/maxMin.png</image:loc>
+      <image:title>Graphiti automatically detects local maxima, minima, points of inflection and intersections</image:title>
+      <image:caption>Graphiti automatically detects local maxima, minima, points of inflection and intersections</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/graphiti/implicit.png</image:loc>
+      <image:title>Graphiti can plot implicit functions in addition to explicit functions</image:title>
+      <image:caption>Graphiti can plot implicit functions in addition to explicit functions</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/graphiti/parametric.png</image:loc>
+      <image:title>Graphiti can plot parametric functions</image:title>
+      <image:caption>Graphiti can plot parametric functions</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/graphiti/inequalityIntersections.png</image:loc>
+      <image:title>Graphiti can plot inequalities and their intersections</image:title>
+      <image:caption>Graphiti can plot inequalities and their intersections</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/graphiti/polar.png</image:loc>
+      <image:title>Graphiti can plot polar functions with optional animation and step-through</image:title>
+      <image:caption>Graphiti can plot polar functions with optional animation and step-through</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/graphiti/definiteIntegral.png</image:loc>
+      <image:title>Graphiti can calculate definite integrals</image:title>
+      <image:caption>Graphiti can calculate definite integrals</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/graphiti/interactiveTangentsNormals.png</image:loc>
+      <image:title>Graphiti can add interactive tangents and normals</image:title>
+      <image:caption>Graphiti can add interactive tangents and normals</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/graphiti/numericalIntegration.png</image:loc>
+      <image:title>Graphiti can perform interactive numerical integration using Simpson's, mid-ordinate and trapezium rules with adjustable strips</image:title>
+      <image:caption>Graphiti can perform interactive numerical integration using Simpson's, mid-ordinate and trapezium rules with adjustable strips</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/graphiti/areaBetweenCurves.png</image:loc>
+      <image:title>Graphiti can calculate and shade the area between curves</image:title>
+      <image:caption>Graphiti can calculate and shade the area between curves</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/graphiti/polarArea.png</image:loc>
+      <image:title>Graphiti can calculate and shade the area of polar functions</image:title>
+      <image:caption>Graphiti can calculate and shade the area of polar functions</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/graphiti/shapeDetection.png</image:loc>
+      <image:title>Graphiti can automatically detect shapes in graphs</image:title>
+      <image:caption>Graphiti can automatically detect shapes in graphs</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/graphiti/parameterSliders.png</image:loc>
+      <image:title>Graphiti can adjust parameters using sliders</image:title>
+      <image:caption>Graphiti can adjust parameters using sliders</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/graphiti/asymptopes.png</image:loc>
+      <image:title>Graphiti can automatically detect asymptotes (horizontal, vertical and oblique)</image:title>
+      <image:caption>Graphiti can automatically detect asymptotes (horizontal, vertical and oblique)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/graphiti/curvilinear.png</image:loc>
+      <image:title>Graphiti can automatically detect curvilinear asymptotes</image:title>
+      <image:caption>Graphiti can automatically detect curvilinear asymptotes</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/graphiti/autoHoleDetection.png</image:loc>
+      <image:title>Graphiti can automatically detect and show removable singularities (holes)</image:title>
+      <image:caption>Graphiti can automatically detect and show removable singularities (holes)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/graphiti/envelope.png</image:loc>
+      <image:title>Graphiti can automatically detect envelopes for oscillating functions such as damped harmonic motion</image:title>
+      <image:caption>Graphiti can automatically detect envelopes for oscillating functions such as damped harmonic motion</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/graphiti/svg.png</image:loc>
+      <image:title>Export graphs as fully customisable SVG files for use in worksheets and slides</image:title>
+      <image:caption>Export graphs as fully customisable SVG files for use in worksheets and slides</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/vectorama/2DPoints.png</image:loc>
+      <image:title>Vectorama allows you to add vectors as points in 2D space. Ideal for exploring transformations of the unit square in Level 2 Further Maths</image:title>
+      <image:caption>Vectorama allows you to add vectors as points in 2D space. Ideal for exploring transformations of the unit square in Level 2 Further Maths</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/vectorama/2DArrows.png</image:loc>
+      <image:title>Vectorama can also represent vectors as arrows. Add your own or choose from built-in vector presets</image:title>
+      <image:caption>Vectorama can also represent vectors as arrows. Add your own or choose from built-in vector presets</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/vectorama/2DShear.png</image:loc>
+      <image:title>Add matrices and experiment with changing the entries and watch the smooth animation as the transformation is applied</image:title>
+      <image:caption>Add matrices and experiment with changing the entries and watch the smooth animation as the transformation is applied</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/vectorama/2DComposition.png</image:loc>
+      <image:title>Vectorama can apply multiple matrices in sequence to perform composition transformations</image:title>
+      <image:caption>Vectorama can apply multiple matrices in sequence to perform composition transformations</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/vectorama/3DMatrices.png</image:loc>
+      <image:title>Vectorama works with 3D vectors and matrices, allowing you to explore transformations in 3D space. Ideal for A Level Further Maths and university linear algebra courses</image:title>
+      <image:caption>Vectorama works with 3D vectors and matrices, allowing you to explore transformations in 3D space. Ideal for A Level Further Maths and university linear algebra courses</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/vectorama/Lattice.png</image:loc>
+      <image:title>Vectorama can overlay a lattice so you can see how spaces are transformed by matrices</image:title>
+      <image:caption>Vectorama can overlay a lattice so you can see how spaces are transformed by matrices</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/vectorama/MatrixIdentification.png</image:loc>
+      <image:title>As you experiment changing the entries in a matrix, Vectorama can identify the matrix transformation and display its properties</image:title>
+      <image:caption>As you experiment changing the entries in a matrix, Vectorama can identify the matrix transformation and display its properties</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/vectorama/EigenSpace.png</image:loc>
+      <image:title>Vectorama calculates eigenvalues, eigenvectors and visualises eigenspaces for any matrix transformation</image:title>
+      <image:caption>Vectorama calculates eigenvalues, eigenvectors and visualises eigenspaces for any matrix transformation</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/vectorama/AngleBetweenPlanes.png</image:loc>
+      <image:title>Vectorama can calculate the equation of the line of intersection between two planes and find the angle between them</image:title>
+      <image:caption>Vectorama can calculate the equation of the line of intersection between two planes and find the angle between them</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/vectorama/SkewLinesAngle.png</image:loc>
+      <image:title>Lines and planes can be added in all the usual vector forms. Vectorama will calculate the angle between lines and planes and even skew lines</image:title>
+      <image:caption>Lines and planes can be added in all the usual vector forms. Vectorama will calculate the angle between lines and planes and even skew lines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/vectorama/SkewLinesDistance.png</image:loc>
+      <image:title>Vectorama can calculate the distance between skew lines</image:title>
+      <image:caption>Vectorama can calculate the distance between skew lines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/trimension/composite.png</image:loc>
+      <image:title>Trimension allows you to build composite solids from cuboids, pyramids, prisms, and more. Dimensions and adjacent faces are fully customisable</image:title>
+      <image:caption>Trimension allows you to build composite solids from cuboids, pyramids, prisms, and more. Dimensions and adjacent faces are fully customisable</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/trimension/addItems.png</image:loc>
+      <image:title>Add internal labels, angles, triangles, line-segments, quadrilaterals, and more to your solids. All items can be hidden at any time; ideal for gradually revealing features during a lesson</image:title>
+      <image:caption>Add internal labels, angles, triangles, line-segments, quadrilaterals, and more to your solids. All items can be hidden at any time; ideal for gradually revealing features during a lesson</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/trimension/inspect.png</image:loc>
+      <image:title>Trimension's standout feature: tap Inspect on any triangle or quadrilateral to instantly extract it into a clean, labelled 2D view, ideal for identifying triangles and walking students through the geometry step by step</image:title>
+      <image:caption>Trimension's standout feature: tap Inspect on any triangle or quadrilateral to instantly extract it into a clean, labelled 2D view, ideal for identifying triangles and walking students through the geometry step by step</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/trimension/exportSVG.png</image:loc>
+      <image:title>Trimension can export PNG and SVG versions for worksheets and presentations. SVGs are editable in Word, PowerPoint, and SVG editors, so labels, lengths, and other details can be adjusted</image:title>
+      <image:caption>Trimension can export PNG and SVG versions for worksheets and presentations. SVGs are editable in Word, PowerPoint, and SVG editors, so labels, lengths, and other details can be adjusted</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.korovatron.co.uk/pacman/</loc>
