@@ -669,9 +669,14 @@
             color: #c4c4c4;
         }
 
-        .description a:hover,
         .description a:focus-visible {
             color: inherit;
+        }
+
+        @media (hover: hover) and (pointer: fine) {
+            .description a:hover {
+                color: inherit;
+            }
         }
 
         .tile-highlight {
@@ -883,17 +888,8 @@
             text-shadow: 0 0 5px #00ff88;
         }
 
-        .green:hover {
-            background: #000000;
-            box-shadow: 0 0 15px #00ff88, 0 0 25px #00ff88, 0 0 35px #00ff88;
-        }
-
         .image-button.green {
             box-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88, 0 0 30px #00ff88;
-        }
-
-        .image-button.green:hover {
-            box-shadow: 0 0 15px #00ff88, 0 0 25px #00ff88, 0 0 35px #00ff88;
         }
 
         .media-only-card {
@@ -932,22 +928,12 @@
             text-shadow: 0 0 5px #ff80ff;
         }
 
-        .purple:hover {
-            background: #000000;
-            box-shadow: 0 0 15px #ff99ff, 0 0 25px #ff99ff, 0 0 35px #ff99ff;
-        }
-
         .blue {
             background: #000000;
             color: #66ccff;
             border-color: #66ccff;
             box-shadow: 0 0 10px #66ccff, 0 0 20px #66ccff, 0 0 30px #66ccff;
             text-shadow: 0 0 5px #66ccff;
-        }
-
-        .blue:hover {
-            background: #000000;
-            box-shadow: 0 0 15px #88ddff, 0 0 25px #88ddff, 0 0 35px #88ddff;
         }
 
         .yellow {
@@ -958,22 +944,12 @@
             text-shadow: 0 0 5px #ffecb3;
         }
 
-        .yellow:hover {
-            background: #000000;
-            box-shadow: 0 0 15px #ffe066, 0 0 25px #ffe066, 0 0 35px #ffe066;
-        }
-
         .orange {
             background: #000000;
             color: #ff8844;
             border-color: #ff8844;
             box-shadow: 0 0 10px #ff8844, 0 0 20px #ff8844, 0 0 30px #ff8844;
             text-shadow: 0 0 5px #ff8844;
-        }
-
-        .orange:hover {
-            background: #000000;
-            box-shadow: 0 0 15px #ffaa66, 0 0 25px #ffaa66, 0 0 35px #ffaa66;
         }
 
         .neon {
@@ -984,9 +960,40 @@
             text-shadow: 0 0 5px #00cfc0;
         }
 
-        .neon:hover {
-            background: #000000;
-            box-shadow: 0 0 15px #18d6c8, 0 0 25px #18d6c8, 0 0 35px #18d6c8;
+        @media (hover: hover) and (pointer: fine) {
+            .green:hover {
+                background: #000000;
+                box-shadow: 0 0 15px #00ff88, 0 0 25px #00ff88, 0 0 35px #00ff88;
+            }
+
+            .image-button.green:hover {
+                box-shadow: 0 0 15px #00ff88, 0 0 25px #00ff88, 0 0 35px #00ff88;
+            }
+
+            .purple:hover {
+                background: #000000;
+                box-shadow: 0 0 15px #ff99ff, 0 0 25px #ff99ff, 0 0 35px #ff99ff;
+            }
+
+            .blue:hover {
+                background: #000000;
+                box-shadow: 0 0 15px #88ddff, 0 0 25px #88ddff, 0 0 35px #88ddff;
+            }
+
+            .yellow:hover {
+                background: #000000;
+                box-shadow: 0 0 15px #ffe066, 0 0 25px #ffe066, 0 0 35px #ffe066;
+            }
+
+            .orange:hover {
+                background: #000000;
+                box-shadow: 0 0 15px #ffaa66, 0 0 25px #ffaa66, 0 0 35px #ffaa66;
+            }
+
+            .neon:hover {
+                background: #000000;
+                box-shadow: 0 0 15px #18d6c8, 0 0 25px #18d6c8, 0 0 35px #18d6c8;
+            }
         }
 
         footer {
@@ -1533,6 +1540,15 @@
             });
         }
 
+        function addExternalDescriptionLinkTracking(card, item) {
+            card.querySelectorAll('.description a[target="_blank"]').forEach((link) => {
+                const linkName = link.textContent.trim().replace(/\s+/g, ' ');
+                if (linkName) {
+                    link.setAttribute('data-goat-event', `${item.title}-${linkName}-Link Clicked`);
+                }
+            });
+        }
+
         // Load all content on page load
         function loadContent() {
             const contentArea = document.getElementById('content-area');
@@ -1624,6 +1640,8 @@
                     ${actionHtml}
                     ${buttonNoteHtml}
                 `;
+
+                addExternalDescriptionLinkTracking(gameDiv, item);
 
                 const galleryDescriptionList = createGalleryDescriptionList(item, galleryItems);
                 if (galleryDescriptionList) {
