@@ -239,19 +239,19 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-    <url>
+  <url>
     <loc>https://www.korovatron.co.uk/graphiti/integration-area-graphing-calculator.html</loc>
     <lastmod>2026-07-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-    <url>
+  <url>
     <loc>https://www.korovatron.co.uk/graphiti/a-level-maths-graphing-calculator.html</loc>
     <lastmod>2026-07-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-    <url>
+  <url>
     <loc>https://www.korovatron.co.uk/graphiti/inequality-graphing-calculator.html</loc>
     <lastmod>2026-07-25</lastmod>
     <changefreq>monthly</changefreq>
@@ -262,7 +262,13 @@
     <lastmod>2026-07-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    </url>
+  </url>
+  <url>
+    <loc>https://www.korovatron.co.uk/graphiti/curve-identifier-graphing-calculator.html</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <url>
     <loc>https://www.korovatron.co.uk/gyrograf/</loc>
     <lastmod>2026-07-22</lastmod>
