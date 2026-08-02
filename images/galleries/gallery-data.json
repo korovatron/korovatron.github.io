@@ -26,6 +26,11 @@
 			"alt": "Graphiti can plot polar functions with optional animation and step-through"
 		},
 		{
+			"src": "images/galleries/graphiti/implicitPolar.png",
+			"title": "Graphiti can plot implicit polar functions. This ability is unique amongst graphing calculators.",
+			"alt": "Graphiti can plot implicit polar functions"
+		},
+		{
 			"src": "images/galleries/graphiti/definiteIntegral.png",
 			"title": "Graphiti can calculate definite integrals",
 			"alt": "Graphiti can calculate definite integrals"
