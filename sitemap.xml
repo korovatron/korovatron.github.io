@@ -32,6 +32,11 @@
       <image:caption>Graphiti can plot polar functions with optional animation and step-through</image:caption>
     </image:image>
     <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/graphiti/implicitPolar.png</image:loc>
+      <image:title>Graphiti can plot implicit polar functions. This ability is unique amongst graphing calculators.</image:title>
+      <image:caption>Graphiti can plot implicit polar functions. This ability is unique amongst graphing calculators.</image:caption>
+    </image:image>
+    <image:image>
       <image:loc>https://www.korovatron.co.uk/images/galleries/graphiti/definiteIntegral.png</image:loc>
       <image:title>Graphiti can calculate definite integrals</image:title>
       <image:caption>Graphiti can calculate definite integrals</image:caption>
@@ -165,6 +170,36 @@
       <image:loc>https://www.korovatron.co.uk/images/galleries/trimension/exportSVG.png</image:loc>
       <image:title>Trimension can export PNG and SVG versions for worksheets and presentations. SVGs are editable in Word, PowerPoint, and SVG editors, so labels, lengths, and other details can be adjusted</image:title>
       <image:caption>Trimension can export PNG and SVG versions for worksheets and presentations. SVGs are editable in Word, PowerPoint, and SVG editors, so labels, lengths, and other details can be adjusted</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/komplexiti/complexForms.png</image:loc>
+      <image:title>Komplexiti allows you to enter complex numbers in cartesian, exponential and trigonometric forms. It can also convert between these forms and plot them on the Argand diagram as points or vectors</image:title>
+      <image:caption>Komplexiti allows you to enter complex numbers in cartesian, exponential and trigonometric forms. It can also convert between these forms and plot them on the Argand diagram as points or vectors</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/komplexiti/complexEquations.png</image:loc>
+      <image:title>Komplexiti can solve complex equations, displaying the roots on an Argand diagram as well as listing them in cartesian, exponential or trigonometric forms, using surds and pi where appropriate</image:title>
+      <image:caption>Komplexiti can solve complex equations, displaying the roots on an Argand diagram as well as listing them in cartesian, exponential or trigonometric forms, using surds and pi where appropriate</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/komplexiti/complexLoci.png</image:loc>
+      <image:title>Komplexiti can plot complex loci on the Argand diagram, helping visualise the geometric representation of complex numbers. Komplexiti displays appropriate meta data for recognised loci</image:title>
+      <image:caption>Komplexiti can plot complex loci on the Argand diagram, helping visualise the geometric representation of complex numbers. Komplexiti displays appropriate meta data for recognised loci</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/komplexiti/moreComplexLoci.png</image:loc>
+      <image:title>Komplexiti can plot lines, half-lines and perpendicular bisectors as loci on the Argand diagram, helping visualise the geometric representation of complex numbers. Komplexiti displays appropriate meta data for recognised loci</image:title>
+      <image:caption>Komplexiti can plot lines, half-lines and perpendicular bisectors as loci on the Argand diagram, helping visualise the geometric representation of complex numbers. Komplexiti displays appropriate meta data for recognised loci</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/komplexiti/conjugateEquations.png</image:loc>
+      <image:title>Komplexiti can solve equations involving complex conjugates, displaying the roots on an Argand diagram as well as listing them in cartesian, exponential or trigonometric forms, using surds and pi where appropriate</image:title>
+      <image:caption>Komplexiti can solve equations involving complex conjugates, displaying the roots on an Argand diagram as well as listing them in cartesian, exponential or trigonometric forms, using surds and pi where appropriate</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/komplexiti/complexInequalities.png</image:loc>
+      <image:title>Komplexiti can plot inequalities involving complex loci, displaying the solution regions on an Argand diagram</image:title>
+      <image:caption>Komplexiti can plot inequalities involving complex loci, displaying the solution regions on an Argand diagram</image:caption>
     </image:image>
   </url>
   <url>
