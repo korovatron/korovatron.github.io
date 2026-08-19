@@ -166,6 +166,36 @@
 			"title": "Trimension can export PNG and SVG versions for worksheets and presentations. SVGs are editable in Word, PowerPoint, and SVG editors, so labels, lengths, and other details can be adjusted",
 			"alt": "Trimension can export PNG and SVG versions for worksheets and presentations. SVGs are editable in Word, PowerPoint, and SVG editors, so labels, lengths, and other details can be adjusted"
 		}],
+	"Komplexiti": [{
+			"src": "images/galleries/komplexiti/complexForms.png",
+			"title": "Komplexiti allows you to enter complex numbers in cartesian, exponential and trigonometric forms. It can also convert between these forms and plot them on the Argand diagram as points or vectors",
+			"alt": "Komplexiti allows you to enter complex numbers in cartesian, exponential and trigonometric forms. It can also convert between these forms and plot them on the Argand diagram as points or vectors"
+		},
+		{
+			"src": "images/galleries/komplexiti/complexEquations.png",
+			"title": "Komplexiti can solve complex equations, displaying the roots on an Argand diagram as well as listing them in cartesian, exponential or trigonometric forms, using surds and pi where appropriate",
+			"alt": "Komplexiti can solve complex equations, displaying the roots on an Argand diagram as well as listing them in cartesian, exponential or trigonometric forms, using surds and pi where appropriate"
+		},
+		{
+			"src": "images/galleries/komplexiti/complexLoci.png",
+			"title": "Komplexiti can plot complex loci on the Argand diagram, helping visualise the geometric representation of complex numbers. Komplexiti displays appropriate meta data for recognised loci",
+			"alt": "Komplexiti can plot complex loci on the Argand diagram, helping visualise the geometric representation of complex numbers. Komplexiti displays appropriate meta data for recognised loci"
+		},
+		{
+			"src": "images/galleries/komplexiti/moreComplexLoci.png",
+			"title": "Komplexiti can plot lines, half-lines and perpendicular bisectors as loci on the Argand diagram, helping visualise the geometric representation of complex numbers. Komplexiti displays appropriate meta data for recognised loci",
+			"alt": "Komplexiti can plot lines, half-lines and perpendicular bisectors as loci on the Argand diagram, helping visualise the geometric representation of complex numbers. Komplexiti displays appropriate meta data for recognised loci"
+		},
+		{
+			"src": "images/galleries/komplexiti/conjugateEquations.png",
+			"title": "Komplexiti can solve equations involving complex conjugates, displaying the roots on an Argand diagram as well as listing them in cartesian, exponential or trigonometric forms, using surds and pi where appropriate",
+			"alt": "Komplexiti can solve equations involving complex conjugates, displaying the roots on an Argand diagram as well as listing them in cartesian, exponential or trigonometric forms, using surds and pi where appropriate"
+		},
+		{
+			"src": "images/galleries/komplexiti/complexInequalities.png",
+			"title": "Komplexiti can plot inequalities involving complex loci, displaying the solution regions on an Argand diagram",
+			"alt": "Komplexiti can plot inequalities involving complex loci, displaying the solution regions on an Argand diagram"
+		}],	
     "The Crate Escape": [],
     "Gyrograf": [],
     "Haskish": [],
