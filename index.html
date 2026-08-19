@@ -1190,6 +1190,7 @@
                 <img class="game-image footer-slurm-icon" src="images/icons/hypnoToad.png" alt="HypnoToad Icon" width="120" height="120">
             </div>
             <span>© 2025-2026 Neil Kendall</span>
+            <a class="footer-contact footer-link" href="gallery/">Gallery</a>
             <a class="footer-contact footer-link" href="privacy-policy.html">Privacy Policy</a>
         </footer>
     </main>
@@ -1655,7 +1656,7 @@
 
                 const galleryItems = getGalleryItems(item);
                 const galleryButtonHtml = galleryItems.length
-                    ? `<button class="game-action action-button ${item.buttonClass}" type="button" data-gallery-title="${item.title}" title="Explore a gallery of features">Gallery</button>`
+                    ? `<a class="game-action action-button ${item.buttonClass}" href="/gallery/?app=${encodeURIComponent(item.title)}" title="Explore a gallery of features">Gallery</a>`
                     : '';
                 const actionHtml = `<div class="game-actions${galleryItems.length ? ' has-gallery' : ''}">${launchHtml}${galleryButtonHtml}</div>`;
 
@@ -1700,14 +1701,6 @@
 
             displayItems.forEach(item => {
                 const card = createCard(item);
-                const galleryButton = card.querySelector('[data-gallery-title]');
-                if (galleryButton) {
-                    galleryButton.addEventListener('click', () => openGallery(item));
-                }
-                const galleryTextLink = card.querySelector(`[data-gallery-link="${item.title}"]`);
-                if (galleryTextLink) {
-                    galleryTextLink.addEventListener('click', () => openGallery(item));
-                }
                 contentArea.appendChild(card);
             });
 
