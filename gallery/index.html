@@ -426,6 +426,7 @@
                                     data-src="../${esc(item.src)}"
                                     data-alt="${esc(item.alt || item.title)}"
                                     data-caption="${esc(item.title)}"
+                                    data-app="${esc(appName)}"
                                     aria-label="View full size: ${esc(item.title)}">
                                 <img class="gallery-img"
                                      src="../${esc(item.src)}"
@@ -454,6 +455,12 @@
             container.innerHTML = sections.join('');
         }
 
+        function countGoatEvent(eventText) {
+            if (window.goatcounter && typeof window.goatcounter.count === 'function' && eventText) {
+                window.goatcounter.count({ path: eventText, title: eventText, event: true });
+            }
+        }
+
         function initialiseLightbox() {
             const lightbox = document.getElementById('lightbox');
             const lightboxImg = document.getElementById('lightbox-img');
@@ -468,6 +475,7 @@
                 lightbox.classList.add('is-open');
                 document.body.style.overflow = 'hidden';
                 document.getElementById('lightbox-close').focus();
+                countGoatEvent(`${btn.dataset.app} lightbox opened`);
             }
 
             function closeLightbox() {
