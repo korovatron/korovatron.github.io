@@ -360,10 +360,10 @@
 
     <script>
         const appMeta = {
-            'Graphiti':   { colorClass: 'green',  url: '/graphiti/',   icon: '../images/icons/graphitiIcon.png' },
-            'Komplexiti': { colorClass: 'neon',   url: '/komplexiti/', icon: '../images/icons/complexiti.png' },
-            'Vectorama':  { colorClass: 'orange', url: '/vectorama/',  icon: '../images/icons/vectorama.png' },
-            'Trimension': { colorClass: 'purple', url: '/trimension/', icon: '../images/icons/trimensionIcon.png' },
+            'Graphiti':   { colorClass: 'green',  url: '/graphiti/',   icon: '/images/icons/graphitiIcon.png' },
+            'Komplexiti': { colorClass: 'neon',   url: '/komplexiti/', icon: '/images/icons/complexiti.png' },
+            'Vectorama':  { colorClass: 'orange', url: '/vectorama/',  icon: '/images/icons/vectorama.png' },
+            'Trimension': { colorClass: 'purple', url: '/trimension/', icon: '/images/icons/trimensionIcon.png' },
         };
 
         const preferredOrder = ['Graphiti', 'Komplexiti', 'Vectorama', 'Trimension'];
@@ -430,14 +430,14 @@
                     <figure class="gallery-figure fig-${cc}">
                         <div class="img-wrap">
                             <button class="img-btn" type="button"
-                                    data-src="../${esc(item.src)}"
+                                    data-src="/${esc(item.src)}"
                                     data-alt="${esc(item.alt || item.title)}"
                                     data-caption="${esc(item.title)}"
                                     data-app="${esc(appName)}"
                                     aria-label="View full size: ${esc(item.title)}">
                                 <img class="gallery-img"
-                                     src="../${esc(item.src)}"
-                                     alt=""
+                                     src="/${esc(item.src)}"
+                                     alt="${esc(item.alt || item.title)}"
                                      loading="${filterApp && i === 0 ? 'eager' : 'lazy'}">
                             </button>
                         </div>
