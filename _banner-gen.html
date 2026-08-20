@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1200px; height: 630px; overflow: hidden; }
+  .banner {
+    width: 1200px;
+    height: 630px;
+    background: linear-gradient(120deg, #0a0e1a 0%, #1e2540 45%, #2a1a40 75%, #1a0f2e 100%);
+    display: flex;
+    align-items: center;
+    padding: 0 80px;
+    position: relative;
+    overflow: hidden;
+  }
+  /* subtle grid overlay */
+  .banner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(77,90,122,0.15) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(77,90,122,0.15) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+  .cow {
+    width: 360px;
+    height: 360px;
+    object-fit: contain;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1;
+    filter: drop-shadow(0 0 32px rgba(77, 180, 255, 0.35));
+  }
+  .divider {
+    width: 2px;
+    height: 280px;
+    background: linear-gradient(to bottom, transparent, #4d5a7a, transparent);
+    margin: 0 64px;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1;
+  }
+  .text-section {
+    position: relative;
+    z-index: 1;
+  }
+  .brand {
+    font-size: 80px;
+    font-weight: 800;
+    font-family: Arial, system-ui, sans-serif;
+    color: #ffffff;
+    letter-spacing: -1px;
+    line-height: 1;
+    text-shadow: 0 0 40px rgba(100, 160, 255, 0.4);
+  }
+  .tagline {
+    font-size: 26px;
+    font-family: Arial, system-ui, sans-serif;
+    color: #ffecb3;
+    margin-top: 20px;
+    line-height: 1.45;
+    max-width: 480px;
+  }
+  .url {
+    font-size: 20px;
+    font-family: Arial, system-ui, sans-serif;
+    color: #88bbdd;
+    margin-top: 28px;
+    letter-spacing: 0.5px;
+  }
+</style>
+</head>
+<body>
+<div class="banner">
+  <img class="cow" src="images/higherResIcons/originalMysticCow.png" alt="">
+  <div class="divider"></div>
+  <div class="text-section">
+    <div class="brand">Korovatron</div>
+    <div class="tagline">Free browser-based GCSE &amp; A Level<br>Maths and Computer Science tools</div>
+    <div class="url">korovatron.co.uk</div>
+  </div>
+</div>
+</body>
+</html>
