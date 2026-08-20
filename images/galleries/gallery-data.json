@@ -187,6 +187,11 @@
 			"alt": "Komplexiti can plot lines, half-lines and perpendicular bisectors as loci on the Argand diagram, helping visualise the geometric representation of complex numbers. Komplexiti displays appropriate meta data for recognised loci"
 		},
 		{
+			"src": "images/galleries/komplexiti/extrema.png",
+			"title": "Komplexiti calculates the maximum and minimum moduli and arguments for complex loci, displaying them on the Argand diagram",
+			"alt": "Komplexiti calculates the maximum and minimum moduli and arguments for complex loci, displaying them on the Argand diagram"
+		},
+		{
 			"src": "images/galleries/komplexiti/conjugateEquations.png",
 			"title": "Komplexiti can solve equations involving complex conjugates, displaying the roots on an Argand diagram as well as listing them in cartesian, exponential or trigonometric forms, using surds and pi where appropriate",
 			"alt": "Komplexiti can solve equations involving complex conjugates, displaying the roots on an Argand diagram as well as listing them in cartesian, exponential or trigonometric forms, using surds and pi where appropriate"
