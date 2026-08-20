@@ -360,10 +360,26 @@
 
     <script>
         const appMeta = {
-            'Graphiti':   { colorClass: 'green',  url: '/graphiti/',   icon: '/images/icons/graphitiIcon.png' },
-            'Komplexiti': { colorClass: 'neon',   url: '/komplexiti/', icon: '/images/icons/complexiti.png' },
-            'Vectorama':  { colorClass: 'orange', url: '/vectorama/',  icon: '/images/icons/vectorama.png' },
-            'Trimension': { colorClass: 'purple', url: '/trimension/', icon: '/images/icons/trimensionIcon.png' },
+            'Graphiti': {
+                colorClass: 'green', url: '/graphiti/', icon: '/images/icons/graphitiIcon.png',
+                description: 'Feature screenshots for Graphiti - the free graphing tool that automatically detects turning points, asymptotes, integrals, tangents and more. For GCSE and A Level maths.',
+                firstImage: 'https://www.korovatron.co.uk/images/galleries/graphiti/parameterSliders.png',
+            },
+            'Komplexiti': {
+                colorClass: 'neon', url: '/komplexiti/', icon: '/images/icons/complexiti.png',
+                description: 'Feature screenshots for Komplexiti - the free Argand diagram app for A Level Further Maths. Plot complex loci, roots of unity, inequalities and more.',
+                firstImage: 'https://www.korovatron.co.uk/images/galleries/komplexiti/complexInequalities.png',
+            },
+            'Vectorama': {
+                colorClass: 'orange', url: '/vectorama/', icon: '/images/icons/vectorama.png',
+                description: 'Feature screenshots for Vectorama - the free linear algebra tool for A Level maths. Explore vectors, matrices, transformations and eigenvalues in 2D and 3D.',
+                firstImage: 'https://www.korovatron.co.uk/images/galleries/vectorama/MatrixIdentification.png',
+            },
+            'Trimension': {
+                colorClass: 'purple', url: '/trimension/', icon: '/images/icons/trimensionIcon.png',
+                description: 'Feature screenshots for Trimension - the free 3D geometry tool for GCSE and A Level maths. Build composite solids and explore 3D Pythagoras and trigonometry.',
+                firstImage: 'https://www.korovatron.co.uk/images/galleries/trimension/addItems.png',
+            },
         };
 
         const preferredOrder = ['Graphiti', 'Komplexiti', 'Vectorama', 'Trimension'];
@@ -391,27 +407,31 @@
             ];
 
             if (filterApp) {
-                appNames = appNames.filter(n => n === filterApp);
+                const filterAppLower = filterApp.toLowerCase();
+                appNames = appNames.filter(n => n.toLowerCase() === filterAppLower);
                 if (!appNames.length) {
                     container.innerHTML = '<p class="status-msg">No gallery found for this app.</p>';
                     return;
                 }
-                document.title = `${filterApp} Gallery | Korovatron`;
-                document.querySelector('meta[name="description"]').content =
-                    `Screenshots and feature highlights for ${filterApp}, a free browser-based tool from Korovatron.`;
-                document.querySelector('link[rel="canonical"]').href =
-                    `https://www.korovatron.co.uk/gallery/?app=${encodeURIComponent(filterApp)}`;
-                document.querySelector('meta[property="og:url"]').content =
-                    `https://www.korovatron.co.uk/gallery/?app=${encodeURIComponent(filterApp)}`;
-                document.querySelector('meta[property="og:title"]').content =
-                    `${filterApp} Gallery | Korovatron`;
-                document.querySelector('meta[name="twitter:url"]').content =
-                    `https://www.korovatron.co.uk/gallery/?app=${encodeURIComponent(filterApp)}`;
-                document.querySelector('meta[name="twitter:title"]').content =
-                    `${filterApp} Gallery | Korovatron`;
-                document.querySelector('h1').textContent = `${filterApp} - Gallery`;
+                const resolvedApp = appNames[0]; // use the correctly-cased name from the data
+                const meta = appMeta[resolvedApp];
+                const appDesc = meta?.description ?? `Feature screenshots for ${resolvedApp}, a free browser-based tool from Korovatron.`;
+                const appImg = meta?.firstImage ?? 'https://www.korovatron.co.uk/images/galleries/graphiti/maxMin.png';
+                const appUrl = `https://www.korovatron.co.uk/gallery/?app=${encodeURIComponent(resolvedApp)}`;
+                document.title = `${resolvedApp} Gallery | Korovatron`;
+                document.querySelector('meta[name="description"]').content = appDesc;
+                document.querySelector('link[rel="canonical"]').href = appUrl;
+                document.querySelector('meta[property="og:url"]').content = appUrl;
+                document.querySelector('meta[property="og:title"]').content = `${resolvedApp} Gallery | Korovatron`;
+                document.querySelector('meta[property="og:description"]').content = appDesc;
+                document.querySelector('meta[property="og:image"]').content = appImg;
+                document.querySelector('meta[name="twitter:url"]').content = appUrl;
+                document.querySelector('meta[name="twitter:title"]').content = `${resolvedApp} Gallery | Korovatron`;
+                document.querySelector('meta[name="twitter:description"]').content = appDesc;
+                document.querySelector('meta[name="twitter:image"]').content = appImg;
+                document.querySelector('h1').textContent = `${resolvedApp} - Gallery`;
                 document.querySelector('.breadcrumb').innerHTML =
-                    `<a href="/">Korovatron</a> &rsaquo; <a href="/gallery/">Gallery</a> &rsaquo; ${filterApp}`;
+                    `<a href="/">Korovatron</a> &rsaquo; <a href="/gallery/">Gallery</a> &rsaquo; ${resolvedApp}`;
                 document.querySelector('.page-intro').style.display = 'none';
             }
 
