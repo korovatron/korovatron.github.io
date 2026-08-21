@@ -264,6 +264,12 @@
             box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
         }
 
+        .lightbox-img.lb-green  { outline: 2px solid #00ff8866; outline-offset: 6px; box-shadow: 0 0 40px rgba(0,0,0,0.8), 0 0 24px #00ff8840; }
+        .lightbox-img.lb-neon   { outline: 2px solid #00cfc066; outline-offset: 6px; box-shadow: 0 0 40px rgba(0,0,0,0.8), 0 0 24px #00cfc040; }
+        .lightbox-img.lb-orange { outline: 2px solid #ff884466; outline-offset: 6px; box-shadow: 0 0 40px rgba(0,0,0,0.8), 0 0 24px #ff884440; }
+        .lightbox-img.lb-purple { outline: 2px solid #ff80ff66; outline-offset: 6px; box-shadow: 0 0 40px rgba(0,0,0,0.8), 0 0 24px #ff80ff40; }
+        .lightbox-img.lb-blue   { outline: 2px solid #66ccff66; outline-offset: 6px; box-shadow: 0 0 40px rgba(0,0,0,0.8), 0 0 24px #66ccff40; }
+
         .lightbox-controls {
             display: grid;
             grid-template-columns: auto 1fr auto;
@@ -379,6 +385,11 @@
                 colorClass: 'purple', url: '/trimension/', icon: '/images/icons/trimensionIcon.png',
                 description: 'Feature screenshots for Trimension - the free 3D geometry tool for GCSE and A Level maths. Build composite solids and explore 3D Pythagoras and trigonometry.',
                 firstImage: 'https://www.korovatron.co.uk/images/galleries/trimension/addItems.png',
+            },
+            'Haskish': {
+                colorClass: 'orange', url: '/haskish/', icon: '/images/icons/haskishIcon.png',
+                description: 'Feature screenshots for Haskish - the free Haskell-style functional programming playground for AQA A Level Computer Science. No installation or sign-in required.',
+                firstImage: 'https://www.korovatron.co.uk/images/galleries/haskish/functionalProgrammingAQA.png',
             },
         };
 
@@ -515,6 +526,8 @@
                 lightboxImg.src = btn.dataset.src;
                 lightboxImg.alt = btn.dataset.alt;
                 lightboxCaption.textContent = btn.dataset.caption;
+                const cc = (appMeta[btn.dataset.app] ?? { colorClass: 'blue' }).colorClass;
+                lightboxImg.className = `lightbox-img lb-${cc}`;
             }
 
             function navigate(dir) {
