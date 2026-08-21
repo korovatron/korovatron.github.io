@@ -36,6 +36,11 @@
 			"alt": "Graphiti can calculate definite integrals"
 		},
 		{
+			"src": "images/galleries/graphiti/mobileGraphiti.png",
+			"title": "Graphiti can be installed on mobile devices. This has the advantage of true full-screen display and off-line use. On iPhone go to the share menu and select 'Add to Home Screen'. On Android go to the menu and select 'Add to Home Screen'",
+			"alt": "Graphiti can be installed on mobile devices. This has the advantage of true full-screen display and off-line use. On iPhone go to the share menu and select 'Add to Home Screen'. On Android go to the menu and select 'Add to Home Screen'"
+		},
+		{
 			"src": "images/galleries/graphiti/interactiveTangentsNormals.png",
 			"title": "Graphiti can add interactive tangents and normals",
 			"alt": "Graphiti can add interactive tangents and normals"
@@ -117,6 +122,11 @@
 			"alt": "Vectorama works with 3D vectors and matrices, allowing you to explore transformations in 3D space. Ideal for A Level Further Maths and university linear algebra courses"
 		},
 		{
+			"src": "images/galleries/vectorama/mobileVectorama.png",
+			"title": "Vectorama can be installed on mobile devices. This has the advantage of true full-screen display and off-line use. On iPhone go to the share menu and select 'Add to Home Screen'. On Android go to the menu and select 'Add to Home Screen'",
+			"alt": "Vectorama can be installed on mobile devices. This has the advantage of true full-screen display and off-line use. On iPhone go to the share menu and select 'Add to Home Screen'. On Android go to the menu and select 'Add to Home Screen'"
+		},
+		{
 			"src": "images/galleries/vectorama/Lattice.png",
 			"title": "Vectorama can overlay a lattice so you can see how spaces are transformed by matrices",
 			"alt": "Vectorama can overlay a lattice so you can see how spaces are transformed by matrices"
@@ -157,6 +167,11 @@
 			"alt": "Add internal labels, angles, triangles, line-segments, quadrilaterals, and more to your solids. All items can be hidden at any time; ideal for gradually revealing features during a lesson"
 		},
 		{
+			"src": "images/galleries/trimension/mobileTrimension.png",
+			"title": "Trimension can be installed on mobile devices. This has the advantage of true full-screen display and off-line use. On iPhone go to the share menu and select 'Add to Home Screen'. On Android go to the menu and select 'Add to Home Screen'",
+			"alt": "Trimension can be installed on mobile devices. This has the advantage of true full-screen display and off-line use. On iPhone go to the share menu and select 'Add to Home Screen'. On Android go to the menu and select 'Add to Home Screen'"
+		},
+		{
 			"src": "images/galleries/trimension/inspect.png",
 			"title": "Trimension's standout feature: tap Inspect on any triangle or quadrilateral to instantly extract it into a clean, labelled 2D view, ideal for identifying triangles and walking students through the geometry step by step",
 			"alt": "Trimension's standout feature: tap Inspect on any triangle or quadrilateral to instantly extract it into a clean, labelled 2D view, ideal for identifying triangles and walking students through the geometry step by step"
@@ -180,6 +195,11 @@
 			"src": "images/galleries/komplexiti/complexLoci.png",
 			"title": "Komplexiti can plot complex loci on the Argand diagram, helping visualise the geometric representation of complex numbers. Komplexiti displays appropriate meta data for recognised loci",
 			"alt": "Komplexiti can plot complex loci on the Argand diagram, helping visualise the geometric representation of complex numbers. Komplexiti displays appropriate meta data for recognised loci"
+		},
+		{
+			"src": "images/galleries/komplexiti/mobileKomplexiti.png",
+			"title": "Komplexiti can be installed on mobile devices. This has the advantage of true full-screen display and off-line use. On iPhone go to the share menu and select 'Add to Home Screen'. On Android go to the menu and select 'Add to Home Screen'",
+			"alt": "Komplexiti can be installed on mobile devices. This has the advantage of true full-screen display and off-line use. On iPhone go to the share menu and select 'Add to Home Screen'. On Android go to the menu and select 'Add to Home Screen'"
 		},
 		{
 			"src": "images/galleries/komplexiti/moreComplexLoci.png",

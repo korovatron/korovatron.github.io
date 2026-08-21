@@ -97,6 +97,11 @@
       <image:caption>Export graphs as fully customisable SVG files for use in worksheets and slides</image:caption>
     </image:image>
     <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/graphiti/mobileGraphiti.png</image:loc>
+      <image:title>Graphiti can be installed on mobile devices. This has the advantage of true full-screen display and off-line use. On iPhone go to the share menu and select 'Add to Home Screen'. On Android go to the menu and select 'Add to Home Screen'</image:title>
+      <image:caption>Graphiti can be installed on mobile devices. This has the advantage of true full-screen display and off-line use. On iPhone go to the share menu and select 'Add to Home Screen'. On Android go to the menu and select 'Add to Home Screen'</image:caption>
+    </image:image>
+    <image:image>
       <image:loc>https://www.korovatron.co.uk/images/galleries/vectorama/2DPoints.png</image:loc>
       <image:title>Vectorama allows you to add vectors as points in 2D space. Ideal for exploring transformations of the unit square in Level 2 Further Maths</image:title>
       <image:caption>Vectorama allows you to add vectors as points in 2D space. Ideal for exploring transformations of the unit square in Level 2 Further Maths</image:caption>
@@ -152,6 +157,11 @@
       <image:caption>Vectorama can calculate the distance between skew lines</image:caption>
     </image:image>
     <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/vectorama/mobileVectorama.png</image:loc>
+      <image:title>Vectorama can be installed on mobile devices. This has the advantage of true full-screen display and off-line use. On iPhone go to the share menu and select 'Add to Home Screen'. On Android go to the menu and select 'Add to Home Screen'</image:title>
+      <image:caption>Vectorama can be installed on mobile devices. This has the advantage of true full-screen display and off-line use. On iPhone go to the share menu and select 'Add to Home Screen'. On Android go to the menu and select 'Add to Home Screen'</image:caption>
+    </image:image>
+    <image:image>
       <image:loc>https://www.korovatron.co.uk/images/galleries/trimension/composite.png</image:loc>
       <image:title>Trimension allows you to build composite solids from cuboids, pyramids, prisms, and more. Dimensions and adjacent faces are fully customisable</image:title>
       <image:caption>Trimension allows you to build composite solids from cuboids, pyramids, prisms, and more. Dimensions and adjacent faces are fully customisable</image:caption>
@@ -170,6 +180,11 @@
       <image:loc>https://www.korovatron.co.uk/images/galleries/trimension/exportSVG.png</image:loc>
       <image:title>Trimension can export PNG and SVG versions for worksheets and presentations. SVGs are editable in Word, PowerPoint, and SVG editors, so labels, lengths, and other details can be adjusted</image:title>
       <image:caption>Trimension can export PNG and SVG versions for worksheets and presentations. SVGs are editable in Word, PowerPoint, and SVG editors, so labels, lengths, and other details can be adjusted</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/trimension/mobileTrimension.png</image:loc>
+      <image:title>Trimension can be installed on mobile devices. This has the advantage of true full-screen display and off-line use. On iPhone go to the share menu and select 'Add to Home Screen'. On Android go to the menu and select 'Add to Home Screen'</image:title>
+      <image:caption>Trimension can be installed on mobile devices. This has the advantage of true full-screen display and off-line use. On iPhone go to the share menu and select 'Add to Home Screen'. On Android go to the menu and select 'Add to Home Screen'</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://www.korovatron.co.uk/images/galleries/komplexiti/complexForms.png</image:loc>
@@ -200,6 +215,11 @@
       <image:loc>https://www.korovatron.co.uk/images/galleries/komplexiti/complexInequalities.png</image:loc>
       <image:title>Komplexiti can plot inequalities involving complex loci, displaying the solution regions on an Argand diagram</image:title>
       <image:caption>Komplexiti can plot inequalities involving complex loci, displaying the solution regions on an Argand diagram</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/komplexiti/mobileKomplexiti.png</image:loc>
+      <image:title>Komplexiti can be installed on mobile devices. This has the advantage of true full-screen display and off-line use. On iPhone go to the share menu and select 'Add to Home Screen'. On Android go to the menu and select 'Add to Home Screen'</image:title>
+      <image:caption>Komplexiti can be installed on mobile devices. This has the advantage of true full-screen display and off-line use. On iPhone go to the share menu and select 'Add to Home Screen'. On Android go to the menu and select 'Add to Home Screen'</image:caption>
     </image:image>
   </url>
   <url>
