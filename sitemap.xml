@@ -221,6 +221,41 @@
       <image:title>Komplexiti can be installed on mobile devices. This has the advantage of true full-screen display and off-line use. On iPhone go to the share menu and select 'Add to Home Screen'. On Android go to the menu and select 'Add to Home Screen'</image:title>
       <image:caption>Komplexiti can be installed on mobile devices. This has the advantage of true full-screen display and off-line use. On iPhone go to the share menu and select 'Add to Home Screen'. On Android go to the menu and select 'Add to Home Screen'</image:caption>
     </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/haskish/functionalProgrammingAQA.png</image:loc>
+      <image:title>Haskish is designed for teaching the AQA Functional Programming topic. It implements a subset of the Haskell language with full specification coverage, and requires no installation or user accounts.</image:title>
+      <image:caption>Haskish is designed for teaching the AQA Functional Programming topic. It implements a subset of the Haskell language with full specification coverage, and requires no installation or user accounts.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/haskish/repl.png</image:loc>
+      <image:title>Haskish provides an interactive REPL for experimenting with Haskell code. It supports multi-line input, syntax highlighting, and displays results in a clear format.</image:title>
+      <image:caption>Haskish provides an interactive REPL for experimenting with Haskell code. It supports multi-line input, syntax highlighting, and displays results in a clear format.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/haskish/lessons.png</image:loc>
+      <image:title>Haskish includes 15 comprehensive lessons covering the AQA Functional Programming specification, with explanations, examples, exercises, and further challenges for the most able students.</image:title>
+      <image:caption>Haskish includes 15 comprehensive lessons covering the AQA Functional Programming specification, with explanations, examples, exercises, and further challenges for the most able students.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/haskish/partialFunctionApplication.png</image:loc>
+      <image:title>Haskish supports partial function application, allowing functions to be applied to some of their arguments, returning new functions that take the remaining arguments.</image:title>
+      <image:caption>Haskish supports partial function application, allowing functions to be applied to some of their arguments, returning new functions that take the remaining arguments.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/haskish/higherOrderFunctions.png</image:loc>
+      <image:title>Haskish supports higher-order functions, allowing functions to be passed as arguments and returned as results.</image:title>
+      <image:caption>Haskish supports higher-order functions, allowing functions to be passed as arguments and returned as results.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/haskish/recursion.png</image:loc>
+      <image:title>Haskish supports recursion, allowing functions to call themselves for iterative computation.</image:title>
+      <image:caption>Haskish supports recursion, allowing functions to call themselves for iterative computation.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/haskish/listProcessing.png</image:loc>
+      <image:title>Haskish includes list processing capabilities, providing functions to manipulate and transform lists efficiently.</image:title>
+      <image:caption>Haskish includes list processing capabilities, providing functions to manipulate and transform lists efficiently.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.korovatron.co.uk/gallery/</loc>
@@ -423,6 +458,12 @@
   <url>
     <loc>https://www.korovatron.co.uk/gallery/?app=Trimension</loc>
     <lastmod>2026-08-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.korovatron.co.uk/gallery/?app=Haskish</loc>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

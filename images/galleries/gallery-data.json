@@ -223,7 +223,41 @@
 		}],	
     "The Crate Escape": [],
     "Gyrograf": [],
-    "Haskish": [],
+    "Haskish": [{
+			"src": "images/galleries/haskish/functionalProgrammingAQA.png",
+			"title": "Haskish is designed for teaching the AQA Functional Programming topic. It implements a subset of the Haskell language with full specification coverage, and requires no installation or user accounts.",
+			"alt": "Haskish is designed for teaching the AQA Functional Programming topic. It implements a subset of the Haskell language with full specification coverage, and requires no installation or user accounts."
+		},
+		{
+			"src": "images/galleries/haskish/repl.png",
+			"title": "Haskish provides an interactive REPL (Read-Eval-Print Loop) for experimenting with Haskell code. It supports multi-line input, syntax highlighting, and displays results in a clear format.",
+			"alt": "Haskish provides an interactive REPL (Read-Eval-Print Loop) for experimenting with Haskell code. It supports multi-line input, syntax highlighting, and displays results in a clear format."
+		},
+		{
+			"src": "images/galleries/haskish/lessons.png",
+			"title": "Haskish includes 15 comprehensive lessons covering the AQA Functional Programming specification. Each lesson includes explanations, examples, and exercises to reinforce learning. There are further challenges for each exercise to challenge the most able students.",
+			"alt": "Haskish includes 15 comprehensive lessons covering the AQA Functional Programming specification. Each lesson includes explanations, examples, and exercises to reinforce learning. There are further challenges for each exercise to challenge the most able students."
+		},
+		{
+			"src": "images/galleries/haskish/partialFunctionApplication.png",
+			"title": "Haskish supports partial function application, allowing functions to be applied to some of their arguments, returning new functions that take the remaining arguments.",
+			"alt": "Haskish supports partial function application, allowing functions to be applied to some of their arguments, returning new functions that take the remaining arguments."
+		},
+		{
+			"src": "images/galleries/haskish/higherOrderFunctions.png",
+			"title": "Haskish supports higher-order functions, allowing functions to be passed as arguments and returned as results.",
+			"alt": "Haskish supports higher-order functions, allowing functions to be passed as arguments and returned as results."
+		},
+		{
+			"src": "images/galleries/haskish/recursion.png",
+			"title": "Haskish supports recursion, allowing functions to call themselves for iterative computation.",
+			"alt": "Haskish supports recursion, allowing functions to call themselves for iterative computation"
+		},
+		{
+			"src": "images/galleries/haskish/listProcessing.png",
+			"title": "Haskish includes list processing capabilities, providing functions to manipulate and transform lists efficiently.",
+			"alt": "Haskish includes list processing capabilities, providing functions to manipulate and transform lists efficiently."
+		}],
     "Syntaxor": [],
     "Chewring": [],
     "Boolinator": [],
