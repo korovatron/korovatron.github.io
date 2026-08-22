@@ -514,12 +514,17 @@
                 lightbox.classList.add('is-open');
                 document.body.style.overflow = 'hidden';
                 document.getElementById('lightbox-close').focus();
+                history.pushState({ lightboxOpen: true }, '');
                 countGoatEvent(`${btn.dataset.app} lightbox opened`);
             }
 
-            function closeLightbox() {
+            function closeLightbox(fromPopstate = false) {
+                if (!lightbox.classList.contains('is-open')) return;
                 lightbox.classList.remove('is-open');
                 document.body.style.overflow = '';
+                if (!fromPopstate && history.state && history.state.lightboxOpen) {
+                    history.back();
+                }
             }
 
             function showImage(index) {
@@ -541,10 +546,16 @@
                 if (btn) openLightbox(btn);
             });
 
-            document.getElementById('lightbox-backdrop').addEventListener('click', closeLightbox);
-            document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+            document.getElementById('lightbox-backdrop').addEventListener('click', () => closeLightbox());
+            document.getElementById('lightbox-close').addEventListener('click', () => closeLightbox());
             document.getElementById('lightbox-prev').addEventListener('click', () => navigate(-1));
             document.getElementById('lightbox-next').addEventListener('click', () => navigate(1));
+
+            window.addEventListener('popstate', () => {
+                if (lightbox.classList.contains('is-open')) {
+                    closeLightbox(true);
+                }
+            });
 
             document.addEventListener('keydown', e => {
                 if (!lightbox.classList.contains('is-open')) return;
