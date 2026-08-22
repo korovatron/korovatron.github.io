@@ -2,224 +2,224 @@
     "Graphiti": [
         {
 			"src": "images/galleries/graphiti/maxMin.png",
-			"title": "Graphiti automatically detects local maxima, minima, points of inflection and intersections",
-			"alt": "Graphiti automatically detects local maxima, minima, points of inflection and intersections"
+			"title": "Graphiti is more than a graphing calculator. It detects asymptotes, holes, turning points, points of inflection and other key features that ordinary graphing calculators simply plot.",
+			"alt": "Graphiti is more than a graphing calculator. It detects asymptotes, holes, turning points, points of inflection and other key features that ordinary graphing calculators simply plot."
 		},
 		{
 			"src": "images/galleries/graphiti/implicit.png",
-			"title": "Graphiti can plot implicit functions in addition to explicit functions",
-			"alt": "Graphiti can plot implicit functions in addition to explicit functions"
+			"title": "Graphiti can plot implicit functions in addition to explicit functions.",
+			"alt": "Graphiti can plot implicit functions in addition to explicit functions."
 		},
 		{
 			"src": "images/galleries/graphiti/parametric.png",
-			"title": "Graphiti can plot parametric functions",
-			"alt": "Graphiti can plot parametric functions"
+			"title": "Graphiti can plot parametric functions.",
+			"alt": "Graphiti can plot parametric functions."
 		},
 		{
 			"src": "images/galleries/graphiti/inequalityIntersections.png",
-			"title": "Graphiti can plot inequalities and their intersections",
-			"alt": "Graphiti can plot inequalities and their intersections"
+			"title": "Graphiti can plot inequalities and their intersections.",
+			"alt": "Graphiti can plot inequalities and their intersections."
 		},
 		{
 			"src": "images/galleries/graphiti/polar.png",
-			"title": "Graphiti can plot polar functions with optional animation and step-through",
-			"alt": "Graphiti can plot polar functions with optional animation and step-through"
+			"title": "Graphiti can plot polar functions with optional animation and step-through.",
+			"alt": "Graphiti can plot polar functions with optional animation and step-through."
 		},
 		{
 			"src": "images/galleries/graphiti/implicitPolar.png",
 			"title": "Graphiti can plot implicit polar functions. This ability is unique amongst graphing calculators.",
-			"alt": "Graphiti can plot implicit polar functions"
+			"alt": "Graphiti can plot implicit polar functions. This ability is unique amongst graphing calculators."
 		},
 		{
 			"src": "images/galleries/graphiti/definiteIntegral.png",
-			"title": "Graphiti can calculate definite integrals",
-			"alt": "Graphiti can calculate definite integrals"
+			"title": "Graphiti can calculate definite integrals.",
+			"alt": "Graphiti can calculate definite integrals."
 		},
 		{
 			"src": "images/galleries/graphiti/mobileGraphiti.png",
-			"title": "Graphiti can be installed on mobile devices. This has the advantage of true full-screen display and off-line use. On iPhone go to the share menu and select 'Add to Home Screen'. On Android go to the menu and select 'Add to Home Screen'",
-			"alt": "Graphiti can be installed on mobile devices. This has the advantage of true full-screen display and off-line use. On iPhone go to the share menu and select 'Add to Home Screen'. On Android go to the menu and select 'Add to Home Screen'"
+			"title": "Graphiti can be installed on mobile devices. This has the advantage of true full-screen display and off-line use. On iPhone go to the share menu and select 'Add to Home Screen'. On Android go to the menu and select 'Add to Home Screen'.",
+			"alt": "Graphiti can be installed on mobile devices. This has the advantage of true full-screen display and off-line use. On iPhone go to the share menu and select 'Add to Home Screen'. On Android go to the menu and select 'Add to Home Screen'."
 		},
 		{
 			"src": "images/galleries/graphiti/interactiveTangentsNormals.png",
-			"title": "Graphiti can add interactive tangents and normals",
-			"alt": "Graphiti can add interactive tangents and normals"
+			"title": "Graphiti can add interactive tangents and normals.",
+			"alt": "Graphiti can add interactive tangents and normals."
 		},
 		{
 			"src": "images/galleries/graphiti/numericalIntegration.png",
-			"title": "Graphiti can perform interactive numerical integration using Simpson's, mid-ordinate and trapezium rules with adjustable strips",
-			"alt": "Graphiti can perform interactive numerical integration using Simpson's, mid-ordinate and trapezium rules with adjustable strips"
+			"title": "Graphiti can perform interactive numerical integration using Simpson's, mid-ordinate and trapezium rules with adjustable strips.",
+			"alt": "Graphiti can perform interactive numerical integration using Simpson's, mid-ordinate and trapezium rules with adjustable strips."
 		},
 		{
 			"src": "images/galleries/graphiti/areaBetweenCurves.png",
-			"title": "Graphiti can calculate and shade the area between curves",
-			"alt": "Graphiti can calculate and shade the area between curves"
+			"title": "Graphiti can calculate and shade the area between curves.",
+			"alt": "Graphiti can calculate and shade the area between curves."
 		},
 		{
 			"src": "images/galleries/graphiti/polarArea.png",
-			"title": "Graphiti can calculate and shade the area of polar functions",
-			"alt": "Graphiti can calculate and shade the area of polar functions"
+			"title": "Graphiti can calculate and shade the area of polar functions.",
+			"alt": "Graphiti can calculate and shade the area of polar functions."
 		},
 		{
 			"src": "images/galleries/graphiti/shapeDetection.png",
-			"title": "Graphiti can automatically detect shapes in graphs",
-			"alt": "Graphiti can automatically detect shapes in graphs"
+			"title": "Graphiti can automatically detect shapes in graphs.",
+			"alt": "Graphiti can automatically detect shapes in graphs."
 		},
 		{
 			"src": "images/galleries/graphiti/parameterSliders.png",
-			"title": "Graphiti can adjust parameters using sliders",
-			"alt": "Graphiti can adjust parameters using sliders"
+			"title": "Graphiti can adjust parameters using sliders.",
+			"alt": "Graphiti can adjust parameters using sliders."
 		},
 		{
 			"src": "images/galleries/graphiti/asymptopes.png",
-			"title": "Graphiti can automatically detect asymptotes (horizontal, vertical and oblique)",
-			"alt": "Graphiti can automatically detect asymptotes (horizontal, vertical and oblique)"
+			"title": "Graphiti can automatically detect asymptotes (horizontal, vertical and oblique).",
+			"alt": "Graphiti can automatically detect asymptotes (horizontal, vertical and oblique)."
 		},
         {
 			"src": "images/galleries/graphiti/curvilinear.png",
-			"title": "Graphiti can automatically detect curvilinear asymptotes",
-			"alt": "Graphiti can automatically detect curvilinear asymptotes"
+			"title": "Graphiti can automatically detect curvilinear asymptotes.",
+			"alt": "Graphiti can automatically detect curvilinear asymptotes."
 		},
 		{
 			"src": "images/galleries/graphiti/autoHoleDetection.png",
-			"title": "Graphiti can automatically detect and show removable singularities (holes)",
-			"alt": "Graphiti can automatically detect and show removable singularities (holes)"
+			"title": "Graphiti can automatically detect and show removable singularities (holes).",
+			"alt": "Graphiti can automatically detect and show removable singularities (holes)."
 		},
 		{
 			"src": "images/galleries/graphiti/envelope.png",
-			"title": "Graphiti can automatically detect envelopes for oscillating functions such as damped harmonic motion",
-			"alt": "Graphiti can automatically detect envelopes for oscillating functions"
+			"title": "Graphiti can automatically detect envelopes for oscillating functions such as damped harmonic motion.",
+			"alt": "Graphiti can automatically detect envelopes for oscillating functions such as damped harmonic motion."
 		},
         {
 			"src": "images/galleries/graphiti/svg.png",
-			"title": "Export graphs as fully customisable SVG files for use in worksheets and slides",
-			"alt": "Export graphs as fully customisable SVG files for use in worksheets and slides"
+			"title": "Export graphs as fully customisable SVG files for use in worksheets and slides.",
+			"alt": "Export graphs as fully customisable SVG files for use in worksheets and slides."
 		}
     ],
     "Vectorama": [ {
 			"src": "images/galleries/vectorama/2DPoints.png",
-			"title": "Vectorama allows you to add vectors as points in 2D space. Ideal for exploring transformations of the unit square in Level 2 Further Maths",
-			"alt": "Vectorama allows you to add vectors as points in 2D space. Ideal for exploring transformations of the unit square in Level 2 Further Maths"
+			"title": "Vectorama is an interactive 2D/3D linear algebra playground that lets you explore vectors, lines, planes, and matrix transformations with instant geometric feedback and shareable scene URLs.",
+			"alt": "Vectorama is an interactive 2D/3D linear algebra playground that lets you explore vectors, lines, planes, and matrix transformations with instant geometric feedback and shareable scene URLs."
 		},
 		{
 			"src": "images/galleries/vectorama/2DArrows.png",
-			"title": "Vectorama can also represent vectors as arrows. Add your own or choose from built-in vector presets",
-			"alt": "Vectorama can also represent vectors as arrows. Add your own or choose from built-in vector presets"
+			"title": "Vectorama can also represent vectors as arrows. Add your own or choose from built-in vector presets.",
+			"alt": "Vectorama can also represent vectors as arrows. Add your own or choose from built-in vector presets."
 		},
 		{
 			"src": "images/galleries/vectorama/2DShear.png",
-			"title": "Add matrices and experiment with changing the entries and watch the smooth animation as the transformation is applied",
-			"alt": "Add matrices and experiment with changing the entries and watch the smooth animation as the transformation is applied"
+			"title": "Add matrices and experiment with changing the entries and watch the smooth animation as the transformation is applied.",
+			"alt": "Add matrices and experiment with changing the entries and watch the smooth animation as the transformation is applied."
 		},
 		{
 			"src": "images/galleries/vectorama/2DComposition.png",
-			"title": "Vectorama can apply multiple matrices in sequence to perform composition transformations",
-			"alt": "Vectorama can apply multiple matrices in sequence to perform composition transformations"
+			"title": "Vectorama can apply multiple matrices in sequence to perform composition transformations.",
+			"alt": "Vectorama can apply multiple matrices in sequence to perform composition transformations."
 		},
 		{
 			"src": "images/galleries/vectorama/3DMatrices.png",
-			"title": "Vectorama works with 3D vectors and matrices, allowing you to explore transformations in 3D space. Ideal for A Level Further Maths and university linear algebra courses",
-			"alt": "Vectorama works with 3D vectors and matrices, allowing you to explore transformations in 3D space. Ideal for A Level Further Maths and university linear algebra courses"
+			"title": "Vectorama works with 3D vectors and matrices, allowing you to explore transformations in 3D space. Ideal for A Level Further Maths and university linear algebra courses.",
+			"alt": "Vectorama works with 3D vectors and matrices, allowing you to explore transformations in 3D space. Ideal for A Level Further Maths and university linear algebra courses."
 		},
 		{
 			"src": "images/galleries/vectorama/mobileVectorama.png",
-			"title": "Vectorama can be installed on mobile devices. This has the advantage of true full-screen display and off-line use. On iPhone go to the share menu and select 'Add to Home Screen'. On Android go to the menu and select 'Add to Home Screen'",
-			"alt": "Vectorama can be installed on mobile devices. This has the advantage of true full-screen display and off-line use. On iPhone go to the share menu and select 'Add to Home Screen'. On Android go to the menu and select 'Add to Home Screen'"
+			"title": "Vectorama can be installed on mobile devices. This has the advantage of true full-screen display and off-line use. On iPhone go to the share menu and select 'Add to Home Screen'. On Android go to the menu and select 'Add to Home Screen'.",
+			"alt": "Vectorama can be installed on mobile devices. This has the advantage of true full-screen display and off-line use. On iPhone go to the share menu and select 'Add to Home Screen'. On Android go to the menu and select 'Add to Home Screen'."
 		},
 		{
 			"src": "images/galleries/vectorama/Lattice.png",
-			"title": "Vectorama can overlay a lattice so you can see how spaces are transformed by matrices",
-			"alt": "Vectorama can overlay a lattice so you can see how spaces are transformed by matrices"
+			"title": "Vectorama can overlay a lattice so you can see how spaces are transformed by matrices.",
+			"alt": "Vectorama can overlay a lattice so you can see how spaces are transformed by matrices."
 		},
 		{
 			"src": "images/galleries/vectorama/MatrixIdentification.png",
-			"title": "As you experiment changing the entries in a matrix, Vectorama can identify the matrix transformation and display its properties",
-			"alt": "As you experiment changing the entries in a matrix, Vectorama can identify the matrix transformation and display its properties"
+			"title": "As you experiment changing the entries in a matrix, Vectorama can identify the matrix transformation and display its properties.",
+			"alt": "As you experiment changing the entries in a matrix, Vectorama can identify the matrix transformation and display its properties."
 		},
 		{
 			"src": "images/galleries/vectorama/EigenSpace.png",
-			"title": "Vectorama calculates eigenvalues, eigenvectors and visualises eigenspaces for any matrix transformation",
-			"alt": "Vectorama calculates eigenvalues, eigenvectors and visualises eigenspaces for any matrix transformation"
+			"title": "Vectorama calculates eigenvalues, eigenvectors and visualises eigenspaces for any matrix transformation.",
+			"alt": "Vectorama calculates eigenvalues, eigenvectors and visualises eigenspaces for any matrix transformation."
 		},
 		{
 			"src": "images/galleries/vectorama/AngleBetweenPlanes.png",
-			"title": "Vectorama can calculate the equation of the line of intersection between two planes and find the angle between them",
-			"alt": "Vectorama can calculate the equation of the line of intersection between two planes and find the angle between them"
+			"title": "Vectorama can calculate the equation of the line of intersection between two planes and find the angle between them.",
+			"alt": "Vectorama can calculate the equation of the line of intersection between two planes and find the angle between them."
 		},
 		{
 			"src": "images/galleries/vectorama/SkewLinesAngle.png",
-			"title": "Lines and planes can be added in all the usual vector forms. Vectorama will calculate the angle between lines and planes and even skew lines",
-			"alt": "Lines and planes can be added in all the usual vector forms. Vectorama will calculate the angle between lines and planes and even skew lines"
+			"title": "Lines and planes can be added in all the usual vector forms. Vectorama will calculate the angle between lines and planes and even skew lines.",
+			"alt": "Lines and planes can be added in all the usual vector forms. Vectorama will calculate the angle between lines and planes and even skew lines."
 		},
 		{
 			"src": "images/galleries/vectorama/SkewLinesDistance.png",
-			"title": "Vectorama can calculate the distance between skew lines",
-			"alt": "Vectorama can calculate the distance between skew lines"
+			"title": "Vectorama can calculate the distance between skew lines.",
+			"alt": "Vectorama can calculate the distance between skew lines."
 		}],
     "Trimension": [{
 			"src": "images/galleries/trimension/composite.png",
-			"title": "Trimension allows you to build composite solids from cuboids, pyramids, prisms, and more. Dimensions and adjacent faces are fully customisable",
-			"alt": "Trimension allows you to build composite solids from cuboids, pyramids, prisms, and more. Dimensions and adjacent faces are fully customisable"
+			"title": "Trimension is a 3D geometry workspace that lets you build solids, draw internal triangles and planes, and instantly extract any face into a clean 2D diagram for teaching 3D Pythagoras and trigonometry.",
+			"alt": "Trimension is a 3D geometry workspace that lets you build solids, draw internal triangles and planes, and instantly extract any face into a clean 2D diagram for teaching 3D Pythagoras and trigonometry."
 		},
 		{
 			"src": "images/galleries/trimension/addItems.png",
-			"title": "Add internal labels, angles, triangles, line-segments, quadrilaterals, and more to your solids. All items can be hidden at any time; ideal for gradually revealing features during a lesson",
-			"alt": "Add internal labels, angles, triangles, line-segments, quadrilaterals, and more to your solids. All items can be hidden at any time; ideal for gradually revealing features during a lesson"
+			"title": "Add internal labels, angles, triangles, line-segments, quadrilaterals, and more to your solids. All items can be hidden at any time; ideal for gradually revealing features during a lesson.",
+			"alt": "Add internal labels, angles, triangles, line-segments, quadrilaterals, and more to your solids. All items can be hidden at any time; ideal for gradually revealing features during a lesson."
 		},
 		{
 			"src": "images/galleries/trimension/mobileTrimension.png",
-			"title": "Trimension can be installed on mobile devices. This has the advantage of true full-screen display and off-line use. On iPhone go to the share menu and select 'Add to Home Screen'. On Android go to the menu and select 'Add to Home Screen'",
-			"alt": "Trimension can be installed on mobile devices. This has the advantage of true full-screen display and off-line use. On iPhone go to the share menu and select 'Add to Home Screen'. On Android go to the menu and select 'Add to Home Screen'"
+			"title": "Trimension can be installed on mobile devices. This has the advantage of true full-screen display and off-line use. On iPhone go to the share menu and select 'Add to Home Screen'. On Android go to the menu and select 'Add to Home Screen'.",
+			"alt": "Trimension can be installed on mobile devices. This has the advantage of true full-screen display and off-line use. On iPhone go to the share menu and select 'Add to Home Screen'. On Android go to the menu and select 'Add to Home Screen'."
 		},
 		{
 			"src": "images/galleries/trimension/inspect.png",
-			"title": "Trimension's standout feature: tap Inspect on any triangle or quadrilateral to instantly extract it into a clean, labelled 2D view, ideal for identifying triangles and walking students through the geometry step by step",
-			"alt": "Trimension's standout feature: tap Inspect on any triangle or quadrilateral to instantly extract it into a clean, labelled 2D view, ideal for identifying triangles and walking students through the geometry step by step"
+			"title": "Trimension's standout feature: tap Inspect on any triangle or quadrilateral to instantly extract it into a clean, labelled 2D view, ideal for identifying triangles and walking students through the geometry step by step.",
+			"alt": "Trimension's standout feature: tap Inspect on any triangle or quadrilateral to instantly extract it into a clean, labelled 2D view, ideal for identifying triangles and walking students through the geometry step by step."
 		},
 		{
 			"src": "images/galleries/trimension/exportSVG.png",
-			"title": "Trimension can export PNG and SVG versions for worksheets and presentations. SVGs are editable in Word, PowerPoint, and SVG editors, so labels, lengths, and other details can be adjusted",
-			"alt": "Trimension can export PNG and SVG versions for worksheets and presentations. SVGs are editable in Word, PowerPoint, and SVG editors, so labels, lengths, and other details can be adjusted"
+			"title": "Trimension can export PNG and SVG versions for worksheets and presentations. SVGs are editable in Word, PowerPoint, and SVG editors, so labels, lengths, and other details can be adjusted.",
+			"alt": "Trimension can export PNG and SVG versions for worksheets and presentations. SVGs are editable in Word, PowerPoint, and SVG editors, so labels, lengths, and other details can be adjusted."
 		}],
 	"Komplexiti": [{
 			"src": "images/galleries/komplexiti/complexForms.png",
-			"title": "Komplexiti allows you to enter complex numbers in cartesian, exponential and trigonometric forms. It can also convert between these forms and plot them on the Argand diagram as points or vectors",
-			"alt": "Komplexiti allows you to enter complex numbers in cartesian, exponential and trigonometric forms. It can also convert between these forms and plot them on the Argand diagram as points or vectors"
+			"title": "Komplexiti is an interactive Argand diagram workspace for exploring complex numbers, plotting loci, solving equations, and visualising inequalities with instant geometric feedback.",
+			"alt": "Komplexiti is an interactive Argand diagram workspace for exploring complex numbers, plotting loci, solving equations, and visualising inequalities with instant geometric feedback."
 		},
 		{
 			"src": "images/galleries/komplexiti/complexEquations.png",
-			"title": "Komplexiti can solve complex equations, displaying the roots on an Argand diagram as well as listing them in cartesian, exponential or trigonometric forms, using surds and pi where appropriate",
-			"alt": "Komplexiti can solve complex equations, displaying the roots on an Argand diagram as well as listing them in cartesian, exponential or trigonometric forms, using surds and pi where appropriate"
+			"title": "Komplexiti can solve complex equations, displaying the roots on an Argand diagram as well as listing them in cartesian, exponential or trigonometric forms, using surds and pi where appropriate.",
+			"alt": "Komplexiti can solve complex equations, displaying the roots on an Argand diagram as well as listing them in cartesian, exponential or trigonometric forms, using surds and pi where appropriate."
 		},
 		{
 			"src": "images/galleries/komplexiti/complexLoci.png",
-			"title": "Komplexiti can plot complex loci on the Argand diagram, helping visualise the geometric representation of complex numbers. Komplexiti displays appropriate meta data for recognised loci",
-			"alt": "Komplexiti can plot complex loci on the Argand diagram, helping visualise the geometric representation of complex numbers. Komplexiti displays appropriate meta data for recognised loci"
+			"title": "Komplexiti can plot complex loci on the Argand diagram, helping visualise the geometric representation of complex numbers. Komplexiti displays appropriate meta data for recognised loci.",
+			"alt": "Komplexiti can plot complex loci on the Argand diagram, helping visualise the geometric representation of complex numbers. Komplexiti displays appropriate meta data for recognised loci."
 		},
 		{
 			"src": "images/galleries/komplexiti/mobileKomplexiti.png",
-			"title": "Komplexiti can be installed on mobile devices. This has the advantage of true full-screen display and off-line use. On iPhone go to the share menu and select 'Add to Home Screen'. On Android go to the menu and select 'Add to Home Screen'",
-			"alt": "Komplexiti can be installed on mobile devices. This has the advantage of true full-screen display and off-line use. On iPhone go to the share menu and select 'Add to Home Screen'. On Android go to the menu and select 'Add to Home Screen'"
+			"title": "Komplexiti can be installed on mobile devices. This has the advantage of true full-screen display and off-line use. On iPhone go to the share menu and select 'Add to Home Screen'. On Android go to the menu and select 'Add to Home Screen'.",
+			"alt": "Komplexiti can be installed on mobile devices. This has the advantage of true full-screen display and off-line use. On iPhone go to the share menu and select 'Add to Home Screen'. On Android go to the menu and select 'Add to Home Screen'."
 		},
 		{
 			"src": "images/galleries/komplexiti/moreComplexLoci.png",
-			"title": "Komplexiti can plot lines, half-lines and perpendicular bisectors as loci on the Argand diagram, helping visualise the geometric representation of complex numbers. Komplexiti displays appropriate meta data for recognised loci",
-			"alt": "Komplexiti can plot lines, half-lines and perpendicular bisectors as loci on the Argand diagram, helping visualise the geometric representation of complex numbers. Komplexiti displays appropriate meta data for recognised loci"
+			"title": "Komplexiti can plot lines, half-lines and perpendicular bisectors as loci on the Argand diagram, helping visualise the geometric representation of complex numbers. Komplexiti displays appropriate meta data for recognised loci.",
+			"alt": "Komplexiti can plot lines, half-lines and perpendicular bisectors as loci on the Argand diagram, helping visualise the geometric representation of complex numbers. Komplexiti displays appropriate meta data for recognised loci."
 		},
 		{
 			"src": "images/galleries/komplexiti/extrema.png",
-			"title": "Komplexiti calculates the maximum and minimum moduli and arguments for complex loci, displaying them on the Argand diagram",
-			"alt": "Komplexiti calculates the maximum and minimum moduli and arguments for complex loci, displaying them on the Argand diagram"
+			"title": "Komplexiti calculates the maximum and minimum moduli and arguments for complex loci, displaying them on the Argand diagram.",
+			"alt": "Komplexiti calculates the maximum and minimum moduli and arguments for complex loci, displaying them on the Argand diagram."
 		},
 		{
 			"src": "images/galleries/komplexiti/conjugateEquations.png",
-			"title": "Komplexiti can solve equations involving complex conjugates, displaying the roots on an Argand diagram as well as listing them in cartesian, exponential or trigonometric forms, using surds and pi where appropriate",
-			"alt": "Komplexiti can solve equations involving complex conjugates, displaying the roots on an Argand diagram as well as listing them in cartesian, exponential or trigonometric forms, using surds and pi where appropriate"
+			"title": "Komplexiti can solve equations involving complex conjugates, displaying the roots on an Argand diagram as well as listing them in cartesian, exponential or trigonometric forms, using surds and pi where appropriate.",
+			"alt": "Komplexiti can solve equations involving complex conjugates, displaying the roots on an Argand diagram as well as listing them in cartesian, exponential or trigonometric forms, using surds and pi where appropriate."
 		},
 		{
 			"src": "images/galleries/komplexiti/complexInequalities.png",
-			"title": "Komplexiti can plot inequalities involving complex loci, displaying the solution regions on an Argand diagram",
-			"alt": "Komplexiti can plot inequalities involving complex loci, displaying the solution regions on an Argand diagram"
+			"title": "Komplexiti can plot inequalities involving complex loci, displaying the solution regions on an Argand diagram.",
+			"alt": "Komplexiti can plot inequalities involving complex loci, displaying the solution regions on an Argand diagram."
 		}],	
     "The Crate Escape": [],
     "Gyrograf": [],
@@ -251,7 +251,7 @@
 		{
 			"src": "images/galleries/haskish/recursion.png",
 			"title": "Haskish supports recursion, allowing functions to call themselves for iterative computation.",
-			"alt": "Haskish supports recursion, allowing functions to call themselves for iterative computation"
+			"alt": "Haskish supports recursion, allowing functions to call themselves for iterative computation."
 		},
 		{
 			"src": "images/galleries/haskish/listProcessing.png",
