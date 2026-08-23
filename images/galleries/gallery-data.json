@@ -343,7 +343,71 @@
 			"title": "Boolinator includes a random worksheet generator (with answers) ideal for use in lessons or to set as homework.",
 			"alt": "Boolinator includes a random worksheet generator (with answers) ideal for use in lessons or to set as homework."
 		}],
-    "Encodr": [],
+    "Encodr": [ {
+			"src": "images/galleries/encodr/intro.png",
+			"title": "Encodr provides interactive tools for teaching and practising Data Representation at GCSE and A Level. Explore number bases, fixed and floating-point representation, bitmap images, character encoding, and digital sound through interactive tools designed for classroom teaching and independent practice.",
+			"alt": "Encodr provides interactive tools for teaching and practising Data Representation at GCSE and A Level. Explore number bases, fixed and floating-point representation, bitmap images, character encoding, and digital sound through interactive tools designed for classroom teaching and independent practice."
+		},
+		{
+			"src": "images/galleries/encodr/numberBases.png",
+			"title": "Encodr has interactive tools for fixed and floating point representation, allowing you to explore the representation of numbers in different bases.",
+			"alt": "Encodr has interactive tools for fixed and floating point representation, allowing you to explore the representation of numbers in different bases."
+		},
+		{
+			"src": "images/galleries/encodr/bitmappedImages.png",
+			"title": "Encodr has an interactive tool for exploring bitmap images, allowing you to see how images are represented in binary.",
+			"alt": "Encodr has an interactive tool for exploring bitmap images, allowing you to see how images are represented in binary."
+		},
+		{
+			"src": "images/galleries/encodr/vectorImages.png",
+			"title": "Encodr has an interactive tool for exploring vector images, allowing you to see how images are represented using mathematical descriptions.",
+			"alt": "Encodr has an interactive tool for exploring vector images, allowing you to see how images are represented using mathematical descriptions."
+		},
+		{
+			"src": "images/galleries/encodr/digitisedSound.png",
+			"title": "Encodr has an interactive digitised sound tool, allowing the manipulation of sample frequency, sample resolution and to see how this affects file size and sound quality.",
+			"alt": "Encodr has an interactive digitised sound tool, allowing the manipulation of sample frequency, sample resolution and to see how this affects file size and sound quality."
+		},
+		{
+			"src": "images/galleries/encodr/midi.png",
+			"title": "Encodr has an interactive MIDI tool, allowing you to explore music synthesis and composition.",
+			"alt": "Encodr has an interactive MIDI tool, allowing you to explore music synthesis and composition."
+		},
+		{
+			"src": "images/galleries/encodr/interactiveTests.png",
+			"title": "Encodr has interactive tests in each section that generate random questions and give instant feedback.",
+			"alt": "Encodr has interactive tests in each section that generate random questions and give instant feedback."
+		},
+		{
+			"src": "images/galleries/encodr/worksheetGenerator.png",
+			"title": "Encodr has an interactive random worksheet generator, allowing you to create custom exercises for practice and homework. Choose which topics to include and the number of questions. Worksheets can be printed or saved as PDFs.",
+			"alt": "Encodr has an interactive random worksheet generator, allowing you to create custom exercises for practice and homework. Choose which topics to include and the number of questions. Worksheets can be printed or saved as PDFs."
+		},
+		{
+			"src": "images/galleries/encodr/huffmanCoding.png",
+			"title": "Encodr has an interactive Huffman coding tool, allowing you to explore data compression techniques.",
+			"alt": "Encodr has an interactive Huffman coding tool, allowing you to explore data compression techniques."
+		},
+		{
+			"src": "images/galleries/encodr/runLengthEncoding.png",
+			"title": "Encodr has an interactive run-length encoding tool, allowing you to explore data compression techniques.",
+			"alt": "Encodr has an interactive run-length encoding tool, allowing you to explore data compression techniques."
+		},
+		{
+			"src": "images/galleries/encodr/dictionaryCompression.png",
+			"title": "Encodr has an interactive dictionary compression tool, allowing you to explore data compression techniques.",
+			"alt": "Encodr has an interactive dictionary compression tool, allowing you to explore data compression techniques."
+		},
+		{
+			"src": "images/galleries/encodr/binaryArithmetic.png",
+			"title": "Encodr allows you to explore binary arithmetic, including addition and multiplication.",
+			"alt": "Encodr allows you to explore binary arithmetic, including addition and multiplication."
+		},
+		{
+			"src": "images/galleries/encodr/bitManipulation.png",
+			"title": "Encodr allows you to explore bit manipulation including shifts and masking.",
+			"alt": "Encodr allows you to explore bit manipulation including shifts and masking."
+		}],
     "SQL Academy": [],
     "Mandelscope": [],
     "Pac-Man": [],

@@ -346,6 +346,71 @@
       <image:title>Boolinator includes a random worksheet generator (with answers) ideal for use in lessons or to set as homework.</image:title>
       <image:caption>Boolinator includes a random worksheet generator (with answers) ideal for use in lessons or to set as homework.</image:caption>
     </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/encodr/intro.png</image:loc>
+      <image:title>Encodr provides interactive tools for teaching and practising Data Representation at GCSE and A Level. Explore number bases, fixed and floating-point representation, bitmap images, character encoding, and digital sound through interactive tools designed for classroom teaching and independent practice.</image:title>
+      <image:caption>Encodr provides interactive tools for teaching and practising Data Representation at GCSE and A Level. Explore number bases, fixed and floating-point representation, bitmap images, character encoding, and digital sound through interactive tools designed for classroom teaching and independent practice.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/encodr/numberBases.png</image:loc>
+      <image:title>Encodr has interactive tools for fixed and floating point representation, allowing you to explore the representation of numbers in different bases.</image:title>
+      <image:caption>Encodr has interactive tools for fixed and floating point representation, allowing you to explore the representation of numbers in different bases.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/encodr/bitmappedImages.png</image:loc>
+      <image:title>Encodr has an interactive tool for exploring bitmap images, allowing you to see how images are represented in binary.</image:title>
+      <image:caption>Encodr has an interactive tool for exploring bitmap images, allowing you to see how images are represented in binary.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/encodr/vectorImages.png</image:loc>
+      <image:title>Encodr has an interactive tool for exploring vector images, allowing you to see how images are represented using mathematical descriptions.</image:title>
+      <image:caption>Encodr has an interactive tool for exploring vector images, allowing you to see how images are represented using mathematical descriptions.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/encodr/digitisedSound.png</image:loc>
+      <image:title>Encodr has an interactive digitised sound tool, allowing the manipulation of sample frequency, sample resolution and to see how this affects file size and sound quality.</image:title>
+      <image:caption>Encodr has an interactive digitised sound tool, allowing the manipulation of sample frequency, sample resolution and to see how this affects file size and sound quality.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/encodr/midi.png</image:loc>
+      <image:title>Encodr has an interactive MIDI tool, allowing you to explore music synthesis and composition.</image:title>
+      <image:caption>Encodr has an interactive MIDI tool, allowing you to explore music synthesis and composition.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/encodr/interactiveTests.png</image:loc>
+      <image:title>Encodr has interactive tests in each section that generate random questions and give instant feedback.</image:title>
+      <image:caption>Encodr has interactive tests in each section that generate random questions and give instant feedback.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/encodr/worksheetGenerator.png</image:loc>
+      <image:title>Encodr has an interactive random worksheet generator, allowing you to create custom exercises for practice and homework. Choose which topics to include and the number of questions. Worksheets can be printed or saved as PDFs.</image:title>
+      <image:caption>Encodr has an interactive random worksheet generator, allowing you to create custom exercises for practice and homework. Choose which topics to include and the number of questions. Worksheets can be printed or saved as PDFs.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/encodr/huffmanCoding.png</image:loc>
+      <image:title>Encodr has an interactive Huffman coding tool, allowing you to explore data compression techniques.</image:title>
+      <image:caption>Encodr has an interactive Huffman coding tool, allowing you to explore data compression techniques.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/encodr/runLengthEncoding.png</image:loc>
+      <image:title>Encodr has an interactive run-length encoding tool, allowing you to explore data compression techniques.</image:title>
+      <image:caption>Encodr has an interactive run-length encoding tool, allowing you to explore data compression techniques.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/encodr/dictionaryCompression.png</image:loc>
+      <image:title>Encodr has an interactive dictionary compression tool, allowing you to explore data compression techniques.</image:title>
+      <image:caption>Encodr has an interactive dictionary compression tool, allowing you to explore data compression techniques.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/encodr/binaryArithmetic.png</image:loc>
+      <image:title>Encodr allows you to explore binary arithmetic, including addition and multiplication.</image:title>
+      <image:caption>Encodr allows you to explore binary arithmetic, including addition and multiplication.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/encodr/bitManipulation.png</image:loc>
+      <image:title>Encodr allows you to explore bit manipulation including shifts and masking.</image:title>
+      <image:caption>Encodr allows you to explore bit manipulation including shifts and masking.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.korovatron.co.uk/gallery/</loc>
@@ -505,7 +570,7 @@
   </url>
   <url>
     <loc>https://www.korovatron.co.uk/encodr/</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -571,6 +636,12 @@
   </url>
   <url>
     <loc>https://www.korovatron.co.uk/gallery/?app=Boolinator</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.korovatron.co.uk/gallery/?app=Encodr</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
