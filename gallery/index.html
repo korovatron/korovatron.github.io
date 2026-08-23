@@ -448,7 +448,7 @@
             const filterApp = new URLSearchParams(window.location.search).get('app');
             let data;
             try {
-                const res = await fetch('../images/galleries/gallery-data.json', { cache: 'no-cache' });
+                const res = await fetch(`../images/galleries/gallery-data.json?t=${Date.now()}`, { cache: 'no-cache' });
                 if (!res.ok) throw new Error();
                 data = await res.json();
             } catch {

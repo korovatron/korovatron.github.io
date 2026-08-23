@@ -1293,7 +1293,7 @@
 
         async function loadGalleryData() {
             try {
-                const response = await fetch('images/galleries/gallery-data.json?v=2026082325', { cache: 'no-cache' });
+                const response = await fetch(`images/galleries/gallery-data.json?t=${Date.now()}`, { cache: 'no-cache' });
                 if (response.ok) {
                     galleryData = await response.json();
                 }
