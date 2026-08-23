@@ -321,6 +321,31 @@
       <image:title>Syntaxor has built-in student exercises that you can complete to practice your understanding of grammars and parsing.</image:title>
       <image:caption>Syntaxor has built-in student exercises that you can complete to practice your understanding of grammars and parsing.</image:caption>
     </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/boolinator/intro.png</image:loc>
+      <image:title>Boolinator allows you to practise your Boolean algebra by simplifying randomly generated expressions. Work through expressions step by step and have each stage checked for logical equivalence. If you get stuck, request a hint to nudge you in the right direction.</image:title>
+      <image:caption>Boolinator allows you to practise your Boolean algebra by simplifying randomly generated expressions. Work through expressions step by step and have each stage checked for logical equivalence. If you get stuck, request a hint to nudge you in the right direction.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/boolinator/progress.png</image:loc>
+      <image:title>Boolinator tracks your progress as you work through Boolean algebra exercises, helping you identify areas for improvement.</image:title>
+      <image:caption>Boolinator tracks your progress as you work through Boolean algebra exercises, helping you identify areas for improvement.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/boolinator/hints.png</image:loc>
+      <image:title>Boolinator can offer hints if you are struggling with the next step in simplifying a Boolean expression.</image:title>
+      <image:caption>Boolinator can offer hints if you are struggling with the next step in simplifying a Boolean expression.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/boolinator/notation.png</image:loc>
+      <image:title>Boolinator can use the two main notation styles, making it suitable for different exam board preferences.</image:title>
+      <image:caption>Boolinator can use the two main notation styles, making it suitable for different exam board preferences.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/boolinator/worksheetGeneration.png</image:loc>
+      <image:title>Boolinator includes a random worksheet generator (with answers) ideal for use in lessons or to set as homework.</image:title>
+      <image:caption>Boolinator includes a random worksheet generator (with answers) ideal for use in lessons or to set as homework.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.korovatron.co.uk/gallery/</loc>
@@ -540,6 +565,12 @@
   </url>
   <url>
     <loc>https://www.korovatron.co.uk/gallery/?app=Syntaxor</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.korovatron.co.uk/gallery/?app=Boolinator</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

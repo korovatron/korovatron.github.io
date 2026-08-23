@@ -318,7 +318,31 @@
 			"title": "Chewring has built-in student tasks that you can complete to practice your understanding of Turing machines.",
 			"alt": "Chewring has built-in student tasks that you can complete to practice your understanding of Turing machines."
 		}],
-    "Boolinator": [],
+    "Boolinator": [{
+			"src": "images/galleries/boolinator/intro.png",
+			"title": "Boolinator allows you to practise your Boolean algebra by simplifying randomly generated expressions. Work through expressions step by step and have each stage checked for logical equivalence. If you get stuck, request a hint to nudge you in the right direction.",
+			"alt": "Boolinator allows you to practise your Boolean algebra by simplifying randomly generated expressions. Work through expressions step by step and have each stage checked for logical equivalence. If you get stuck, request a hint to nudge you in the right direction."
+		},
+		{
+			"src": "images/galleries/boolinator/progress.png",
+			"title": "Boolinator tracks your progress as you work through Boolean algebra exercises, helping you identify areas for improvement.",
+			"alt": "Boolinator tracks your progress as you work through Boolean algebra exercises, helping you identify areas for improvement."
+		},
+		{
+			"src": "images/galleries/boolinator/hints.png",
+			"title": "Boolinator can offer hints if you are struggling with the next step in simplifying a Boolean expression.",
+			"alt": "Boolinator can offer hints if you are struggling with the next step in simplifying a Boolean expression."
+		},
+		{
+			"src": "images/galleries/boolinator/notation.png",
+			"title": "Boolinator can use the two main notation styles, making it suitable for different exam board preferences.",
+			"alt": "Boolinator can use the two main notation styles, making it suitable for different exam board preferences."
+		},
+		{
+			"src": "images/galleries/boolinator/worksheetGeneration.png",
+			"title": "Boolinator includes a random worksheet generator (with answers) ideal for use in lessons or to set as homework.",
+			"alt": "Boolinator includes a random worksheet generator (with answers) ideal for use in lessons or to set as homework."
+		}],
     "Encodr": [],
     "SQL Academy": [],
     "Mandelscope": [],
