@@ -1094,7 +1094,7 @@
                 alt: "Mandelscope Icon",
                 description: "Explore the infinite beauty of the Mandelbrot and Julia sets with this interactive fractal viewer. Zoom incredibly deep using GPU acceleration and perturbation theory, as far as 10<sup>-38</sup> magnification levels. Discover intricate patterns, and save your favorite locations for future reference.<br><br>Includes an interactive educational guide where you can learn the mathematics behind the sets and write your own implementation.",
                 color: "#ff80ff",
-                buttonText: "<img src='images/icons/mandelscopeIcon.png' alt='' aria-hidden='true' width='28' height='28' style='width:28px;height:28px;vertical-align:middle;margin-right:5px;'>Explore",
+                buttonText: "Explore",
                 buttonClass: "purple",
                 url: "https://www.korovatron.co.uk/mandelscope/"
             },
@@ -1280,7 +1280,7 @@
 
         async function loadGalleryData() {
             try {
-                const response = await fetch('images/galleries/gallery-data.json', { cache: 'no-cache' });
+                const response = await fetch('images/galleries/gallery-data.json?v=202608232', { cache: 'no-cache' });
                 if (response.ok) {
                     galleryData = await response.json();
                 }

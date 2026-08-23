@@ -428,7 +428,26 @@
 			"title": "SQL Academy has 44 structured exercises organised into seven modules, covering everything required for GCSE and A Level Computer Science exams. Progress is tracked and students can revisit exercises to see their solutions.",
 			"alt": "SQL Academy has 44 structured exercises organised into seven modules, covering everything required for GCSE and A Level Computer Science exams. Progress is tracked and students can revisit exercises to see their solutions."
 		}],
-    "Mandelscope": [],
+    "Mandelscope": [{
+			"src": "images/galleries/mandelscope/intro.png",
+			"title": "Use Mandelscope to explore the infinite beauty of the Mandelbrot set. Discover intricate patterns, and save your favorite locations for future reference.",
+			"alt": "Use Mandelscope to explore the infinite beauty of the Mandelbrot set. Discover intricate patterns, and save your favorite locations for future reference."
+		},
+		{
+			"src": "images/galleries/mandelscope/julia.png",
+			"title": "Mandelscope allows users to explore Julia sets, providing a deeper understanding of complex dynamics.",
+			"alt": "Mandelscope allows users to explore Julia sets, providing a deeper understanding of complex dynamics."
+		},
+		{
+			"src": "images/galleries/mandelscope/deepDive.png",
+			"title": "Mandelscope uses Perturbation Theory to allow extreme diving into the Mandelbrot set, revealing intricate details at high magnifications.",
+			"alt": "Mandelscope uses Perturbation Theory to allow extreme diving into the Mandelbrot set, revealing intricate details at high magnifications."
+		},
+		{
+			"src": "images/galleries/mandelscope/buildYourOwn.png",
+			"title": "Mandelscope includes a guide to the algorithm used to generate the Mandelbrot set, allowing you to experiment with your own live javascript implementation.",
+			"alt": "Mandelscope includes a guide to the algorithm used to generate the Mandelbrot set, allowing you to experiment with your own live javascript implementation."
+		}],
     "Pac-Man": [],
     "Tetris": [],
     "Space Invaders": [],

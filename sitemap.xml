@@ -431,6 +431,26 @@
       <image:title>SQL Academy has 44 structured exercises organised into seven modules, covering everything required for GCSE and A Level Computer Science exams. Progress is tracked and students can revisit exercises to see their solutions.</image:title>
       <image:caption>SQL Academy has 44 structured exercises organised into seven modules, covering everything required for GCSE and A Level Computer Science exams. Progress is tracked and students can revisit exercises to see their solutions.</image:caption>
     </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/mandelscope/intro.png</image:loc>
+      <image:title>Use Mandelscope to explore the infinite beauty of the Mandelbrot set. Discover intricate patterns, and save your favorite locations for future reference.</image:title>
+      <image:caption>Use Mandelscope to explore the infinite beauty of the Mandelbrot set. Discover intricate patterns, and save your favorite locations for future reference.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/mandelscope/julia.png</image:loc>
+      <image:title>Mandelscope allows users to explore Julia sets, providing a deeper understanding of complex dynamics.</image:title>
+      <image:caption>Mandelscope allows users to explore Julia sets, providing a deeper understanding of complex dynamics.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/mandelscope/deepDive.png</image:loc>
+      <image:title>Mandelscope uses Perturbation Theory to allow extreme diving into the Mandelbrot set, revealing intricate details at high magnifications.</image:title>
+      <image:caption>Mandelscope uses Perturbation Theory to allow extreme diving into the Mandelbrot set, revealing intricate details at high magnifications.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/mandelscope/buildYourOwn.png</image:loc>
+      <image:title>Mandelscope includes a guide to the algorithm used to generate the Mandelbrot set, allowing you to experiment with your own live javascript implementation.</image:title>
+      <image:caption>Mandelscope includes a guide to the algorithm used to generate the Mandelbrot set, allowing you to experiment with your own live javascript implementation.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.korovatron.co.uk/gallery/</loc>
@@ -554,7 +574,7 @@
   </url>
   <url>
     <loc>https://www.korovatron.co.uk/mandelscope/</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -668,6 +688,12 @@
   </url>
   <url>
     <loc>https://www.korovatron.co.uk/gallery/?app=SQL%20Academy</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.korovatron.co.uk/gallery/?app=Mandelscope</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
