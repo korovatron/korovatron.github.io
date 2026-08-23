@@ -259,7 +259,36 @@
 			"alt": "Haskish includes list processing capabilities, providing functions to manipulate and transform lists efficiently."
 		}],
     "Syntaxor": [],
-    "Chewring": [],
+    "Chewring": [{
+			"src": "images/galleries/chewring/intro.png",
+			"title": "Chewring is a Turing machine simulator for A-level Computer Science, designed for classroom demonstrations and for students building their own machines and completing student tasks through an intuitive interface.",
+			"alt": "Chewring is a Turing machine simulator for A-level Computer Science, designed for classroom demonstrations and for students building their own machines and completing student tasks through an intuitive interface."
+		},
+		{
+			"src": "images/galleries/chewring/deltaRules.png",
+			"title": "Chewring allows you to build your Turing machine by adding states and defining delta rules for each state. You can also add multiple tapes to your machine.",
+			"alt": "Chewring allows you to build your Turing machine by adding states and defining delta rules for each state. You can also add multiple tapes to your machine."
+		},
+		{
+			"src": "images/galleries/chewring/finiteStateDiagram.png",
+			"title": "Chewring provides a visual representation of the finite state diagram, helping you understand the structure and transitions of your Turing machine.",
+			"alt": "Chewring provides a visual representation of the finite state diagram, helping you understand the structure and transitions of your Turing machine."
+		},
+		{
+			"src": "images/galleries/chewring/stepThrough.png",
+			"title": "Chewring allows you to step through the execution of your Turing machine, observing the changes in the tape and the current state.",
+			"alt": "Chewring allows you to step through the execution of your Turing machine, observing the changes in the tape and the current state."
+		},
+		{
+			"src": "images/galleries/chewring/examples.png",
+			"title": "Chewring provides example Turing machines to help you get started quickly.",
+			"alt": "Chewring provides example Turing machines to help you get started quickly."
+		},
+		{
+			"src": "images/galleries/chewring/tasks.png",
+			"title": "Chewring has built-in student tasks that you can complete to practice your understanding of Turing machines.",
+			"alt": "Chewring has built-in student tasks that you can complete to practice your understanding of Turing machines."
+		}],
     "Boolinator": [],
     "Encodr": [],
     "SQL Academy": [],
