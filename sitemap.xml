@@ -466,6 +466,46 @@
       <image:title>Gyrograf includes all the original wheels and tracks, including the obround.</image:title>
       <image:caption>Gyrograf includes all the original wheels and tracks, including the obround.</image:caption>
     </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/the-crate-escape/intro.png</image:loc>
+      <image:title>The Crate Escape is a Sokoban style puzzle game. Push, plan, and puzzle your way through over 1200 levels, playable on mobile, desktop, and tablet.</image:title>
+      <image:caption>The Crate Escape is a Sokoban style puzzle game. Push, plan, and puzzle your way through over 1200 levels, playable on mobile, desktop, and tablet.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/the-crate-escape/controls.png</image:loc>
+      <image:title>The Crate Escape can be controlled via keyboard or by swipe gestures on touch devices.</image:title>
+      <image:caption>The Crate Escape can be controlled via keyboard or by swipe gestures on touch devices.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/the-crate-escape/mobile.png</image:loc>
+      <image:title>The Crate Escape is fully optimised for mobile devices, with touch controls for intuitive gameplay.</image:title>
+      <image:caption>The Crate Escape is fully optimised for mobile devices, with touch controls for intuitive gameplay.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/the-crate-escape/levels.png</image:loc>
+      <image:title>The Crate Escape features over 1200 challenging levels, each requiring strategic planning and careful execution.</image:title>
+      <image:caption>The Crate Escape features over 1200 challenging levels, each requiring strategic planning and careful execution.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/the-crate-escape/cloudSync.png</image:loc>
+      <image:title>The Crate Escape can optionally use Google sign-in to sync your progress across multiple devices and can be installed on mobile devices. This has the advantage of true full-screen display and off-line use. On iPhone go to the share menu and select 'Add to Home Screen'. On Android go to the menu and select 'Add to Home Screen'.</image:title>
+      <image:caption>The Crate Escape can optionally use Google sign-in to sync your progress across multiple devices and can be installed on mobile devices. This has the advantage of true full-screen display and off-line use. On iPhone go to the share menu and select 'Add to Home Screen'. On Android go to the menu and select 'Add to Home Screen'.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/the-crate-escape/lurdConsole.png</image:loc>
+      <image:title>You can input sequences of moves into the LURD console and step-through them or open your previous solutions to that level.</image:title>
+      <image:caption>You can input sequences of moves into the LURD console and step-through them or open your previous solutions to that level.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/the-crate-escape/xsbFormat.png</image:loc>
+      <image:title>The Crate Escape allows you to import custom level files in the XSB format to to play or modify. Levels can be shared via URL for others to play.</image:title>
+      <image:caption>The Crate Escape allows you to import custom level files in the XSB format to to play or modify. Levels can be shared via URL for others to play.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/the-crate-escape/visualEditor.png</image:loc>
+      <image:title>The Crate Escape includes a visual editor for creating and modifying levels, allowing you to design intricate puzzles. This is live synced with the XSB format.</image:title>
+      <image:caption>The Crate Escape includes a visual editor for creating and modifying levels, allowing you to design intricate puzzles. This is live synced with the XSB format.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.korovatron.co.uk/gallery/</loc>
@@ -499,7 +539,7 @@
   </url>
   <url>
     <loc>https://www.korovatron.co.uk/crate_escape/</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -715,6 +755,12 @@
   </url>
   <url>
     <loc>https://www.korovatron.co.uk/gallery/?app=Gyrograf</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.korovatron.co.uk/gallery/?app=The%20Crate%20Escape</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

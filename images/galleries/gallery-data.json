@@ -221,7 +221,46 @@
 			"title": "Komplexiti can plot inequalities involving complex loci, displaying the solution regions on an Argand diagram.",
 			"alt": "Komplexiti can plot inequalities involving complex loci, displaying the solution regions on an Argand diagram."
 		}],	
-    "The Crate Escape": [],
+    "The Crate Escape": [{
+			"src": "images/galleries/the-crate-escape/intro.png",
+			"title": "The Crate Escape is a Sokoban style puzzle game. Push, plan, and puzzle your way through over 1200 levels, playable on mobile, desktop, and tablet.",
+			"alt": "The Crate Escape is a Sokoban style puzzle game. Push, plan, and puzzle your way through over 1200 levels, playable on mobile, desktop, and tablet."
+		},
+		{
+			"src": "images/galleries/the-crate-escape/controls.png",
+			"title": "The Crate Escape can be controlled via keyboard or by swipe gestures on touch devices.",
+			"alt": "The Crate Escape can be controlled via keyboard or by swipe gestures on touch devices."
+		},
+		{
+			"src": "images/galleries/the-crate-escape/mobile.png",
+			"title": "The Crate Escape is fully optimised for mobile devices, with touch controls for intuitive gameplay.",
+			"alt": "The Crate Escape is fully optimised for mobile devices, with touch controls for intuitive gameplay."
+		},
+		{
+			"src": "images/galleries/the-crate-escape/levels.png",
+			"title": "The Crate Escape features over 1200 challenging levels, each requiring strategic planning and careful execution.",
+			"alt": "The Crate Escape features over 1200 challenging levels, each requiring strategic planning and careful execution."
+		},
+		{
+			"src": "images/galleries/the-crate-escape/cloudSync.png",
+			"title": "The Crate Escape can optionally use Google sign-in to sync your progress across multiple devices and can be installed on mobile devices. This has the advantage of true full-screen display and off-line use. On iPhone go to the share menu and select 'Add to Home Screen'. On Android go to the menu and select 'Add to Home Screen'.",
+			"alt": "The Crate Escape can optionally use Google sign-in to sync your progress across multiple devices and can be installed on mobile devices. This has the advantage of true full-screen display and off-line use. On iPhone go to the share menu and select 'Add to Home Screen'. On Android go to the menu and select 'Add to Home Screen'."
+		},
+		{
+			"src": "images/galleries/the-crate-escape/lurdConsole.png",
+			"title": "You can input sequences of moves into the LURD console and step-through them or open your previous solutions to that level.",
+			"alt": "You can input sequences of moves into the LURD console and step-through them or open your previous solutions to that level."
+		},
+		{
+			"src": "images/galleries/the-crate-escape/xsbFormat.png",
+			"title": "The Crate Escape allows you to import custom level files in the XSB format to to play or modify. Levels can be shared via URL for others to play.",
+			"alt": "The Crate Escape allows you to import custom level files in the XSB format to to play or modify. Levels can be shared via URL for others to play."
+		},
+		{
+			"src": "images/galleries/the-crate-escape/visualEditor.png",
+			"title": "The Crate Escape includes a visual editor for creating and modifying levels, allowing you to design intricate puzzles. This is live synced with the XSB format.",
+			"alt": "The Crate Escape includes a visual editor for creating and modifying levels, allowing you to design intricate puzzles. This is live synced with the XSB format."
+		}],
     "Gyrograf": [{
 			"src": "images/galleries/gyrograf/intro.png",
 			"title": "Create intricate Spirograph-style designs in this interactive drawing app. Inspired by the classic drawing toy popularised by Denys Fisher, Gyrograf lets you choose different rings and wheels, experiment with combinations, and watch geometric patterns emerge as you draw.",

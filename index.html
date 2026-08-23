@@ -1147,7 +1147,7 @@
                     Replay your past solutions step-by-step to sharpen your strategy and uncover smarter paths.<br><br>
                     Build your own puzzles with the level editor/importer, then generate links to share custom levels instantly.`,
                 color: "#ff80ff",
-                buttonText: "📦 Shove Off",
+                buttonText: "Shove Off",
                 buttonClass: "purple",
                 url: "https://www.korovatron.co.uk/crate_escape/"
             },
@@ -1280,7 +1280,7 @@
 
         async function loadGalleryData() {
             try {
-                const response = await fetch('images/galleries/gallery-data.json?v=2026082324', { cache: 'no-cache' });
+                const response = await fetch('images/galleries/gallery-data.json?v=2026082325', { cache: 'no-cache' });
                 if (response.ok) {
                     galleryData = await response.json();
                 }
