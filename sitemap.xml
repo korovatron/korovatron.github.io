@@ -3,33 +3,33 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.korovatron.co.uk/</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://www.korovatron.co.uk/images/galleries/graphiti/maxMin.png</image:loc>
-      <image:title>Graphiti automatically detects local maxima, minima, points of inflection and intersections</image:title>
-      <image:caption>Graphiti automatically detects local maxima, minima, points of inflection and intersections</image:caption>
+      <image:title>Graphiti is more than a graphing calculator. It detects asymptotes, holes, turning points, points of inflection and other key features that ordinary graphing calculators simply plot.</image:title>
+      <image:caption>Graphiti is more than a graphing calculator. It detects asymptotes, holes, turning points, points of inflection and other key features that ordinary graphing calculators simply plot.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://www.korovatron.co.uk/images/galleries/graphiti/implicit.png</image:loc>
-      <image:title>Graphiti can plot implicit functions in addition to explicit functions</image:title>
-      <image:caption>Graphiti can plot implicit functions in addition to explicit functions</image:caption>
+      <image:title>Graphiti can plot implicit functions in addition to explicit functions.</image:title>
+      <image:caption>Graphiti can plot implicit functions in addition to explicit functions.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://www.korovatron.co.uk/images/galleries/graphiti/parametric.png</image:loc>
-      <image:title>Graphiti can plot parametric functions</image:title>
-      <image:caption>Graphiti can plot parametric functions</image:caption>
+      <image:title>Graphiti can plot parametric functions.</image:title>
+      <image:caption>Graphiti can plot parametric functions.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://www.korovatron.co.uk/images/galleries/graphiti/inequalityIntersections.png</image:loc>
-      <image:title>Graphiti can plot inequalities and their intersections</image:title>
-      <image:caption>Graphiti can plot inequalities and their intersections</image:caption>
+      <image:title>Graphiti can plot inequalities and their intersections.</image:title>
+      <image:caption>Graphiti can plot inequalities and their intersections.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://www.korovatron.co.uk/images/galleries/graphiti/polar.png</image:loc>
-      <image:title>Graphiti can plot polar functions with optional animation and step-through</image:title>
-      <image:caption>Graphiti can plot polar functions with optional animation and step-through</image:caption>
+      <image:title>Graphiti can plot polar functions with optional animation and step-through.</image:title>
+      <image:caption>Graphiti can plot polar functions with optional animation and step-through.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://www.korovatron.co.uk/images/galleries/graphiti/implicitPolar.png</image:loc>
@@ -38,188 +38,193 @@
     </image:image>
     <image:image>
       <image:loc>https://www.korovatron.co.uk/images/galleries/graphiti/definiteIntegral.png</image:loc>
-      <image:title>Graphiti can calculate definite integrals</image:title>
-      <image:caption>Graphiti can calculate definite integrals</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.korovatron.co.uk/images/galleries/graphiti/interactiveTangentsNormals.png</image:loc>
-      <image:title>Graphiti can add interactive tangents and normals</image:title>
-      <image:caption>Graphiti can add interactive tangents and normals</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.korovatron.co.uk/images/galleries/graphiti/numericalIntegration.png</image:loc>
-      <image:title>Graphiti can perform interactive numerical integration using Simpson's, mid-ordinate and trapezium rules with adjustable strips</image:title>
-      <image:caption>Graphiti can perform interactive numerical integration using Simpson's, mid-ordinate and trapezium rules with adjustable strips</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.korovatron.co.uk/images/galleries/graphiti/areaBetweenCurves.png</image:loc>
-      <image:title>Graphiti can calculate and shade the area between curves</image:title>
-      <image:caption>Graphiti can calculate and shade the area between curves</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.korovatron.co.uk/images/galleries/graphiti/polarArea.png</image:loc>
-      <image:title>Graphiti can calculate and shade the area of polar functions</image:title>
-      <image:caption>Graphiti can calculate and shade the area of polar functions</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.korovatron.co.uk/images/galleries/graphiti/shapeDetection.png</image:loc>
-      <image:title>Graphiti can automatically detect shapes in graphs</image:title>
-      <image:caption>Graphiti can automatically detect shapes in graphs</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.korovatron.co.uk/images/galleries/graphiti/parameterSliders.png</image:loc>
-      <image:title>Graphiti can adjust parameters using sliders</image:title>
-      <image:caption>Graphiti can adjust parameters using sliders</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.korovatron.co.uk/images/galleries/graphiti/asymptopes.png</image:loc>
-      <image:title>Graphiti can automatically detect asymptotes (horizontal, vertical and oblique)</image:title>
-      <image:caption>Graphiti can automatically detect asymptotes (horizontal, vertical and oblique)</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.korovatron.co.uk/images/galleries/graphiti/curvilinear.png</image:loc>
-      <image:title>Graphiti can automatically detect curvilinear asymptotes</image:title>
-      <image:caption>Graphiti can automatically detect curvilinear asymptotes</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.korovatron.co.uk/images/galleries/graphiti/autoHoleDetection.png</image:loc>
-      <image:title>Graphiti can automatically detect and show removable singularities (holes)</image:title>
-      <image:caption>Graphiti can automatically detect and show removable singularities (holes)</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.korovatron.co.uk/images/galleries/graphiti/envelope.png</image:loc>
-      <image:title>Graphiti can automatically detect envelopes for oscillating functions such as damped harmonic motion</image:title>
-      <image:caption>Graphiti can automatically detect envelopes for oscillating functions such as damped harmonic motion</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.korovatron.co.uk/images/galleries/graphiti/svg.png</image:loc>
-      <image:title>Export graphs as fully customisable SVG files for use in worksheets and slides</image:title>
-      <image:caption>Export graphs as fully customisable SVG files for use in worksheets and slides</image:caption>
+      <image:title>Graphiti can calculate definite integrals.</image:title>
+      <image:caption>Graphiti can calculate definite integrals.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://www.korovatron.co.uk/images/galleries/graphiti/mobileGraphiti.png</image:loc>
-      <image:title>Graphiti can be installed on mobile devices. This has the advantage of true full-screen display and off-line use. On iPhone go to the share menu and select 'Add to Home Screen'. On Android go to the menu and select 'Add to Home Screen'</image:title>
-      <image:caption>Graphiti can be installed on mobile devices. This has the advantage of true full-screen display and off-line use. On iPhone go to the share menu and select 'Add to Home Screen'. On Android go to the menu and select 'Add to Home Screen'</image:caption>
+      <image:title>Graphiti can be installed on mobile devices. This has the advantage of true full-screen display and off-line use. On iPhone go to the share menu and select 'Add to Home Screen'. On Android go to the menu and select 'Add to Home Screen'.</image:title>
+      <image:caption>Graphiti can be installed on mobile devices. This has the advantage of true full-screen display and off-line use. On iPhone go to the share menu and select 'Add to Home Screen'. On Android go to the menu and select 'Add to Home Screen'.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/graphiti/interactiveTangentsNormals.png</image:loc>
+      <image:title>Graphiti can add interactive tangents and normals.</image:title>
+      <image:caption>Graphiti can add interactive tangents and normals.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/graphiti/numericalIntegration.png</image:loc>
+      <image:title>Graphiti can perform interactive numerical integration using Simpson's, mid-ordinate and trapezium rules with adjustable strips.</image:title>
+      <image:caption>Graphiti can perform interactive numerical integration using Simpson's, mid-ordinate and trapezium rules with adjustable strips.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/graphiti/areaBetweenCurves.png</image:loc>
+      <image:title>Graphiti can calculate and shade the area between curves.</image:title>
+      <image:caption>Graphiti can calculate and shade the area between curves.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/graphiti/polarArea.png</image:loc>
+      <image:title>Graphiti can calculate and shade the area of polar functions.</image:title>
+      <image:caption>Graphiti can calculate and shade the area of polar functions.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/graphiti/shapeDetection.png</image:loc>
+      <image:title>Graphiti can automatically detect shapes in graphs.</image:title>
+      <image:caption>Graphiti can automatically detect shapes in graphs.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/graphiti/parameterSliders.png</image:loc>
+      <image:title>Graphiti can adjust parameters using sliders.</image:title>
+      <image:caption>Graphiti can adjust parameters using sliders.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/graphiti/asymptopes.png</image:loc>
+      <image:title>Graphiti can automatically detect asymptotes (horizontal, vertical and oblique).</image:title>
+      <image:caption>Graphiti can automatically detect asymptotes (horizontal, vertical and oblique).</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/graphiti/curvilinear.png</image:loc>
+      <image:title>Graphiti can automatically detect curvilinear asymptotes.</image:title>
+      <image:caption>Graphiti can automatically detect curvilinear asymptotes.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/graphiti/autoHoleDetection.png</image:loc>
+      <image:title>Graphiti can automatically detect and show removable singularities (holes).</image:title>
+      <image:caption>Graphiti can automatically detect and show removable singularities (holes).</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/graphiti/envelope.png</image:loc>
+      <image:title>Graphiti can automatically detect envelopes for oscillating functions such as damped harmonic motion.</image:title>
+      <image:caption>Graphiti can automatically detect envelopes for oscillating functions such as damped harmonic motion.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/graphiti/svg.png</image:loc>
+      <image:title>Export graphs as fully customisable SVG files for use in worksheets and slides.</image:title>
+      <image:caption>Export graphs as fully customisable SVG files for use in worksheets and slides.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://www.korovatron.co.uk/images/galleries/vectorama/2DPoints.png</image:loc>
-      <image:title>Vectorama allows you to add vectors as points in 2D space. Ideal for exploring transformations of the unit square in Level 2 Further Maths</image:title>
-      <image:caption>Vectorama allows you to add vectors as points in 2D space. Ideal for exploring transformations of the unit square in Level 2 Further Maths</image:caption>
+      <image:title>Vectorama is an interactive 2D/3D linear algebra playground that lets you explore vectors, lines, planes, and matrix transformations with instant geometric feedback and shareable scene URLs.</image:title>
+      <image:caption>Vectorama is an interactive 2D/3D linear algebra playground that lets you explore vectors, lines, planes, and matrix transformations with instant geometric feedback and shareable scene URLs.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://www.korovatron.co.uk/images/galleries/vectorama/2DArrows.png</image:loc>
-      <image:title>Vectorama can also represent vectors as arrows. Add your own or choose from built-in vector presets</image:title>
-      <image:caption>Vectorama can also represent vectors as arrows. Add your own or choose from built-in vector presets</image:caption>
+      <image:title>Vectorama can also represent vectors as arrows. Add your own or choose from built-in vector presets.</image:title>
+      <image:caption>Vectorama can also represent vectors as arrows. Add your own or choose from built-in vector presets.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://www.korovatron.co.uk/images/galleries/vectorama/2DShear.png</image:loc>
-      <image:title>Add matrices and experiment with changing the entries and watch the smooth animation as the transformation is applied</image:title>
-      <image:caption>Add matrices and experiment with changing the entries and watch the smooth animation as the transformation is applied</image:caption>
+      <image:title>Add matrices and experiment with changing the entries and watch the smooth animation as the transformation is applied.</image:title>
+      <image:caption>Add matrices and experiment with changing the entries and watch the smooth animation as the transformation is applied.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://www.korovatron.co.uk/images/galleries/vectorama/2DComposition.png</image:loc>
-      <image:title>Vectorama can apply multiple matrices in sequence to perform composition transformations</image:title>
-      <image:caption>Vectorama can apply multiple matrices in sequence to perform composition transformations</image:caption>
+      <image:title>Vectorama can apply multiple matrices in sequence to perform composition transformations.</image:title>
+      <image:caption>Vectorama can apply multiple matrices in sequence to perform composition transformations.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://www.korovatron.co.uk/images/galleries/vectorama/3DMatrices.png</image:loc>
-      <image:title>Vectorama works with 3D vectors and matrices, allowing you to explore transformations in 3D space. Ideal for A Level Further Maths and university linear algebra courses</image:title>
-      <image:caption>Vectorama works with 3D vectors and matrices, allowing you to explore transformations in 3D space. Ideal for A Level Further Maths and university linear algebra courses</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.korovatron.co.uk/images/galleries/vectorama/Lattice.png</image:loc>
-      <image:title>Vectorama can overlay a lattice so you can see how spaces are transformed by matrices</image:title>
-      <image:caption>Vectorama can overlay a lattice so you can see how spaces are transformed by matrices</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.korovatron.co.uk/images/galleries/vectorama/MatrixIdentification.png</image:loc>
-      <image:title>As you experiment changing the entries in a matrix, Vectorama can identify the matrix transformation and display its properties</image:title>
-      <image:caption>As you experiment changing the entries in a matrix, Vectorama can identify the matrix transformation and display its properties</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.korovatron.co.uk/images/galleries/vectorama/EigenSpace.png</image:loc>
-      <image:title>Vectorama calculates eigenvalues, eigenvectors and visualises eigenspaces for any matrix transformation</image:title>
-      <image:caption>Vectorama calculates eigenvalues, eigenvectors and visualises eigenspaces for any matrix transformation</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.korovatron.co.uk/images/galleries/vectorama/AngleBetweenPlanes.png</image:loc>
-      <image:title>Vectorama can calculate the equation of the line of intersection between two planes and find the angle between them</image:title>
-      <image:caption>Vectorama can calculate the equation of the line of intersection between two planes and find the angle between them</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.korovatron.co.uk/images/galleries/vectorama/SkewLinesAngle.png</image:loc>
-      <image:title>Lines and planes can be added in all the usual vector forms. Vectorama will calculate the angle between lines and planes and even skew lines</image:title>
-      <image:caption>Lines and planes can be added in all the usual vector forms. Vectorama will calculate the angle between lines and planes and even skew lines</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.korovatron.co.uk/images/galleries/vectorama/SkewLinesDistance.png</image:loc>
-      <image:title>Vectorama can calculate the distance between skew lines</image:title>
-      <image:caption>Vectorama can calculate the distance between skew lines</image:caption>
+      <image:title>Vectorama works with 3D vectors and matrices, allowing you to explore transformations in 3D space. Ideal for A Level Further Maths and university linear algebra courses.</image:title>
+      <image:caption>Vectorama works with 3D vectors and matrices, allowing you to explore transformations in 3D space. Ideal for A Level Further Maths and university linear algebra courses.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://www.korovatron.co.uk/images/galleries/vectorama/mobileVectorama.png</image:loc>
-      <image:title>Vectorama can be installed on mobile devices. This has the advantage of true full-screen display and off-line use. On iPhone go to the share menu and select 'Add to Home Screen'. On Android go to the menu and select 'Add to Home Screen'</image:title>
-      <image:caption>Vectorama can be installed on mobile devices. This has the advantage of true full-screen display and off-line use. On iPhone go to the share menu and select 'Add to Home Screen'. On Android go to the menu and select 'Add to Home Screen'</image:caption>
+      <image:title>Vectorama can be installed on mobile devices. This has the advantage of true full-screen display and off-line use. On iPhone go to the share menu and select 'Add to Home Screen'. On Android go to the menu and select 'Add to Home Screen'.</image:title>
+      <image:caption>Vectorama can be installed on mobile devices. This has the advantage of true full-screen display and off-line use. On iPhone go to the share menu and select 'Add to Home Screen'. On Android go to the menu and select 'Add to Home Screen'.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/vectorama/Lattice.png</image:loc>
+      <image:title>Vectorama can overlay a lattice so you can see how spaces are transformed by matrices.</image:title>
+      <image:caption>Vectorama can overlay a lattice so you can see how spaces are transformed by matrices.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/vectorama/MatrixIdentification.png</image:loc>
+      <image:title>As you experiment changing the entries in a matrix, Vectorama can identify the matrix transformation and display its properties.</image:title>
+      <image:caption>As you experiment changing the entries in a matrix, Vectorama can identify the matrix transformation and display its properties.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/vectorama/EigenSpace.png</image:loc>
+      <image:title>Vectorama calculates eigenvalues, eigenvectors and visualises eigenspaces for any matrix transformation.</image:title>
+      <image:caption>Vectorama calculates eigenvalues, eigenvectors and visualises eigenspaces for any matrix transformation.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/vectorama/AngleBetweenPlanes.png</image:loc>
+      <image:title>Vectorama can calculate the equation of the line of intersection between two planes and find the angle between them.</image:title>
+      <image:caption>Vectorama can calculate the equation of the line of intersection between two planes and find the angle between them.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/vectorama/SkewLinesAngle.png</image:loc>
+      <image:title>Lines and planes can be added in all the usual vector forms. Vectorama will calculate the angle between lines and planes and even skew lines.</image:title>
+      <image:caption>Lines and planes can be added in all the usual vector forms. Vectorama will calculate the angle between lines and planes and even skew lines.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/vectorama/SkewLinesDistance.png</image:loc>
+      <image:title>Vectorama can calculate the distance between skew lines.</image:title>
+      <image:caption>Vectorama can calculate the distance between skew lines.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://www.korovatron.co.uk/images/galleries/trimension/composite.png</image:loc>
-      <image:title>Trimension allows you to build composite solids from cuboids, pyramids, prisms, and more. Dimensions and adjacent faces are fully customisable</image:title>
-      <image:caption>Trimension allows you to build composite solids from cuboids, pyramids, prisms, and more. Dimensions and adjacent faces are fully customisable</image:caption>
+      <image:title>Trimension is a 3D geometry workspace that lets you build solids, draw internal triangles and planes, and instantly extract any face into a clean 2D diagram for teaching 3D Pythagoras and trigonometry.</image:title>
+      <image:caption>Trimension is a 3D geometry workspace that lets you build solids, draw internal triangles and planes, and instantly extract any face into a clean 2D diagram for teaching 3D Pythagoras and trigonometry.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://www.korovatron.co.uk/images/galleries/trimension/addItems.png</image:loc>
-      <image:title>Add internal labels, angles, triangles, line-segments, quadrilaterals, and more to your solids. All items can be hidden at any time; ideal for gradually revealing features during a lesson</image:title>
-      <image:caption>Add internal labels, angles, triangles, line-segments, quadrilaterals, and more to your solids. All items can be hidden at any time; ideal for gradually revealing features during a lesson</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.korovatron.co.uk/images/galleries/trimension/inspect.png</image:loc>
-      <image:title>Trimension's standout feature: tap Inspect on any triangle or quadrilateral to instantly extract it into a clean, labelled 2D view, ideal for identifying triangles and walking students through the geometry step by step</image:title>
-      <image:caption>Trimension's standout feature: tap Inspect on any triangle or quadrilateral to instantly extract it into a clean, labelled 2D view, ideal for identifying triangles and walking students through the geometry step by step</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.korovatron.co.uk/images/galleries/trimension/exportSVG.png</image:loc>
-      <image:title>Trimension can export PNG and SVG versions for worksheets and presentations. SVGs are editable in Word, PowerPoint, and SVG editors, so labels, lengths, and other details can be adjusted</image:title>
-      <image:caption>Trimension can export PNG and SVG versions for worksheets and presentations. SVGs are editable in Word, PowerPoint, and SVG editors, so labels, lengths, and other details can be adjusted</image:caption>
+      <image:title>Add internal labels, angles, triangles, line-segments, quadrilaterals, and more to your solids. All items can be hidden at any time; ideal for gradually revealing features during a lesson.</image:title>
+      <image:caption>Add internal labels, angles, triangles, line-segments, quadrilaterals, and more to your solids. All items can be hidden at any time; ideal for gradually revealing features during a lesson.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://www.korovatron.co.uk/images/galleries/trimension/mobileTrimension.png</image:loc>
-      <image:title>Trimension can be installed on mobile devices. This has the advantage of true full-screen display and off-line use. On iPhone go to the share menu and select 'Add to Home Screen'. On Android go to the menu and select 'Add to Home Screen'</image:title>
-      <image:caption>Trimension can be installed on mobile devices. This has the advantage of true full-screen display and off-line use. On iPhone go to the share menu and select 'Add to Home Screen'. On Android go to the menu and select 'Add to Home Screen'</image:caption>
+      <image:title>Trimension can be installed on mobile devices. This has the advantage of true full-screen display and off-line use. On iPhone go to the share menu and select 'Add to Home Screen'. On Android go to the menu and select 'Add to Home Screen'.</image:title>
+      <image:caption>Trimension can be installed on mobile devices. This has the advantage of true full-screen display and off-line use. On iPhone go to the share menu and select 'Add to Home Screen'. On Android go to the menu and select 'Add to Home Screen'.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/trimension/inspect.png</image:loc>
+      <image:title>Trimension's standout feature: tap Inspect on any triangle or quadrilateral to instantly extract it into a clean, labelled 2D view, ideal for identifying triangles and walking students through the geometry step by step.</image:title>
+      <image:caption>Trimension's standout feature: tap Inspect on any triangle or quadrilateral to instantly extract it into a clean, labelled 2D view, ideal for identifying triangles and walking students through the geometry step by step.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/trimension/exportSVG.png</image:loc>
+      <image:title>Trimension can export PNG and SVG versions for worksheets and presentations. SVGs are editable in Word, PowerPoint, and SVG editors, so labels, lengths, and other details can be adjusted.</image:title>
+      <image:caption>Trimension can export PNG and SVG versions for worksheets and presentations. SVGs are editable in Word, PowerPoint, and SVG editors, so labels, lengths, and other details can be adjusted.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://www.korovatron.co.uk/images/galleries/komplexiti/complexForms.png</image:loc>
-      <image:title>Komplexiti allows you to enter complex numbers in cartesian, exponential and trigonometric forms. It can also convert between these forms and plot them on the Argand diagram as points or vectors</image:title>
-      <image:caption>Komplexiti allows you to enter complex numbers in cartesian, exponential and trigonometric forms. It can also convert between these forms and plot them on the Argand diagram as points or vectors</image:caption>
+      <image:title>Komplexiti is an interactive Argand diagram workspace for exploring complex numbers, plotting loci, solving equations, and visualising inequalities with instant geometric feedback.</image:title>
+      <image:caption>Komplexiti is an interactive Argand diagram workspace for exploring complex numbers, plotting loci, solving equations, and visualising inequalities with instant geometric feedback.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://www.korovatron.co.uk/images/galleries/komplexiti/complexEquations.png</image:loc>
-      <image:title>Komplexiti can solve complex equations, displaying the roots on an Argand diagram as well as listing them in cartesian, exponential or trigonometric forms, using surds and pi where appropriate</image:title>
-      <image:caption>Komplexiti can solve complex equations, displaying the roots on an Argand diagram as well as listing them in cartesian, exponential or trigonometric forms, using surds and pi where appropriate</image:caption>
+      <image:title>Komplexiti can solve complex equations, displaying the roots on an Argand diagram as well as listing them in cartesian, exponential or trigonometric forms, using surds and pi where appropriate.</image:title>
+      <image:caption>Komplexiti can solve complex equations, displaying the roots on an Argand diagram as well as listing them in cartesian, exponential or trigonometric forms, using surds and pi where appropriate.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://www.korovatron.co.uk/images/galleries/komplexiti/complexLoci.png</image:loc>
-      <image:title>Komplexiti can plot complex loci on the Argand diagram, helping visualise the geometric representation of complex numbers. Komplexiti displays appropriate meta data for recognised loci</image:title>
-      <image:caption>Komplexiti can plot complex loci on the Argand diagram, helping visualise the geometric representation of complex numbers. Komplexiti displays appropriate meta data for recognised loci</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.korovatron.co.uk/images/galleries/komplexiti/moreComplexLoci.png</image:loc>
-      <image:title>Komplexiti can plot lines, half-lines and perpendicular bisectors as loci on the Argand diagram, helping visualise the geometric representation of complex numbers. Komplexiti displays appropriate meta data for recognised loci</image:title>
-      <image:caption>Komplexiti can plot lines, half-lines and perpendicular bisectors as loci on the Argand diagram, helping visualise the geometric representation of complex numbers. Komplexiti displays appropriate meta data for recognised loci</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.korovatron.co.uk/images/galleries/komplexiti/conjugateEquations.png</image:loc>
-      <image:title>Komplexiti can solve equations involving complex conjugates, displaying the roots on an Argand diagram as well as listing them in cartesian, exponential or trigonometric forms, using surds and pi where appropriate</image:title>
-      <image:caption>Komplexiti can solve equations involving complex conjugates, displaying the roots on an Argand diagram as well as listing them in cartesian, exponential or trigonometric forms, using surds and pi where appropriate</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.korovatron.co.uk/images/galleries/komplexiti/complexInequalities.png</image:loc>
-      <image:title>Komplexiti can plot inequalities involving complex loci, displaying the solution regions on an Argand diagram</image:title>
-      <image:caption>Komplexiti can plot inequalities involving complex loci, displaying the solution regions on an Argand diagram</image:caption>
+      <image:title>Komplexiti can plot complex loci on the Argand diagram, helping visualise the geometric representation of complex numbers. Komplexiti displays appropriate meta data for recognised loci.</image:title>
+      <image:caption>Komplexiti can plot complex loci on the Argand diagram, helping visualise the geometric representation of complex numbers. Komplexiti displays appropriate meta data for recognised loci.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://www.korovatron.co.uk/images/galleries/komplexiti/mobileKomplexiti.png</image:loc>
-      <image:title>Komplexiti can be installed on mobile devices. This has the advantage of true full-screen display and off-line use. On iPhone go to the share menu and select 'Add to Home Screen'. On Android go to the menu and select 'Add to Home Screen'</image:title>
-      <image:caption>Komplexiti can be installed on mobile devices. This has the advantage of true full-screen display and off-line use. On iPhone go to the share menu and select 'Add to Home Screen'. On Android go to the menu and select 'Add to Home Screen'</image:caption>
+      <image:title>Komplexiti can be installed on mobile devices. This has the advantage of true full-screen display and off-line use. On iPhone go to the share menu and select 'Add to Home Screen'. On Android go to the menu and select 'Add to Home Screen'.</image:title>
+      <image:caption>Komplexiti can be installed on mobile devices. This has the advantage of true full-screen display and off-line use. On iPhone go to the share menu and select 'Add to Home Screen'. On Android go to the menu and select 'Add to Home Screen'.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/komplexiti/moreComplexLoci.png</image:loc>
+      <image:title>Komplexiti can plot lines, half-lines and perpendicular bisectors as loci on the Argand diagram, helping visualise the geometric representation of complex numbers. Komplexiti displays appropriate meta data for recognised loci.</image:title>
+      <image:caption>Komplexiti can plot lines, half-lines and perpendicular bisectors as loci on the Argand diagram, helping visualise the geometric representation of complex numbers. Komplexiti displays appropriate meta data for recognised loci.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/komplexiti/extrema.png</image:loc>
+      <image:title>Komplexiti calculates the maximum and minimum moduli and arguments for complex loci, displaying them on the Argand diagram.</image:title>
+      <image:caption>Komplexiti calculates the maximum and minimum moduli and arguments for complex loci, displaying them on the Argand diagram.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/komplexiti/conjugateEquations.png</image:loc>
+      <image:title>Komplexiti can solve equations involving complex conjugates, displaying the roots on an Argand diagram as well as listing them in cartesian, exponential or trigonometric forms, using surds and pi where appropriate.</image:title>
+      <image:caption>Komplexiti can solve equations involving complex conjugates, displaying the roots on an Argand diagram as well as listing them in cartesian, exponential or trigonometric forms, using surds and pi where appropriate.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/komplexiti/complexInequalities.png</image:loc>
+      <image:title>Komplexiti can plot inequalities involving complex loci, displaying the solution regions on an Argand diagram.</image:title>
+      <image:caption>Komplexiti can plot inequalities involving complex loci, displaying the solution regions on an Argand diagram.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://www.korovatron.co.uk/images/galleries/haskish/functionalProgrammingAQA.png</image:loc>
@@ -228,13 +233,13 @@
     </image:image>
     <image:image>
       <image:loc>https://www.korovatron.co.uk/images/galleries/haskish/repl.png</image:loc>
-      <image:title>Haskish provides an interactive REPL for experimenting with Haskell code. It supports multi-line input, syntax highlighting, and displays results in a clear format.</image:title>
-      <image:caption>Haskish provides an interactive REPL for experimenting with Haskell code. It supports multi-line input, syntax highlighting, and displays results in a clear format.</image:caption>
+      <image:title>Haskish provides an interactive REPL (Read-Eval-Print Loop) for experimenting with Haskell code. It supports multi-line input, syntax highlighting, and displays results in a clear format.</image:title>
+      <image:caption>Haskish provides an interactive REPL (Read-Eval-Print Loop) for experimenting with Haskell code. It supports multi-line input, syntax highlighting, and displays results in a clear format.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://www.korovatron.co.uk/images/galleries/haskish/lessons.png</image:loc>
-      <image:title>Haskish includes 15 comprehensive lessons covering the AQA Functional Programming specification, with explanations, examples, exercises, and further challenges for the most able students.</image:title>
-      <image:caption>Haskish includes 15 comprehensive lessons covering the AQA Functional Programming specification, with explanations, examples, exercises, and further challenges for the most able students.</image:caption>
+      <image:title>Haskish includes 15 comprehensive lessons covering the AQA Functional Programming specification. Each lesson includes explanations, examples, and exercises to reinforce learning. There are further challenges for each exercise to challenge the most able students.</image:title>
+      <image:caption>Haskish includes 15 comprehensive lessons covering the AQA Functional Programming specification. Each lesson includes explanations, examples, and exercises to reinforce learning. There are further challenges for each exercise to challenge the most able students.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://www.korovatron.co.uk/images/galleries/haskish/partialFunctionApplication.png</image:loc>
@@ -256,10 +261,40 @@
       <image:title>Haskish includes list processing capabilities, providing functions to manipulate and transform lists efficiently.</image:title>
       <image:caption>Haskish includes list processing capabilities, providing functions to manipulate and transform lists efficiently.</image:caption>
     </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/chewring/intro.png</image:loc>
+      <image:title>Chewring is a Turing machine simulator for A-level Computer Science, designed for classroom demonstrations and for students building their own machines and completing student tasks through an intuitive interface.</image:title>
+      <image:caption>Chewring is a Turing machine simulator for A-level Computer Science, designed for classroom demonstrations and for students building their own machines and completing student tasks through an intuitive interface.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/chewring/deltaRules.png</image:loc>
+      <image:title>Chewring allows you to build your Turing machine by adding states and defining delta rules for each state. You can also add multiple tapes to your machine.</image:title>
+      <image:caption>Chewring allows you to build your Turing machine by adding states and defining delta rules for each state. You can also add multiple tapes to your machine.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/chewring/finiteStateDiagram.png</image:loc>
+      <image:title>Chewring provides a visual representation of the finite state diagram, helping you understand the structure and transitions of your Turing machine.</image:title>
+      <image:caption>Chewring provides a visual representation of the finite state diagram, helping you understand the structure and transitions of your Turing machine.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/chewring/stepThrough.png</image:loc>
+      <image:title>Chewring allows you to step through the execution of your Turing machine, observing the changes in the tape and the current state.</image:title>
+      <image:caption>Chewring allows you to step through the execution of your Turing machine, observing the changes in the tape and the current state.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/chewring/examples.png</image:loc>
+      <image:title>Chewring provides example Turing machines to help you get started quickly.</image:title>
+      <image:caption>Chewring provides example Turing machines to help you get started quickly.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/chewring/tasks.png</image:loc>
+      <image:title>Chewring has built-in student tasks that you can complete to practice your understanding of Turing machines.</image:title>
+      <image:caption>Chewring has built-in student tasks that you can complete to practice your understanding of Turing machines.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.korovatron.co.uk/gallery/</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -439,31 +474,37 @@
   </url>
   <url>
     <loc>https://www.korovatron.co.uk/gallery/?app=Graphiti</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.korovatron.co.uk/gallery/?app=Komplexiti</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.korovatron.co.uk/gallery/?app=Vectorama</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.korovatron.co.uk/gallery/?app=Trimension</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.korovatron.co.uk/gallery/?app=Haskish</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.korovatron.co.uk/gallery/?app=Chewring</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
