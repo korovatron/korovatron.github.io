@@ -291,6 +291,36 @@
       <image:title>Chewring has built-in student tasks that you can complete to practice your understanding of Turing machines.</image:title>
       <image:caption>Chewring has built-in student tasks that you can complete to practice your understanding of Turing machines.</image:caption>
     </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/syntaxor/intro.png</image:loc>
+      <image:title>Syntaxor is a Backus-Naur Form (BNF) playground for A Level Computer Science. Build grammar rules, test strings, and visualise syntax and parse trees. Includes worked examples and student exercises covering context-free grammars, parsing, and syntax trees.</image:title>
+      <image:caption>Syntaxor is a Backus-Naur Form (BNF) playground for A Level Computer Science. Build grammar rules, test strings, and visualise syntax and parse trees. Includes worked examples and student exercises covering context-free grammars, parsing, and syntax trees.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/syntaxor/grammarWorkspace.png</image:loc>
+      <image:title>Syntaxor provides a grammar workspace where you can define and test BNF grammar rules, with syntax highlighting and snippet support for common grammar constructs.</image:title>
+      <image:caption>Syntaxor provides a grammar workspace where you can define and test BNF grammar rules, with syntax highlighting and snippet support for common grammar constructs.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/syntaxor/syntaxDiagram.png</image:loc>
+      <image:title>Syntaxor provides a visual representation of the syntax diagram, helping you understand the structure and rules of your grammar.</image:title>
+      <image:caption>Syntaxor provides a visual representation of the syntax diagram, helping you understand the structure and rules of your grammar.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/syntaxor/parseTree.png</image:loc>
+      <image:title>Syntaxor generates parse trees for your input strings, allowing you to visualise the syntactic structure according to your grammar rules.</image:title>
+      <image:caption>Syntaxor generates parse trees for your input strings, allowing you to visualise the syntactic structure according to your grammar rules.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/syntaxor/examples.png</image:loc>
+      <image:title>Syntaxor provides example grammars and strings to help you get started quickly.</image:title>
+      <image:caption>Syntaxor provides example grammars and strings to help you get started quickly.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/syntaxor/tasks.png</image:loc>
+      <image:title>Syntaxor has built-in student exercises that you can complete to practice your understanding of grammars and parsing.</image:title>
+      <image:caption>Syntaxor has built-in student exercises that you can complete to practice your understanding of grammars and parsing.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.korovatron.co.uk/gallery/</loc>
@@ -504,6 +534,12 @@
   </url>
   <url>
     <loc>https://www.korovatron.co.uk/gallery/?app=Chewring</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.korovatron.co.uk/gallery/?app=Syntaxor</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
