@@ -253,8 +253,8 @@
 		},
 		{
 			"src": "images/galleries/the-crate-escape/xsbFormat.png",
-			"title": "The Crate Escape allows you to import custom level files in the XSB format to to play or modify. Levels can be shared via URL for others to play.",
-			"alt": "The Crate Escape allows you to import custom level files in the XSB format to to play or modify. Levels can be shared via URL for others to play."
+			"title": "The Crate Escape allows you to import custom level files in the XSB format to play or modify. Levels can be shared via URL for others to play.",
+			"alt": "The Crate Escape allows you to import custom level files in the XSB format to play or modify. Levels can be shared via URL for others to play."
 		},
 		{
 			"src": "images/galleries/the-crate-escape/visualEditor.png",
@@ -435,6 +435,11 @@
 			"src": "images/galleries/encodr/worksheetGenerator.png",
 			"title": "Encodr has an interactive random worksheet generator, allowing you to create custom exercises for practice and homework. Choose which topics to include and the number of questions. Worksheets can be printed or saved as PDFs.",
 			"alt": "Encodr has an interactive random worksheet generator, allowing you to create custom exercises for practice and homework. Choose which topics to include and the number of questions. Worksheets can be printed or saved as PDFs."
+		},
+		{
+			"src": "images/galleries/encodr/exampleWorksheet.png",
+			"title": "Encodr can generate worksheets with spaces for students to write answers or they can be generated in compact mode to save ink and paper.",
+			"alt": "Encodr can generate worksheets with spaces for students to write answers or they can be generated in compact mode to save ink and paper."
 		},
 		{
 			"src": "images/galleries/encodr/huffmanCoding.png",

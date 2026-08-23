@@ -387,6 +387,11 @@
       <image:caption>Encodr has an interactive random worksheet generator, allowing you to create custom exercises for practice and homework. Choose which topics to include and the number of questions. Worksheets can be printed or saved as PDFs.</image:caption>
     </image:image>
     <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/encodr/exampleWorksheet.png</image:loc>
+      <image:title>Encodr can generate worksheets with spaces for students to write answers or they can be generated in compact mode to save ink and paper.</image:title>
+      <image:caption>Encodr can generate worksheets with spaces for students to write answers or they can be generated in compact mode to save ink and paper.</image:caption>
+    </image:image>
+    <image:image>
       <image:loc>https://www.korovatron.co.uk/images/galleries/encodr/huffmanCoding.png</image:loc>
       <image:title>Encodr has an interactive Huffman coding tool, allowing you to explore data compression techniques.</image:title>
       <image:caption>Encodr has an interactive Huffman coding tool, allowing you to explore data compression techniques.</image:caption>
@@ -498,8 +503,8 @@
     </image:image>
     <image:image>
       <image:loc>https://www.korovatron.co.uk/images/galleries/the-crate-escape/xsbFormat.png</image:loc>
-      <image:title>The Crate Escape allows you to import custom level files in the XSB format to to play or modify. Levels can be shared via URL for others to play.</image:title>
-      <image:caption>The Crate Escape allows you to import custom level files in the XSB format to to play or modify. Levels can be shared via URL for others to play.</image:caption>
+      <image:title>The Crate Escape allows you to import custom level files in the XSB format to play or modify. Levels can be shared via URL for others to play.</image:title>
+      <image:caption>The Crate Escape allows you to import custom level files in the XSB format to play or modify. Levels can be shared via URL for others to play.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://www.korovatron.co.uk/images/galleries/the-crate-escape/visualEditor.png</image:loc>
