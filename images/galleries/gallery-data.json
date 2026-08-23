@@ -408,7 +408,26 @@
 			"title": "Encodr allows you to explore bit manipulation including shifts and masking.",
 			"alt": "Encodr allows you to explore bit manipulation including shifts and masking."
 		}],
-    "SQL Academy": [],
+    "SQL Academy": [{
+			"src": "images/galleries/sql-academy/intro.png",
+			"title": "SQL Academy allows students to practice writing SQL queries to prepare for their GCSE and A Level Computer Science exams. Interactive exercises help students master database queries, data manipulation, and SQL syntax.",
+			"alt": "SQL Academy allows students to practice writing SQL queries to prepare for their GCSE and A Level Computer Science exams. Interactive exercises help students master database queries, data manipulation, and SQL syntax."
+		},
+		{
+			"src": "images/galleries/sql-academy/queryEditor.png",
+			"title": "SQL Academy has an interactive query editor with syntax highlighting and auto-completion, allowing students to write and test SQL queries in a safe environment.",
+			"alt": "SQL Academy has an interactive query editor with syntax highlighting and auto-completion, allowing students to write and test SQL queries in a safe environment."
+		},
+		{
+			"src": "images/galleries/sql-academy/liveSchema.png",
+			"title": "SQL Academy provides a live schema view, updating as students add or remove tables, helping students understand the structure of their databases and the relationships between tables.",
+			"alt": "SQL Academy provides a live schema view, updating as students add or remove tables, helping students understand the structure of their databases and the relationships between tables."
+		},
+		{
+			"src": "images/galleries/sql-academy/exercises.png",
+			"title": "SQL Academy has 44 structured exercises organised into seven modules, covering everything required for GCSE and A Level Computer Science exams. Progress is tracked and students can revisit exercises to see their solutions.",
+			"alt": "SQL Academy has 44 structured exercises organised into seven modules, covering everything required for GCSE and A Level Computer Science exams. Progress is tracked and students can revisit exercises to see their solutions."
+		}],
     "Mandelscope": [],
     "Pac-Man": [],
     "Tetris": [],

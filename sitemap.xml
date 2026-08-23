@@ -411,6 +411,26 @@
       <image:title>Encodr allows you to explore bit manipulation including shifts and masking.</image:title>
       <image:caption>Encodr allows you to explore bit manipulation including shifts and masking.</image:caption>
     </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/sql-academy/intro.png</image:loc>
+      <image:title>SQL Academy allows students to practice writing SQL queries to prepare for their GCSE and A Level Computer Science exams. Interactive exercises help students master database queries, data manipulation, and SQL syntax.</image:title>
+      <image:caption>SQL Academy allows students to practice writing SQL queries to prepare for their GCSE and A Level Computer Science exams. Interactive exercises help students master database queries, data manipulation, and SQL syntax.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/sql-academy/queryEditor.png</image:loc>
+      <image:title>SQL Academy has an interactive query editor with syntax highlighting and auto-completion, allowing students to write and test SQL queries in a safe environment.</image:title>
+      <image:caption>SQL Academy has an interactive query editor with syntax highlighting and auto-completion, allowing students to write and test SQL queries in a safe environment.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/sql-academy/liveSchema.png</image:loc>
+      <image:title>SQL Academy provides a live schema view, updating as students add or remove tables, helping students understand the structure of their databases and the relationships between tables.</image:title>
+      <image:caption>SQL Academy provides a live schema view, updating as students add or remove tables, helping students understand the structure of their databases and the relationships between tables.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/sql-academy/exercises.png</image:loc>
+      <image:title>SQL Academy has 44 structured exercises organised into seven modules, covering everything required for GCSE and A Level Computer Science exams. Progress is tracked and students can revisit exercises to see their solutions.</image:title>
+      <image:caption>SQL Academy has 44 structured exercises organised into seven modules, covering everything required for GCSE and A Level Computer Science exams. Progress is tracked and students can revisit exercises to see their solutions.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.korovatron.co.uk/gallery/</loc>
@@ -450,7 +470,7 @@
   </url>
   <url>
     <loc>https://www.korovatron.co.uk/sql_academy/</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -642,6 +662,12 @@
   </url>
   <url>
     <loc>https://www.korovatron.co.uk/gallery/?app=Encodr</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.korovatron.co.uk/gallery/?app=SQL%20Academy</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
