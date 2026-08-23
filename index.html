@@ -1034,8 +1034,6 @@
     </main>
 
     <script>
-        let galleryData = {};
-
         // All content items
         const allItems = [
             {
@@ -1255,53 +1253,6 @@
         );
         const displayItems = allDisplayItems;
 
-        function getGalleryItems(item) {
-            const gallery = galleryData[item.title];
-            if (!Array.isArray(gallery)) {
-                return [];
-            }
-
-            return gallery.filter(entry => entry && entry.src && entry.title);
-        }
-
-        function createGalleryDescriptionList(item, galleryItems) {
-            if (!galleryItems.length) {
-                return null;
-            }
-
-            const section = document.createElement('section');
-            const headingId = `gallery-descriptions-${item.title.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
-            section.className = 'visually-hidden';
-            section.setAttribute('aria-labelledby', headingId);
-
-            const heading = document.createElement('h3');
-            heading.id = headingId;
-            heading.textContent = `${item.title} gallery descriptions`;
-
-            const list = document.createElement('ul');
-            galleryItems.forEach((entry) => {
-                const listItem = document.createElement('li');
-                listItem.textContent = entry.title;
-                list.appendChild(listItem);
-            });
-
-            section.appendChild(heading);
-            section.appendChild(list);
-
-            return section;
-        }
-
-        async function loadGalleryData() {
-            try {
-                const response = await fetch(`images/galleries/gallery-data.json?t=${Date.now()}`, { cache: 'no-cache' });
-                if (response.ok) {
-                    galleryData = await response.json();
-                }
-            } catch (error) {
-                galleryData = {};
-            }
-        }
-
         function countGoatEvent(eventText) {
             if (window.goatcounter && typeof window.goatcounter.count === 'function' && eventText) {
                 window.goatcounter.count({
@@ -1388,7 +1339,6 @@
                     ? `<a class="game-action image-button-link" href="${item.url}" aria-label="${item.buttonText}" title="Open App"${trackingAttributes}><img class="image-button ${item.buttonClass}" src="${item.buttonImage}" alt="${item.buttonText}" width="140"></a>`
                     : `<a class="game-action action-button ${item.buttonClass}" href="${item.url}" title="Open App"${trackingAttributes}>${item.buttonText}</a>`;
 
-                const galleryItems = getGalleryItems(item);
                 const showGallery = item.hasGallery;
                 const galleryButtonHtml = showGallery
                     ? `<a class="game-action action-button ${item.buttonClass}" href="/gallery/?app=${encodeURIComponent(item.title)}" title="Explore a gallery of features">Gallery</a>`
@@ -1402,11 +1352,6 @@
                             ${mainImageHtml}
                         </div>
                     `;
-
-                    const galleryDescriptionList = createGalleryDescriptionList(item, galleryItems);
-                    if (galleryDescriptionList) {
-                        gameDiv.appendChild(galleryDescriptionList);
-                    }
 
                     return gameDiv;
                 }
@@ -1426,11 +1371,6 @@
 
                 addExternalDescriptionLinkTracking(gameDiv, item);
 
-                const galleryDescriptionList = createGalleryDescriptionList(item, galleryItems);
-                if (galleryDescriptionList) {
-                    gameDiv.appendChild(galleryDescriptionList);
-                }
-
                 return gameDiv;
             }
 
@@ -1447,23 +1387,9 @@
             });
         }
 
-        // Initialize on page load - render cards immediately, then enrich with gallery descriptions once data loads
+        // Initialize on page load
         initialiseKorovatronPronunciation();
         loadContent();
-        loadGalleryData().then(() => {
-            document.querySelectorAll('.game').forEach(card => {
-                const titleEl = card.querySelector('.game-title');
-                if (!titleEl) return;
-                const item = allDisplayItems.find(i => i.title === titleEl.textContent);
-                if (!item) return;
-                const galleryItems = getGalleryItems(item);
-                if (!galleryItems.length) return;
-                const existing = card.querySelector('section.visually-hidden');
-                if (existing) return;
-                const descriptionList = createGalleryDescriptionList(item, galleryItems);
-                if (descriptionList) card.appendChild(descriptionList);
-            });
-        });
     </script>
 </body>
 
