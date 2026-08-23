@@ -451,6 +451,21 @@
       <image:title>Mandelscope includes a guide to the algorithm used to generate the Mandelbrot set, allowing you to experiment with your own live javascript implementation.</image:title>
       <image:caption>Mandelscope includes a guide to the algorithm used to generate the Mandelbrot set, allowing you to experiment with your own live javascript implementation.</image:caption>
     </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/gyrograf/intro.png</image:loc>
+      <image:title>Create intricate Spirograph-style designs in this interactive drawing app. Inspired by the classic drawing toy popularised by Denys Fisher, Gyrograf lets you choose different rings and wheels, experiment with combinations, and watch geometric patterns emerge as you draw.</image:title>
+      <image:caption>Create intricate Spirograph-style designs in this interactive drawing app. Inspired by the classic drawing toy popularised by Denys Fisher, Gyrograf lets you choose different rings and wheels, experiment with combinations, and watch geometric patterns emerge as you draw.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/gyrograf/wheelPositions.png</image:loc>
+      <image:title>Gyrograf lets you precisely position the wheels and rings to create complex patterns.</image:title>
+      <image:caption>Gyrograf lets you precisely position the wheels and rings to create complex patterns.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/gyrograf/obround.png</image:loc>
+      <image:title>Gyrograf includes all the original wheels and tracks, including the obround.</image:title>
+      <image:caption>Gyrograf includes all the original wheels and tracks, including the obround.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.korovatron.co.uk/gallery/</loc>
@@ -568,7 +583,7 @@
   </url>
   <url>
     <loc>https://www.korovatron.co.uk/gyrograf/</loc>
-    <lastmod>2026-07-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -694,6 +709,12 @@
   </url>
   <url>
     <loc>https://www.korovatron.co.uk/gallery/?app=Mandelscope</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.korovatron.co.uk/gallery/?app=Gyrograf</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

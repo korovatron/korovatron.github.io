@@ -222,7 +222,21 @@
 			"alt": "Komplexiti can plot inequalities involving complex loci, displaying the solution regions on an Argand diagram."
 		}],	
     "The Crate Escape": [],
-    "Gyrograf": [],
+    "Gyrograf": [{
+			"src": "images/galleries/gyrograf/intro.png",
+			"title": "Create intricate Spirograph-style designs in this interactive drawing app. Inspired by the classic drawing toy popularised by Denys Fisher, Gyrograf lets you choose different rings and wheels, experiment with combinations, and watch geometric patterns emerge as you draw.",
+			"alt": "Create intricate Spirograph-style designs in this interactive drawing app. Inspired by the classic drawing toy popularised by Denys Fisher, Gyrograf lets you choose different rings and wheels, experiment with combinations, and watch geometric patterns emerge as you draw."
+		},
+		{
+			"src": "images/galleries/gyrograf/wheelPositions.png",
+			"title": "Gyrograf lets you precisely position the wheels and rings to create complex patterns.",
+			"alt": "Gyrograf lets you precisely position the wheels and rings to create complex patterns."
+		},
+		{
+			"src": "images/galleries/gyrograf/obround.png",
+			"title": "Gyrograf includes all the original wheels and tracks, including the obround.",
+			"alt": "Gyrograf includes all the original wheels and tracks, including the obround."
+		}],
     "Haskish": [{
 			"src": "images/galleries/haskish/functionalProgrammingAQA.png",
 			"title": "Haskish is designed for teaching the AQA Functional Programming topic. It implements a subset of the Haskell language with full specification coverage, and requires no installation or user accounts.",
