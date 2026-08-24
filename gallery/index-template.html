@@ -61,6 +61,7 @@
         .container {
             max-width: 1200px;
             margin: 0 auto;
+            position: relative;
         }
 
         .breadcrumb {
@@ -83,7 +84,7 @@
         .page-intro {
             font-size: 1rem;
             color: #ccc;
-            margin: 0 0 3rem 0;
+            margin: 0 0 1.5rem 0;
             line-height: 1.6;
         }
 
@@ -197,6 +198,18 @@
         .fig-purple { border-color: #ff80ff66; }
         .fig-blue   { border-color: #66ccff66; }
         .fig-yellow { border-color: #ffecb366; }
+
+        .site-logo-link {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .site-logo {
+            width: 120px;
+            height: auto;
+            display: block;
+        }
 
         @media (hover: hover) and (pointer: fine) {
             .launch-link.c-green:hover  { box-shadow: 0 0 15px #00ff88, 0 0 25px #00ff88, 0 0 35px #00ff88; }
@@ -337,6 +350,9 @@
 
 <body>
     <main class="container">
+        <a href="/" class="site-logo-link">
+            <img src="../images/mysticCow.png" alt="Korovatron home" class="site-logo" width="120" height="120">
+        </a>
         <nav class="breadcrumb" aria-label="Breadcrumb">
             <a href="/">Korovatron</a> &rsaquo; Gallery
         </nav>
@@ -473,7 +489,8 @@
             document.querySelector('h1').textContent = `${appName} - Gallery`;
             document.querySelector('.breadcrumb').innerHTML =
                 `<a href="/">Korovatron</a> &rsaquo; <a href="/gallery/">Gallery</a> &rsaquo; ${appName}`;
-            document.querySelector('.page-intro').style.display = 'none';
+            document.querySelector('.page-intro').textContent =
+                `Feature screenshots from Korovatron\u2019s ${appName} app.`;
 
             const firstImg = matchedSection.querySelector('.gallery-img');
             if (firstImg) firstImg.loading = 'eager';
