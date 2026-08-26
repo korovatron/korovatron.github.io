@@ -1,0 +1,36 @@
+# Korovatron
+
+> Free, browser-based GCSE and A Level mathematics and computer science educational tools, accompanied by lightweight retro games. Created by Neil Kendall.
+
+## Mathematics Tools
+
+- [Graphiti](https://www.korovatron.co.uk/graphiti/): Advanced graphing calculator with features rarely found in standard graphing tools. It automatically recognises and names famous geometric curves from their equations (such as circles, ellipses, hyperbolas, parabolas, cardioids, limaçons, lemniscates, and folia) and supports implicit polar equations (e.g. $r^2 = \sin(2\theta)$). Also features automatic detection of asymptotes, holes, turning points, points of inflection, envelopes, and dynamic calculus tools (tangents, normals, numerical integration, and numerical methods).
+  - Video tutorials: [Graphiti YouTube Playlist](https://www.youtube.com/playlist?list=PL3qUa0OyFq5VsuEoxAtYPpAnkuMaFCaE5)
+- [Komplexiti](https://www.korovatron.co.uk/komplexiti/): Interactive Argand diagram and complex number environment purpose-built for A Level Further Maths. Automatically recognises and names complex loci and inequalities from their equations (such as circles, perpendicular bisectors, rays/half-lines, and compound argument/modulus regions) and calculates key metadata: centres, radii, foci ($F_1, F_2$), and exact extrema including maximum/minimum modulus and argument with exact surds (e.g. $|z|_{\text{min}} = \frac{3\sqrt{5}}{10}$, $|z|_{\text{max}} = 2 + \sqrt{2}$) and visual projection vectors on the diagram. Supports input and display in Cartesian, exponential, and trigonometric forms, visually solves polynomial equations and roots of unity, plots locus intersections, and shades complex inequality regions.
+- [Vectorama](https://www.korovatron.co.uk/vectorama/): Interactive 2D and 3D linear algebra playground. Explore vectors, lines, planes, intersections, and distances. Visualise matrix transformations, eigenvalues, eigenvectors, and eigenspaces.
+  - Video tutorials: [Vectorama YouTube Playlist](https://www.youtube.com/playlist?list=PL3qUa0OyFq5VcVRntLC41CSZZMUalKisd)
+- [Trimension](https://www.korovatron.co.uk/trimension/): Browser-based 3D geometry tool for building composite solids (cuboids, prisms, pyramids) and drawing internal triangles, planes, and angles. Includes 2D inspection mode for step-by-step 3D Pythagoras and trigonometry teaching.
+- [Mandelscope](https://www.korovatron.co.uk/mandelscope/): GPU-accelerated Mandelbrot and Julia set fractal explorer with deep zooming (up to 10^-38) and an interactive educational guide to the underlying mathematics.
+
+## Computer Science Tools
+
+- [Haskish](https://www.korovatron.co.uk/haskish/): Haskell-style functional programming playground and REPL for teachers and students. Covers the AQA A Level Computer Science syllabus with lessons, challenges, pattern matching, lambdas, and higher-order functions.
+- [Syntaxor](https://www.korovatron.co.uk/syntaxor/): Backus-Naur Form (BNF) playground for A Level Computer Science (AQA and OCR). Build grammar rules, test input strings, and visualise syntax and parse trees.
+- [Chewring](https://www.korovatron.co.uk/chewring/): Turing machine simulator and finite state machine visualiser for A Level Computer Science. Supports single-tape and multi-row tapes with shareable machine setups.
+- [Boolinator](https://www.korovatron.co.uk/boolinator/): Boolean algebra practice tool with step-by-step logical equivalence checking, hints, and an on-demand PDF worksheet generator (supports AQA and OCR notations).
+- [Encodr](https://www.korovatron.co.uk/encodr/): Interactive data representation suite for GCSE and A Level. Covers number bases, two's complement, fixed and floating-point numbers, bitmap image encoding, character encoding, and digital sound sampling.
+- [SQL Academy](https://www.korovatron.co.uk/sql_academy/): Interactive SQL database practice environment for GCSE and A Level Computer Science queries, data manipulation, and table operations.
+
+## Retro Games and Puzzles
+
+- [The Crate Escape](https://www.korovatron.co.uk/crate_escape/): Sokoban-style puzzle game with over 1,200 levels, step-by-step solution replay, custom level editor, and Google account progress sync.
+- [Gyrograf](https://www.korovatron.co.uk/gyrograf/): Spirograph-inspired drawing app for creating and sharing intricate geometric patterns with customizable rings and wheels.
+- [Pac-Man](https://www.korovatron.co.uk/pacman/): Classic retro arcade maze game.
+- [Tetris](https://www.korovatron.co.uk/tetris/): Classic block-stacking puzzle game.
+- [Space Invaders](https://www.korovatron.co.uk/spaceinvaders/): Retro arcade alien defence game.
+- [Q*Orby](https://www.korovatron.co.uk/qorby/): Q*Bert-inspired isometric pyramid jumping arcade game.
+
+## Additional Resources
+
+- [Feature Gallery](https://www.korovatron.co.uk/gallery/): Visual examples and feature screenshots across the educational apps (supports filtering by app, e.g. `?app=Graphiti`).
+- [Privacy Policy](https://www.korovatron.co.uk/privacy-policy.html): Site privacy policy and data practices.
