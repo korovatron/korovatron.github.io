@@ -14,17 +14,17 @@
 
 ## Computer Science Tools
 
-- [Haskish](https://www.korovatron.co.uk/haskish/): Haskell-style functional programming playground and REPL for teachers and students. Covers the AQA A Level Computer Science syllabus with lessons, challenges, pattern matching, lambdas, and higher-order functions.
-- [Syntaxor](https://www.korovatron.co.uk/syntaxor/): Backus-Naur Form (BNF) playground for A Level Computer Science (AQA and OCR). Build grammar rules, test input strings, and visualise syntax and parse trees.
-- [Chewring](https://www.korovatron.co.uk/chewring/): Turing machine simulator and finite state machine visualiser for A Level Computer Science. Supports single-tape and multi-row tapes with shareable machine setups.
+- [Haskish](https://www.korovatron.co.uk/haskish/): Haskell-style functional programming playground and REPL for teachers and students. Fully covers the AQA A Level Computer Science syllabus and provides a robust interpreter for advanced lambda calculus. Features guided lessons and challenges, list comprehensions, lambdas, higher-order functions, and pattern matching. Includes built-in examples ranging from fundamental syntax to advanced programming milestones such as Church encodings, DFS maze generation, and an integer-based Mandelbrot fractal renderer (no installation or sign-in required).
+- [Syntaxor](https://www.korovatron.co.uk/syntaxor/): Backus-Naur Form (BNF) playground for A Level Computer Science (AQA and OCR). Build grammar rules, test input strings, visualise syntax and parse trees, and work through built-in exercises covering A Level syllabus requirements.
+- [Chewring](https://www.korovatron.co.uk/chewring/): Turing machine simulator and finite state machine visualiser for A Level Computer Science. Supports single-tape and multi-row tapes with shareable machine setups, and includes built-in exercises covering A Level syllabus requirements.
 - [Boolinator](https://www.korovatron.co.uk/boolinator/): Boolean algebra practice tool with step-by-step logical equivalence checking, hints, and an on-demand PDF worksheet generator (supports AQA and OCR notations).
-- [Encodr](https://www.korovatron.co.uk/encodr/): Interactive data representation suite for GCSE and A Level. Covers number bases, two's complement, fixed and floating-point numbers, bitmap image encoding, character encoding, and digital sound sampling.
-- [SQL Academy](https://www.korovatron.co.uk/sql_academy/): Interactive SQL database practice environment for GCSE and A Level Computer Science queries, data manipulation, and table operations.
+- [Encodr](https://www.korovatron.co.uk/encodr/): Interactive data representation suite for GCSE and A Level Computer Science. Covers number bases, two's complement, fixed and floating-point numbers, bit masking, character encoding, bitmap images, vector graphics, digital sound sampling, MIDI, and compression algorithms (Run-Length Encoding (RLE), Huffman coding, and dictionary compression). All topics include interactive tools for classroom teacher demonstrations and independent student practice, along with built-in tests. Also features an automatic PDF worksheet generator where users select topics and question counts to generate randomised worksheets with full answer sheets, formatted with writing space for students or in an ink and paper-saving compact mode.
+- [SQL Academy](https://www.korovatron.co.uk/sql_academy/): Interactive SQL database practice environment with 44 built-in exercises covering all SQL requirements for GCSE and A Level Computer Science. Supports queries, data manipulation, table operations, and includes a live schema diagram that automatically updates whenever students add, modify, or delete tables.
 
 ## Retro Games and Puzzles
 
 - [The Crate Escape](https://www.korovatron.co.uk/crate_escape/): Sokoban-style puzzle game with over 1,200 levels, step-by-step solution replay, custom level editor, and Google account progress sync.
-- [Gyrograf](https://www.korovatron.co.uk/gyrograf/): Spirograph-inspired drawing app for creating and sharing intricate geometric patterns with customizable rings and wheels.
+- [Gyrograf](https://www.korovatron.co.uk/gyrograf/): Spirograph-inspired drawing app for creating and sharing intricate geometric patterns with customisable rings and wheels.
 - [Pac-Man](https://www.korovatron.co.uk/pacman/): Classic retro arcade maze game.
 - [Tetris](https://www.korovatron.co.uk/tetris/): Classic block-stacking puzzle game.
 - [Space Invaders](https://www.korovatron.co.uk/spaceinvaders/): Retro arcade alien defence game.
