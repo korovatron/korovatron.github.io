@@ -627,6 +627,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.korovatron.co.uk/komplexiti/guide.html</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.korovatron.co.uk/gyrograf/</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
