@@ -217,6 +217,11 @@
 			"alt": "Komplexiti can solve equations involving complex conjugates, displaying the roots on an Argand diagram as well as listing them in cartesian, exponential or trigonometric forms, using surds and pi where appropriate."
 		},
 		{
+			"src": "images/galleries/komplexiti/svg.png",
+			"title": "Komplexiti can export graphs as fully customisable SVG files for use in worksheets and slides.",
+			"alt": "Komplexiti can export graphs as fully customisable SVG files for use in worksheets and slides."
+		},
+		{
 			"src": "images/galleries/komplexiti/complexInequalities.png",
 			"title": "Komplexiti can plot inequalities involving complex loci, displaying the solution regions on an Argand diagram.",
 			"alt": "Komplexiti can plot inequalities involving complex loci, displaying the solution regions on an Argand diagram."

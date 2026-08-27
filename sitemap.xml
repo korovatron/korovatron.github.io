@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.korovatron.co.uk/</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -220,6 +220,11 @@
       <image:loc>https://www.korovatron.co.uk/images/galleries/komplexiti/conjugateEquations.png</image:loc>
       <image:title>Komplexiti can solve equations involving complex conjugates, displaying the roots on an Argand diagram as well as listing them in cartesian, exponential or trigonometric forms, using surds and pi where appropriate.</image:title>
       <image:caption>Komplexiti can solve equations involving complex conjugates, displaying the roots on an Argand diagram as well as listing them in cartesian, exponential or trigonometric forms, using surds and pi where appropriate.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/komplexiti/svg.png</image:loc>
+      <image:title>Komplexiti can export graphs as fully customisable SVG files for use in worksheets and slides.</image:title>
+      <image:caption>Komplexiti can export graphs as fully customisable SVG files for use in worksheets and slides.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://www.korovatron.co.uk/images/galleries/komplexiti/complexInequalities.png</image:loc>
@@ -514,7 +519,7 @@
   </url>
   <url>
     <loc>https://www.korovatron.co.uk/gallery/</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -706,7 +711,7 @@
   </url>
   <url>
     <loc>https://www.korovatron.co.uk/gallery/?app=Komplexiti</loc>
-    <lastmod>2026-08-24</lastmod>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
