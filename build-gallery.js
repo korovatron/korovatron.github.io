@@ -27,7 +27,7 @@ const appMeta = {
         firstImage: 'https://www.korovatron.co.uk/images/galleries/trimension/addItems.png',
     },
     'The Crate Escape': {
-        colorClass: 'purple', url: '/crate_escape/', icon: '/images/icons/crateEscapeIcon.png',
+        colorClass: 'green', url: '/crate_escape/', icon: '/images/icons/crateEscapeIcon.png',
         description: 'Feature screenshots for The Crate Escape - the free Sokoban-style puzzle game with over 1200 levels, progress syncing, LURD move replay, and built-in level editor.',
         firstImage: 'https://www.korovatron.co.uk/images/galleries/the-crate-escape/intro.png',
     },
@@ -47,7 +47,7 @@ const appMeta = {
         firstImage: 'https://www.korovatron.co.uk/images/galleries/chewring/intro.png',
     },
     'Syntaxor': {
-        colorClass: 'green', url: '/syntaxor/', icon: '/images/icons/syntaxor.png',
+        colorClass: 'purple', url: '/syntaxor/', icon: '/images/icons/syntaxor.png',
         description: 'Feature screenshots for Syntaxor - the free Backus-Naur Form (BNF) playground for A Level Computer Science. Build grammar rules, test strings, and visualise parse trees.',
         firstImage: 'https://www.korovatron.co.uk/images/galleries/syntaxor/intro.png',
     },
