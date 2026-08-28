@@ -73,11 +73,17 @@
             color: #888;
             text-decoration: underline;
             text-underline-offset: 2px;
+            transition: color 0.2s ease;
+        }
+
+        .breadcrumb a:hover {
+            color: #ffff00;
         }
 
         h1 {
             font-size: 1.8rem;
             margin: 0 0 0.5rem 0;
+            color: #ffffff;
         }
 
         .page-intro {
@@ -183,6 +189,13 @@
         .c-purple  { color: #ff80ff; border-color: #ff80ff; }
         .c-blue    { color: #66ccff; border-color: #66ccff; }
         .c-yellow  { color: #ffecb3; border-color: #ffecb3; }
+
+        h1.c-green  { color: #00ff88; }
+        h1.c-neon   { color: #00cfc0; }
+        h1.c-orange { color: #ff8844; }
+        h1.c-purple { color: #ff80ff; }
+        h1.c-blue   { color: #66ccff; }
+        h1.c-yellow { color: #ffecb3; }
 
         .launch-link.c-green  { box-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88, 0 0 30px #00ff88; text-shadow: 0 0 5px #00ff88; }
         .launch-link.c-neon   { box-shadow: 0 0 10px #00cfc0, 0 0 20px #00cfc0, 0 0 30px #00cfc0; text-shadow: 0 0 5px #00cfc0; }
@@ -372,6 +385,11 @@
             color: inherit;
             text-decoration: underline;
             text-underline-offset: 2px;
+            transition: color 0.2s ease;
+        }
+
+        footer a:hover {
+            color: #ffff00;
         }
     </style>
 </head>
@@ -518,7 +536,9 @@
             document.querySelector('meta[name="twitter:title"]').content = `${appName} Gallery | Korovatron`;
             document.querySelector('meta[name="twitter:description"]').content = appDesc;
             document.querySelector('meta[name="twitter:image"]').content = appImg;
-            document.querySelector('h1').textContent = `${appName} - Gallery`;
+            const h1 = document.querySelector('h1');
+            h1.textContent = `${appName} Gallery`;
+            if (meta?.colorClass) { h1.style.color = ''; h1.classList.add(`c-${meta.colorClass}`); }
             document.querySelector('.breadcrumb').innerHTML =
                 `<a href="/">Korovatron</a> &rsaquo; <a href="/gallery/">Gallery</a> &rsaquo; ${appName}`;
             document.querySelector('.page-intro').textContent =
