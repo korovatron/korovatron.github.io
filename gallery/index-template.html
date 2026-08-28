@@ -77,7 +77,7 @@
         }
 
         .breadcrumb a:hover {
-            color: #ffff00;
+            color: var(--link-hover-color, #ffff00);
         }
 
         h1 {
@@ -389,7 +389,7 @@
         }
 
         footer a:hover {
-            color: #ffff00;
+            color: var(--link-hover-color, #ffff00);
         }
     </style>
 </head>
@@ -401,7 +401,7 @@
                 <nav class="breadcrumb" aria-label="Breadcrumb">
                     <a href="/">Korovatron</a> &rsaquo; Gallery
                 </nav>
-                <h1>App Gallery</h1>
+                <h1>Gallery</h1>
                 <p class="page-intro">Feature screenshots from Korovatron's free browser-based tools for GCSE and A Level maths and computer science.</p>
             </div>
             <a href="/" class="site-logo-link">
@@ -536,9 +536,14 @@
             document.querySelector('meta[name="twitter:title"]').content = `${appName} Gallery | Korovatron`;
             document.querySelector('meta[name="twitter:description"]').content = appDesc;
             document.querySelector('meta[name="twitter:image"]').content = appImg;
+            const colorHex = { green: '#00ff88', neon: '#00cfc0', orange: '#ff8844', purple: '#ff80ff', blue: '#66ccff', yellow: '#ffecb3' };
             const h1 = document.querySelector('h1');
             h1.textContent = `${appName} Gallery`;
-            if (meta?.colorClass) { h1.style.color = ''; h1.classList.add(`c-${meta.colorClass}`); }
+            if (meta?.colorClass) {
+                h1.style.color = '';
+                h1.classList.add(`c-${meta.colorClass}`);
+                document.documentElement.style.setProperty('--link-hover-color', colorHex[meta.colorClass] ?? '#ffff00');
+            }
             document.querySelector('.breadcrumb').innerHTML =
                 `<a href="/">Korovatron</a> &rsaquo; <a href="/gallery/">Gallery</a> &rsaquo; ${appName}`;
             document.querySelector('.page-intro').textContent =
