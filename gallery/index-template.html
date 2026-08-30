@@ -567,7 +567,7 @@
             let currentIndex = 0;
 
             function openLightbox(btn) {
-                allImages = Array.from(document.querySelectorAll('.img-btn'));
+                allImages = Array.from(document.querySelectorAll('.img-btn')).filter(b => b.closest('.app-section')?.style.display !== 'none');
                 currentIndex = allImages.indexOf(btn);
                 showImage(currentIndex);
                 lightbox.classList.add('is-open');
