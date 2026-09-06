@@ -226,6 +226,21 @@
 			"title": "Komplexiti can plot inequalities involving complex loci, displaying the solution regions on an Argand diagram.",
 			"alt": "Komplexiti can plot inequalities involving complex loci, displaying the solution regions on an Argand diagram."
 		}],	
+    "Pascalator": [{
+			"src": "images/galleries/pascalator/explorePascals.png",
+			"title": "Pascalator allows you to explore an infinite Pascal's Triangle.",
+			"alt": "Pascalator allows you to explore an infinite Pascal's Triangle."
+		},
+		{
+			"src": "images/galleries/pascalator/sierpinskiModuloShading.png",
+			"title": "Pascalator can apply modulo shading to discover Sierpinski patterns.",
+			"alt": "Pascalator can apply modulo shading to discover Sierpinski patterns."
+		},
+		{
+			"src": "images/galleries/pascalator/binomialExpansion.png",
+			"title": "Pascalator can generate random Binomial expansion questions to display on a classroom board, then gradually reveal all the stages of working.",
+			"alt": "Pascalator can generate random Binomial expansion questions to display on a classroom board, then gradually reveal all the stages of working."
+		}],
     "The Crate Escape": [{
 			"src": "images/galleries/the-crate-escape/intro.png",
 			"title": "The Crate Escape is a Sokoban style puzzle game. Push, plan, and puzzle your way through over 1200 levels, playable on mobile, desktop, and tablet.",

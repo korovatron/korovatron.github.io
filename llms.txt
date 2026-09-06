@@ -10,6 +10,7 @@
 - [Vectorama](https://www.korovatron.co.uk/vectorama/): Interactive 2D and 3D linear algebra playground. Explore vectors, lines, planes, intersections, and distances. Visualise matrix transformations, eigenvalues, eigenvectors, and eigenspaces.
   - Video tutorials: [Vectorama YouTube Playlist](https://www.youtube.com/playlist?list=PL3qUa0OyFq5VcVRntLC41CSZZMUalKisd)
 - [Trimension](https://www.korovatron.co.uk/trimension/): Browser-based 3D geometry tool for building composite solids (cuboids, prisms, pyramids) and drawing internal triangles, planes, and angles. Includes 2D inspection mode for step-by-step 3D Pythagoras and trigonometry teaching.
+- [Pascalator](https://www.korovatron.co.uk/pascalator/): Interactive Pascal's triangle explorer with infinite pan and zoom, highlighting rows, diagonals, hockey sticks, and fractal patterns such as the Sierpinski triangle. Also generates random binomial expansion questions suited to Level 2 Further Maths and A Level, with full step-by-step worked solutions.
 - [Mandelscope](https://www.korovatron.co.uk/mandelscope/): GPU-accelerated Mandelbrot and Julia set fractal explorer with deep zooming (up to 10^-38) and an interactive educational guide to the underlying mathematics.
 
 ## Computer Science Tools

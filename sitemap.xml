@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.korovatron.co.uk/</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-09-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -185,6 +185,21 @@
       <image:loc>https://www.korovatron.co.uk/images/galleries/trimension/exportSVG.png</image:loc>
       <image:title>Trimension can export PNG and SVG versions for worksheets and presentations. SVGs are editable in Word, PowerPoint, and SVG editors, so labels, lengths, and other details can be adjusted.</image:title>
       <image:caption>Trimension can export PNG and SVG versions for worksheets and presentations. SVGs are editable in Word, PowerPoint, and SVG editors, so labels, lengths, and other details can be adjusted.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/pascalator/explorePascals.png</image:loc>
+      <image:title>Pascalator allows you to explore an infinite Pascal's Triangle.</image:title>
+      <image:caption>Pascalator allows you to explore an infinite Pascal's Triangle.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/pascalator/sierpinskiModuloShading.png</image:loc>
+      <image:title>Pascalator can apply modulo shading to discover Sierpinski patterns.</image:title>
+      <image:caption>Pascalator can apply modulo shading to discover Sierpinski patterns.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/pascalator/binomialExpansion.png</image:loc>
+      <image:title>Pascalator can generate random Binomial expansion questions to display on a classroom board, then gradually reveal all the stages of working.</image:title>
+      <image:caption>Pascalator can generate random Binomial expansion questions to display on a classroom board, then gradually reveal all the stages of working.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://www.korovatron.co.uk/images/galleries/komplexiti/complexForms.png</image:loc>
@@ -698,6 +713,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.korovatron.co.uk/pascalator/</loc>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.korovatron.co.uk/syntaxor/</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
@@ -724,6 +745,12 @@
   <url>
     <loc>https://www.korovatron.co.uk/gallery/?app=Trimension</loc>
     <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.korovatron.co.uk/gallery/?app=Pascalator</loc>
+    <lastmod>2026-09-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
