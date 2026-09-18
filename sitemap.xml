@@ -457,6 +457,16 @@
       <image:caption>SQL Academy has 44 structured exercises organised into seven modules, covering everything required for GCSE and A Level Computer Science exams. Progress is tracked and students can revisit exercises to see their solutions.</image:caption>
     </image:image>
     <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/flashcards/diyaFlashCard.png</image:loc>
+      <image:title>Digital flashcards covering the entire AQA A Level Computer Science specification. Generously donated by a former student.</image:title>
+      <image:caption>Digital flashcards covering the entire AQA A Level Computer Science specification. Generously donated by a former student.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/flashcards/mobileFriendly.png</image:loc>
+      <image:title>Diya's Flashcards are mobile friendly and can be installed for offline use.</image:title>
+      <image:caption>Diya's Flashcards are mobile friendly and can be installed for offline use.</image:caption>
+    </image:image>
+    <image:image>
       <image:loc>https://www.korovatron.co.uk/images/galleries/mandelscope/intro.png</image:loc>
       <image:title>Use Mandelscope to explore the infinite beauty of the Mandelbrot set. Discover intricate patterns, and save your favorite locations for future reference.</image:title>
       <image:caption>Use Mandelscope to explore the infinite beauty of the Mandelbrot set. Discover intricate patterns, and save your favorite locations for future reference.</image:caption>
@@ -793,6 +803,12 @@
   <url>
     <loc>https://www.korovatron.co.uk/gallery/?app=SQL%20Academy</loc>
     <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.korovatron.co.uk/gallery/?app=Diya%27s%20Flashcards</loc>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

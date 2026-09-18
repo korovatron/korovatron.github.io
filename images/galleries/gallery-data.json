@@ -506,6 +506,16 @@
 			"title": "SQL Academy has 44 structured exercises organised into seven modules, covering everything required for GCSE and A Level Computer Science exams. Progress is tracked and students can revisit exercises to see their solutions.",
 			"alt": "SQL Academy has 44 structured exercises organised into seven modules, covering everything required for GCSE and A Level Computer Science exams. Progress is tracked and students can revisit exercises to see their solutions."
 		}],
+    "Diya's Flashcards": [{
+			"src": "images/galleries/flashcards/diyaFlashCard.png",
+			"title": "Digital flashcards covering the entire AQA A Level Computer Science specification. Generously donated by a former student.",
+			"alt": "Digital flashcards covering the entire AQA A Level Computer Science specification. Generously donated by a former student."
+		},
+		{
+			"src": "images/galleries/flashcards/mobileFriendly.png",
+			"title": "Diya's Flashcards are mobile friendly and can be installed for offline use.",
+			"alt": "Diya's Flashcards are mobile friendly and can be installed for offline use."
+		}],
     "Mandelscope": [{
 			"src": "images/galleries/mandelscope/intro.png",
 			"title": "Use Mandelscope to explore the infinite beauty of the Mandelbrot set. Discover intricate patterns, and save your favorite locations for future reference.",
