@@ -227,6 +227,11 @@
 			"alt": "Komplexiti can plot inequalities involving complex loci, displaying the solution regions on an Argand diagram."
 		},
 		{
+			"src": "images/galleries/komplexiti/polesHoles.png",
+			"title": "Komplexiti can identify poles and holes of complex functions, displaying them on an Argand diagram.",
+			"alt": "Komplexiti can identify poles and holes of complex functions, displaying them on an Argand diagram."
+		},
+		{
 			"src": "images/galleries/komplexiti/colouring1.png",
 			"title": "Komplexiti can apply enhanced domain colouring to visualise complex functions.",
 			"alt": "Komplexiti can apply enhanced domain colouring to visualise complex functions."
