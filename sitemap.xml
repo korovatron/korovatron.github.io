@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.korovatron.co.uk/</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -260,6 +260,11 @@
       <image:loc>https://www.korovatron.co.uk/images/galleries/komplexiti/colouring2.png</image:loc>
       <image:title>Komplexiti colours the Argand diagram using argument for hue and modulus for brightness.</image:title>
       <image:caption>Komplexiti colours the Argand diagram using argument for hue and modulus for brightness.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.korovatron.co.uk/images/galleries/komplexiti/hiresFractal.png</image:loc>
+      <image:title>Generate a one-off hi-resolution domain colouring when you find something interesting!</image:title>
+      <image:caption>Generate a one-off hi-resolution domain colouring when you find something interesting!</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://www.korovatron.co.uk/images/galleries/haskish/functionalProgrammingAQA.png</image:loc>
@@ -559,7 +564,7 @@
   </url>
   <url>
     <loc>https://www.korovatron.co.uk/gallery/</loc>
-    <lastmod>2026-08-27</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -673,7 +678,7 @@
   </url>
   <url>
     <loc>https://www.korovatron.co.uk/komplexiti/</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -763,7 +768,7 @@
   </url>
   <url>
     <loc>https://www.korovatron.co.uk/gallery/?app=Komplexiti</loc>
-    <lastmod>2026-08-27</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

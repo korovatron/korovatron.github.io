@@ -240,6 +240,11 @@
 			"src": "images/galleries/komplexiti/colouring2.png",
 			"title": "Komplexiti colours the Argand diagram using argument for hue and modulus for brightness.",
 			"alt": "Komplexiti colours the Argand diagram using argument for hue and modulus for brightness."
+		},
+		{
+			"src": "images/galleries/komplexiti/hiresFractal.png",
+			"title": "Generate a one-off hi-resolution domain colouring when you find something interesting!",
+			"alt": "Generate a one-off hi-resolution domain colouring when you find something interesting!"
 		}],	
     "Pascalator": [{
 			"src": "images/galleries/pascalator/explorePascals.png",
