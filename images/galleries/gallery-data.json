@@ -246,6 +246,31 @@
 			"title": "Generate a one-off hi-resolution domain colouring when you find something interesting!",
 			"alt": "Generate a one-off hi-resolution domain colouring when you find something interesting!"
 		}],	
+	"Mathamorph": [{
+            "src": "images/galleries/mathamorph/equationEditor.png",
+            "title": "Mathamorph allows you to rapidly build equations ready to drop into your documents. No more wrestling with the clunky editors built into popular office apps.",
+            "alt": "Mathamorph allows you to rapidly build equations ready to drop into your documents. No more wrestling with the clunky editors built into popular office apps."
+        },
+        {
+            "src": "images/galleries/mathamorph/export.png",
+            "title": "Mathamorph allows you to export equations as editable LaTeX, PNG or SVG files for use in other applications. Or simply copy and paste directly using CTRL+C.",
+            "alt": "Mathamorph allows you to export equations as editable LaTeX, PNG or SVG files for use in other applications. Or simply copy and paste directly using CTRL+C."
+        },
+		{
+            "src": "images/galleries/mathamorph/morphing.png",
+            "title": "Mathamorph's morphing feature lets you simplify, solve, factorise, expand, differentiate, integrate or Taylor expand highlighted parts of an equation with full CAS precision. Save hours of manual calculation!",
+            "alt": "Mathamorph's morphing feature lets you simplify, solve, factorise, expand, differentiate, integrate or Taylor expand highlighted parts of an equation with full CAS precision. Save hours of manual calculation!"
+        },
+		{
+            "src": "images/galleries/mathamorph/openIn.png",
+            "title": "Mathamorph allows you to open valid equations directly in Graphiti or Komplexiti for instant plotting.",
+            "alt": "Mathamorph allows you to open valid equations directly in Graphiti or Komplexiti for instant plotting."
+        },
+		{
+            "src": "images/galleries/mathamorph/snippets.png",
+            "title": "Mathamorph includes a built-in snippet manager to keep frequently used equations just a click away. The snippet collection can be exported.",
+            "alt": "Mathamorph includes a built-in snippet manager to keep frequently used equations just a click away. The snippet collection can be exported."
+        }],		
     "Pascalator": [{
 			"src": "images/galleries/pascalator/explorePascals.png",
 			"title": "Pascalator allows you to explore an infinite Pascal's Triangle.",
