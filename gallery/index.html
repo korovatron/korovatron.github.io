@@ -2498,7 +2498,9 @@
             },
         };
 
-        // Hides all sections except the one matching ?app= and updates page meta accordingly
+        // Removes all sections except the one matching ?app= (and updates page meta accordingly).
+        // Non-matching sections are removed from the DOM entirely, not just hidden with CSS, so that
+        // their screenshots can't be picked up by crawlers (e.g. Google Images) as belonging to this page.
         function filterGallery() {
             const filterApp = new URLSearchParams(window.location.search).get('app');
             if (!filterApp) return;
@@ -2512,7 +2514,7 @@
                 if (heading && heading.textContent.toLowerCase() === filterAppLower) {
                     matchedSection = section;
                 } else {
-                    section.style.display = 'none';
+                    section.remove();
                 }
             });
 
@@ -2566,7 +2568,7 @@
             let currentIndex = 0;
 
             function openLightbox(btn) {
-                allImages = Array.from(document.querySelectorAll('.img-btn')).filter(b => b.closest('.app-section')?.style.display !== 'none');
+                allImages = Array.from(document.querySelectorAll('.img-btn'));
                 currentIndex = allImages.indexOf(btn);
                 showImage(currentIndex);
                 lightbox.classList.add('is-open');
