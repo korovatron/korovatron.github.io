@@ -268,8 +268,8 @@
         },
 		{
             "src": "images/galleries/mathamorph/snippets.png",
-            "title": "Mathamorph includes a built-in snippet manager to keep frequently used equations just a click away. The snippet collection can be exported.",
-            "alt": "Mathamorph includes a built-in snippet manager to keep frequently used equations just a click away. The snippet collection can be exported."
+            "title": "Mathamorph includes a built-in snippet manager to keep frequently used equations just a click away. The snippet collection can be exported or optionally you can sign in with your Google account to sync across devices.",
+            "alt": "Mathamorph includes a built-in snippet manager to keep frequently used equations just a click away. The snippet collection can be exported or optionally you can sign in with your Google account to sync across devices."
         }],		
     "Pascalator": [{
 			"src": "images/galleries/pascalator/explorePascals.png",
