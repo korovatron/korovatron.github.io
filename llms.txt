@@ -28,6 +28,7 @@
 
 - [The Crate Escape](https://www.korovatron.co.uk/crate_escape/): Sokoban-style puzzle game with over 1,200 levels, step-by-step solution replay, custom level editor, and Google account progress sync.
 - [Gyrograf](https://www.korovatron.co.uk/gyrograf/): Spirograph-inspired drawing app for creating and sharing intricate geometric patterns with customisable rings and wheels.
+- [Jumping Jack](https://www.korovatron.co.uk/jumpingjack/): A tribute to Jumping Jack, the 1983 ZX Spectrum classic by Albert Ball. Guide Jack through moving gaps, avoid hazards, climb ever higher, and chase a high score.
 - [Pac-Man](https://www.korovatron.co.uk/pacman/): Classic retro arcade maze game.
 - [Tetris](https://www.korovatron.co.uk/tetris/): Classic block-stacking puzzle game.
 - [Space Invaders](https://www.korovatron.co.uk/spaceinvaders/): Retro arcade alien defence game with an online leaderboard.
