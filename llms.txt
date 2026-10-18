@@ -37,4 +37,5 @@
 ## Additional Resources
 
 - [Feature Gallery](https://www.korovatron.co.uk/gallery/): Visual examples and feature screenshots across the educational apps (supports filtering by app, e.g. `?app=Graphiti`).
+- [Worksheets](https://www.korovatron.co.uk/worksheets/): Downloadable, printable worksheets for GCSE and A Level maths, further maths, and computer science, including investigations (e.g. complex conjugates, 2D transformations, eigenvalues and eigenvectors) with full solutions. Also hosts solutions for apps with built-in exercises, such as Haskish, SQL Academy, and Syntaxor.
 - [Privacy Policy](https://www.korovatron.co.uk/privacy-policy.html): Site privacy policy and data practices.
