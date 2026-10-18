@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script data-goatcounter="https://korovatron.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+    <!-- Desktop browser favicon -->
+    <link rel="icon" type="image/png" sizes="48x48" href="../favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <!-- iOS/mobile homescreen icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon-180x180.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Worksheets | Korovatron</title>
+    <meta name="description" content="Downloadable, printable worksheets for GCSE and A Level maths and computer science.">
+    <link rel="canonical" href="https://www.korovatron.co.uk/worksheets/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.korovatron.co.uk/worksheets/">
+    <meta property="og:title" content="Worksheets | Korovatron">
+    <meta property="og:description" content="Downloadable, printable worksheets for GCSE and A Level maths and computer science.">
+    <meta property="og:image" content="https://www.korovatron.co.uk/images/og-banner.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.korovatron.co.uk/worksheets/">
+    <meta name="twitter:title" content="Worksheets | Korovatron">
+    <meta name="twitter:description" content="Downloadable, printable worksheets for GCSE and A Level maths and computer science.">
+    <meta name="twitter:image" content="https://www.korovatron.co.uk/images/og-banner.png">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.korovatron.co.uk/"},
+            {"@type": "ListItem", "position": 2, "name": "Worksheets", "item": "https://www.korovatron.co.uk/worksheets/"}
+        ]
+    }
+    </script>
+
+    <style>
+        *, *::before, *::after { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            background: #000;
+            color: #ffecb3;
+            font-family: Arial, system-ui, -apple-system, sans-serif;
+            padding: 2rem 1.5rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .breadcrumb {
+            font-size: 0.9rem;
+            color: #888;
+            margin-bottom: 0.5rem;
+        }
+
+        .breadcrumb a {
+            color: #888;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+            transition: color 0.2s ease;
+        }
+
+        .breadcrumb a:hover {
+            color: #ffecb3;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            margin: 0 0 0.5rem 0;
+            color: #ffffff;
+        }
+
+        .page-intro {
+            font-size: 1rem;
+            color: #ffffff;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .page-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .page-header-text {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .page-header-text h1 { margin-bottom: 0.5rem; }
+
+        .page-header-text .page-intro { margin-bottom: 0; }
+
+        .site-logo-link {
+            flex-shrink: 0;
+            display: block;
+            align-self: flex-start;
+        }
+
+        .site-logo {
+            width: 85px;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        @media (hover: hover) and (pointer: fine) {
+            .site-logo-link:hover .site-logo { transform: scale(1.1); }
+        }
+
+        @media (min-width: 640px) {
+            .site-logo { width: 90px; }
+        }
+
+        @media (min-width: 1024px) {
+            .site-logo { width: 120px; }
+        }
+
+        #content-area {
+            margin-top: 1rem;
+        }
+
+        .placeholder-card {
+            padding: 1.5rem;
+            border: 2px solid #444;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #2a1a33 60%, #3a2332 100%);
+            box-shadow: 0 0 18px 2px #33224444;
+            text-align: center;
+        }
+
+        .placeholder-card p {
+            margin: 0;
+            font-size: 1.05rem;
+            line-height: 1.6;
+            color: #ffecb3;
+        }
+
+        .worksheet-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+        }
+
+        .worksheet-row {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 1.25rem 1.5rem;
+            border: 2px solid #444;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #2a1a33 60%, #3a2332 100%);
+            box-shadow: 0 0 18px 2px #33224444;
+            text-align: left;
+        }
+
+        .worksheet-row-content {
+            flex: 1 1 auto;
+            min-width: 0;
+        }
+
+        .worksheet-title {
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: #fff;
+            margin: 0 0 0.4rem 0;
+        }
+
+        .worksheet-description {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #ffecb3;
+            margin: 0;
+        }
+
+        .worksheet-actions {
+            display: flex;
+            flex-direction: row;
+            flex: 0 0 auto;
+            gap: 0.6rem;
+        }
+
+        .worksheet-button {
+            display: inline-block;
+            text-align: center;
+            padding: 0.65rem 1.4rem;
+            font-size: 1rem;
+            font-weight: 400;
+            border: 2px solid #6b6350;
+            border-radius: 8px;
+            background: #000;
+            color: #d8cdb0;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .worksheet-button:focus-visible {
+            outline: 2px solid #ffffff;
+            outline-offset: 3px;
+        }
+
+        @media (hover: hover) and (pointer: fine) {
+            .worksheet-button:hover {
+                border-color: #d8cdb0;
+                box-shadow: 0 0 6px #d8cdb055;
+            }
+        }
+
+        .worksheet-button.has-subject-color {
+            border-color: var(--subject-color);
+            color: var(--subject-color);
+        }
+
+        @media (hover: hover) and (pointer: fine) {
+            .worksheet-button.has-subject-color:hover {
+                border-color: var(--subject-color);
+                background: var(--subject-color);
+                color: #000;
+            }
+        }
+
+        @media (max-width: 700px) {
+            .worksheet-row {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .worksheet-actions {
+                justify-content: center;
+                width: 100%;
+            }
+
+            .worksheet-button {
+                flex: 1 1 0;
+            }
+        }
+
+        .subject-filter {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .subject-filter-button {
+            padding: 0.5rem 1.25rem;
+            font-size: 0.95rem;
+            font-family: inherit;
+            border: 2px solid var(--subject-color, #665f50);
+            border-radius: 999px;
+            background: #000;
+            color: #d8cdb0;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .subject-filter-button.is-active {
+            background: var(--subject-color, #ffecb3);
+            border-color: var(--subject-color, #ffecb3);
+            color: #000;
+            font-weight: 700;
+        }
+
+        @media (hover: hover) and (pointer: fine) {
+            .subject-filter-button:not(.is-active):hover {
+                border-color: var(--subject-color, #ffecb3);
+                color: var(--subject-color, #ffecb3);
+            }
+        }
+
+        .no-results {
+            text-align: center;
+            color: #ccc;
+            font-size: 1rem;
+        }
+
+        footer {
+            margin-top: 2rem;
+            font-size: 0.95rem;
+            color: #888;
+            text-align: center;
+        }
+
+        footer a {
+            color: inherit;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+            transition: color 0.2s ease;
+        }
+
+        footer a:hover {
+            color: #ffecb3;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <div class="page-header">
+            <div class="page-header-text">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="/">Korovatron</a> &rsaquo; Worksheets
+                </nav>
+                <h1>Worksheets</h1>
+                <p class="page-intro">Downloadable, printable worksheets for GCSE and A Level maths and computer science, for students and teachers.</p>
+            </div>
+            <a href="/" class="site-logo-link">
+                <img src="../images/mysticCow.png" alt="Korovatron home" class="site-logo" width="80" height="80">
+            </a>
+        </div>
+
+        <div id="content-area">
+            <div class="placeholder-card">
+                <p>Worksheets are coming soon. Check back here for downloadable, printable resources.</p>
+            </div>
+        </div>
+
+        <footer>
+            <a href="/">Back to Korovatron</a>
+        </footer>
+    </main>
+
+    <script>
+        let allWorksheets = [];
+        let activeSubject = 'All';
+
+        const subjectColors = {
+            'Maths': { color: '#00ff88', glow: '#00ff8877' },
+            'Computer Science': { color: '#66ccff', glow: '#66ccff77' }
+        };
+
+        function countGoatEvent(eventText) {
+            if (window.goatcounter && typeof window.goatcounter.count === 'function' && eventText) {
+                window.goatcounter.count({
+                    path: eventText,
+                    title: eventText,
+                    event: true
+                });
+            }
+        }
+
+        function renderPlaceholder(contentArea) {
+            contentArea.innerHTML = `
+                <div class="placeholder-card">
+                    <p>Worksheets are coming soon. Check back here for downloadable, printable resources.</p>
+                </div>
+            `;
+        }
+
+        function createWorksheetRow(worksheet) {
+            const row = document.createElement('div');
+            row.className = 'worksheet-row';
+
+            const subjectTheme = subjectColors[worksheet.subject];
+            const buttonClass = subjectTheme ? ' has-subject-color' : '';
+            const buttonStyle = subjectTheme ? ` style="--subject-color:${subjectTheme.color};"` : '';
+            const descriptionStyle = subjectTheme ? ` style="color:${subjectTheme.color};"` : '';
+            const eventText = `Worksheet ${worksheet.shortDescription || worksheet.title} downloaded`;
+
+            const solutionsButtonHtml = worksheet.solutionsUrl
+                ? `<a class="worksheet-button${buttonClass}" href="${worksheet.solutionsUrl}" target="_blank" rel="noopener" data-goat-event="${eventText}"${buttonStyle}>Solutions</a>`
+                : '';
+
+            row.innerHTML = `
+                <div class="worksheet-row-content">
+                    <h2 class="worksheet-title">${worksheet.title}</h2>
+                    <p class="worksheet-description"${descriptionStyle}>${worksheet.description}</p>
+                </div>
+                <div class="worksheet-actions">
+                    <a class="worksheet-button${buttonClass}" href="${worksheet.worksheetUrl}" target="_blank" rel="noopener" data-goat-event="${eventText}"${buttonStyle}>Worksheet</a>
+                    ${solutionsButtonHtml}
+                </div>
+            `;
+
+            return row;
+        }
+
+        function renderFilterBar(container) {
+            const subjects = ['All', ...new Set(allWorksheets.map((worksheet) => worksheet.subject).filter(Boolean))];
+
+            if (subjects.length <= 2) {
+                return;
+            }
+
+            const filterBar = document.createElement('div');
+            filterBar.className = 'subject-filter';
+
+            subjects.forEach((subject) => {
+                const button = document.createElement('button');
+                button.type = 'button';
+                button.className = 'subject-filter-button' + (subject === activeSubject ? ' is-active' : '');
+                button.textContent = subject;
+
+                const subjectTheme = subjectColors[subject];
+                if (subjectTheme) {
+                    button.style.setProperty('--subject-color', subjectTheme.color);
+                    button.style.setProperty('--subject-glow', subjectTheme.glow);
+                }
+
+                button.addEventListener('click', () => {
+                    activeSubject = subject;
+                    filterBar.querySelectorAll('.subject-filter-button').forEach((btn) => {
+                        btn.classList.toggle('is-active', btn.textContent === subject);
+                    });
+                    renderList();
+                });
+                filterBar.appendChild(button);
+            });
+
+            container.appendChild(filterBar);
+        }
+
+        function renderList() {
+            const list = document.getElementById('worksheet-list');
+            const filtered = activeSubject === 'All'
+                ? allWorksheets
+                : allWorksheets.filter((worksheet) => worksheet.subject === activeSubject);
+
+            filtered.sort((a, b) => a.title.localeCompare(b.title));
+
+            list.innerHTML = '';
+
+            if (filtered.length === 0) {
+                list.innerHTML = `<p class="no-results">No worksheets found for ${activeSubject} yet.</p>`;
+                return;
+            }
+
+            filtered.forEach((worksheet) => list.appendChild(createWorksheetRow(worksheet)));
+        }
+
+        async function loadWorksheets() {
+            const contentArea = document.getElementById('content-area');
+
+            try {
+                const response = await fetch('worksheets-data.json', { cache: 'no-store' });
+                if (!response.ok) {
+                    throw new Error(`Failed to load worksheets data: ${response.status}`);
+                }
+
+                const worksheets = await response.json();
+
+                if (!Array.isArray(worksheets) || worksheets.length === 0) {
+                    renderPlaceholder(contentArea);
+                    return;
+                }
+
+                allWorksheets = worksheets;
+
+                contentArea.innerHTML = '';
+                renderFilterBar(contentArea);
+
+                const list = document.createElement('div');
+                list.id = 'worksheet-list';
+                list.className = 'worksheet-list';
+                contentArea.appendChild(list);
+
+                renderList();
+            } catch (error) {
+                console.error(error);
+                renderPlaceholder(contentArea);
+            }
+        }
+
+        document.addEventListener('click', (event) => {
+            const target = event.target.closest('[data-goat-event]');
+            if (target) {
+                countGoatEvent(target.getAttribute('data-goat-event'));
+            }
+        });
+
+        loadWorksheets();
+    </script>
+</body>
+
+</html>

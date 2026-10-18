@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="Worksheets icon">
+    <!-- Page with folded top-right corner -->
+    <path d="M40 10 H130 L170 50 V190 H40 Z" fill="#fefefe" stroke="#1b1b1b" stroke-width="8" stroke-linejoin="round"/>
+    <path d="M130 10 L130 50 H170 Z" fill="#cfd8e3" stroke="#1b1b1b" stroke-width="8" stroke-linejoin="round"/>
+    <!-- Worksheet text lines -->
+    <line x1="60" y1="90" x2="150" y2="90" stroke="#9aa7b8" stroke-width="8" stroke-linecap="round"/>
+    <line x1="60" y1="115" x2="150" y2="115" stroke="#9aa7b8" stroke-width="8" stroke-linecap="round"/>
+    <line x1="60" y1="140" x2="120" y2="140" stroke="#9aa7b8" stroke-width="8" stroke-linecap="round"/>
+    <!-- PDF ribbon -->
+    <rect x="35" y="150" width="90" height="36" rx="6" fill="#e5533d" stroke="#1b1b1b" stroke-width="6"/>
+    <text x="80" y="176" font-family="Arial, sans-serif" font-size="22" font-weight="800" fill="#ffffff" text-anchor="middle">PDF</text>
+</svg>

@@ -1,0 +1,51 @@
+[
+{
+    "title": "Complex Conjugate Investigation",
+    "subject": "Maths",
+    "shortDescription": "complex conj investigation",
+    "description": "An investigation for students to discover geometric properties of complex conjugates.",
+    "worksheetUrl": "pdf/conjugates.pdf",
+    "solutionsUrl": "pdf/conjugates-answers.pdf"
+},
+{
+    "title": "Investigating 2D Transformations",
+    "subject": "Maths",
+    "shortDescription": "2D transformations",
+    "description": "An investigation where students use a unit square to discover how 2D transformations change shape, size, and position.",
+    "worksheetUrl": "pdf/Investigating_2D_Transformations.pdf",
+    "solutionsUrl": "pdf/Investigating_2D_Transformations_Answers.pdf"
+},
+{
+    "title": "Combining 2D Transformations",
+    "subject": "Maths",
+    "shortDescription": "Comb 2D Transformations",
+    "description": "An investigation where students use a unit square to combine transformations, test the effect of order, and find single equivalent 2D matrices.",
+    "worksheetUrl": "pdf/Combining_2D_Transformations.pdf",
+    "solutionsUrl": "pdf/Combining_2D_Transformations_Answers.pdf"
+},
+{
+    "title": "Eigenvalues and eigenvectors Investigation",
+    "subject": "Maths",
+    "shortDescription": "Eigen Part 1",
+    "description": "An investigation intended for use before formal teaching of eigenvalues and eigenvectors, where students observe invariant behaviour under transformations and infer key ideas before any techniques for finding eigenvalues and eigenvectors are taught, including that eigenvectors give invariant directions while an invariant line of points is not necessarily an eigenvector direction.",
+    "worksheetUrl": "pdf/EigenValuesVectors_Investigation.pdf",
+    "solutionsUrl": "pdf/EigenValuesVectors_Investigation_Answers.pdf"
+},
+{
+    "title": "Eigenvalues and eigenvectors Investigation – Part 2",
+    "subject": "Maths",
+    "shortDescription": "Eigen Part 2",
+    "description": "A follow-up investigation where students explore how repeated eigenvalues affect eigenspace geometry in 2D and 3D before formal techniques are introduced.",
+    "worksheetUrl": "pdf/EigenValuesVectors_Investigation_part2.pdf",
+    "solutionsUrl": "pdf/EigenValuesVectors_Investigation_part2_Answers.pdf"
+},
+{
+    "title": "Functional Programming",
+    "subject": "Computer Science",
+    "shortDescription": "Haskish",
+    "description": "These questions are reproduced from the built in lessons in the Haskish app and add no additional content. However the solutions link provides full worked solutions which are not available within the app.",
+    "worksheetUrl": "pdf/Haskish.pdf",
+    "solutionsUrl": "pdf/Haskish Solutions.pdf"
+}
+
+]
