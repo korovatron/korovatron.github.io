@@ -183,6 +183,29 @@
             margin: 0;
         }
 
+        .worksheet-description a {
+            color: #c4c4c4;
+            font-weight: 700;
+            text-decoration: underline;
+            text-decoration-color: currentColor;
+            text-underline-offset: 3px;
+        }
+
+        .worksheet-description a:visited {
+            color: #c4c4c4;
+        }
+
+        .worksheet-description a:focus-visible {
+            outline: 2px solid #ffffff;
+            outline-offset: 2px;
+        }
+
+        @media (hover: hover) and (pointer: fine) {
+            .worksheet-description a:hover {
+                color: #ffffff;
+            }
+        }
+
         .worksheet-actions {
             display: flex;
             flex-direction: row;
@@ -202,6 +225,14 @@
             color: #d8cdb0;
             text-decoration: none;
             transition: all 0.2s ease;
+            width: 130px;
+        }
+
+        .worksheet-button-placeholder {
+            border-color: transparent;
+            background: transparent;
+            visibility: hidden;
+            pointer-events: none;
         }
 
         .worksheet-button:focus-visible {
@@ -242,6 +273,10 @@
 
             .worksheet-button {
                 flex: 1 1 0;
+            }
+
+            .worksheet-button-placeholder {
+                display: none;
             }
         }
 
@@ -370,7 +405,10 @@
 
             const solutionsButtonHtml = worksheet.solutionsUrl
                 ? `<a class="worksheet-button${buttonClass}" href="${worksheet.solutionsUrl}" target="_blank" rel="noopener" data-goat-event="${eventText}"${buttonStyle}>Solutions</a>`
-                : '';
+                : `<span class="worksheet-button worksheet-button-placeholder" aria-hidden="true"></span>`;
+            const worksheetButtonHtml = worksheet.worksheetUrl
+                ? `<a class="worksheet-button${buttonClass}" href="${worksheet.worksheetUrl}" target="_blank" rel="noopener" data-goat-event="${eventText}"${buttonStyle}>Worksheet</a>`
+                : `<span class="worksheet-button worksheet-button-placeholder" aria-hidden="true"></span>`;
 
             row.innerHTML = `
                 <div class="worksheet-row-content">
@@ -378,7 +416,7 @@
                     <p class="worksheet-description"${descriptionStyle}>${worksheet.description}</p>
                 </div>
                 <div class="worksheet-actions">
-                    <a class="worksheet-button${buttonClass}" href="${worksheet.worksheetUrl}" target="_blank" rel="noopener" data-goat-event="${eventText}"${buttonStyle}>Worksheet</a>
+                    ${worksheetButtonHtml}
                     ${solutionsButtonHtml}
                 </div>
             `;
