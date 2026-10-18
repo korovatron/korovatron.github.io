@@ -75,16 +75,16 @@
     "title": "Boolean Algebra Simplification",
     "subject": "Computer Science",
     "shortDescription": "Boolean Algebra Simplification",
-    "description": "Generate unlimited boolean algebra simplification worksheets with <a href=\"https://www.korovatron.co.uk/boolinator/\" target=\"_blank\" rel=\"noopener\">Boolinator</a>, with answers provided. Ideal for homework and revision. Supports both AQA and OCR notation.",
-    "worksheetUrl": "",
+    "description": "Generate unlimited boolean algebra simplification worksheets with <a href=\"https://www.korovatron.co.uk/boolinator?worksheet/\" target=\"_blank\" rel=\"noopener\">Boolinator</a>, with answers provided. Ideal for homework and revision. Supports both AQA and OCR notation.",
+    "worksheetUrl": "https://www.korovatron.co.uk/boolinator?worksheet/",
     "solutionsUrl": ""
 },
 {
     "title": "Data Representation",
     "subject": "Computer Science",
-    "shortDescription": "Boolean Algebra Simplification",
+    "shortDescription": "Data Representation",
     "description": "Generate unlimited data representation worksheets with <a href=\"https://www.korovatron.co.uk/encodr/pages/worksheet-generator.html\" target=\"_blank\" rel=\"noopener\">Encodr</a>, with answers provided. Ideal for homework and revision. Choose from unsigned/signed binary, hex and floating point numbers, Huffman encoding, RLE, bitmap images and sampled sound and much more ...",
-    "worksheetUrl": "",
+    "worksheetUrl": "https://www.korovatron.co.uk/encodr/pages/worksheet-generator.html",
     "solutionsUrl": ""
 }
 ]
