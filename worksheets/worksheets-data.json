@@ -75,7 +75,7 @@
     "title": "Boolean Algebra Simplification",
     "subject": "Computer Science",
     "shortDescription": "Boolean Algebra Simplification",
-    "description": "Generate unlimited boolean algebra simplification worksheets with <a href=\"https://www.korovatron.co.uk/boolinator?worksheet/\" target=\"_blank\" rel=\"noopener\">Boolinator</a>, with answers provided. Ideal for homework and revision. Supports both AQA and OCR notation.",
+    "description": "Generate unlimited boolean algebra simplification worksheets with <a href=\"https://www.korovatron.co.uk/boolinator/?worksheet\" target=\"_blank\" rel=\"noopener\">Boolinator</a>, with answers provided. Ideal for homework and revision. Supports both AQA and OCR notation.",
     "worksheetUrl": "https://www.korovatron.co.uk/boolinator?worksheet/",
     "solutionsUrl": ""
 },
