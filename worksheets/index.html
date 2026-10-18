@@ -172,14 +172,14 @@
         .worksheet-title {
             font-size: 1.3rem;
             font-weight: 800;
-            color: #fff;
+            color: #4d7fff;
             margin: 0 0 0.4rem 0;
         }
 
         .worksheet-description {
             font-size: 1rem;
             line-height: 1.6;
-            color: #ffecb3;
+            color: #b0b0b0;
             margin: 0;
         }
 
@@ -400,7 +400,6 @@
             const subjectTheme = subjectColors[worksheet.subject];
             const buttonClass = subjectTheme ? ' has-subject-color' : '';
             const buttonStyle = subjectTheme ? ` style="--subject-color:${subjectTheme.color};"` : '';
-            const descriptionStyle = subjectTheme ? ` style="color:${subjectTheme.color};"` : '';
             const eventText = `Worksheet ${worksheet.shortDescription || worksheet.title} downloaded`;
 
             const solutionsButtonHtml = worksheet.solutionsUrl
@@ -413,7 +412,7 @@
             row.innerHTML = `
                 <div class="worksheet-row-content">
                     <h2 class="worksheet-title">${worksheet.title}</h2>
-                    <p class="worksheet-description"${descriptionStyle}>${worksheet.description}</p>
+                    <p class="worksheet-description">${worksheet.description}</p>
                 </div>
                 <div class="worksheet-actions">
                     ${worksheetButtonHtml}
