@@ -1,12 +1,32 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="Worksheets icon">
-    <!-- Page with folded top-right corner -->
-    <path d="M40 10 H130 L170 50 V190 H40 Z" fill="#fefefe" stroke="#1b1b1b" stroke-width="8" stroke-linejoin="round"/>
-    <path d="M130 10 L130 50 H170 Z" fill="#cfd8e3" stroke="#1b1b1b" stroke-width="8" stroke-linejoin="round"/>
-    <!-- Worksheet text lines -->
-    <line x1="60" y1="90" x2="150" y2="90" stroke="#9aa7b8" stroke-width="8" stroke-linecap="round"/>
-    <line x1="60" y1="115" x2="150" y2="115" stroke="#9aa7b8" stroke-width="8" stroke-linecap="round"/>
-    <line x1="60" y1="140" x2="120" y2="140" stroke="#9aa7b8" stroke-width="8" stroke-linecap="round"/>
-    <!-- PDF ribbon -->
-    <rect x="35" y="150" width="90" height="36" rx="6" fill="#e5533d" stroke="#1b1b1b" stroke-width="6"/>
-    <text x="80" y="176" font-family="Arial, sans-serif" font-size="22" font-weight="800" fill="#ffffff" text-anchor="middle">PDF</text>
+    <defs>
+        <clipPath id="paperClip">
+            <path d="M 30,20 L 37,27 L 44,20 L 51,27 L 58,20 L 65,27 L 72,20 L 79,27 L 86,20 L 93,27 L 100,20 L 107,27 L 114,20 L 121,27 L 128,20 L 135,27 L 142,20 L 149,27 L 156,20 L 163,27 L 170,20 L 170,180 L 163,173 L 156,180 L 149,173 L 142,180 L 135,173 L 128,180 L 121,173 L 114,180 L 107,173 L 100,180 L 93,173 L 86,180 L 79,173 L 72,180 L 65,173 L 58,180 L 51,173 L 44,180 L 37,173 L 30,180 Z"/>
+        </clipPath>
+    </defs>
+    <!-- Retro tractor-feed printer paper, perforated top and bottom -->
+    <path d="M 30,20 L 37,27 L 44,20 L 51,27 L 58,20 L 65,27 L 72,20 L 79,27 L 86,20 L 93,27 L 100,20 L 107,27 L 114,20 L 121,27 L 128,20 L 135,27 L 142,20 L 149,27 L 156,20 L 163,27 L 170,20 L 170,180 L 163,173 L 156,180 L 149,173 L 142,180 L 135,173 L 128,180 L 121,173 L 114,180 L 107,173 L 100,180 L 93,173 L 86,180 L 79,173 L 72,180 L 65,173 L 58,180 L 51,173 L 44,180 L 37,173 L 30,180 Z"
+        fill="#fefefe" stroke="#1b1b1b" stroke-width="8" stroke-linejoin="round"/>
+    <g clip-path="url(#paperClip)">
+        <!-- Greenbar stripes -->
+        <rect x="52" y="25" width="96" height="21" fill="#bdf2d5"/>
+        <rect x="52" y="67" width="96" height="21" fill="#bdf2d5"/>
+        <rect x="52" y="109" width="96" height="21" fill="#bdf2d5"/>
+        <rect x="52" y="151" width="96" height="24" fill="#bdf2d5"/>
+        <!-- Sprocket feed margins -->
+        <rect x="30" y="20" width="22" height="160" fill="#eef1f3"/>
+        <rect x="148" y="20" width="22" height="160" fill="#eef1f3"/>
+        <line x1="52" y1="20" x2="52" y2="180" stroke="#1b1b1b" stroke-width="3"/>
+        <line x1="148" y1="20" x2="148" y2="180" stroke="#1b1b1b" stroke-width="3"/>
+        <circle cx="41" cy="40" r="6" fill="#fefefe" stroke="#1b1b1b" stroke-width="4"/>
+        <circle cx="41" cy="75" r="6" fill="#fefefe" stroke="#1b1b1b" stroke-width="4"/>
+        <circle cx="41" cy="110" r="6" fill="#fefefe" stroke="#1b1b1b" stroke-width="4"/>
+        <circle cx="41" cy="145" r="6" fill="#fefefe" stroke="#1b1b1b" stroke-width="4"/>
+        <circle cx="159" cy="40" r="6" fill="#fefefe" stroke="#1b1b1b" stroke-width="4"/>
+        <circle cx="159" cy="75" r="6" fill="#fefefe" stroke="#1b1b1b" stroke-width="4"/>
+        <circle cx="159" cy="110" r="6" fill="#fefefe" stroke="#1b1b1b" stroke-width="4"/>
+        <circle cx="159" cy="145" r="6" fill="#fefefe" stroke="#1b1b1b" stroke-width="4"/>
+    </g>
+    <!-- Teacher's red pen tick -->
+    <path d="M 88,98 L 107,118 L 152,58" fill="none" stroke="#ef3e36" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" transform="rotate(-6 120 88)"/>
 </svg>
