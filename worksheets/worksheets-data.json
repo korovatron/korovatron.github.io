@@ -86,6 +86,14 @@
     "description": "Generate unlimited data representation worksheets with <a href=\"https://www.korovatron.co.uk/encodr/pages/worksheet-generator.html\" target=\"_blank\" rel=\"noopener\">Encodr</a>, with answers provided. Ideal for homework and revision. Choose from unsigned/signed binary, hex and floating point numbers, Huffman encoding, RLE, bitmap images and sampled sound and much more ...",
     "worksheetUrl": "https://www.korovatron.co.uk/encodr/pages/worksheet-generator.html",
     "solutionsUrl": ""
+},
+{
+    "title": "Chewring Solutions",
+    "subject": "Computer Science",
+    "shortDescription": "Chewring solutions",
+    "description": "Possible solutions for the tasks in <a href=\"https://www.korovatron.co.uk/chewring/\" target=\"_blank\" rel=\"noopener\">Chewring</a>.",
+    "worksheetUrl": "",
+    "solutionsUrl": "https://www.korovatron.co.uk/chewring/taskSolutions.html"
 }
 ]
 
