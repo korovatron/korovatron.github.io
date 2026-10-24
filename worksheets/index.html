@@ -402,11 +402,19 @@
             const buttonStyle = subjectTheme ? ` style="--subject-color:${subjectTheme.color};"` : '';
             const eventText = `Worksheet ${worksheet.shortDescription || worksheet.title} downloaded`;
 
+            // Note: rel="opener" here - these links point to our own installed PWAs
+            // (Chewring, Boolinator, Encodr, SQL Academy, etc.). Browsers treat
+            // target="_blank" links as implicitly rel="noopener" by default, which makes
+            // the new tab a non-auxiliary browsing context - and that's exactly what
+            // Chrome/Edge's PWA link-capturing looks for before hijacking a click into the
+            // installed app instead of a normal browser tab. Explicitly opting back in to
+            // rel="opener" keeps these as auxiliary browsing contexts, which stops the
+            // installed PWA from stealing the navigation.
             const solutionsButtonHtml = worksheet.solutionsUrl
-                ? `<a class="worksheet-button${buttonClass}" href="${worksheet.solutionsUrl}" target="_blank" rel="noopener" data-goat-event="${eventText}"${buttonStyle}>Solutions</a>`
+                ? `<a class="worksheet-button${buttonClass}" href="${worksheet.solutionsUrl}" target="_blank" rel="opener" data-goat-event="${eventText}"${buttonStyle}>Solutions</a>`
                 : `<span class="worksheet-button worksheet-button-placeholder" aria-hidden="true"></span>`;
             const worksheetButtonHtml = worksheet.worksheetUrl
-                ? `<a class="worksheet-button${buttonClass}" href="${worksheet.worksheetUrl}" target="_blank" rel="noopener" data-goat-event="${eventText}"${buttonStyle}>Worksheet</a>`
+                ? `<a class="worksheet-button${buttonClass}" href="${worksheet.worksheetUrl}" target="_blank" rel="opener" data-goat-event="${eventText}"${buttonStyle}>Worksheet</a>`
                 : `<span class="worksheet-button worksheet-button-placeholder" aria-hidden="true"></span>`;
 
             row.innerHTML = `

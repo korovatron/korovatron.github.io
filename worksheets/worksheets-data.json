@@ -43,7 +43,7 @@
     "title": "Haskish Solutions",
     "subject": "Computer Science",
     "shortDescription": "Haskish solutions",
-    "description": "Possible solutions for the lesson challenges in <a href=\"https://www.korovatron.co.uk/haskish/\" target=\"_blank\" rel=\"noopener\">Haskish</a>.",
+    "description": "Possible solutions for the lesson challenges in <a href=\"https://www.korovatron.co.uk/haskish/\" target=\"_blank\" rel=\"opener\">Haskish</a>.",
     "worksheetUrl": "",
     "solutionsUrl": "pdf/Haskish Solutions.pdf"
 },
@@ -51,7 +51,7 @@
     "title": "SQL Academy Solutions",
     "subject": "Computer Science",
     "shortDescription": "SQL Academy solutions",
-    "description": "Possible solutions for the exercises in <a href=\"https://www.korovatron.co.uk/sql_academy/\" target=\"_blank\" rel=\"noopener\">SQL Academy</a>.",
+    "description": "Possible solutions for the exercises in <a href=\"https://www.korovatron.co.uk/sql_academy/\" target=\"_blank\" rel=\"opener\">SQL Academy</a>.",
     "worksheetUrl": "",
     "solutionsUrl": "https://www.korovatron.co.uk/sql_academy/solutions"
 },
@@ -59,7 +59,7 @@
     "title": "Syntaxor Solutions",
     "subject": "Computer Science",
     "shortDescription": "Syntaxor solutions",
-    "description": "Possible solutions for the tasks in <a href=\"https://www.korovatron.co.uk/syntaxor/\" target=\"_blank\" rel=\"noopener\">Syntaxor</a>.",
+    "description": "Possible solutions for the tasks in <a href=\"https://www.korovatron.co.uk/syntaxor/\" target=\"_blank\" rel=\"opener\">Syntaxor</a>.",
     "worksheetUrl": "",
     "solutionsUrl": "pdf/syntaxor_solutions.pdf"
 },
@@ -67,7 +67,7 @@
     "title": "Design a Sprite",
     "subject": "Computer Science",
     "shortDescription": "Design a Sprite",
-    "description": "A worksheet to use with the <a href=\"https://www.korovatron.co.uk/encodr/pages/bitmap.html\" target=\"_blank\" rel=\"noopener\">bitmap activity</a> in Encodr.",
+    "description": "A worksheet to use with the <a href=\"https://www.korovatron.co.uk/encodr/pages/bitmap.html\" target=\"_blank\" rel=\"opener\">bitmap activity</a> in Encodr.",
     "worksheetUrl": "pdf/spritedesign.pdf",
     "solutionsUrl": ""
 },
@@ -75,7 +75,7 @@
     "title": "Boolean Algebra Simplification",
     "subject": "Computer Science",
     "shortDescription": "Boolean Algebra Simplification",
-    "description": "Generate unlimited boolean algebra simplification worksheets with <a href=\"https://www.korovatron.co.uk/boolinator/?worksheet\" target=\"_blank\" rel=\"noopener\">Boolinator</a>, with answers provided. Ideal for homework and revision. Supports both AQA and OCR notation.",
+    "description": "Generate unlimited boolean algebra simplification worksheets with <a href=\"https://www.korovatron.co.uk/boolinator/?worksheet\" target=\"_blank\" rel=\"opener\">Boolinator</a>, with answers provided. Ideal for homework and revision. Supports both AQA and OCR notation.",
     "worksheetUrl": "https://www.korovatron.co.uk/boolinator/?worksheet",
     "solutionsUrl": ""
 },
@@ -83,7 +83,7 @@
     "title": "Data Representation",
     "subject": "Computer Science",
     "shortDescription": "Data Representation",
-    "description": "Generate unlimited data representation worksheets with <a href=\"https://www.korovatron.co.uk/encodr/pages/worksheet-generator.html\" target=\"_blank\" rel=\"noopener\">Encodr</a>, with answers provided. Ideal for homework and revision. Choose from unsigned/signed binary, hex and floating point numbers, Huffman encoding, RLE, bitmap images and sampled sound and much more ...",
+    "description": "Generate unlimited data representation worksheets with <a href=\"https://www.korovatron.co.uk/encodr/pages/worksheet-generator.html\" target=\"_blank\" rel=\"opener\">Encodr</a>, with answers provided. Ideal for homework and revision. Choose from unsigned/signed binary, hex and floating point numbers, Huffman encoding, RLE, bitmap images and sampled sound and much more ...",
     "worksheetUrl": "https://www.korovatron.co.uk/encodr/pages/worksheet-generator.html",
     "solutionsUrl": ""
 },
@@ -91,7 +91,7 @@
     "title": "Chewring Solutions",
     "subject": "Computer Science",
     "shortDescription": "Chewring solutions",
-    "description": "Possible solutions for the tasks in <a href=\"https://www.korovatron.co.uk/chewring/\" target=\"_blank\" rel=\"noopener\">Chewring</a>.",
+    "description": "Possible solutions for the tasks in <a href=\"https://www.korovatron.co.uk/chewring/\" target=\"_blank\" rel=\"opener\">Chewring</a>.",
     "worksheetUrl": "",
     "solutionsUrl": "https://www.korovatron.co.uk/chewring/taskSolutions.html"
 }
